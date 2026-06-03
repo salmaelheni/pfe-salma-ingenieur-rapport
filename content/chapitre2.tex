@@ -1,0 +1,527 @@
+
+\chapter{Spécification et capture des besoins}
+
+\section{Introduction}
+
+Dans ce chapitre, nous analysons les besoins fonctionnels et techniques du projet, identifions les différents acteurs impliqués et présentons le backlog produit. Nous détaillons également la planification des sprints afin de fournir une vision globale du déroulement du projet et des fonctionnalités clés à implémenter.
+Enfin, ce chapitre présente l'architecture générale de l'application.
+
+\section{Capture des besoins}
+La réussite du projet repose sur une compréhension claire et précise des besoins à satisfaire. Cette phase essentielle consiste à identifier les principaux acteurs du système et à définir leurs besoins fonctionnels et non fonctionnels. Elle permet ainsi de garantir que la solution proposée répond de manière cohérente aux exigences métier et aux contraintes techniques.
+
+\subsection{Identification des acteurs}
+
+Le système e-Gouv repose sur plusieurs acteurs, chacun disposant d’un rôle et d’un périmètre d’intervention spécifiques. 
+\newpage
+Le tableau suivant présente les acteurs identifiés ainsi que leur description.
+
+\begin{table}[H]
+\centering
+
+\rowcolors{2}{gray!15}{white}
+\setlength{\arrayrulewidth}{0.3pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabular}{|p{5cm}|p{11cm}|}
+\hline
+\rowcolor{gray!30}
+\textbf{Acteur} & \textbf{Description} \\
+\hline
+
+Administrateur &
+Acteur générique regroupant l’ensemble des fonctionnalités communes aux profils administratifs du système.
+Il constitue l’acteur parent dont héritent l’administrateur système, l’administrateur ministériel et l’administrateur institutionnel. \\
+\hline
+
+Administrateur Système &
+Hérite de l’administrateur. Il dispose des privilèges les plus élevés et assure la gouvernance globale du système e-Gouv. \\
+\hline
+
+Administrateur Ministériel &
+Hérite de l’administrateur. Il est responsable de la gestion administrative d’un ministère ou d’une administration globale. \\
+\hline
+
+Administrateur Institutionnel &
+Hérite de l’administrateur. Il est rattaché à une institution spécifique et agit selon les permissions définies par l’administrateur ministériel. \\
+\hline
+
+Internaute &
+Utilisateur non authentifié accédant au portail e-Gouv afin de consulter les informations publiques et initier une inscription. \\
+\hline
+
+Client &
+Hérite de l’internaute e-Gouv. Il s’agit d’un citoyen disposant d’un compte lui permettant d’accéder aux services publics numériques. \\
+\hline
+
+\end{tabular}
+
+\caption{Acteurs du système e-Gouv}
+\label{tab:acteurs}
+\end{table}
+
+\newpage
+\subsection{Besoins fonctionnels}
+
+Les besoins fonctionnels du système sont exprimés à travers les cas d’utilisation associés à chaque acteur. Le tableau ci-dessous synthétise les principales fonctionnalités offertes par acteur.
+
+\begin{table}[H]
+\centering
+
+\rowcolors{2}{gray!15}{white}
+\setlength{\arrayrulewidth}{0.3pt}
+\renewcommand{\arraystretch}{1.3}
+
+\begin{tabular}{|p{5cm}|p{11cm}|}
+\hline
+\rowcolor{gray!30}
+\textbf{Acteur} & \textbf{Fonctionnalités principales} \\
+\hline
+
+Administrateur &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+    \item S’authentifier
+    \item Consulter les statistiques globales
+    \item Consulter les journaux d'activités
+    \item Consulter les notifications
+    \item Consulter administrations
+    \item Modifier profil
+\end{itemize}
+\vspace{0.2cm}
+\end{minipage}
+\\
+\hline
+
+Administrateur Système &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+    \item Gérer les comptes des administrateurs
+    \item Gérer les rôles
+    \item Consulter les permissions
+    \item Configurer les modèles de notifications
+    \item Gérer les notifications
+    \item Consulter l'historique des notifications
+    \item Gérer les administrations
+    \item Gérer les secteurs de services
+    \item Gérer les catégories de réclamations
+    \item Personaliser étapes de traitement des réclamations système
+    \item Gérer les langues du site
+    \item Consulter les logs système
+\end{itemize}
+\vspace{0.2cm}
+\end{minipage}
+\\
+\hline
+
+Administrateur Ministériel &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+    \item Gérer les comptes des administrateurs institutionnels
+    \item Gérer les services administratifs
+    \item Personaliser étapes de traitement des demandes sur services
+    \item Gérer les formulaires dynamiques des services
+\end{itemize}
+\vspace{0.2cm}
+\end{minipage}
+\\
+\hline
+
+Administrateur Institutionnel &
+\begin{minipage}[t]{\linewidth}
+\begin{itemize}
+    \item Gére les demandes sur services
+    \item Gérer les réclamations
+\end{itemize}
+\vspace{0.2cm}
+\end{minipage}
+\\
+\hline
+
+\end{tabular}
+
+\caption{Besoins fonctionnels par acteur (partie administration)}
+\label{tab:besoins_admin}
+\end{table}
+
+
+\begin{table}[H]
+\centering
+
+\rowcolors{2}{gray!15}{white}
+\setlength{\arrayrulewidth}{0.3pt}
+\renewcommand{\arraystretch}{1.3}
+\setlength{\tabcolsep}{10pt} % <-- AJOUT IMPORTANT
+
+\begin{tabular}{|p{5cm}|p{11cm}|}
+\hline
+\rowcolor{gray!30}
+\textbf{Acteur} & \textbf{Fonctionnalités principales} \\
+\hline
+
+Internaute &
+\begin{minipage}[t]{\linewidth}
+\vspace{0.2cm}
+\begin{itemize}
+    \item S'inscrire
+    \item Consulter l’accueil
+    \item Consulter les secteurs et services
+    \item Consulter le gouvernement
+    \item Consulter les projets et réalisations
+    \item Consulter les actualités
+    \item Consulter la FAQ
+    \item Contacter l’administrateur
+    \item Gérer les réclamations
+\end{itemize}
+\vspace{0.2cm}
+\end{minipage}
+\\
+\hline
+
+Client &
+\begin{minipage}[t]{\linewidth}
+\vspace{0.2cm}
+\begin{itemize}
+    \item S’authentifier
+    \item Consulter le tableau de bord
+    \item Consulter les notifications
+    \item Déposer des demandes de services
+    \item Suivre l’état d’avancement des dossiers
+    \item Évaluer les services
+    \item Modifier profil
+\end{itemize}
+\vspace{0.2cm}
+\end{minipage}
+\\
+\hline
+
+\end{tabular}
+\caption{Besoins fonctionnels par acteur (partie citoyens)}
+\label{tab:besoins_citoyens}
+\end{table}
+
+\subsection{Les Besoins non fonctionnels}
+
+Les besoins non fonctionnels du système s’appuient sur le modèle de qualité défini par la norme \textbf{ISO/IEC 25010}.  
+Cette norme internationale propose un cadre de référence permettant d’évaluer la qualité d’un système logiciel à travers plusieurs caractéristiques essentielles, notamment la performance, la sécurité, la maintenabilité, la fiabilité et la compatibilité.
+Dans le cadre de ce projet, les exigences non fonctionnelles ont été définies en s’inspirant principalement des caractéristiques suivantes du modèle ISO/IEC 25010 :
+
+\begin{itemize}
+    \item \textbf{Performance} : La plateforme doit offrir des temps de chargement rapides et des réponses fluides aux actions des utilisateurs. Cela implique une optimisation du code, un traitement efficace côté serveur et l’utilisation de mécanismes de mise en cache afin d’assurer une navigation réactive, même en période de forte sollicitation.
+
+    \item \textbf{Sécurité} : La plateforme doit garantir la protection des données et la confidentialité des informations des utilisateurs. Elle doit mettre en œuvre des mécanismes de sécurité adaptés, tels que le l’authentification sécurisée, la gestion des accès et le respect des bonnes pratiques de sécurité afin de prévenir les accès non autorisés.
+
+    \item \textbf{Maintenance} : Le système doit être facile à maintenir, à corriger et à faire évoluer. Cela repose sur un code clair, modulaire et bien documenté, l’utilisation de technologies standards et le respect des bonnes pratiques de développement, afin de faciliter les interventions et les améliorations à long terme.
+\end{itemize}
+
+\subsection{Digramme des cas d'utilisations global}
+Dans cette section, nous présentons les diagrammes de cas d’utilisation. En raison de la longueur de ce diagramme, le diagramme global a été divisé en deux diagrammes distincts afin d'améliorer la lisibilité et la compréhension.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/diagrammes/Diagramme use case global admins.drawio.png}
+    \caption{Diagramme de cas d'utilisation global (Partie Backoffice)}
+    \label{fig:cas-utilisation-admins}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/diagrammes/internaute_citoyen.drawio_2.png}
+    \caption{Diagramme de cas d'utilisation global (Partie Frontoffice)}
+    \label{fig:cas-utilisation-user}
+\end{figure}
+
+\subsection{Backlog du Produit}
+Le backlog produit constitue l'artefact central du framework Scrum. Il regroupe l'ensemble des fonctionnalités nécessaires à la réalisation de notre solution, organisées selon l'ordre d'implémentation défini dans la planification des sprints.
+Le tableau ci-dessous présente une synthèse du backlog produit relatif à la conception et au développement de la plateforme e-Gouv.
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
+    \rowcolor{orange!30}
+    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
+
+    1 & Administrateur & Je veux m'authentifier afin d'accéder de manière sécurisée au backoffice & 2 & Élevée \\ \hline
+    2 & Administrateur Système & Je veux gérer les comptes des administrateurs backoffice afin de contrôler les accès à la plateforme & 4 & Élevée \\ \hline
+    3 & Administrateur Système & Je veux gérer les rôles afin de définir les niveaux d'accès pour chaque type d'utilisateur & 4 & Élevée \\ \hline
+    4 & Administrateur Système & Je veux consulter les permissions associées aux rôles afin de vérifier les droits attribués & 2 & Élevée \\ \hline
+    5 & Administrateur Ministériel & Je veux gérer les comptes des administrateurs institutionnels afin d'assurer leur accès aux modules concernés & 4 & Élevée \\ \hline
+    6 & Administrateur Système & Je veux gérer les administrations ministérielles afin d'organiser les structures institutionnelles de la plateforme & 4 & Élevée \\ \hline
+    7 & Administrateur Système & Je veux gérer les langues de la plateforme afin de garantir une interface multilingue & 2 & Élevée \\ \hline
+    8 & Administrateur & Je veux modifier mon profil afin de maintenir mes informations personnelles à jour & 1 & Moyenne \\ \hline
+    9  & Administrateur système & Je veux gérer les secteurs de services afin d'organiser les offres de la plateforme par domaine & 2 & Élevée \\ \hline
+    
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
+    \rowcolor{orange!30}
+    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
+    10 & Administrateur Ministériel & Je veux gérer les services administratifs afin de définir les prestations disponibles pour les citoyens & 4 & Élevée \\ \hline
+    11 & Administrateur Ministériel & Je veux personnaliser les étapes de traitement des demandes sur les services afin d’adapter le workflow aux besoins spécifiques de mon ministère & 2 & Élevée \\ \hline
+    12 & Administrateur Ministériel & Je veux gérer le moteur de formulaires dynamiques afin de personnaliser les champs et les étapes des demandes par service & 13 & Élevée \\ \hline
+    13 & Internaute & Je veux créer un compte afin de pouvoir déposer des demandes de services & 2 & Élevée \\ \hline
+    14 & Client & Je veux m'authentifier afin d'accéder à mon espace personnel & 3 & Élevée \\ \hline
+    15 & Internaute & Je veux consulter les secteurs et les services disponibles afin de connaître les offres par administration & 2 & Moyenne \\ \hline
+    16 & Client & Je veux déposer une demande de service en ligne afin d'obtenir une prestation administrative sans me déplacer & 7 & Élevée \\ \hline
+    17 & Client & Je veux suivre l'état d'avancement de mes dossiers afin de connaître leur progression en temps réel & 5 & Élevée \\ \hline
+    18 & Client & Je veux évaluer un service après traitement afin de donner mon avis sur la qualité de la prestation & 2 & Moyenne \\ \hline
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
+    \rowcolor{orange!30}
+    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
+    
+
+    19 & Client & Je veux consulter mon tableau de bord afin d'avoir une vue d'ensemble de mes demandes et activités & 2 & Moyenne \\ \hline
+    20 & Client & Je veux Modifier mon profil afin de changer mes informations personnelles & 1 & Moyenne \\ \hline
+    21 & Administrateur Système & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & 2 & Élevée \\ \hline
+    22 & Administrateur système & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & 3 & Élevée \\ \hline
+    23 & Administrateur Institutionnel  & Je veux gérer les réclamations soumises afin d'y apporter des réponses appropriées & 2 & Élevée \\ \hline
+    24 & Administrateur Institutionnel & Je veux gérer les demandes de service afin de les traiter et les suivre & 2 & Élevée \\ \hline
+    25 & Administrateur Système & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & 3 & Élevée \\ \hline
+    26 & Administrateur Système & Je veux gérer notifications afin d'informer automatiquement les utilisateurs des changements de statut & 4 & Élevée \\ \hline
+    27 & Administrateur Système & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & 2 & Moyenne \\ \hline
+    28 & Internaute & Je veux gérer mes réclamation afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement& 2 & Élevée \\ \hline
+    29 & Client & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & 2 & Élevée \\ \hline
+    
+\end{tabular}
+\end{table}
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
+    \rowcolor{orange!30}
+    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
+
+    30 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 3 & Moyenne \\ \hline
+    31 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 2 & Moyenne \\ \hline
+    32 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
+    33 & Internaute & Je veux consulter la page d'accueil afin d'obtenir une présentation générale du portail e-Gouv & 2 & Moyenne \\ \hline
+    34 & Internaute & Je veux consulter les informations sur le Gouvernement afin d'accéder aux données officielles & 2 & Moyenne \\ \hline
+    35 & Internaute & Je veux consulter les Projets et Réalisations afin d'accéder aux données officielles & 2 & Moyenne \\ \hline
+    36 & Internaute & Je veux consulter les actualités afin de suivre les dernières nouvelles du Gouvernement & 1 & Basse \\ \hline
+    37 & Internaute & Je veux consulter a propos du portail afin de comprendre les objectifs de la plateforme au service des citoyens et de l'État  & 1 & Basse \\ \hline
+    38 & Internaute & Je veux consulter la FAQ afin d'obtenir des réponses rapides & 1 & Basse \\ \hline
+    39 & Internaute & Je veux consulter le guide d'utilisation afin d'obtenir de savoir utiliser l'espace client & 1 & Basse \\ \hline
+    40 & Internaute & Je veux consulter la page a propos afin de comprendre les objectifs du portail & 1 & Basse \\ \hline
+    41 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
+
+\end{tabular}
+\end{table}
+
+
+\subsection{Structuration et planification des sprints}
+le développement du projet a été planifié sous forme d’itérations successives appelées sprints. Chaque sprint vise la réalisation d’un ensemble priorisé d’éléments du backlog produit, sélectionnés en fonction de leur valeur métier. 
+
+Afin de structurer les livraisons du projet, les cinq sprints ont été regroupés en trois releases cohérentes, permettant de présenter l’évolution progressive du système.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/autre/planification_sprints_releases.png}
+    \caption{Planification des sprints et des releases}
+    \label{fig:release}
+\end{figure}
+
+\subsection{Environnement matériel}
+Au cours de la phase de la réalisation, j'ai utilisé un ordinateur ayant les caractéristiques suivantes: 
+
+\begin{itemize}
+    \item \textbf{Processeur} : 11th Gen Intel® Core™ i5-1135G7 @ 2.40GHz × 8.
+    \item \textbf{Mémoire RAM} : 24.0 GiB.
+    \item \textbf{Type de système} : Système d’exploitation 64 bits.
+    \item \textbf{OS} : Ubuntu 24.04.3 LTS.
+    \item \textbf{Carte graphique} : Mesa Intel® Xe Graphics (TGL GT2).
+    \item \textbf{Disque dur} : 1.5 TB.
+\end{itemize}
+
+\subsection{Environnement logiciel}
+
+Le tableau suivant présente les logiciels utilisés lors du développement de notre application :
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ |p{2.5cm}|p{4cm}|p{8.5cm}|} \hline
+        \textbf{Nom} & \textbf{Logo} & \textbf{Description} \\ \hline
+
+        \begin{center} Visual Studio Code \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=2cm]{images/logos/vscode.png}
+        \end{center} &
+        Visual Studio Code est un éditeur de code source léger mais puissant, disponible sur Windows, macOS et Linux. Il offre plusieurs fonctionnalités facilitant le développement logiciel, telles que le débogage, l’autocomplétion et l’intégration Git.\cite{vscode} \\ \hline
+
+        \begin{center} Git \end{center} &
+        \begin{center}
+            \includegraphics[width=1.5cm,height=1.5cm]{images/logos/git.png}
+        \end{center} &
+        Git est un système de contrôle de version distribué conçu pour suivre les modifications du code source et faciliter la collaboration entre développeurs au sein d’un projet logiciel.\cite{git} \\ \hline
+
+        \begin{center} GitLab \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=2cm]{images/logos/GitLab01.png}
+        \end{center} &
+        GitLab est une plateforme de gestion de code source basée sur Git, permettant l’hébergement des dépôts, la collaboration entre équipes et l’automatisation des processus de développement.\cite{gitlab} \\ \hline
+
+        \begin{center} Jira \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=1.5cm]{images/logos/Jira_Logo.svg.png}
+        \end{center} &
+        Jira est un outil de gestion de projet permettant de planifier, suivre et gérer efficacement les tâches, les tickets et les processus de développement logiciel.\cite{jira} \\ \hline
+        
+        \begin{center} Figma \end{center} &
+        \begin{center}
+            \includegraphics[width=3cm,height=2cm]{images/logos/figma.png}
+        \end{center} &
+        Figma est un outil de conception collaborative permettant de créer des interfaces utilisateur, des prototypes interactifs et des systèmes de design adaptés au développement d’applications modernes.\cite{figma} \\ \hline
+
+        \begin{center} draw.io \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=2cm]{images/logos/drowio.jpeg}
+        \end{center} &
+        draw.io (diagrams.net) est un outil gratuit et open-source permettant de concevoir différents types de diagrammes, notamment les diagrammes UML, les architectures logicielles et les diagrammes de flux.\cite{drawio} \\ \hline
+
+        \begin{center} Postman \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=2cm]{images/logos/postman.png}
+        \end{center} &
+        Postman est une plateforme permettant de tester, documenter et valider les API afin de garantir leur bon fonctionnement tout au long du développement.\cite{postman} \\ \hline
+
+    \end{tabular}
+    \caption{Environnement logiciel (partie 1)}
+    \label{tab:env_logiciel_2}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ |p{2.5cm}|p{4cm}|p{8.5cm}|} \hline
+        \textbf{Nom} & \textbf{Logo} & \textbf{Description} \\ \hline
+
+        \begin{center} Mailtrap \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=2cm]{images/logos/mailtrap.png}
+        \end{center} &
+        Mailtrap est une plateforme dédiée au test et à la validation des emails dans un environnement sécurisé, facilitant le développement et le débogage des fonctionnalités d’envoi d’emails.\cite{mailtrap} \\ \hline
+
+    \end{tabular}
+    \caption{Environnement logiciel (partie 2)}
+    \label{tab:env_logiciel_3}
+\end{table}
+
+
+\subsection{Environnement technique}
+
+Le tableau suivant présente les différentes technologies utilisées lors du développement de notre application :
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ |p{2.5cm}|p{4cm}|p{8.5cm}|} \hline
+        \textbf{Nom} & \textbf{Logo} & \textbf{Description} \\ \hline
+
+        \begin{center} PHP \end{center} &
+        \begin{center}
+            \includegraphics[width=3cm,height=2cm]{images/logos/php.png}
+        \end{center} &
+        PHP est un langage de programmation open-source principalement utilisé pour le développement d’applications web dynamiques côté serveur.\cite{php} \\ \hline
+
+        \begin{center} Laravel \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=2cm]{images/logos/laravel.png}
+        \end{center} &
+        Laravel est un framework web open-source basé sur PHP, suivant l’architecture MVC (Modèle–Vue–Contrôleur), facilitant le développement d’applications web robustes et sécurisées.\cite{laravel} \\ \hline
+
+        \begin{center} Drupal \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=2cm]{images/logos/drupal.png}
+        \end{center} &
+        Drupal est un système de gestion de contenu (CMS) open-source écrit en PHP, permettant de créer et gérer efficacement des sites web et des contenus numériques.\cite{drupal} \\ \hline
+
+        \begin{center} Next.js \end{center} &
+        \begin{center}
+            \includegraphics[width=4cm,height=3cm]{images/logos/next.js.jpg}
+        \end{center} &
+        Next.js est un framework React utilisé pour développer des applications web modernes, offrant des fonctionnalités avancées telles que le rendu côté serveur et l’optimisation des performances.\cite{nextjs} \\ \hline
+
+    \end{tabular}
+    \caption{Environnement technique (partie 1)}
+    \label{tab:env_technique_1}
+\end{table}
+
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ |p{2.5cm}|p{4cm}|p{8.5cm}|} \hline
+        \textbf{Nom} & \textbf{Logo} & \textbf{Description} \\ \hline
+
+        \begin{center} Docker \end{center} &
+        \begin{center}
+            \includegraphics[width=3cm,height=3cm]{images/logos/Docker.png}
+        \end{center} &
+        Docker est une plateforme de conteneurisation permettant de développer, déployer et exécuter des applications dans des environnements isolés et reproductibles.\cite{docker} \\ \hline
+
+        \begin{center} Nginx \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=2cm]{images/logos/nginx.png}
+        \end{center} &
+        Nginx est un serveur web et proxy inverse permettant la gestion des requêtes HTTP, la répartition de charge ainsi que l’amélioration des performances des applications web.\cite{nginx} \\ \hline
+
+        \begin{center} PostgreSQL \end{center} &
+        \begin{center}
+            \includegraphics[width=2cm,height=2cm]{images/logos/Postgresql_elephant.svg.png}
+        \end{center} &
+        PostgreSQL est un système de gestion de base de données relationnelle open-source reconnu pour sa robustesse, sa fiabilité et ses performances élevées.\cite{postgresql} \\ \hline
+
+        \begin{center} Redis \end{center} &
+        \begin{center}
+            \includegraphics[width=3cm,height=2cm]{images/logos/redis-color-1.png}
+        \end{center} &
+        Redis est une base de données en mémoire utilisée principalement pour la mise en cache, l’optimisation des performances et le stockage rapide de données temporaires.\cite{redis} \\ \hline
+
+    \end{tabular}
+    \caption{Environnement technique (partie 2)}
+    \label{tab:env_technique_2}
+\end{table}
+
+
+\section{Architecture générale}
+\subsection{Architecture logique}
+L'architecture logique de la plateforme \textbf{e-Gouv} repose sur un modèle \textbf{trois couches} qui sépare clairement les responsabilités du système. 
+
+La \textbf{couche de présentation} constitue le point d'entrée des utilisateurs ; elle regroupe l'ensemble des interfaces web à travers lesquelles citoyens et administrateurs interagissent avec la plateforme. Les requêtes sont transmises à la \textbf{couche d'application}, qui centralise la logique métier et orchestre le traitement des services administratifs. 
+
+Cette couche communique à son tour avec la \textbf{couche de données}, chargée de la persistance et de la restitution des informations. Les échanges entre les couches suivent un flux structuré : les requêtes descendent de la présentation vers les données, et les résultats remontent vers l'utilisateur final. Cette séparation garantit la maintenabilité, la scalabilité et la sécurité de l'ensemble du système.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/autre/arch3tier.drawio.png}
+    \caption{Architecture logique}
+    \label{fig:arch-log}
+\end{figure}
+
+
+\subsection{Architecture physique}
+L'architecture physique décrit le déploiement concret des composants techniques sur les différents serveurs de la plateforme. 
+
+La \textbf{couche présentation} est assurée par deux espaces distincts : le Frontoffice, qui héberge Next.js pour le rendu des interfaces citoyens et Drupal pour la gestion de contenu, et le Backoffice, qui expose l'interface d'administration via Laravel. Chacun de ces composants est exposé derrière un serveur Nginx jouant le rôle de reverse proxy, qui gère la terminaison SSL, le routage des requêtes et la transmission par Proxy Pass vers l'application cible. 
+
+La \textbf{couche métier} est portée par une API Laravel dédiée, également protégée par Nginx, qui reçoit les requêtes HTTPS depuis la couche présentation et retourne des réponses JSON.
+
+Enfin, la \textbf{couche données} regroupe trois systèmes de stockage complémentaires : PostgreSQL pour la persistance relationnelle des données, Redis pour la gestion du cache et des sessions, et un Document Storage pour l'archivage des fichiers et pièces jointes. Les échanges entre la couche métier et la couche données s'effectuent en lecture/écriture selon les besoins du traitement.
+
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/autre/Architecture 3 Couches — Présentation _ Accès Données _ Données.png}
+    \caption{Architecture physique}
+    \label{fig:arch-phy}
+\end{figure}
+
+
+\section{Conclusion}
+Dans ce chapitre, nous avons identifié les acteurs du système ainsi que les besoins fonctionnels et non fonctionnels. Nous avons ensuite présenté les diagrammes de cas d’utilisation, le backlog produit, l’environnement de travail et l’architecture générale du système.
+Dans ce chapitre, nous avons identifié les acteurs du système ainsi que les besoins fonctionnels et non fonctionnels. Nous avons ensuite présenté les diagrammes de cas d’utilisation, le backlog produit, l’environnement de travail et l’architecture générale du système.

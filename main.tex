@@ -1,0 +1,49 @@
+\documentclass[a4paper,12pt]{report}
+
+
+
+\input{settings.tex} 
+
+
+\begin{document}
+\setcounter{page}{1}
+\pagenumbering{Roman}
+\clearpage
+% \includepdf[pages=-]{"content/garde_page.pdf"}
+% \clearpage
+% \input{content/signature}
+% \clearpage
+% \input{content/remerciment.tex}
+% \clearpage
+% \input{content/dedicase}
+% \clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Table des matières}
+\tableofcontents
+\clearpage
+\phantomsection
+\addcontentsline{toc}{chapter}{Table des figures}
+\listoffigures
+\phantomsection
+\addcontentsline{toc}{chapter}{Liste des tableaux}
+\listoftables
+\clearpage
+
+\pagenumbering{arabic}
+\setcounter{page}{1}
+\input{content/Introduction-generale}
+\clearpage
+\input{content/chapitre1}
+\clearpage
+\input{content/chapitre2}
+\clearpage
+\input{content/chapitre3}
+\clearpage
+\input{content/chapitre4}
+\clearpage
+\input{content/chapitre5}
+\clearpage
+\input{content/conclusion.tex}
+% \clearpage
+% \includepdf[pages=-]{"content/end_page.pdf"}
+\end{document}

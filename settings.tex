@@ -1,0 +1,88 @@
+\usepackage[french]{babel}
+\DeclareUnicodeCharacter{00A0}{ }
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+
+\usepackage{graphicx}
+\graphicspath{{./images/}}
+
+\usepackage{multirow}
+\usepackage{booktabs}
+\usepackage{csquotes}
+\usepackage{setspace}
+\usepackage[hypcap=false]{caption}
+\usepackage[hidelinks]{hyperref}
+
+\usepackage{lscape}
+\usepackage[svgnames,dvipsnames,table,xcdraw]{xcolor}
+
+\usepackage{lipsum}
+\usepackage{longtable}
+\usepackage{pifont}
+\usepackage{diagbox}
+\usepackage{lmodern}
+\usepackage{framed}
+
+\usepackage[Conny]{fncychap}
+\ChTitleAsIs
+\usepackage{float}
+\usepackage{amsmath}
+
+\usepackage{url}
+\usepackage{array}
+\usepackage{tabularx}
+
+\usepackage{lmodern}
+\usepackage{newtxtext,newtxmath}
+
+\usepackage{xspace}
+\usepackage[french]{minitoc}
+
+\usepackage[top=2cm, bottom=2cm, left=2cm, right=2cm]{geometry}
+
+\usepackage{subfig}
+\usepackage{wrapfig}
+\usepackage{mwe}
+\usepackage{adjustbox}
+\usepackage{pdfpages}
+\usepackage{rotating}
+
+% =========================
+% BIBLATEX
+% =========================
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex}
+\addbibresource{references.bib} % change if needed
+
+% =========================
+% SETTINGS
+% =========================
+\setcounter{secnumdepth}{4}
+\setcounter{tocdepth}{4}
+\setcounter{minitocdepth}{2}
+
+\setstretch{1.5}
+
+\setlength{\arrayrulewidth}{0.4pt}
+\renewcommand{\arraystretch}{1}
+
+\newcolumntype{R}[1]{>{\raggedleft\arraybackslash}b{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}b{#1}}
+\newcolumntype{C}[1]{>{\centering\arraybackslash}b{#1}}
+
+\renewcommand{\figurename}{\textbf{Figure}}
+\renewcommand{\tablename}{\textbf{Tableau}}
+
+\addto\captionsfrench{\renewcommand{\bibname}{\textbf{Références bibliographiques}}}
+\addto\captionsfrench{\renewcommand{\glossaryname}{\textbf{Glossaire}}}
+
+% TOC clean
+\makeatletter
+\renewcommand\tableofcontents{%
+\null\hfill\textbf{\Large\contentsname}\hfill\null\par
+\@starttoc{toc}%
+}
+\makeatother
+
+\usepackage{lettrine}
+\usepackage{xstring}

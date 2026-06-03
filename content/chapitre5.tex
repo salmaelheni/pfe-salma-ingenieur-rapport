@@ -1,0 +1,912 @@
+\chapter{Troisième release}
+
+\section{Introduction}
+Cette troisième release regroupe les \textit{Sprint 4} et \textit{Sprint 5}, consacrés à l’enrichissement de la plateforme e-Gouvernement à travers des fonctionnalités visant à améliorer l’interaction avec les citoyens, la communication institutionnelle ainsi que la supervision globale du système.
+
+
+\section{Sprint 4 : La gestion des réclamations et du système de notifications}
+
+Ce sprint vise à permettre aux citoyens de soumettre et suivre leurs réclamations, tout en offrant aux administrations des mécanismes de traitement structurés et un système de notifications assurant une communication fluide entre les différents acteurs.
+
+\subsection{Backlog du Sprint 4}
+
+Le tableau ci-dessous présente le backlog du quatrième sprint avec l'estimation en jours de chaque tâche.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ |p{1cm}|p{3cm}|p{7cm}|p{1cm}|p{2cm}|} \hline
+    \rowcolor{orange!30}
+    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
+
+    21 & Administrateur Système & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & 2 & Élevée \\ \hline
+    22 & Administrateur système & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & 3 & Élevée \\ \hline
+    23 & Administrateur Institutionnel  & Je veux gérer les réclamations soumises afin d'y apporter des réponses appropriées & 2 & Élevée \\ \hline
+    25 & Administrateur Système & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & 3 & Élevée \\ \hline
+    26 & Administrateur Système & Je veux gérer notifications afin d'informer automatiquement les utilisateurs des changements de statut & 4 & Élevée \\ \hline
+    27 & Administrateur Système & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & 2 & Moyenne \\ \hline
+    28 & Internaute & Je veux gérer mes réclamation afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement& 2 & Élevée \\ \hline
+    29 & Client & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & 2 & Élevée \\ \hline
+
+    \end{tabular}
+    \caption{User stories du Sprint 4}
+    \label{tab:user-stories-sprint4}
+\end{table}
+
+\subsection{Spécification fonctionnelle du Sprint 4}
+Dans cette section, nous présentons les diagrammes de cas d'utilisation du sprint 4, le raffinement des cas principaux ainsi que leur description textuelle.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm,height=16cm]{images/diagrammes/sprint4/cas-utilisation-sprint4.drawio_2.png}
+    \caption{Diagramme de cas d'utilisation -- Sprint 4}
+    \label{fig:cas-utilisation-sprint4}
+\end{figure}
+
+\subsection{Diagramme de classe du Sprint 4}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=18cm,height=16cm]{images/diagrammes/sprint4/class-reclamation.drawio.png}
+    \caption{Diagramme de cas d'utilisation -- Sprint 4}
+    \label{fig:cas-utilisation-sprint4}
+\end{figure}
+
+\subsection{Raffinement et description textuelle du cas d'utilisation <<Personnaliser les étapes de traitement des réclamations >>}
+
+Dans la section suivante, nous utiliserons des descriptions de
+scénarios pour décrire le cas « Personnaliser les étapes 
+de traitement des réclamations ». Ce dernier montre les sous opérations possible à faire.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=10cm]{images/diagrammes/sprint4/cas-utilisation-personaliser-reclamation-raff.drawio_2.png}
+    \caption{Raffinement du cas d'utilisation « Personnaliser les étapes 
+de traitement des réclamations »}
+    \label{fig:cas-utilisation-sprint2-raff/}
+\end{figure}
+
+\textbf{Description textuelle}
+
+% ===================== CONSULTER =====================
+Une description détaillée du cas d’utilisation « Consulter les étapes de traitement des réclamations » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter les étapes de traitement des réclamations \\ \hline
+
+Acteur principal & Administrateur système \\ \hline
+
+Objectif & Permettre à l’administrateur de consulter les étapes configurées pour le traitement des réclamations d’une administration. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item Une administration existe dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L’administrateur accède au rubrique status de réclamations.
+    \item Le système affiche la liste des étapes de traitement de chaque administrations.
+    \item L’administrateur consulte les détails des étapes.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si aucune étape n’est configurée, le système affiche un message informatif.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Les étapes de traitement sont consultées avec succès. \\ \hline
+
+\end{tabular}
+\caption{Consulter les étapes de traitement des réclamations}
+\end{table}
+
+
+% ===================== AJOUTER =====================
+Une description détaillée du cas d’utilisation « Ajouter une nouvelle étape de traitement » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Ajouter une nouvelle étape de traitement \\ \hline
+
+Acteur principal & Administrateur système \\ \hline
+
+Objectif & Permettre l’ajout d’une nouvelle étape dans le workflow de traitement des réclamations. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item Une administration est sélectionnée.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L’administrateur clique sur « Ajouter une étape ».
+    \item Il renseigne les informations de l’étape (nom, ordre, administration, statut).
+    \item Il valide les informations saisies.
+    \item Le système enregistre la nouvelle étape.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si les champs sont invalides, un message d’erreur est affiché.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+La nouvelle étape est ajoutée au workflow. \\ \hline
+
+\end{tabular}
+\caption{Ajouter une nouvelle étape de traitement}
+\end{table}
+
+
+% ===================== VISUALISER =====================
+Une description détaillée du cas d’utilisation « Visualiser workflow de traitement par administration » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Visualiser workflow de traitement par administration \\ \hline
+
+Acteur principal & Administrateur système \\ \hline
+
+Objectif & Permettre la visualisation complète du workflow de traitement des réclamations d’une administration. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item Une administration est sélectionnée.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L’administrateur clique sur workflow de traitement.
+    \item Le système affiche le workflow complet de chaque administration.
+    \item Les étapes sont affichées dans leur ordre de traitement.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Aucun workflow n’est disponible : affichage d’un message informatif.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Le workflow est consulté avec succès. \\ \hline
+
+\end{tabular}
+\caption{Visualiser workflow de traitement}
+\end{table}
+
+
+% ===================== MODIFIER =====================
+Une description détaillée du cas d’utilisation « Modifier une étape » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Modifier une étape \\ \hline
+
+Acteur principal & Administrateur système \\ \hline
+
+Objectif & Permettre la modification des informations d’une étape existante. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item Une étape existe.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L’administrateur sélectionne une étape.
+    \item Il clique sur modifier.
+    \item Il met à jour les informations.
+    \item Il valide les changements.
+    \item Le système enregistre les modifications.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Données invalides : message d’erreur.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+L’étape est mise à jour. \\ \hline
+
+\end{tabular}
+\caption{Modifier une étape}
+\end{table}
+
+
+% ===================== SUPPRIMER =====================
+Une description détaillée du cas d’utilisation « Supprimer une étape » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Supprimer une étape \\ \hline
+
+Acteur principal & Administrateur système \\ \hline
+
+Objectif & Permettre la suppression d’une étape du workflow de traitement. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item Une étape existe.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L’administrateur sélectionne une étape.
+    \item Il clique sur supprimer.
+    \item Confirmation demandée.
+    \item L’administrateur confirme.
+    \item Le système supprime l’étape.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Étape utilisée : suppression refusée.
+    \item Annulation : aucune action effectuée.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+L’étape est supprimée du système. \\ \hline
+
+\end{tabular}
+\caption{Supprimer une étape}
+\end{table}
+
+\subsection{Les diagrammes de séquences du cas d’utilisation « Personnaliser les étapes de traitement des réclamations »}
+
+Dans cette section, nous avons choisi de présenter certains diagrammes de séquence parmi ceux définis lors de l’étape de raffinement du sprint « Gestion des étapes de traitement des réclamations ». Ce choix vise à mettre en évidence les interactions les plus représentatives du système, notamment la consultation du workflow, la visualisation des étapes, ainsi que les opérations d’ajout, de modification et de suppression d’une étape. Ces diagrammes permettent d’illustrer le fonctionnement global du processus de gestion des réclamations et les échanges entre l’administrateur et le système.
+
+\noindent  \textbf{Présentation des diagrammes de séquences :}
+
+% ===================== CONSULTER =====================
+\noindent Ce diagramme de séquence illustre le processus de consultation des étapes de traitement des réclamations. Il décrit les interactions permettant à l’administrateur de visualiser les différentes étapes configurées pour le traitement d’une réclamation.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/consulter-etape.drawio.png}
+    \caption{Diagramme de séquence - Consulter les étapes de traitement des réclamations}
+    \label{fig:consulter-etapes}
+\end{figure}
+
+
+% ===================== WORKFLOW =====================
+\noindent Ce diagramme de séquence illustre le processus de visualisation du workflow de traitement des réclamations par administration. Il permet à l’administrateur de consulter l’enchaînement complet des étapes définies dans le processus de gestion des réclamations.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/workflow_etape.drawio.png}
+    \caption{Diagramme de séquence - Visualiser workflow de traitement par administration}
+    \label{fig:workflow-etapes}
+\end{figure}
+
+
+% ===================== AJOUTER =====================
+\noindent Ce diagramme de séquence présente le processus d’ajout d’une nouvelle étape de traitement des réclamations. Il décrit les interactions permettant à l’administrateur de créer et d’enregistrer une nouvelle étape dans le workflow existant.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/ajouter-etape.drawio.png}
+    \caption{Diagramme de séquence - Ajouter une nouvelle étape de traitement}
+    \label{fig:ajouter-etape}
+\end{figure}
+
+
+% ===================== MODIFIER =====================
+\noindent Ce diagramme de séquence illustre le processus de modification d’une étape de traitement des réclamations. Il décrit les interactions permettant à l’administrateur de mettre à jour les informations d’une étape existante dans le workflow.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/modifier-etape.drawio.png}
+    \caption{Diagramme de séquence - Modifier une étape}
+    \label{fig:modifier-etape}
+\end{figure}
+
+
+% ===================== SUPPRIMER =====================
+\noindent Ce diagramme de séquence illustre le processus de suppression d’une étape de traitement des réclamations. Il décrit les interactions permettant à l’administrateur de retirer une étape du workflow tout en vérifiant les contraintes éventuelles liées à son utilisation.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/supp-etape.drawio.png}
+    \caption{Diagramme de séquence - Supprimer une étape}
+    \label{fig:supprimer-etape}
+\end{figure}
+
+
+
+\subsection{Réalisation du sprint <<Personnaliser les étapes de traitement des réclamations>>}
+
+Dans cette section, nous présentons certaines interfaces représentatives de la réalisation du sprint « Gestion des étapes de traitement des réclamations », afin d’illustrer les principales fonctionnalités implémentées. Ce choix met en évidence les écrans les plus significatifs du système, notamment la consultation des étapes, la visualisation du workflow ainsi que les opérations de modification et de suppression. Ces captures permettent de mieux comprendre la structuration du processus de traitement des réclamations et l’interaction de l’administrateur avec le système.
+
+\noindent \textbf{Présentation des interfaces :}
+
+% ===================== CONSULTER =====================
+\noindent L’interface suivante permet à l’administrateur de consulter la liste des étapes de traitement des réclamations associées à une administration. Elle offre une vue globale sur la structure du workflow configuré.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/list.png}}
+    \captionof{figure}{Consulter les étapes de traitement des réclamations}
+    \label{fig:real-list}
+\end{center}
+
+
+% ===================== WORKFLOW =====================
+\noindent L’interface suivante permet de visualiser le workflow complet de traitement des réclamations par administration. Elle met en évidence l’enchaînement des étapes et leur organisation dans le processus global.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/workflow.png}}
+    \captionof{figure}{Visualiser workflow de traitement par administration}
+    \label{fig:real-workflow}
+\end{center}
+
+
+% ===================== MODIFIER =====================
+\noindent L’interface suivante permet à l’administrateur de modifier une étape existante du workflow. Elle offre la possibilité de mettre à jour les informations liées à une étape de traitement.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/modifier.png}}
+    \captionof{figure}{Modifier une étape}
+    \label{fig:real-edit}
+\end{center}
+
+
+% ===================== SUPPRIMER =====================
+\noindent L’interface suivante permet à l’administrateur de supprimer une étape du workflow de traitement des réclamations. Une confirmation est généralement demandée afin d’éviter toute suppression accidentelle.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/delete.png}}
+    \captionof{figure}{Supprimer une étape}
+    \label{fig:real-supp}
+\end{center}
+
+
+
+\subsection{Raffinement et description textuelle du cas d'utilisation <<Gérer les notifications>>}
+
+Dans cette section, nous décrivons les sous-opérations du cas d'utilisation « Gérer les notifications ». Ce cas regroupe la configuration des modèles de notifications, l'envoi des notifications aux utilisateurs et la consultation de l'historique des communications.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=10cm]{images/diagrammes/sprint4/cas-utilisation-notifications-raff.drawio.png}
+    \caption{Raffinement du cas d'utilisation « Gérer les notifications »}
+    \label{fig:cas-utilisation-sprint4-notifications-raff}
+\end{figure}
+
+\textbf{Description textuelle}
+
+% ===================== CONFIGURER MODÈLE =====================
+Une description détaillée du cas d'utilisation « Configurer un modèle de notification » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Configurer un modèle de notification \\ \hline
+
+Acteur principal & Administrateur Système \\ \hline
+
+Objectif & Permettre à l'administrateur de créer ou modifier un modèle de notification utilisé pour communiquer avec les utilisateurs lors des changements de statut de leurs dossiers. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item L'administrateur est authentifié.
+    \item L'administrateur dispose des droits nécessaires.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L'administrateur accède au module de gestion des modèles de notifications.
+    \item Il clique sur « Ajouter un modèle ».
+    \item Le système affiche le formulaire de création.
+    \item L'administrateur renseigne les informations (clé, titre, sujet, corps du message, canaux d'envoi).
+    \item L'administrateur valide le formulaire.
+    \item Le système vérifie les données saisies.
+    \item Le système enregistre le nouveau modèle.
+    \item Le système affiche un message de confirmation.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si les données sont invalides, le système affiche un message d'erreur.
+    \item Si la clé est déjà utilisée, le système refuse l'enregistrement.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Le modèle de notification est enregistré et disponible pour l'envoi automatique. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle - Configurer un modèle de notification}
+\label{tab:configurer-modele-notif}
+\end{table}
+
+
+% ===================== GÉRER NOTIFICATIONS =====================
+Une description détaillée du cas d'utilisation « Gérer les notifications » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Gérer les notifications \\ \hline
+
+Acteur principal & Administrateur Système \\ \hline
+
+Objectif & Permettre à l'administrateur de programmer, envoyer et superviser les notifications destinées aux utilisateurs. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item L'administrateur est authentifié.
+    \item Au moins un modèle de notification est configuré.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L'administrateur accède au module de gestion des notifications.
+    \item Il consulte la liste des notifications existantes.
+    \item Il crée une nouvelle notification en sélectionnant un modèle, un ou plusieurs destinataires et un canal d'envoi (email, SMS, push).
+    \item Il programme ou envoie immédiatement la notification.
+    \item Le système traite et envoie la notification aux destinataires.
+    \item Le système enregistre le résultat dans l'historique.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item En cas d'échec d'envoi, le système consigne l'erreur et notifie l'administrateur.
+    \item Si aucun destinataire n'est sélectionné, le système bloque l'envoi.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+La notification est envoyée et son résultat est enregistré dans l'historique. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle - Gérer les notifications}
+\label{tab:gerer-notifications}
+\end{table}
+
+
+% ===================== HISTORIQUE =====================
+Une description détaillée du cas d'utilisation « Consulter l'historique des notifications » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter l'historique des notifications \\ \hline
+
+Acteur principal & Administrateur Système \\ \hline
+
+Objectif & Permettre à l'administrateur de suivre et analyser les communications envoyées, en consultant le détail des envois réussis et échoués. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item L'administrateur est authentifié.
+    \item Au moins une notification a été envoyée.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L'administrateur accède à l'historique des notifications.
+    \item Le système affiche la liste des envois avec les statistiques (nombre de destinataires, succès, échecs, date d'envoi).
+    \item L'administrateur peut filtrer par date, canal ou modèle.
+    \item L'administrateur consulte le détail d'un envoi.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si aucun historique n'existe, le système affiche un message informatif.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+L'historique des notifications est consulté avec succès. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle - Consulter l'historique des notifications}
+\label{tab:historique-notifications}
+\end{table}
+
+
+\subsection{Les diagrammes de séquences du cas d'utilisation <<Gérer les notifications>>}
+
+Dans cette section, nous présentons les diagrammes de séquence illustrant les principales interactions liées à la gestion des notifications, depuis la configuration des modèles jusqu'à la consultation de l'historique des envois.
+
+\noindent Ce diagramme illustre le processus de configuration d'un modèle de notification, depuis la saisie des informations jusqu'à son enregistrement dans le système.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/configurer-modele-notif.drawio.png}
+    \caption{Diagramme de séquence - Configurer un modèle de notification}
+    \label{fig:seq-configurer-modele-notif}
+\end{figure}
+
+\noindent Ce diagramme présente le processus d'envoi d'une notification, incluant la sélection du modèle, des destinataires et l'enregistrement du résultat dans l'historique.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/envoyer-notification.drawio.png}
+    \caption{Diagramme de séquence - Envoyer une notification}
+    \label{fig:seq-envoyer-notification}
+\end{figure}
+
+\noindent Ce diagramme décrit le processus de consultation de l'historique des notifications, permettant à l'administrateur d'analyser les envois passés.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=14cm]{images/diagrammes/sprint4/consulter-historique-notif.drawio.png}
+    \caption{Diagramme de séquence - Consulter l'historique des notifications}
+    \label{fig:seq-historique-notif}
+\end{figure}
+
+
+\subsection{Réalisation du sprint <<Gérer les notifications>>}
+
+Dans cette section, nous présentons les interfaces représentatives de la gestion des notifications, illustrant la configuration des modèles, la liste des notifications et la consultation de l'historique.
+
+\noindent L'interface suivante permet à l'administrateur de consulter l'ensemble des modèles de notifications configurés dans le système, avec la possibilité de les activer, modifier ou supprimer.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint4/notif-modeles.png}}
+    \captionof{figure}{Liste des modèles de notifications}
+    \label{fig:real-notif-modeles}
+\end{center}
+
+\vspace{10pt}
+
+\noindent L'interface suivante permet à l'administrateur de configurer un nouveau modèle de notification en définissant son titre, son canal d'envoi et son contenu multilingue.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint4/notif-ajouter-modele.png}}
+    \captionof{figure}{Configurer un modèle de notification}
+    \label{fig:real-notif-ajouter-modele}
+\end{center}
+
+\vspace{10pt}
+
+\noindent L'interface suivante présente la liste des notifications envoyées avec leur statut, la date d'envoi et les statistiques associées.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint4/notif-liste.png}}
+    \captionof{figure}{Liste des notifications}
+    \label{fig:real-notif-liste}
+\end{center}
+
+\vspace{10pt}
+
+\noindent L'interface suivante affiche l'historique des envois de notifications, permettant à l'administrateur de consulter les détails de chaque campagne d'envoi.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint4/notif-historique.png}}
+    \captionof{figure}{Historique des notifications}
+    \label{fig:real-notif-historique}
+\end{center}
+
+
+\section{Sprint 5 : Vitrine institutionnelle et supervision système}
+
+
+\subsection{Backlog du Sprint 5}
+
+Le tableau ci-dessous présente le backlog du cinquième sprint avec l'estimation en jours de chaque tâche.
+
+\begin{table}[H]
+    \centering
+    \begin{tabular}{ |p{1cm}|p{3cm}|p{7cm}|p{1cm}|p{2cm}|} \hline
+    \rowcolor{orange!30}
+    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
+
+     30 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 3 & Moyenne \\ \hline
+    31 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 2 & Moyenne \\ \hline
+    32 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
+    33 & Internaute & Je veux consulter la page d'accueil afin d'obtenir une présentation générale du portail e-Gouv & 2 & Moyenne \\ \hline
+    34 & Internaute & Je veux consulter les informations sur le Gouvernement afin d'accéder aux données officielles & 2 & Moyenne \\ \hline
+    35 & Internaute & Je veux consulter les Projets et Réalisations afin d'accéder aux données officielles & 2 & Moyenne \\ \hline
+    36 & Internaute & Je veux consulter les actualités afin de suivre les dernières nouvelles du Gouvernement & 1 & Basse \\ \hline
+    37 & Internaute & Je veux consulter a propos du portail afin de comprendre les objectifs de la plateforme au service des citoyens et de l'État  & 1 & Basse \\ \hline
+    38 & Internaute & Je veux consulter la FAQ afin d'obtenir des réponses rapides & 1 & Basse \\ \hline
+    39 & Internaute & Je veux consulter le guide d'utilisation afin d'obtenir de savoir utiliser l'espace client & 1 & Basse \\ \hline
+    40 & Internaute & Je veux consulter la page a propos afin de comprendre les objectifs du portail & 1 & Basse \\ \hline
+    41 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
+
+    \end{tabular}
+    \caption{User stories du Sprint 5}
+    \label{tab:user-stories-sprint5}
+\end{table}
+
+\subsection{Spécification fonctionnelle du Sprint 5}
+
+Dans cette section, nous présentons les diagrammes de cas d'utilisation du sprint 5, le raffinement des cas principaux ainsi que leur description textuelle.
+
+\subsection{Diagramme de cas d'utilisation du sprint 5}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=12cm,height=14cm]{images/diagrammes/sprint5/cas-utilisation-sprint5.drawio.png}
+    \caption{Diagramme de cas d'utilisation -- Sprint 5}
+    \label{fig:cas-utilisation-sprint5}
+\end{figure}
+
+\subsection{Diagramme de classe du sprint 5}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=16cm,height=16cm]{images/diagrammes/sprint5/diag-classe-sprint5.drawio.png}
+    \caption{Diagramme de classe -- Sprint 5}
+    \label{fig:diag-classe-sprint5}
+\end{figure}
+
+\subsection{Raffinement et description textuelle du cas d'utilisation <<Supervision du système>>}
+
+Dans cette section, nous décrivons le cas d'utilisation « Supervision du système », qui regroupe les fonctionnalités permettant à l'administrateur de surveiller l'activité de la plateforme, d'analyser les statistiques et de consulter les journaux d'événements.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=9cm]{images/diagrammes/sprint5/cas-utilisation-supervision-raff.drawio.png}
+    \caption{Raffinement du cas d'utilisation « Supervision du système »}
+    \label{fig:cas-utilisation-sprint5-supervision-raff}
+\end{figure}
+
+\textbf{Description textuelle}
+
+% ===================== STATISTIQUES =====================
+Une description détaillée du cas d'utilisation « Consulter les statistiques globales » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter les statistiques globales \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l'administrateur de visualiser les indicateurs clés de la plateforme (nombre de demandes, réclamations, utilisateurs actifs, taux de traitement) afin d'analyser l'activité globale. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item L'administrateur est authentifié.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L'administrateur accède au tableau de bord de supervision.
+    \item Le système calcule et affiche les statistiques globales (par administration, par période).
+    \item L'administrateur peut filtrer les données par administration, par date ou par type de service.
+    \item L'administrateur consulte les graphiques et indicateurs synthétiques.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si aucune donnée n'est disponible pour la période sélectionnée, le système affiche un message informatif.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Les statistiques sont affichées et disponibles pour analyse. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle - Consulter les statistiques globales}
+\label{tab:statistiques-globales}
+\end{table}
+
+
+% ===================== JOURNAUX D'ACTIVITÉS =====================
+Une description détaillée du cas d'utilisation « Consulter les journaux d'activités » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter les journaux d'activités \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l'administrateur de consulter l'ensemble des actions effectuées sur la plateforme afin d'assurer la traçabilité et la surveillance des activités. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item L'administrateur est authentifié.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L'administrateur accède au module des journaux d'activités.
+    \item Le système affiche la liste des événements enregistrés (action, acteur, date, entité concernée).
+    \item L'administrateur peut filtrer les journaux par utilisateur, par type d'action ou par période.
+    \item L'administrateur consulte le détail d'un événement.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si aucun journal n'est disponible, le système affiche un message informatif.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Les journaux d'activités sont consultés avec succès. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle - Consulter les journaux d'activités}
+\label{tab:journaux-activites}
+\end{table}
+
+
+% ===================== LOGS SYSTÈME =====================
+Une description détaillée du cas d'utilisation « Consulter les logs système » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter les logs système \\ \hline
+
+Acteur principal & Administrateur Système \\ \hline
+
+Objectif & Permettre à l'administrateur système de consulter les logs techniques de la plateforme afin de détecter les anomalies, diagnostiquer les erreurs et assurer la sécurité du système. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item L'administrateur système est authentifié.
+    \item L'administrateur dispose des droits d'accès aux logs système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L'administrateur accède au module de logs système.
+    \item Le système affiche les fichiers de logs disponibles.
+    \item L'administrateur sélectionne un fichier de log.
+    \item Le système affiche le contenu du log avec les événements techniques (erreurs, avertissements, informations).
+    \item L'administrateur peut rechercher des entrées spécifiques ou filtrer par niveau de sévérité.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si les logs sont vides ou inaccessibles, le système affiche un message d'erreur approprié.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Les logs système sont consultés et les anomalies éventuelles sont identifiées. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle - Consulter les logs système}
+\label{tab:logs-systeme}
+\end{table}
+
+
+\subsection{Les diagrammes de séquences du cas d'utilisation <<Supervision du système>>}
+
+Dans cette section, nous présentons les diagrammes de séquence illustrant les interactions liées à la supervision du système, notamment la consultation des statistiques, des journaux d'activités et des logs.
+
+\noindent Ce diagramme illustre le processus de consultation des statistiques globales par l'administrateur, depuis la demande d'affichage jusqu'à la visualisation des indicateurs calculés par le système.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint5/consulter-statistiques.drawio.png}
+    \caption{Diagramme de séquence - Consulter les statistiques globales}
+    \label{fig:seq-statistiques}
+\end{figure}
+
+\noindent Ce diagramme présente les interactions permettant à l'administrateur de consulter les journaux d'activités, en filtrant et explorant les événements enregistrés sur la plateforme.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint5/consulter-journaux.drawio.png}
+    \caption{Diagramme de séquence - Consulter les journaux d'activités}
+    \label{fig:seq-journaux}
+\end{figure}
+
+
+\subsection{Réalisation du Sprint 5}
+
+Dans cette section, nous présentons les interfaces représentatives du sprint 5, illustrant la supervision du système ainsi que les pages publiques de la vitrine institutionnelle.
+
+\noindent \textbf{Supervision du système :}
+
+\noindent L'interface suivante présente le tableau de bord de supervision affichant les statistiques globales de la plateforme, avec des indicateurs clés par administration et par période.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/statistiques.png}}
+    \captionof{figure}{Tableau de bord des statistiques globales}
+    \label{fig:real-statistiques}
+\end{center}
+
+\vspace{10pt}
+
+\noindent L'interface suivante permet à l'administrateur de consulter les journaux d'activités de la plateforme, avec la possibilité de filtrer et d'explorer les événements enregistrés.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/journaux.png}}
+    \captionof{figure}{Journaux d'activités}
+    \label{fig:real-journaux}
+\end{center}
+
+\vspace{10pt}
+
+\noindent L'interface suivante présente les logs système accessibles à l'administrateur système pour le diagnostic et la surveillance des événements techniques.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/logs.png}}
+    \captionof{figure}{Logs système}
+    \label{fig:real-logs}
+\end{center}
+
+\vspace{10pt}
+
+\noindent \textbf{Vitrine institutionnelle :}
+
+\noindent L'interface suivante présente la page d'accueil du portail e-Gouvernement, offrant aux internautes une vue générale des services disponibles et des informations officielles publiées.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/accueil.png}}
+    \captionof{figure}{Page d'accueil du portail e-Gouvernement}
+    \label{fig:real-accueil}
+\end{center}
+
+\vspace{10pt}
+
+\noindent L'interface suivante permet à l'internaute de consulter les informations officielles sur le Gouvernement, ses projets et ses réalisations.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/gouvernement.png}}
+    \captionof{figure}{Page Gouvernement et Projets}
+    \label{fig:real-gouvernement}
+\end{center}
+
+\vspace{10pt}
+
+\noindent L'interface suivante présente les pages institutionnelles complémentaires : actualités, FAQ, guide d'utilisation et formulaire de contact.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/actualites-faq.png}}
+    \captionof{figure}{Actualités, FAQ et Contact}
+    \label{fig:real-actualites-faq}
+\end{center}
+
+
+\section{Conclusion}
+
+Cette troisième release a permis d'enrichir la plateforme e-Gouvernement par des fonctionnalités essentielles pour la communication avec les citoyens et la supervision globale du système.
+
+Le \textit{Sprint 4} a mis en place le système de gestion des réclamations, offrant aux citoyens un canal structuré pour signaler les problèmes, et aux administrateurs des outils adaptés pour les traiter. Le système de notifications, également développé dans ce sprint, garantit une communication fluide et automatisée entre la plateforme et ses utilisateurs.
+
+Le \textit{Sprint 5} a complété la plateforme par la vitrine institutionnelle — accessible à tous les internautes — et par les outils de supervision permettant aux administrateurs de surveiller l'activité, d'analyser les statistiques et de diagnostiquer les éventuelles anomalies du système.
+

@@ -1,0 +1,481 @@
+\chapter{Première release}
+
+
+\section{Introduction}
+
+Cette première release constitue la base fondamentale du système en regroupant le Sprint 1 consacré à la gouvernance des accès et des entités organisationnelles.
+Cette étape est essentielle car elle garantit la sécurité, la stabilité et l’organisation du système.
+
+
+\section{Sprint 1: Gouvernance des accès et des entités organisationnelles }
+
+Le premier sprint vise principalement à mettre en place les fondations de la plateforme, notamment la gestion des utilisateurs, l’authentification, l’autorisation ainsi que la structuration des entités administratives et institutionnelles.
+
+
+\subsection{Backlog du Sprint 1}
+
+Nous proposons grâce au tableau ci-dessous, notre backlog du premier sprint détaillé avec les jours estimées de chaque tâche.
+
+\begin{table}[H]
+
+\centering
+    \begin{tabular}{ |p{1cm}|p{3cm}|p{7cm}|p{1cm}|p{2cm}|} \hline
+    \rowcolor{orange!30}
+    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
+    
+       1 & Administrateur & Je veux m’authentifier afin d’accéder au backoffice & 2 & Élevée\\ \hline
+
+       8 & Administrateur & Je veux modifier mon profil afin de mettre à jour mes informations & 1 & Moyenne\\ \hline
+
+       5 & Administrateur Ministériel & Je veux gérer les comptes des administrateurs institutionnels afin d’assurer leur accès et leurs droits & 4 & Élevée\\ \hline
+
+       7 & Administrateur système & Je veux gérer les langues de la plateforme afin de garantir une interface multilingue & 2 & Élevée\\ \hline
+
+       3 & Administrateur système & Je veux gérer les rôles afin de définir les niveaux d’accès des utilisateurs & 2 & Élevée\\ \hline
+
+       4 & Administrateur système & Je veux consulter les permissions afin de contrôler les actions autorisées & 1 & Élevée\\ \hline
+
+       2 & Administrateur système & Je veux gérer les comptes des administrateurs backoffice afin de contrôler l’accès au système & 4 & Élevée\\ \hline
+
+       6 & Administrateur système & Je veux gérer les administrations ministérielles afin d’organiser les structures & 4 & Élevée\\ \hline
+        
+    \end{tabular}
+    \caption{User stories du Sprint 1}
+    \label{tab:user-stories-sprint1/}
+\end{table}
+
+\subsection{Spécification fonctionnelle du sprint 1}
+Dans cette section, nous présenterons les diagrammes/ de cas d'utilisation pour notre sprint 1 ainsi que le raffinement des cas d'utilisation et leur description textuelle.
+
+\subsection{Diagramme de cas d’utilisation du sprint 1}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=16cm,height=16cm]{images/diagrammes/sprint1/cas-utilisation.drawio.png}
+    \caption{Diagramme de cas d’utilisation -- Sprint 1}
+    \label{fig:cas-utilisation-sprint1/}
+\end{figure}
+
+\subsection{Diagramme de classe du sprint 1}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=16cm,height=16cm]{images/diagrammes/sprint1/diag-classe.drawio.png}
+    \caption{Diagramme de classe -- Sprint 1}
+    \label{fig:cas-utilisation-sprint1/}
+\end{figure}
+
+
+\subsection{Raffinement et description textuelle du cas d'utilisation «Gérer les administrations»}
+
+Dans la section suivante, nous utiliserons un diagramme raffiné et des descriptions de
+scénarios pour décrire le cas « Gérer les administrations ». Ce dernier montre les sous opérations
+possible à faire
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=17cm,height=9cm]{images/diagrammes/sprint1/cas-utilisation-gerer-administration.png}
+    \caption{Raffinement du cas d'utilisation « Gérer les administrations »}
+    \label{fig:cas-utilisation-sprint1-raff/}
+\end{figure}
+
+\textbf{Description textuelle}
+
+
+Une description du cas "Consulter la liste des administrations" est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter la liste des administrations \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l’administrateur de visualiser l’ensemble des administrations enregistrées dans le système. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède au module de gestion des administrations.
+\item Le système affiche la liste des administrations.
+\item L’administrateur peut rechercher ou filtrer les administrations.
+\item L’administrateur consulte les informations détaillées.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si aucune administration n’existe, le système affiche un message informatif.
+\end{itemize}
+\\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Consulter la liste des administrations}
+\label{tab:consulter-admin}
+\end{table}
+
+Une description des scénarios du cas "Ajouter une administration" est présentée dans le tableau suivant :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Ajouter une administration \\ \hline
+
+Acteur principal & Administrateur système \\ \hline
+
+Objectif & Permettre à l’administrateur de créer une nouvelle administration ministèrel dans le système afin de structurer l’organisation administrative. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item L’administrateur dispose des droits nécessaires.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède au module de gestion des administrations.
+\item Il clique sur l’option "Ajouter une administration".
+\item Le système affiche le formulaire de création.
+\item L’administrateur saisit les informations requises (nom, responsable, coordonnées, etc.).
+\item L’administrateur valide le formulaire.
+\item Le système vérifie la validité des données saisies.
+\item Le système enregistre la nouvelle administration.
+\item Le système affiche un message de confirmation.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si les données saisies sont invalides ou incomplètes, le système affiche un message d’erreur.
+\end{itemize}
+\\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Ajouter une administration}
+\label{tab:ajouter-admin}
+\end{table}
+
+Une description du cas "Modifier une administration" est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Modifier une administration \\ \hline
+
+Acteur principal & Administrateur système \\ \hline
+
+Objectif & Permettre à l’administrateur de mettre à jour les informations d’une administration existante. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item L’administration existe dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède à la liste des administrations.
+\item Il sélectionne une administration.
+\item Il clique sur l’option "Modifier".
+\item Le système affiche le formulaire pré-rempli.
+\item L’administrateur modifie les informations.
+\item Il valide les modifications.
+\item Le système vérifie les données.
+\item Le système enregistre les modifications.
+\item Le système affiche un message de confirmation.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si les données sont invalides, le système affiche un message d’erreur.
+\item Si l’administration n’existe plus, le système informe l’utilisateur.
+\end{itemize}
+\\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Modifier une administration}
+\label{tab:modifier-admin}
+\end{table}
+
+Une description du cas "Supprimer une administration" est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Supprimer une administration \\ \hline
+
+Acteur principal & Administrateur système \\ \hline
+
+Objectif & Permettre à l’administrateur de supprimer une administration existante du système. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item L’administration existe dans le système.
+    \item L’administrateur dispose des droits nécessaires.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède à la liste des administrations.
+\item Il sélectionne une administration.
+\item Il clique sur l’option "Supprimer".
+\item Le système demande une confirmation.
+\item L’administrateur confirme la suppression.
+\item Le système supprime l’administration.
+\item Le système affiche un message de confirmation.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si l’administration est liée à des données (services, agents), le système empêche la suppression.
+\item Si l’administrateur annule l’action, aucune modification n’est effectuée.
+\item En cas d’erreur système, un message d’échec est affiché.
+\end{itemize}
+\\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Supprimer une administration}
+\label{tab:supprimer-admin}
+\end{table}
+
+Une description du cas « Consulter les détails d’une administration » est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter les détails d’une administration \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l’administrateur de visualiser les informations détaillées d’une administration enregistrée dans le système. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item L’administration existe dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède au module de gestion des administrations.
+\item Il sélectionne une administration depuis la liste.
+\item Il clique sur l’option "Consulter détails".
+\item Le système affiche les informations détaillées de l’administration (nom, responsable, coordonnées, services associés, statut, etc.).
+\item L’administrateur consulte les informations affichées.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si l’administration n’existe plus, le système affiche un message d’erreur.
+\item En cas de problème de chargement, le système informe l’utilisateur.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Les informations détaillées de l’administration sont affichées et consultables. \\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Consulter les détails d’une administration}
+\label{tab:details-admin}
+\end{table}
+
+Une description du cas « Trier les administrations » est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Trier les administrations \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l’administrateur de filtrer ou trier les administrations afin de faciliter leur recherche et leur gestion. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item Au moins une administration existe dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède au module de gestion des administrations.
+\item Il sélectionne un critère de tri ou de filtrage (nom, statut).
+\item Le système récupère les administrations correspondantes.
+\item Le système affiche la liste triée ou filtrée des administrations.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si aucun résultat ne correspond au critère sélectionné, le système affiche un message informatif.
+\item En cas d’erreur système, un message d’échec est affiché.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+La liste des administrations est affichée selon les critères de tri ou de filtrage sélectionnés. \\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Trier les administrations}
+\label{tab:trier-admin}
+\end{table}
+
+Une description du cas "Consulter la liste des responsables d’administration" est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter la liste des responsables d’administration \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l’administrateur de visualiser les responsables associés à chaque administration afin d’assurer le suivi organisationnel et la gestion des responsabilités. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item Les administrations existent dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède au module de gestion des administrations.
+\item Il sélectionne une administration ou accède à la vue globale des responsables.
+\item Le système affiche la liste des responsables associés.
+\item L’administrateur consulte les informations (nom, fonction, coordonnées).
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item En cas d’erreur de chargement, le système affiche un message d’erreur.
+\end{itemize}
+\\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Consulter les responsables d’administration}
+\label{tab:consulter-responsables}
+\end{table}
+
+\subsection{Les diagrammes de séquences du cas d’utilisation « Gérer les administrations »}
+
+Dans cette section, nous avons choisi d’illustrer uniquement certains diagrammes de séquence parmi ceux définis lors de l’étape de raffinement. Ce choix a été effectué afin de présenter les interactions les plus significatives du cas d’utilisation « Gérer les administrations », notamment les opérations principales telles que l’ajout, la modification, la suppression et la consultation d’une administration.
+
+\noindent  \textbf{Présentation des diagrammes de séquences :}
+
+% Ajouter
+\noindent Ce diagramme illustre le processus d’ajout d’une nouvelle administration, depuis la saisie des informations par l’utilisateur jusqu’à leur enregistrement dans le système.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=22cm]{images/diagrammes/sprint1/vrai-ajouter-administration.drawio.png}
+    \caption{Diagramme de séquence - Ajouter une administration}
+    \label{fig:ajouter-administration}
+\end{figure}
+
+% Modifier
+\noindent Ce diagramme présente les interactions nécessaires pour modifier les informations d’une administration existante, en passant par la récupération des données puis leur mise à jour.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=25cm]{images/diagrammes/sprint1/vrai-modifier-administration.drawio.png}
+    \caption{Diagramme de séquence - Modifier une administration}
+    \label{fig:modifier-administration}
+\end{figure}
+
+% Supprimer
+\noindent Ce diagramme décrit le processus de suppression d’une administration, incluant la confirmation de l’action et la suppression définitive des données.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=19cm]{images/diagrammes/sprint1/vrai-supp-administration.drawio.png}
+    \caption{Diagramme de séquence - Supprimer une administration}
+    \label{fig:supprimer-administration}
+\end{figure}
+\newpage
+% Consulter
+\noindent Ce diagramme montre les interactions permettant de consulter les informations d’une administration, depuis la demande de l’utilisateur jusqu’à l’affichage des données.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint1/vrai-consulter-administration.drawio.png}
+    \caption{Diagramme de séquence - Consulter une administration}
+    \label{fig:consulter-administration}
+\end{figure}
+\newpage
+\subsection{Réalisation du cas d'utilisation « Gérer les administrations »}
+
+Dans cette section, nous avons choisi de présenter certaines interfaces de réalisation du cas d’utilisation « Gérer les administrations » afin d’illustrer les principales fonctionnalités implémentées. Ce choix met en évidence les interfaces les plus représentatives du processus de gestion des administrations, notamment la consultation, l’ajout et l’association des responsables administratifs. Ces captures permettent de visualiser concrètement le fonctionnement du système ainsi que l’interaction de l’administrateur avec les différentes fonctionnalités proposées.
+
+\noindent \textbf{Présentation des réalisations :}
+
+\noindent Cette interface permet à l’administrateur de visualiser l’ensemble des administrations enregistrées dans le système, avec la possibilité de rechercher, filtrer et accéder aux actions de gestion.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint1/Capture1.png}}
+    \captionof{figure}{Liste des administrations}
+    \label{fig:liste-admins}
+\end{center}
+
+\vspace{10pt}
+
+\noindent Cette interface présente la liste des responsables associés aux administrations, offrant une vision claire de la structure organisationnelle et des rôles attribués.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint1//Capture2.png}}
+    \captionof{figure}{Liste des responsables administration}
+    \label{fig:liste-responsables}
+\end{center}
+
+\vspace{10pt}
+
+\noindent Cette interface permet à l’administrateur de créer une nouvelle administration en renseignant les informations nécessaires telles que le nom, les coordonnées et les données du responsable.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint1//Capture3.png}}
+    \captionof{figure}{Ajouter administration}
+    \label{fig:ajouter-admin}
+\end{center}
+
+\vspace{10pt}
+
+\noindent Cette interface permet d’associer un administrateur institutionnel à une administration en définissant ses informations, son rôle et ses permissions au sein de la structure administrative.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint1/Capture4.png}}
+    \captionof{figure}{Ajouter un responsable à une administration}
+    \label{fig:ajouter-responsable}
+\end{center}
+
+\section{Conclusion}
+
+Cette première release a permis de mettre en place les fondations du système à travers le \textit{Sprint 1}, notamment la gestion des accès, des rôles et des entités organisationnelles.
+
+Le chapitre suivant sera dédié à la deuxième release, qui regroupe les \textit{Sprint 2} et \textit{Sprint 3} et qui porte sur la configuration du catalogue de services et la dématérialisation des demandes.
