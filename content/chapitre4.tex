@@ -386,6 +386,25 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \end{center}
 
 
+\subsection{Revue du Sprint 4}
+
+À l'issue du Sprint 4, l'ensemble des user stories planifiées ont été développées et validées.
+
+\begin{longtable}{|c|p{9cm}|c|}
+\hline
+\rowcolor{orange!30}
+\textbf{ID} & \textbf{User Story} & \textbf{Statut} \\ \hline
+21 & Gérer les catégories de réclamations & \textcolor{green!60!black}{Terminé} \\ \hline
+22 & Personnaliser les étapes de traitement des réclamations & \textcolor{green!60!black}{Terminé} \\ \hline
+23 & Gérer les réclamations soumises & \textcolor{green!60!black}{Terminé} \\ \hline
+25 & Gérer les modèles de notifications & \textcolor{green!60!black}{Terminé} \\ \hline
+26 & Gérer les notifications & \textcolor{green!60!black}{Terminé} \\ \hline
+27 & Consulter l'historique des notifications & \textcolor{green!60!black}{Terminé} \\ \hline
+28 & Gérer mes réclamations (Internaute) & \textcolor{green!60!black}{Terminé} \\ \hline
+29 & Consulter mes notifications (Client) & \textcolor{green!60!black}{Terminé} \\ \hline
+\caption{Revue du Sprint 4} 
+\end{longtable}
+
 
 \section{Sprint 5 : Vitrine institutionnelle et supervision système}
 Ce sprint finalise la plateforme e-Gouvernement en déployant deux composantes complémentaires. D'un côté, la vitrine institutionnelle offre aux internautes un accès public aux informations officielles du gouvernement, à ses projets et réalisations, aux actualités, à la FAQ et au guide d'utilisation. De l'autre, le module de supervision permet aux administrateurs de suivre l'activité de la plateforme à travers des tableaux de bord statistiques, des journaux d'activités détaillés et des logs système pour le diagnostic technique.
@@ -427,7 +446,7 @@ Dans cette section, nous présentons les diagrammes de cas d'utilisation du spri
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm,height=14cm]{images/diagrammes/sprint5/cas-utilisation-sprint5.drawio.png}
+    \includegraphics[width=11cm,height=18cm]{images/diagrammes/sprint5/cas-utilisation-sprint5.drawio.png}
     \caption{Diagramme de cas d'utilisation -- Sprint 5}
     \label{fig:cas-utilisation-sprint5}
 \end{figure}
@@ -436,66 +455,25 @@ Dans cette section, nous présentons les diagrammes de cas d'utilisation du spri
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=16cm,height=16cm]{images/diagrammes/sprint5/diag-classe-sprint5.drawio.png}
+    \includegraphics[width=14cm,height=8cm]{images/diagrammes/sprint5/class-sprint5.drawio.png}
     \caption{Diagramme de classe -- Sprint 5}
     \label{fig:diag-classe-sprint5}
 \end{figure}
 
-\subsection{Raffinement et description textuelle du cas d'utilisation <<Supervision du système>>}
+\subsection{Raffinement et description textuelle du cas d'utilisation <<Consulter les journaux 
+d'activités>>}
 
-Dans cette section, nous décrivons le cas d'utilisation « Supervision du système », qui regroupe les fonctionnalités permettant à l'administrateur de surveiller l'activité de la plateforme, d'analyser les statistiques et de consulter les journaux d'événements.
+Dans cette section, nous décrivons le cas d'utilisation « Consulter les journaux 
+d'activités », qui permettent à l'administrateur de suivre les activités des agents des administrations.
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=15cm,height=9cm]{images/diagrammes/sprint5/cas-utilisation-supervision-raff.drawio.png}
+    \includegraphics[width=17cm,height=8cm]{images/diagrammes/sprint5/cas-utilisation-sprint5-activity.drawio.png}
     \caption{Raffinement du cas d'utilisation « Supervision du système »}
     \label{fig:cas-utilisation-sprint5-supervision-raff}
 \end{figure}
-
+\newpage
 \textbf{Description textuelle}
-
-% ===================== STATISTIQUES =====================
-Une description détaillée du cas d'utilisation « Consulter les statistiques globales » est présentée ci-dessous.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
-
-Nom & Consulter les statistiques globales \\ \hline
-
-Acteur principal & Administrateur \\ \hline
-
-Objectif & Permettre à l'administrateur de visualiser les indicateurs clés de la plateforme (nombre de demandes, réclamations, utilisateurs actifs, taux de traitement) afin d'analyser l'activité globale. \\ \hline
-
-Pré-condition &
-\begin{itemize}
-    \item L'administrateur est authentifié.
-\end{itemize}
-\\ \hline
-
-Scénario nominal &
-\begin{enumerate}
-    \item L'administrateur accède au tableau de bord de supervision.
-    \item Le système calcule et affiche les statistiques globales (par administration, par période).
-    \item L'administrateur peut filtrer les données par administration, par date ou par type de service.
-    \item L'administrateur consulte les graphiques et indicateurs synthétiques.
-\end{enumerate}
-\\ \hline
-
-Scénario alternatif &
-\begin{itemize}
-    \item Si aucune donnée n'est disponible pour la période sélectionnée, le système affiche un message informatif.
-\end{itemize}
-\\ \hline
-
-Post-condition &
-Les statistiques sont affichées et disponibles pour analyse. \\ \hline
-
-\end{tabular}
-\caption{Description textuelle - Consulter les statistiques globales}
-\label{tab:statistiques-globales}
-\end{table}
-
 
 % ===================== JOURNAUX D'ACTIVITÉS =====================
 Une description détaillée du cas d'utilisation « Consulter les journaux d'activités » est présentée ci-dessous.
@@ -520,8 +498,6 @@ Scénario nominal &
 \begin{enumerate}
     \item L'administrateur accède au module des journaux d'activités.
     \item Le système affiche la liste des événements enregistrés (action, acteur, date, entité concernée).
-    \item L'administrateur peut filtrer les journaux par utilisateur, par type d'action ou par période.
-    \item L'administrateur consulte le détail d'un événement.
 \end{enumerate}
 \\ \hline
 
@@ -540,72 +516,70 @@ Les journaux d'activités sont consultés avec succès. \\ \hline
 \end{table}
 
 
-% ===================== LOGS SYSTÈME =====================
-Une description détaillée du cas d'utilisation « Consulter les logs système » est présentée ci-dessous.
+\paragraph{Description textuelle du cas « Trier les journaux d'activités »}
 
 \begin{table}[H]
 \centering
 \begin{tabular}{ |p{4cm}|p{12cm}|} \hline
 
-Nom & Consulter les logs système \\ \hline
+Nom & Trier les journaux d'activités \\ \hline
 
-Acteur principal & Administrateur Système \\ \hline
+Acteur principal & Administrateur \\ \hline
 
-Objectif & Permettre à l'administrateur système de consulter les logs techniques de la plateforme afin de détecter les anomalies, diagnostiquer les erreurs et assurer la sécurité du système. \\ \hline
+Objectif & Permettre à l'administrateur de filtrer les journaux d'activités selon des critères précis afin d'isoler rapidement les événements pertinents. \\ \hline
 
 Pré-condition &
 \begin{itemize}
-    \item L'administrateur système est authentifié.
-    \item L'administrateur dispose des droits d'accès aux logs système.
+    \item L'administrateur est authentifié.
+    \item La liste des journaux d'activités est affichée.
 \end{itemize}
 \\ \hline
 
 Scénario nominal &
 \begin{enumerate}
-    \item L'administrateur accède au module de logs système.
-    \item Le système affiche les fichiers de logs disponibles.
-    \item L'administrateur sélectionne un fichier de log.
-    \item Le système affiche le contenu du log avec les événements techniques (erreurs, avertissements, informations).
-    \item L'administrateur peut rechercher des entrées spécifiques ou filtrer par niveau de sévérité.
+    \item L'administrateur accède au module des journaux d'activités.
+    \item Il sélectionne un ou plusieurs critères de tri parmi les options disponibles :
+    \begin{itemize}
+        \item \textbf{Nom du journal} : filtrer par l'intitulé du journal.
+        \item \textbf{Événement} : filtrer par type d'action enregistrée.
+        \item \textbf{Période} : filtrer par plage de dates.
+        \item \textbf{Administration} : filtrer par entité administrative concernée.
+        \item \textbf{Utilisateur} : filtrer par acteur ayant déclenché l'événement.
+    \end{itemize}
+    \item Il applique les filtres.
+    \item Le système filtre et affiche les journaux correspondant aux critères sélectionnés.
+    \item L'administrateur consulte les résultats filtrés.
 \end{enumerate}
 \\ \hline
 
 Scénario alternatif &
 \begin{itemize}
-    \item Si les logs sont vides ou inaccessibles, le système affiche un message d'erreur approprié.
+    \item Si aucun journal ne correspond aux critères, le système affiche un message informatif.
+    \item L'administrateur peut réinitialiser les filtres pour afficher tous les journaux.
 \end{itemize}
 \\ \hline
 
 Post-condition &
-Les logs système sont consultés et les anomalies éventuelles sont identifiées. \\ \hline
+Les journaux d'activités sont affichés selon les critères de tri sélectionnés. \\ \hline
 
 \end{tabular}
-\caption{Description textuelle - Consulter les logs système}
-\label{tab:logs-systeme}
+\caption{Description textuelle - Trier les journaux d'activités}
+\label{tab:trier-journaux}
 \end{table}
 
 
-\subsection{Les diagrammes de séquences du cas d'utilisation <<Supervision du système>>}
+\subsection{Les diagrammes de séquences du cas d'utilisation <<Consulter les journaux d'activités>>}
 
-Dans cette section, nous présentons les diagrammes de séquence illustrant les interactions liées à la supervision du système, notamment la consultation des statistiques, des journaux d'activités et des logs.
-
-\noindent Ce diagramme illustre le processus de consultation des statistiques globales par l'administrateur, depuis la demande d'affichage jusqu'à la visualisation des indicateurs calculés par le système.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint5/consulter-statistiques.drawio.png}
-    \caption{Diagramme de séquence - Consulter les statistiques globales}
-    \label{fig:seq-statistiques}
-\end{figure}
+Dans cette section, nous présentons les diagrammes de séquence illustrant les interactions liées à la consultation des journaux d'activités.
 
 \noindent Ce diagramme présente les interactions permettant à l'administrateur de consulter les journaux d'activités, en filtrant et explorant les événements enregistrés sur la plateforme.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint5/consulter-journaux.drawio.png}
-    \caption{Diagramme de séquence - Consulter les journaux d'activités}
-    \label{fig:seq-journaux}
-\end{figure}
+% \begin{figure}[H]
+%     \centering
+%     \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint5/consulter-journaux.drawio.png}
+%     \caption{Diagramme de séquence - Consulter les journaux d'activités}
+%     \label{fig:seq-journaux}
+% \end{figure}
 
 
 \subsection{Réalisation du Sprint 5}
@@ -614,66 +588,38 @@ Dans cette section, nous présentons les interfaces représentatives du sprint 5
 
 \noindent \textbf{Supervision du système :}
 
-\noindent L'interface suivante présente le tableau de bord de supervision affichant les statistiques globales de la plateforme, avec des indicateurs clés par administration et par période.
-
-\begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/statistiques.png}}
-    \captionof{figure}{Tableau de bord des statistiques globales}
-    \label{fig:real-statistiques}
-\end{center}
-
-\vspace{10pt}
-
 \noindent L'interface suivante permet à l'administrateur de consulter les journaux d'activités de la plateforme, avec la possibilité de filtrer et d'explorer les événements enregistrés.
 
-\begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/journaux.png}}
-    \captionof{figure}{Journaux d'activités}
-    \label{fig:real-journaux}
-\end{center}
+% \begin{center}
+%     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/journaux.png}}
+%     \captionof{figure}{Journaux d'activités}
+%     \label{fig:real-journaux}
+% \end{center}
 
-\vspace{10pt}
 
-\noindent L'interface suivante présente les logs système accessibles à l'administrateur système pour le diagnostic et la surveillance des événements techniques.
 
-\begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/logs.png}}
-    \captionof{figure}{Logs système}
-    \label{fig:real-logs}
-\end{center}
+\subsection{Revue du Sprint 5}
 
-\vspace{10pt}
+À l'issue du Sprint 5, l'ensemble des user stories planifiées ont été développées et validées.
 
-\noindent \textbf{Vitrine institutionnelle :}
-
-\noindent L'interface suivante présente la page d'accueil du portail e-Gouvernement, offrant aux internautes une vue générale des services disponibles et des informations officielles publiées.
-
-\begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/accueil.png}}
-    \captionof{figure}{Page d'accueil du portail e-Gouvernement}
-    \label{fig:real-accueil}
-\end{center}
-
-\vspace{10pt}
-
-\noindent L'interface suivante permet à l'internaute de consulter les informations officielles sur le Gouvernement, ses projets et ses réalisations.
-
-\begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/gouvernement.png}}
-    \captionof{figure}{Page Gouvernement et Projets}
-    \label{fig:real-gouvernement}
-\end{center}
-
-\vspace{10pt}
-
-\noindent L'interface suivante présente les pages institutionnelles complémentaires : actualités, FAQ, guide d'utilisation et formulaire de contact.
-
-\begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/actualites-faq.png}}
-    \captionof{figure}{Actualités, FAQ et Contact}
-    \label{fig:real-actualites-faq}
-\end{center}
-
+\begin{longtable}{|c|p{9cm}|c|}
+\hline
+\rowcolor{orange!30}
+\textbf{ID} & \textbf{User Story} & \textbf{Statut} \\ \hline
+30 & Consulter les statistiques globales & \textcolor{green!60!black}{Terminé} \\ \hline
+31 & Consulter les journaux d'activités & \textcolor{green!60!black}{Terminé} \\ \hline
+32 & Consulter les logs système & \textcolor{green!60!black}{Terminé} \\ \hline
+33 & Consulter la page d'accueil & \textcolor{green!60!black}{Terminé} \\ \hline
+34 & Consulter les informations sur le Gouvernement & \textcolor{green!60!black}{Terminé} \\ \hline
+35 & Consulter les Projets et Réalisations & \textcolor{green!60!black}{Terminé} \\ \hline
+36 & Consulter les actualités & \textcolor{green!60!black}{Terminé} \\ \hline
+37 & Consulter à propos du portail & \textcolor{green!60!black}{Terminé} \\ \hline
+38 & Consulter la FAQ & \textcolor{green!60!black}{Terminé} \\ \hline
+39 & Consulter le guide d'utilisation & \textcolor{green!60!black}{Terminé} \\ \hline
+40 & Consulter la page à propos & \textcolor{green!60!black}{Terminé} \\ \hline
+41 & Contacter l'administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
+\caption{Revue du Sprint 5} 
+\end{longtable}
 
 \section{Conclusion}
 
