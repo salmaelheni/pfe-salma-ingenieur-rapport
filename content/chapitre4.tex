@@ -350,7 +350,7 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \noindent L’interface suivante permet à l’administrateur de consulter la liste des étapes de traitement des réclamations associées à une administration. Elle offre une vue globale sur la structure du workflow configuré.
 
 \begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/list.png}}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint4/list.png}}
     \captionof{figure}{Consulter les étapes de traitement des réclamations}
     \label{fig:real-list}
 \end{center}
@@ -360,7 +360,7 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \noindent L’interface suivante permet de visualiser le workflow complet de traitement des réclamations par administration. Elle met en évidence l’enchaînement des étapes et leur organisation dans le processus global.
 
 \begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/workflow.png}}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint4/workflow.png}}
     \captionof{figure}{Visualiser workflow de traitement par administration}
     \label{fig:real-workflow}
 \end{center}
@@ -370,7 +370,7 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \noindent L’interface suivante permet à l’administrateur de modifier une étape existante du workflow. Elle offre la possibilité de mettre à jour les informations liées à une étape de traitement.
 
 \begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/modifier.png}}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint4/modifier.png}}
     \captionof{figure}{Modifier une étape}
     \label{fig:real-edit}
 \end{center}
@@ -380,7 +380,7 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \noindent L’interface suivante permet à l’administrateur de supprimer une étape du workflow de traitement des réclamations. Une confirmation est généralement demandée afin d’éviter toute suppression accidentelle.
 
 \begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/delete.png}}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint4/delete.png}}
     \captionof{figure}{Supprimer une étape}
     \label{fig:real-supp}
 \end{center}
@@ -516,7 +516,9 @@ Les journaux d'activités sont consultés avec succès. \\ \hline
 \end{table}
 
 
-\paragraph{Description textuelle du cas « Trier les journaux d'activités »}
+
+% ===================== TRIER JOURNAUX D'ACTIVITÉS =====================
+Une description détaillée du cas d'utilisation « Trier les journaux d'activités » est présentée ci-dessous.
 
 \begin{table}[H]
 \centering
@@ -567,36 +569,60 @@ Les journaux d'activités sont affichés selon les critères de tri sélectionn�
 \label{tab:trier-journaux}
 \end{table}
 
-
 \subsection{Les diagrammes de séquences du cas d'utilisation <<Consulter les journaux d'activités>>}
 
 Dans cette section, nous présentons les diagrammes de séquence illustrant les interactions liées à la consultation des journaux d'activités.
 
 \noindent Ce diagramme présente les interactions permettant à l'administrateur de consulter les journaux d'activités, en filtrant et explorant les événements enregistrés sur la plateforme.
 
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint5/consulter-journaux.drawio.png}
-%     \caption{Diagramme de séquence - Consulter les journaux d'activités}
-%     \label{fig:seq-journaux}
-% \end{figure}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=18cm]{images/diagrammes/sprint5/seq-1-sprint5.drawio.png}
+    \caption{Diagramme de séquence - Consulter les journaux d'activités}
+    \label{fig:seq-journaux}
+\end{figure}
 
 
 \subsection{Réalisation du Sprint 5}
 
-Dans cette section, nous présentons les interfaces représentatives du sprint 5, illustrant la supervision du système ainsi que les pages publiques de la vitrine institutionnelle.
-
 \noindent \textbf{Supervision du système :}
 
-\noindent L'interface suivante permet à l'administrateur de consulter les journaux d'activités de la plateforme, avec la possibilité de filtrer et d'explorer les événements enregistrés.
+\noindent L'interface suivante présente le tableau de bord de supervision affichant les statistiques globales de la plateforme, avec des indicateurs clés par administration et par période.
 
-% \begin{center}
-%     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/journaux.png}}
-%     \captionof{figure}{Journaux d'activités}
-%     \label{fig:real-journaux}
-% \end{center}
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/statistique.png}}
+    \captionof{figure}{Tableau de bord des statistiques globales}
+    \label{fig:real-statistiques}
+\end{center}
 
 
+\noindent L'interface suivante permet à l'administrateur de consulter les journaux d'activités de la plateforme et la possibilité de filtrer.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/journaux.png}}
+    \captionof{figure}{Journaux d'activités}
+    \label{fig:real-journaux}
+\end{center}
+
+
+\noindent \textbf{Vitrine institutionnelle :}
+
+\noindent L'interface suivante présente la page d'accueil, offrant aux internautes une vue générale des services disponibles et des informations officielles publiées.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/accueil.png}}
+    \captionof{figure}{Page d'accueil}
+    \label{fig:real-accueil}
+\end{center}
+
+
+\noindent L'interface suivante permet à l'internaute de consulter les projets et ses réalisations.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/projet-realisation.png}}
+    \captionof{figure}{Page Projets et réalisations}
+    \label{fig:real-gouvernement}
+\end{center}
 
 \subsection{Revue du Sprint 5}
 
