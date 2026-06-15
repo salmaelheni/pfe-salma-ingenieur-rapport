@@ -24,7 +24,7 @@ Le tableau ci-dessous présente le backlog du quatrième sprint avec l'estimatio
     25 & Administrateur Système & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & 3 & Élevée \\ \hline
     26 & Administrateur Système & Je veux gérer notifications afin d'informer automatiquement les utilisateurs des changements de statut & 4 & Élevée \\ \hline
     27 & Administrateur Système & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & 2 & Moyenne \\ \hline
-    28 & Internaute & Je veux gérer mes réclamation afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement& 2 & Élevée \\ \hline
+    28 & Internaute & Je veux gérer mes réclamations afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement& 2 & Élevée \\ \hline
     29 & Client & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & 2 & Élevée \\ \hline
 
     \end{tabular}
@@ -47,15 +47,15 @@ Dans cette section, nous présentons les diagrammes de cas d'utilisation du spri
 \begin{figure}[H]
     \centering
     \includegraphics[width=18cm,height=16cm]{images/diagrammes/sprint4/class-reclamation.drawio.png}
-    \caption{Diagramme de cas d'utilisation -- Sprint 4}
-    \label{fig:cas-utilisation-sprint4}
+    \caption{Diagramme de classe -- Sprint 4}
+    \label{fig:classe-sprint4}
 \end{figure}
 
 \subsection{Raffinement et description textuelle du cas d'utilisation <<Personnaliser les étapes de traitement des réclamations >>}
 
 Dans la section suivante, nous utiliserons des descriptions de
 scénarios pour décrire le cas « Personnaliser les étapes
-de traitement des réclamations ». Ce dernier montre les sous opérations possible à faire.
+de traitement des réclamations ». Ce dernier montre les sous-opérations possibles à faire.
 
 \begin{figure}[H]
     \centering
@@ -361,6 +361,8 @@ OpenAI (\texttt{gpt-4o-mini}) & Fiable & Maîtrisé & \textbf{Retenu} \\ \hline
 \noindent Nous détaillons ci-dessous les deux cas d'utilisation principaux du sprint : l'interaction du citoyen avec l'assistant conversationnel et le traitement des demandes d'assistance par l'administrateur.
 
 % ===================== POSER UNE QUESTION =====================
+\noindent Une description détaillée du cas d'utilisation « Poser une question à l'assistant » est présentée ci-dessous.
+
 \begin{table}[H]
 \centering
 \begin{tabular}{ |p{4cm}|p{12cm}|} \hline
@@ -392,6 +394,8 @@ Scénario alternatif &
 \end{table}
 
 % ===================== GÉRER LES DEMANDES D'ASSISTANCE =====================
+\noindent Une description détaillée du cas d'utilisation « Gérer les demandes d'assistance » est présentée ci-dessous.
+
 \begin{table}[H]
 \centering
 \begin{tabular}{ |p{4cm}|p{12cm}|} \hline
@@ -483,7 +487,7 @@ Le statut de la demande est mis à jour. \\ \hline
     \label{fig:real-journaux}
 \end{center}
 
-\noindent L'interface suivante permet à l'administrateur de gérer les demandes d'assiqtance provenant des citoyen du portail.
+\noindent L'interface suivante permet à l'administrateur de gérer les demandes d'assistance provenant des citoyens du portail.
 
 \begin{center}
     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint6/Capture d’écran du 2026-06-14 21-45-07.png}}
