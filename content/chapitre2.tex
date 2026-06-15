@@ -107,6 +107,7 @@ Administrateur Système &
     \item Personaliser étapes de traitement des réclamations système
     \item Gérer les langues du site
     \item Consulter les logs système
+    \item Gérer les demandes d'assistance
 \end{itemize}
 \vspace{0.2cm}
 \end{minipage}
@@ -165,10 +166,10 @@ Internaute &
     \item S'inscrire
     \item Consulter l’accueil
     \item Consulter les secteurs et services
-    \item Consulter le gouvernement
-    \item Consulter les projets et réalisations
-    \item Consulter les actualités
-    \item Consulter la FAQ
+    \item Consulter les pages d'information (gouvernement, projets et réalisations, actualités, FAQ, guide, à propos)
+    \item Poser des questions à l'assistant conversationnel
+    \item Dicter une question à la voix
+    \item Demander à être assisté par un administrateur
     \item Contacter l’administrateur
     \item Gérer les réclamations
 \end{itemize}
@@ -306,18 +307,17 @@ Le tableau ci-dessous présente une synthèse du backlog produit relatif à la c
     \rowcolor{orange!30}
     \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
 
-    30 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 3 & Moyenne \\ \hline
-    31 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 2 & Moyenne \\ \hline
-    32 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
-    33 & Internaute & Je veux consulter la page d'accueil afin d'obtenir une présentation générale du portail e-Gouv & 2 & Moyenne \\ \hline
-    34 & Internaute & Je veux consulter les informations sur le Gouvernement afin d'accéder aux données officielles & 2 & Moyenne \\ \hline
-    35 & Internaute & Je veux consulter les Projets et Réalisations afin d'accéder aux données officielles & 2 & Moyenne \\ \hline
-    36 & Internaute & Je veux consulter les actualités afin de suivre les dernières nouvelles du Gouvernement & 1 & Basse \\ \hline
-    37 & Internaute & Je veux consulter a propos du portail afin de comprendre les objectifs de la plateforme au service des citoyens et de l'État  & 1 & Basse \\ \hline
-    38 & Internaute & Je veux consulter la FAQ afin d'obtenir des réponses rapides & 1 & Basse \\ \hline
-    39 & Internaute & Je veux consulter le guide d'utilisation afin d'obtenir de savoir utiliser l'espace client & 1 & Basse \\ \hline
-    40 & Internaute & Je veux consulter la page a propos afin de comprendre les objectifs du portail & 1 & Basse \\ \hline
-    41 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
+    30 & Internaute & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches & 4 & Élevée \\ \hline
+    31 & Internaute & Je veux dicter ma question à la voix afin de faciliter la saisie & 1 & Moyenne \\ \hline
+    32 & Internaute & Je veux disposer de suggestions de questions afin d'être guidé dans mes demandes & 1 & Moyenne \\ \hline
+    33 & Internaute & Je veux demander à être assisté par un administrateur lorsque je n'arrive pas à utiliser le site & 2 & Élevée \\ \hline
+    34 & Administrateur Système & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & 2 & Élevée \\ \hline
+    35 & Administrateur Système & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & 1 & Moyenne \\ \hline
+    36 & Internaute & Je veux consulter les pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide, à propos) afin d'accéder aux données officielles du portail & 3 & Moyenne \\ \hline
+    37 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
+    38 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 3 & Moyenne \\ \hline
+    39 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 2 & Moyenne \\ \hline
+    40 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
 
 \end{tabular}
 \end{table}
@@ -491,6 +491,12 @@ Le tableau suivant présente les différentes technologies utilisées lors du d�
         \end{center} &
         Redis est une base de données en mémoire utilisée principalement pour la mise en cache, l’optimisation des performances et le stockage rapide de données temporaires.\cite{redis} \\ \hline
 
+        \begin{center} Pinecone \end{center} &
+        \begin{center}
+            \includegraphics[width=3cm,height=2cm]{images/logos/Pinecone.jpg}
+        \end{center} &
+        Pinecone est une base de données vectorielle spécialisée, cloud native, conçue pour stocker, indexer et interroger efficacement des embeddings vectoriels de grande dimension pour des applications d'IA et de machine learning.\cite{pinecone} \\ \hline
+
     \end{tabular}
     \caption{Environnement technique (partie 2)}
     \label{tab:env_technique_2}
@@ -520,12 +526,14 @@ La \textbf{couche présentation} est assurée par deux espaces distincts : le Fr
 
 La \textbf{couche métier} est portée par une API Laravel dédiée, également protégée par Nginx, qui reçoit les requêtes HTTPS depuis la couche présentation et retourne des réponses JSON.
 
-Enfin, la \textbf{couche données} regroupe trois systèmes de stockage complémentaires : PostgreSQL pour la persistance relationnelle des données, Redis pour la gestion du cache et des sessions, et un Document Storage pour l'archivage des fichiers et pièces jointes. Les échanges entre la couche métier et la couche données s'effectuent en lecture/écriture selon les besoins du traitement.
+La \textbf{couche données} regroupe trois systèmes de stockage complémentaires : PostgreSQL pour la persistance relationnelle des données, Redis pour la gestion du cache et des sessions, et un Document Storage pour l'archivage des fichiers et pièces jointes. Les échanges entre la couche métier et la couche données s'effectuent en lecture/écriture selon les besoins du traitement.
+
+Enfin, l'assistant conversationnel s'appuie sur des \textbf{services d'intelligence artificielle externes}, accédés en HTTPS depuis le CMS Drupal du Frontoffice, qui héberge les modules d'IA. La recherche sémantique repose sur \textbf{Pinecone}, une base de données vectorielle gérée dans le cloud, où sont stockés les vecteurs (\textit{embeddings}) du contenu du portail. La génération des réponses est confiée à un \textbf{fournisseur LLM externe}, OpenAI (modèle \texttt{gpt-4o-mini}), interrogé via son API. Lors d'une question, Drupal interroge Pinecone pour récupérer les passages les plus pertinents, puis transmet ce contexte au modèle OpenAI qui formule la réponse, selon le principe de la génération augmentée par la recherche (RAG).
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/autre/Architecture 3 Couches — Présentation _ Accès Données _ Données.png}
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/autre/Architecture 3 Couches — Présentation _ Accès Données _ Données (2).png}
     \caption{Architecture physique}
     \label{fig:arch-phy}
 \end{figure}

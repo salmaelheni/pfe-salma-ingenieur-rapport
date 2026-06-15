@@ -1,0 +1,91 @@
+<mxfile host="app.diagrams.net">
+  <diagram name="Architecture RAG chatbot" id="rag-chatbot">
+    <mxGraphModel dx="900" dy="760" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="780" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+
+        <mxCell id="onlineLabel" value="Phase de requête (en ligne)" style="text;html=1;align=center;fontStyle=2;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="280" y="15" width="240" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="citoyen" value="Citoyen" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="300" y="40" width="200" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="assistant" value="Assistant conversationnel&#10;(Portail Drupal — module AI)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="150" width="240" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="pinecone" value="Base de données vectorielle&#10;Pinecone (index « trainning »)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=12;fillColor=#d5e8d4;strokeColor=#82b366;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="290" y="300" width="220" height="80" as="geometry" />
+        </mxCell>
+
+        <mxCell id="llm" value="LLM — OpenAI&#10;gpt-4o-mini" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="470" width="240" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="reponse" value="Réponse en langage naturel&#10;(fidèle au contenu du portail)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;fontSize=12;" vertex="1" parent="1">
+          <mxGeometry x="280" y="600" width="240" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="indexLabel" value="Indexation périodique (hors ligne)" style="text;html=1;align=center;fontStyle=2;fontSize=11;fontColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="620" y="15" width="240" height="20" as="geometry" />
+        </mxCell>
+
+        <mxCell id="cron" value="Cron quotidien&#10;(exécuté chaque nuit à minuit)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f8cecc;strokeColor=#b85450;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="625" y="45" width="230" height="50" as="geometry" />
+        </mxCell>
+
+        <mxCell id="command" value="Commande de synchronisation (Drush)&#10;détecte les nouveaux services / secteurs" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#ffe6cc;strokeColor=#d79b00;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="625" y="130" width="230" height="60" as="geometry" />
+        </mxCell>
+
+        <mxCell id="services" value="Services &amp; secteurs&#10;(synchronisés depuis l'API métier)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="625" y="220" width="230" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="contenu" value="Contenu du portail&#10;(pages, actualités, FAQ, ministères)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;" vertex="1" parent="1">
+          <mxGeometry x="625" y="300" width="230" height="55" as="geometry" />
+        </mxCell>
+
+        <mxCell id="embeddings" value="Vectorisation (embeddings)" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;strokeColor=#999999;fontSize=11;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="635" y="390" width="210" height="45" as="geometry" />
+        </mxCell>
+
+        <mxCell id="e1" value="(1) question" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=11;" edge="1" parent="1" source="citoyen" target="assistant">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" value="(2) vectorisation + recherche sémantique" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=11;" edge="1" parent="1" source="assistant" target="pinecone">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e3" value="(3) passages pertinents (contexte)" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=11;" edge="1" parent="1" source="pinecone" target="llm">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e4" value="(4) génération de la réponse" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=11;" edge="1" parent="1" source="llm" target="reponse">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e5" value="(5) affichage" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=11;exitX=0;exitY=0.5;entryX=0;entryY=0.5;" edge="1" parent="1" source="reponse" target="citoyen">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+        <mxCell id="i1" value="lance la commande à minuit" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=11;" edge="1" parent="1" source="cron" target="command">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i2" value="récupère / met à jour" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;fontSize=11;" edge="1" parent="1" source="command" target="services">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i3" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;dashed=1;fontSize=11;" edge="1" parent="1" source="services" target="embeddings">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i4" value="" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;dashed=1;fontSize=11;" edge="1" parent="1" source="contenu" target="embeddings">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="i5" value="indexation" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;dashed=1;fontSize=11;" edge="1" parent="1" source="embeddings" target="pinecone">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

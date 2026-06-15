@@ -1,7 +1,7 @@
 \chapter{Deuxième release}
 
 \section{Introduction}
-Cette deuxième release regroupe les \textit{Sprint 4} et \textit{Sprint 5}, consacrés à l’enrichissement de la plateforme e-Gouvernement à travers des fonctionnalités visant à améliorer l’interaction avec les citoyens, la communication institutionnelle ainsi que la supervision globale du système.
+Cette deuxième release regroupe les \textit{Sprint 4} et \textit{Sprint 5}, consacrés à l’enrichissement de la plateforme e-Gouvernement à travers des fonctionnalités visant à améliorer l’interaction avec les citoyens, la communication institutionnelle, la supervision globale du système ainsi que l’intégration d’un assistant conversationnel intelligent basé sur l’intelligence artificielle.
 
 
 \section{Sprint 4 : La gestion des réclamations et du système de notifications}
@@ -54,60 +54,18 @@ Dans cette section, nous présentons les diagrammes de cas d'utilisation du spri
 \subsection{Raffinement et description textuelle du cas d'utilisation <<Personnaliser les étapes de traitement des réclamations >>}
 
 Dans la section suivante, nous utiliserons des descriptions de
-scénarios pour décrire le cas « Personnaliser les étapes 
+scénarios pour décrire le cas « Personnaliser les étapes
 de traitement des réclamations ». Ce dernier montre les sous opérations possible à faire.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=15cm,height=10cm]{images/diagrammes/sprint4/cas-utilisation-personaliser-reclamation-raff.drawio_2.png}
-    \caption{Raffinement du cas d'utilisation « Personnaliser les étapes 
+    \caption{Raffinement du cas d'utilisation « Personnaliser les étapes
 de traitement des réclamations »}
     \label{fig:cas-utilisation-sprint2-raff/}
 \end{figure}
 
 \textbf{Description textuelle}
-
-% ===================== CONSULTER =====================
-Une description détaillée du cas d’utilisation « Consulter les étapes de traitement des réclamations » est présentée ci-dessous.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
-
-Nom & Consulter les étapes de traitement des réclamations \\ \hline
-
-Acteur principal & Administrateur système \\ \hline
-
-Objectif & Permettre à l’administrateur de consulter les étapes configurées pour le traitement des réclamations d’une administration. \\ \hline
-
-Pré-condition &
-\begin{itemize}
-    \item L’administrateur est authentifié.
-    \item Une administration existe dans le système.
-\end{itemize}
-\\ \hline
-
-Scénario nominal &
-\begin{enumerate}
-    \item L’administrateur accède au rubrique status de réclamations.
-    \item Le système affiche la liste des étapes de traitement de chaque administrations.
-    \item L’administrateur consulte les détails des étapes.
-\end{enumerate}
-\\ \hline
-
-Scénario alternatif &
-\begin{itemize}
-    \item Si aucune étape n’est configurée, le système affiche un message informatif.
-\end{itemize}
-\\ \hline
-
-Post-condition &
-Les étapes de traitement sont consultées avec succès. \\ \hline
-
-\end{tabular}
-\caption{Consulter les étapes de traitement des réclamations}
-\end{table}
-
 
 % ===================== AJOUTER =====================
 Une description détaillée du cas d’utilisation « Ajouter une nouvelle étape de traitement » est présentée ci-dessous.
@@ -192,107 +150,12 @@ Le workflow est consulté avec succès. \\ \hline
 \end{table}
 
 
-% ===================== MODIFIER =====================
-Une description détaillée du cas d’utilisation « Modifier une étape » est présentée ci-dessous.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
-
-Nom & Modifier une étape \\ \hline
-
-Acteur principal & Administrateur système \\ \hline
-
-Objectif & Permettre la modification des informations d’une étape existante. \\ \hline
-
-Pré-condition &
-\begin{itemize}
-    \item Une étape existe.
-\end{itemize}
-\\ \hline
-
-Scénario nominal &
-\begin{enumerate}
-    \item L’administrateur sélectionne une étape.
-    \item Il clique sur modifier.
-    \item Il met à jour les informations.
-    \item Il valide les changements.
-    \item Le système enregistre les modifications.
-\end{enumerate}
-\\ \hline
-
-Scénario alternatif &
-\begin{itemize}
-    \item Données invalides : message d’erreur.
-\end{itemize}
-\\ \hline
-
-Post-condition &
-L’étape est mise à jour. \\ \hline
-
-\end{tabular}
-\caption{Modifier une étape}
-\end{table}
-
-
-% ===================== SUPPRIMER =====================
-Une description détaillée du cas d’utilisation « Supprimer une étape » est présentée ci-dessous.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
-
-Nom & Supprimer une étape \\ \hline
-
-Acteur principal & Administrateur système \\ \hline
-
-Objectif & Permettre la suppression d’une étape du workflow de traitement. \\ \hline
-
-Pré-condition &
-\begin{itemize}
-    \item Une étape existe.
-\end{itemize}
-\\ \hline
-
-Scénario nominal &
-\begin{enumerate}
-    \item L’administrateur sélectionne une étape.
-    \item Il clique sur supprimer.
-    \item Confirmation demandée.
-    \item L’administrateur confirme.
-    \item Le système supprime l’étape.
-\end{enumerate}
-\\ \hline
-
-Scénario alternatif &
-\begin{itemize}
-    \item Étape utilisée : suppression refusée.
-    \item Annulation : aucune action effectuée.
-\end{itemize}
-\\ \hline
-
-Post-condition &
-L’étape est supprimée du système. \\ \hline
-
-\end{tabular}
-\caption{Supprimer une étape}
-\end{table}
-
 \subsection{Les diagrammes de séquences du cas d’utilisation « Personnaliser les étapes de traitement des réclamations »}
 
 Dans cette section, nous avons choisi de présenter certains diagrammes de séquence parmi ceux définis lors de l’étape de raffinement du sprint « Gestion des étapes de traitement des réclamations ». Ce choix vise à mettre en évidence les interactions les plus représentatives du système, notamment la consultation du workflow, la visualisation des étapes, ainsi que les opérations d’ajout, de modification et de suppression d’une étape. Ces diagrammes permettent d’illustrer le fonctionnement global du processus de gestion des réclamations et les échanges entre l’administrateur et le système.
 
 \noindent  \textbf{Présentation des diagrammes de séquences :}
 
-% ===================== CONSULTER =====================
-\noindent Ce diagramme de séquence illustre le processus de consultation des étapes de traitement des réclamations. Il décrit les interactions permettant à l’administrateur de visualiser les différentes étapes configurées pour le traitement d’une réclamation.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/consulter-etape.drawio.png}
-    \caption{Diagramme de séquence - Consulter les étapes de traitement des réclamations}
-    \label{fig:consulter-etapes}
-\end{figure}
 
 
 % ===================== WORKFLOW =====================
@@ -315,29 +178,6 @@ Dans cette section, nous avons choisi de présenter certains diagrammes de séqu
     \caption{Diagramme de séquence - Ajouter une nouvelle étape de traitement}
     \label{fig:ajouter-etape}
 \end{figure}
-
-
-% ===================== MODIFIER =====================
-\noindent Ce diagramme de séquence illustre le processus de modification d’une étape de traitement des réclamations. Il décrit les interactions permettant à l’administrateur de mettre à jour les informations d’une étape existante dans le workflow.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/modifier-etape.drawio.png}
-    \caption{Diagramme de séquence - Modifier une étape}
-    \label{fig:modifier-etape}
-\end{figure}
-
-
-% ===================== SUPPRIMER =====================
-\noindent Ce diagramme de séquence illustre le processus de suppression d’une étape de traitement des réclamations. Il décrit les interactions permettant à l’administrateur de retirer une étape du workflow tout en vérifiant les contraintes éventuelles liées à son utilisation.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm,height=16cm]{images/diagrammes/sprint4/supp-etape.drawio.png}
-    \caption{Diagramme de séquence - Supprimer une étape}
-    \label{fig:supprimer-etape}
-\end{figure}
-
 
 
 \subsection{Réalisation du sprint <<Personnaliser les étapes de traitement des réclamations>>}
@@ -402,13 +242,12 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 27 & Consulter l'historique des notifications & \textcolor{green!60!black}{Terminé} \\ \hline
 28 & Gérer mes réclamations (Internaute) & \textcolor{green!60!black}{Terminé} \\ \hline
 29 & Consulter mes notifications (Client) & \textcolor{green!60!black}{Terminé} \\ \hline
-\caption{Revue du Sprint 4} 
+\caption{Revue du Sprint 4}
 \end{longtable}
 
 
-\section{Sprint 5 : Vitrine institutionnelle et supervision système}
-Ce sprint finalise la plateforme e-Gouvernement en déployant deux composantes complémentaires. D'un côté, la vitrine institutionnelle offre aux internautes un accès public aux informations officielles du gouvernement, à ses projets et réalisations, aux actualités, à la FAQ et au guide d'utilisation. De l'autre, le module de supervision permet aux administrateurs de suivre l'activité de la plateforme à travers des tableaux de bord statistiques, des journaux d'activités détaillés et des logs système pour le diagnostic technique.
-
+\section{Sprint 5 : Assistant conversationnel intelligent, vitrine institutionnelle et supervision système}
+Ce sprint clôture la deuxième release en réunissant trois composantes complémentaires. La première est un assistant conversationnel intelligent intégré au portail : fondé sur l'intelligence artificielle générative et une approche \textit{RAG} (\textit{Retrieval-Augmented Generation}, génération augmentée par la recherche), il répond en langage naturel aux questions des citoyens sur les services en ligne, les secteurs, les démarches administratives, les actualités et la FAQ, et réduit ainsi la charge pesant sur les canaux de support traditionnels. La deuxième est la vitrine institutionnelle, qui donne aux internautes un accès public aux informations officielles du gouvernement à travers un ensemble de pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide d'utilisation, à propos). La troisième est le module de supervision, qui permet aux administrateurs de suivre l'activité de la plateforme via des tableaux de bord statistiques, des journaux d'activités et des logs système. Le sprint met également en place un \textbf{canal d'assistance humaine} : un citoyen en difficulté laisse ses coordonnées afin d'être recontacté par un administrateur, les demandes étant centralisées et traitées dans le backoffice.
 
 \subsection{Backlog du Sprint 5}
 
@@ -420,18 +259,17 @@ Le tableau ci-dessous présente le backlog du cinquième sprint avec l'estimatio
     \rowcolor{orange!30}
     \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
 
-     30 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 3 & Moyenne \\ \hline
-    31 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 2 & Moyenne \\ \hline
-    32 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
-    33 & Internaute & Je veux consulter la page d'accueil afin d'obtenir une présentation générale du portail e-Gouv & 2 & Moyenne \\ \hline
-    34 & Internaute & Je veux consulter les informations sur le Gouvernement afin d'accéder aux données officielles & 2 & Moyenne \\ \hline
-    35 & Internaute & Je veux consulter les Projets et Réalisations afin d'accéder aux données officielles & 2 & Moyenne \\ \hline
-    36 & Internaute & Je veux consulter les actualités afin de suivre les dernières nouvelles du Gouvernement & 1 & Basse \\ \hline
-    37 & Internaute & Je veux consulter a propos du portail afin de comprendre les objectifs de la plateforme au service des citoyens et de l'État  & 1 & Basse \\ \hline
-    38 & Internaute & Je veux consulter la FAQ afin d'obtenir des réponses rapides & 1 & Basse \\ \hline
-    39 & Internaute & Je veux consulter le guide d'utilisation afin d'obtenir de savoir utiliser l'espace client & 1 & Basse \\ \hline
-    40 & Internaute & Je veux consulter la page a propos afin de comprendre les objectifs du portail & 1 & Basse \\ \hline
-    41 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
+    30 & Internaute & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches & 4 & Élevée \\ \hline
+    31 & Internaute & Je veux dicter ma question à la voix afin de faciliter la saisie & 1 & Moyenne \\ \hline
+    32 & Internaute & Je veux disposer de suggestions de questions afin d'être guidé dans mes demandes & 1 & Moyenne \\ \hline
+    33 & Internaute & Je veux demander à être assisté par un administrateur lorsque je n'arrive pas à utiliser le site & 2 & Élevée \\ \hline
+    34 & Administrateur Système & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & 2 & Élevée \\ \hline
+    35 & Administrateur Système & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & 1 & Moyenne \\ \hline
+    36 & Internaute & Je veux consulter les pages d'information (gouvernement, projets et réalisations, actualités...) afin d'accéder aux données officielles du portail & 3 & Moyenne \\ \hline
+    37 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
+    38 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 3 & Moyenne \\ \hline
+    39 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 2 & Moyenne \\ \hline
+    40 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
 
     \end{tabular}
     \caption{User stories du Sprint 5}
@@ -439,151 +277,192 @@ Le tableau ci-dessous présente le backlog du cinquième sprint avec l'estimatio
 \end{table}
 
 \subsection{Spécification fonctionnelle du Sprint 5}
+Dans cette section, nous présentons le diagramme de cas d'utilisation du sprint 5, l'architecture de l'assistant conversationnel, le diagramme de classe ainsi que les descriptions textuelles des cas d'utilisation principaux.
 
-Dans cette section, nous présentons les diagrammes de cas d'utilisation du sprint 5, le raffinement des cas principaux ainsi que leur description textuelle.
+\subsection{Diagramme de cas d'utilisation du Sprint 5}
 
-\subsection{Diagramme de cas d'utilisation du sprint 5}
-
+% TODO Salma : exporter ici le diagramme de cas d'utilisation fusionné
+% (Internaute : poser une question, dicter à la voix, choisir une suggestion,
+% demander assistance, consulter les pages d'information, contacter administrateur ;
+% Administrateur / Administrateur Système : consulter statistiques, journaux,
+% logs système, gérer les demandes d'assistance).
 \begin{figure}[H]
     \centering
-    \includegraphics[width=11cm,height=18cm]{images/diagrammes/sprint5/cas-utilisation-sprint5.drawio.png}
+    \includegraphics[width=11cm,height=18cm]{images/diagrammes/sprint5/v2-cas-utilisation-sprint5.drawio.png}
     \caption{Diagramme de cas d'utilisation -- Sprint 5}
     \label{fig:cas-utilisation-sprint5}
 \end{figure}
 
-\subsection{Diagramme de classe du sprint 5}
+\subsection{Architecture de l'assistant conversationnel}
+L'assistant repose sur l'écosystème de modules \textit{AI} de Drupal (\textit{AI Core}, \textit{AI Assistant API}, \textit{AI Chatbot}, \textit{AI Search} et \textit{AI Agents}), couplé à une base de données vectorielle \textit{Pinecone} et à un modèle de langage (\textit{LLM}) accessible via un fournisseur d'IA (OpenAI, avec le modèle \texttt{gpt-4o-mini}, le fournisseur Gemini ayant également été évalué).
+
+\noindent Le fonctionnement suit le principe de la génération augmentée par la recherche (RAG), articulé autour de deux phases :
+
+\begin{itemize}
+    \item \textbf{Phase d'indexation (hors ligne).} Le contenu du portail (pages, actualités, FAQ, annuaire des ministères) ainsi que les services et secteurs synchronisés depuis l'API métier sont transformés en vecteurs numériques (\textit{embeddings}) puis stockés dans l'index vectoriel Pinecone. Un module personnalisé assure cette synchronisation au moyen d'une tâche planifiée (\textit{cron}) exécutée chaque nuit à minuit : la commande détecte les nouveaux services et secteurs ajoutés au système, les transforme en contenus Drupal indexables, puis met à jour l'index vectoriel Pinecone.
+    \item \textbf{Phase de requête (en ligne).} Lorsqu'un internaute pose une question, celle-ci est vectorisée puis comparée par similarité sémantique aux vecteurs de l'index. Les passages les plus pertinents sont récupérés et fournis comme contexte au modèle de langage, qui formule une réponse claire et fidèle aux informations du portail, sans inventer de contenu.
+\end{itemize}
+
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=14cm,height=8cm]{images/diagrammes/sprint5/class-sprint5.drawio.png}
+    \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint5/architecture-chatbot.drawio (1).png}
+    \caption{Architecture RAG de l'assistant conversationnel -- Sprint 5}
+    \label{fig:architecture-chatbot-sprint5}
+\end{figure}
+
+
+\subsection{Base de données vectorielle}
+\noindent La base vectorielle constitue le socle de la phase de recherche du RAG. Le projet s'appuie sur \textit{Pinecone}, une base de données vectorielle gérée dans le cloud, à travers un index dédié.
+
+\noindent Chaque contenu du portail est découpé en passages, puis converti en \textit{embedding} (vecteur numérique de plusieurs centaines de dimensions) à l'aide du modèle de vectorisation du fournisseur d'IA. Ces vecteurs sont enregistrés dans l'index Pinecone. Lorsqu'une question est posée, elle est à son tour vectorisée puis comparée aux vecteurs de l'index par \textbf{similarité sémantique}, afin d'extraire les passages les plus proches.
+
+\noindent Le comportement de la recherche est paramétrable :
+\begin{itemize}
+    \item \textbf{Seuil de similarité} : score minimal qu'un passage doit atteindre pour être retenu ;
+    \item \textbf{Nombre de résultats} : nombre maximal de passages fournis au modèle comme contexte ;
+    \item \textbf{Mode de restitution} : passages bruts (\textit{chunks}) ou contenus rendus.
+\end{itemize}
+
+\subsection{Choix du fournisseur LLM et configuration des clés API}
+\noindent Le module \textit{AI} de Drupal s'interface avec le modèle de langage via un fournisseur configurable. La clé d'accès (\textit{clé API}) est enregistrée de manière sécurisée dans le gestionnaire de clés (\textit{Key}) de Drupal plutôt qu'en clair dans le code. Plusieurs fournisseurs ont été évalués avant d'arrêter le choix définitif.
+
+\begin{itemize}
+    \item \textbf{Gemini (Google)} : intégré et fonctionnel, mais affecté par une \textbf{connectivité réseau instable} depuis l'environnement de développement (résolution DNS lente vers les services Google), entraînant des délais d'attente et des réponses intermittentes.
+    \item \textbf{OpenAI} : retenu. Le modèle \texttt{gpt-4o-mini} offre un bon compromis entre coût, rapidité et qualité de restitution en français. Une difficulté a été rencontrée puis résolue : une première clé API ne disposait plus de quota (\textit{insufficient quota}), remplacée par une clé valide.
+\end{itemize}
+
+\noindent Le tableau \ref{tab:comparaison-llm} synthétise cette comparaison.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{3cm}|p{3.5cm}|p{2.5cm}|p{3cm}|} \hline
+\rowcolor{orange!30}
+\textbf{Fournisseur} & \textbf{Connectivité} & \textbf{Coût} & \textbf{Décision} \\ \hline
+Gemini & Instable (DNS) & Faible & Écarté \\ \hline
+OpenAI (\texttt{gpt-4o-mini}) & Fiable & Maîtrisé & \textbf{Retenu} \\ \hline
+\end{tabular}
+\caption{Comparaison des fournisseurs LLM évalués -- Sprint 5}
+\label{tab:comparaison-llm}
+\end{table}
+
+\subsection{Diagramme de classe du Sprint 5}
+\noindent Le canal d'assistance introduit l'entité \texttt{AssistanceRequest}, qui centralise les demandes issues du chatbot et du formulaire de contact (nom, prénom, téléphone, email, sujet, message, source et statut de traitement). Cette entité est partagée entre l'API métier (qui l'alimente) et le backoffice (qui la gère et la traite). Le module de supervision s'appuie quant à lui sur l'entité \texttt{activity\_log}, qui trace les actions effectuées sur la plateforme.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm,height=10cm]{images/diagrammes/sprint5/v2-class-sprint5.drawio.png}
     \caption{Diagramme de classe -- Sprint 5}
-    \label{fig:diag-classe-sprint5}
+    \label{fig:classe-sprint5}
 \end{figure}
 
-\subsection{Raffinement et description textuelle du cas d'utilisation <<Consulter les journaux 
-d'activités>>}
 
-Dans cette section, nous décrivons le cas d'utilisation « Consulter les journaux 
-d'activités », qui permettent à l'administrateur de suivre les activités des agents des administrations.
+\subsection{Descriptions textuelles des cas d'utilisation}
+\noindent Nous détaillons ci-dessous les deux cas d'utilisation principaux du sprint : l'interaction du citoyen avec l'assistant conversationnel et le traitement des demandes d'assistance par l'administrateur.
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=17cm,height=8cm]{images/diagrammes/sprint5/cas-utilisation-sprint5-activity.drawio.png}
-    \caption{Raffinement du cas d'utilisation « Supervision du système »}
-    \label{fig:cas-utilisation-sprint5-supervision-raff}
-\end{figure}
-\newpage
-\textbf{Description textuelle}
-
-% ===================== JOURNAUX D'ACTIVITÉS =====================
-Une description détaillée du cas d'utilisation « Consulter les journaux d'activités » est présentée ci-dessous.
-
+% ===================== POSER UNE QUESTION =====================
 \begin{table}[H]
 \centering
 \begin{tabular}{ |p{4cm}|p{12cm}|} \hline
-
-Nom & Consulter les journaux d'activités \\ \hline
-
-Acteur principal & Administrateur \\ \hline
-
-Objectif & Permettre à l'administrateur de consulter l'ensemble des actions effectuées sur la plateforme afin d'assurer la traçabilité et la surveillance des activités. \\ \hline
-
+Nom & Poser une question à l'assistant \\ \hline
+Acteur principal & Internaute (citoyen) \\ \hline
+Objectif & Obtenir une réponse en langage naturel, fondée sur le contenu du portail. \\ \hline
 Pré-condition &
 \begin{itemize}
-    \item L'administrateur est authentifié.
+    \item Le contenu du portail est indexé dans la base vectorielle.
 \end{itemize}
 \\ \hline
-
 Scénario nominal &
 \begin{enumerate}
-    \item L'administrateur accède au module des journaux d'activités.
-    \item Le système affiche la liste des événements enregistrés (action, acteur, date, entité concernée).
+\item L'internaute ouvre l'assistant et saisit (ou dicte) sa question.
+\item Le système vectorise la question et recherche les passages pertinents dans l'index Pinecone.
+\item Les passages retenus sont transmis au modèle de langage comme contexte.
+\item Le système affiche une réponse claire et fidèle au contenu, accompagnée des liens utiles le cas échéant.
 \end{enumerate}
 \\ \hline
-
 Scénario alternatif &
 \begin{itemize}
-    \item Si aucun journal n'est disponible, le système affiche un message informatif.
+\item Si aucun passage pertinent n'est trouvé, l'assistant l'indique sans inventer de réponse.
+\item L'internaute peut sélectionner une suggestion prédéfinie au lieu de saisir sa question.
 \end{itemize}
 \\ \hline
-
-Post-condition &
-Les journaux d'activités sont consultés avec succès. \\ \hline
-
 \end{tabular}
-\caption{Description textuelle - Consulter les journaux d'activités}
-\label{tab:journaux-activites}
+\caption{Description textuelle - Poser une question à l'assistant}
+\label{tab:desc-poser-question}
 \end{table}
 
-
-
-% ===================== TRIER JOURNAUX D'ACTIVITÉS =====================
-Une description détaillée du cas d'utilisation « Trier les journaux d'activités » est présentée ci-dessous.
-
+% ===================== GÉRER LES DEMANDES D'ASSISTANCE =====================
 \begin{table}[H]
 \centering
 \begin{tabular}{ |p{4cm}|p{12cm}|} \hline
-
-Nom & Trier les journaux d'activités \\ \hline
-
-Acteur principal & Administrateur \\ \hline
-
-Objectif & Permettre à l'administrateur de filtrer les journaux d'activités selon des critères précis afin d'isoler rapidement les événements pertinents. \\ \hline
-
+Nom & Gérer les demandes d'assistance \\ \hline
+Acteur principal & Administrateur Système \\ \hline
+Objectif & Consulter et traiter les demandes d'assistance laissées par les citoyens afin de les recontacter. \\ \hline
 Pré-condition &
 \begin{itemize}
     \item L'administrateur est authentifié.
-    \item La liste des journaux d'activités est affichée.
+    \item Au moins une demande d'assistance a été soumise (depuis le chatbot ou le formulaire de contact).
 \end{itemize}
 \\ \hline
-
 Scénario nominal &
 \begin{enumerate}
-    \item L'administrateur accède au module des journaux d'activités.
-    \item Il sélectionne un ou plusieurs critères de tri parmi les options disponibles :
-    \begin{itemize}
-        \item \textbf{Nom du journal} : filtrer par l'intitulé du journal.
-        \item \textbf{Événement} : filtrer par type d'action enregistrée.
-        \item \textbf{Période} : filtrer par plage de dates.
-        \item \textbf{Administration} : filtrer par entité administrative concernée.
-        \item \textbf{Utilisateur} : filtrer par acteur ayant déclenché l'événement.
-    \end{itemize}
-    \item Il applique les filtres.
-    \item Le système filtre et affiche les journaux correspondant aux critères sélectionnés.
-    \item L'administrateur consulte les résultats filtrés.
+\item L'administrateur accède au module des demandes d'assistance dans le backoffice.
+\item Le système affiche la liste des demandes (nom, téléphone, sujet, source, statut, date).
+\item L'administrateur filtre les demandes par statut ou par source.
+\item Il ouvre une demande pour consulter les coordonnées et le message du citoyen.
+\item Il met à jour le statut de la demande (en cours, traitée).
+\item Le système enregistre la mise à jour.
 \end{enumerate}
 \\ \hline
-
 Scénario alternatif &
 \begin{itemize}
-    \item Si aucun journal ne correspond aux critères, le système affiche un message informatif.
-    \item L'administrateur peut réinitialiser les filtres pour afficher tous les journaux.
+\item Si aucune demande ne correspond aux filtres, le système affiche un message informatif.
 \end{itemize}
 \\ \hline
-
 Post-condition &
-Les journaux d'activités sont affichés selon les critères de tri sélectionnés. \\ \hline
-
+Le statut de la demande est mis à jour. \\ \hline
 \end{tabular}
-\caption{Description textuelle - Trier les journaux d'activités}
-\label{tab:trier-journaux}
+\caption{Description textuelle - Gérer les demandes d'assistance}
+\label{tab:desc-gerer-assistance}
 \end{table}
-
-\subsection{Les diagrammes de séquences du cas d'utilisation <<Consulter les journaux d'activités>>}
-
-Dans cette section, nous présentons les diagrammes de séquence illustrant les interactions liées à la consultation des journaux d'activités.
-
-\noindent Ce diagramme présente les interactions permettant à l'administrateur de consulter les journaux d'activités, en filtrant et explorant les événements enregistrés sur la plateforme.
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm,height=18cm]{images/diagrammes/sprint5/seq-1-sprint5.drawio.png}
-    \caption{Diagramme de séquence - Consulter les journaux d'activités}
-    \label{fig:seq-journaux}
-\end{figure}
-
 
 \subsection{Réalisation du Sprint 5}
+
+\noindent \textbf{Assistant conversationnel :}
+
+\noindent L'interface suivante présente l'assistant intégré au portail : l'internaute pose sa question et obtient une réponse fondée sur le contenu du site. Elle offre une saisie vocale (dictée via le navigateur) et des suggestions de questions qui guident l'internaute dès l'ouverture de la conversation.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm,height=8cm]{images/realisation/sprint6/Capture d’écran du 2026-06-14 21-39-48.png}
+    \caption{Assistant conversationnel sur le portail}
+    \label{fig:real-chatbot}
+\end{figure}
+
+
+\noindent \textbf{Demande d'assistance depuis le chatbot :}
+
+\noindent Lorsqu'un internaute signale une difficulté, l'assistant affiche un court formulaire (nom et téléphone) puis confirme la prise en compte de la demande.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm,height=8cm]{images/realisation/sprint6/Capture d’écran du 2026-06-14 21-40-18.png}
+    \caption{Demande d'assistance depuis le chatbot}
+    \label{fig:real-assistance-form}
+\end{figure}
+
+
+\noindent \textbf{Gestion des demandes dans le backoffice :}
+
+\noindent Les demandes (issues du chatbot comme du formulaire de contact) sont centralisées dans le backoffice, où l'administrateur peut les consulter, filtrer par statut et faire évoluer leur traitement.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=14cm,height=8cm]{images/realisation/sprint6/Capture d’écran du 2026-06-14 21-40-25.png}
+    \caption{Gestion des demandes d'assistance dans le backoffice}
+    \label{fig:real-backoffice-assistance}
+\end{figure}
+
 
 \noindent \textbf{Supervision du système :}
 
@@ -596,7 +475,7 @@ Dans cette section, nous présentons les diagrammes de séquence illustrant les 
 \end{center}
 
 
-\noindent L'interface suivante permet à l'administrateur de consulter les journaux d'activités de la plateforme et la possibilité de filtrer.
+\noindent L'interface suivante permet à l'administrateur de consulter les journaux d'activités de la plateforme et de les filtrer.
 
 \begin{center}
     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/journaux.png}}
@@ -604,26 +483,15 @@ Dans cette section, nous présentons les diagrammes de séquence illustrant les 
     \label{fig:real-journaux}
 \end{center}
 
-
-\noindent \textbf{Vitrine institutionnelle :}
-
-\noindent L'interface suivante présente la page d'accueil, offrant aux internautes une vue générale des services disponibles et des informations officielles publiées.
+\noindent L'interface suivante permet à l'administrateur de gérer les demandes d'assiqtance provenant des citoyen du portail.
 
 \begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/accueil.png}}
-    \captionof{figure}{Page d'accueil}
-    \label{fig:real-accueil}
-\end{center}
-
-
-\noindent L'interface suivante permet à l'internaute de consulter les projets et ses réalisations.
-
-\begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/projet-realisation.png}}
-    \captionof{figure}{Page Projets et réalisations}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint6/Capture d’écran du 2026-06-14 21-45-07.png}}
+    \captionof{figure}{Page de gestion des demandes d'assistance}
     \label{fig:real-gouvernement}
 \end{center}
 
+\newpage
 \subsection{Revue du Sprint 5}
 
 À l'issue du Sprint 5, l'ensemble des user stories planifiées ont été développées et validées.
@@ -632,28 +500,16 @@ Dans cette section, nous présentons les diagrammes de séquence illustrant les 
 \hline
 \rowcolor{orange!30}
 \textbf{ID} & \textbf{User Story} & \textbf{Statut} \\ \hline
-30 & Consulter les statistiques globales & \textcolor{green!60!black}{Terminé} \\ \hline
-31 & Consulter les journaux d'activités & \textcolor{green!60!black}{Terminé} \\ \hline
-32 & Consulter les logs système & \textcolor{green!60!black}{Terminé} \\ \hline
-33 & Consulter la page d'accueil & \textcolor{green!60!black}{Terminé} \\ \hline
-34 & Consulter les informations sur le Gouvernement & \textcolor{green!60!black}{Terminé} \\ \hline
-35 & Consulter les Projets et Réalisations & \textcolor{green!60!black}{Terminé} \\ \hline
-36 & Consulter les actualités & \textcolor{green!60!black}{Terminé} \\ \hline
-37 & Consulter à propos du portail & \textcolor{green!60!black}{Terminé} \\ \hline
-38 & Consulter la FAQ & \textcolor{green!60!black}{Terminé} \\ \hline
-39 & Consulter le guide d'utilisation & \textcolor{green!60!black}{Terminé} \\ \hline
-40 & Consulter la page à propos & \textcolor{green!60!black}{Terminé} \\ \hline
-41 & Contacter l'administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
-\caption{Revue du Sprint 5} 
+30 & Poser une question à l'assistant conversationnel & \textcolor{green!60!black}{Terminé} \\ \hline
+31 & Dicter sa question à la voix & \textcolor{green!60!black}{Terminé} \\ \hline
+32 & Utiliser des suggestions de questions & \textcolor{green!60!black}{Terminé} \\ \hline
+33 & Demander à être assisté par un administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
+34 & Gérer les demandes d'assistance & \textcolor{green!60!black}{Terminé} \\ \hline
+35 & Être notifié par email d'une nouvelle demande & \textcolor{green!60!black}{Terminé} \\ \hline
+36 & Consulter les pages d'information & \textcolor{green!60!black}{Terminé} \\ \hline
+37 & Contacter l'administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
+38 & Consulter les statistiques globales & \textcolor{green!60!black}{Terminé} \\ \hline
+39 & Consulter les journaux d'activités & \textcolor{green!60!black}{Terminé} \\ \hline
+40 & Consulter les logs système & \textcolor{green!60!black}{Terminé} \\ \hline
+\caption{Revue du Sprint 5}
 \end{longtable}
-
-\section{Conclusion}
-
-Cette troisième release a permis d'enrichir la plateforme e-Gouvernement par des fonctionnalités essentielles pour la communication avec les citoyens et la supervision globale du système.
-
-Le \textit{Sprint 4} a mis en place le système de gestion des réclamations, offrant aux citoyens un canal structuré pour signaler les problèmes, et aux administrateurs des outils adaptés pour les traiter. Le système de notifications, également développé dans ce sprint, garantit une communication fluide et automatisée entre la plateforme et ses utilisateurs.
-
-Le \textit{Sprint 5} a complété la plateforme par la vitrine institutionnelle — accessible à tous les internautes — et par les outils de supervision permettant aux administrateurs de surveiller l'activité, d'analyser les statistiques et de diagnostiquer les éventuelles anomalies du système.
-
-Le chapitre suivant présente la conclusion générale du projet.
-

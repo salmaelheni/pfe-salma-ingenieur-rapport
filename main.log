@@ -1,0 +1,2841 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.5.24)  14 JUN 2026 17:22
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./main.tex
+(main.tex
+LaTeX2e <2025-11-01>
+L3 programming layer <2026-04-28>
+(/usr/local/share/miktex-texmf/tex/latex/base/report.cls
+Document Class: report 2025/01/22 v1.4n Standard LaTeX document class
+(/usr/local/share/miktex-texmf/tex/latex/base/size12.clo
+File: size12.clo 2025/01/22 v1.4n Standard LaTeX file (size option)
+)
+\c@part=\count276
+\c@chapter=\count277
+\c@section=\count278
+\c@subsection=\count279
+\c@subsubsection=\count280
+\c@paragraph=\count281
+\c@subparagraph=\count282
+\c@figure=\count283
+\c@table=\count284
+\abovecaptionskip=\skip49
+\belowcaptionskip=\skip50
+\bibindent=\dimen150
+) (settings.tex
+(/usr/local/share/miktex-texmf/tex/generic/babel/babel.sty
+Package: babel 2026/05/20 v26.8 The multilingual framework for LuaLaTeX, pdfLaT
+eX and XeLaTeX
+\babel@savecnt=\count285
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding OT1) on input li
+ne 2084.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding OT1) on input li
+ne 2086.
+LaTeX Encoding Info:    Redeclaring text command \ij (encoding T1) on input lin
+e 2088.
+LaTeX Encoding Info:    Redeclaring text command \IJ (encoding T1) on input lin
+e 2089.
+LaTeX Encoding Info:    Ignoring declaration for text command \ij (encoding ?) 
+on input line 2090.
+LaTeX Encoding Info:    Ignoring declaration for text command \IJ (encoding ?) 
+on input line 2092.
+LaTeX Encoding Info:    Ignoring declaration for text command \SS (encoding ?) 
+on input line 2117.
+\U@D=\dimen151
+\l@unhyphenated=\language79
+
+(/usr/local/share/miktex-texmf/tex/generic/babel/txtbabel.def)
+\bbl@readstream=\read2
+\bbl@dirlevel=\count286
+Package babel Info: Configuration files are deprecated, as
+(babel)             they can break document portability.
+(babel)             Reported on input line 4228.
+
+*************************************
+* Local config file bblopts.cfg used
+*
+(/usr/local/share/miktex-texmf/tex/latex/arabi/bblopts.cfg
+File: bblopts.cfg 2005/09/08 v0.1 add Arabic and Farsi to "declared" options of
+ babel
+)
+(/usr/local/share/miktex-texmf/tex/generic/babel/locale/fr/babel-french.tex)
+Package babel Info: Importing font and identification data for french
+(babel)             from babel-fr.ini. Reported on input line 4356.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/babel-french/french.ldf
+Language: french 2025-08-15 v4.0e French support from the babel system
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/babel-french/french3.ldf
+Language: french 2025-08-15 v3.7e French support from the babel system
+\FB@stdchar=\count287
+Package babel Info: Making : an active character on input line 273.
+Package babel Info: Making ; an active character on input line 274.
+Package babel Info: Making ! an active character on input line 275.
+Package babel Info: Making ? an active character on input line 276.
+\FBguill@level=\count288
+\FBold@everypar=\toks17
+\FB@Mht=\dimen152
+\mc@charclass=\count289
+\mc@charfam=\count290
+\mc@charslot=\count291
+\std@mcc=\count292
+\dec@mcc=\count293
+\FB@pardim=\dimen153
+\listindentFB=\dimen154
+\descindentFB=\dimen155
+\labelindentFB=\dimen156
+\labelwidthFB=\dimen157
+\leftmarginFB=\dimen158
+\parindentFFN=\dimen159
+\FBfnindent=\dimen160
+))) (/home/salm-el-heni/.miktex/texmfs/install/tex/latex/carlisle/scalefnt.sty)
+   defining Unicode char U+00A0 (decimal 160)
+(/usr/local/share/miktex-texmf/tex/latex/base/inputenc.sty
+Package: inputenc 2024/02/08 v1.3d Input encoding file
+\inpenc@prehook=\toks18
+\inpenc@posthook=\toks19
+)
+(/usr/local/share/miktex-texmf/tex/latex/base/fontenc.sty
+Package: fontenc 2025/07/18 v2.1d Standard LaTeX package
+)
+(/usr/local/share/miktex-texmf/tex/latex/graphics/graphicx.sty
+Package: graphicx 2024/12/31 v1.2e Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/share/miktex-texmf/tex/latex/graphics/keyval.sty
+Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
+\KV@toks@=\toks20
+)
+(/usr/local/share/miktex-texmf/tex/latex/graphics/graphics.sty
+Package: graphics 2024/08/06 v1.4g Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/share/miktex-texmf/tex/latex/graphics/trig.sty
+Package: trig 2023/12/02 v1.11 sin cos tan (DPC)
+)
+(/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 106.
+
+(/usr/local/share/miktex-texmf/tex/latex/graphics-def/pdftex.def
+File: pdftex.def 2025/09/29 v1.2d Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen161
+\Gin@req@width=\dimen162
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/multirow/multirow.sty
+Package: multirow 2024/11/12 v2.9 Span multiple rows of a table
+\multirow@colwidth=\skip51
+\multirow@cntb=\count294
+\multirow@dima=\skip52
+\bigstrutjot=\dimen163
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2020/01/12 v1.61803398 Publication quality tables
+\heavyrulewidth=\dimen164
+\lightrulewidth=\dimen165
+\cmidrulewidth=\dimen166
+\belowrulesep=\dimen167
+\belowbottomsep=\dimen168
+\aboverulesep=\dimen169
+\abovetopsep=\dimen170
+\cmidrulesep=\dimen171
+\cmidrulekern=\dimen172
+\defaultaddspace=\dimen173
+\@cmidla=\count295
+\@cmidlb=\count296
+\@aboverulesep=\dimen174
+\@belowrulesep=\dimen175
+\@thisruleclass=\count297
+\@lastruleclass=\count298
+\@thisrulewidth=\dimen176
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/csquotes/csquotes.sty
+Package: csquotes 2026-05-19 v5.2p context-sensitive quotations (JAW)
+
+(/usr/local/share/miktex-texmf/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2025/10/02 v2.5m e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count299
+)
+\csq@reset=\count300
+\csq@gtype=\count301
+\csq@glevel=\count302
+\csq@qlevel=\count303
+\csq@maxlvl=\count304
+\csq@tshold=\count305
+\csq@ltx@everypar=\toks21
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/csquotes/csquotes.def
+File: csquotes.def 2026-05-19 v5.2p csquotes generic definitions (JAW)
+)
+Package csquotes Info: Trying to load configuration file 'csquotes.cfg'...
+Package csquotes Info: ... configuration file loaded successfully.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/csquotes/csquotes.cfg
+File: csquotes.cfg 
+))
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/setspace/setspace.sty
+Package: setspace 2022/12/04 v6.7b set line spacing
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/caption/caption.sty
+Package: caption 2023/08/05 v3.6o Customizing captions (AR)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/caption/caption3.sty
+Package: caption3 2023/07/31 v2.4d caption3 kernel (AR)
+\caption@tempdima=\dimen177
+\captionmargin=\dimen178
+\caption@leftmargin=\dimen179
+\caption@rightmargin=\dimen180
+\caption@width=\dimen181
+\caption@indent=\dimen182
+\caption@parindent=\dimen183
+\caption@hangindent=\dimen184
+Package caption Info: Standard document class detected.
+Package caption Info: french babel package is loaded.
+)
+\c@caption@flags=\count306
+\c@continuedfloat=\count307
+)
+(/usr/local/share/miktex-texmf/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2026-04-24 v7.01q Hypertext links for LaTeX
+
+(/usr/local/share/miktex-texmf/tex/generic/iftex/iftex.sty
+Package: iftex 2024/12/12 v1.0g TeX engine tests
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/kvsetkeys/kvsetkeys.sty
+Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/kvdefinekeys/kvdefinekey
+s.sty
+Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/pdfescape/pdfescape.sty
+Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/ltxcmds/ltxcmds.sty
+Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
+)
+(/usr/local/share/miktex-texmf/tex/generic/pdftexcmds/pdftexcmds.sty
+Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
+)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/infwarerr/infwarerr.sty
+Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
+)
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+)) (/home/salm-el-heni/.miktex/texmfs/install/tex/latex/hycolor/hycolor.sty
+Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/share/miktex-texmf/tex/latex/hyperref/nameref.sty
+Package: nameref 2026-01-29 v2.58 Cross-referencing by name of section
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/refcount/refcount.sty
+Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/gettitlestring/gettitles
+tring.sty
+Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/kvoptions/kvoptions.sty
+Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
+))
+\c@section@level=\count308
+) (/home/salm-el-heni/.miktex/texmfs/install/tex/generic/stringenc/stringenc.st
+y
+Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
+)
+)
+\@linkdim=\dimen185
+\Hy@linkcounter=\count309
+\Hy@pagecounter=\count310
+ (/usr/local/share/miktex-texmf/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2026-04-24 v7.01q Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/intcalc/intcalc.sty
+Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
+)
+\Hy@SavedSpaceFactor=\count311
+
+(/usr/local/share/miktex-texmf/tex/latex/hyperref/puenc.def
+File: puenc.def 2026-04-24 v7.01q Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
+)
+Package hyperref Info: Hyper figures OFF on input line 4199.
+Package hyperref Info: Link nesting OFF on input line 4204.
+Package hyperref Info: Hyper index ON on input line 4207.
+Package hyperref Info: Plain pages OFF on input line 4214.
+Package hyperref Info: Backreferencing OFF on input line 4219.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4466.
+\c@Hy@tempcnt=\count312
+
+(/usr/local/share/miktex-texmf/tex/latex/url/url.sty
+\Urlmuskip=\muskip17
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+LaTeX Info: Redefining \url on input line 4805.
+\XeTeXLinkMargin=\dimen186
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/bitset/bitset.sty
+Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/bigintcalc/bigintcalc.st
+y
+Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
+)
+))
+\Fld@menulength=\count313
+\Field@Width=\dimen187
+\Fld@charsize=\dimen188
+Package hyperref Info: Hyper figures OFF on input line 6091.
+Package hyperref Info: Link nesting OFF on input line 6096.
+Package hyperref Info: Hyper index ON on input line 6099.
+Package hyperref Info: backreferencing OFF on input line 6106.
+Package hyperref Info: Link coloring OFF on input line 6111.
+Package hyperref Info: Link coloring with OCG OFF on input line 6116.
+Package hyperref Info: PDF/A mode OFF on input line 6121.
+\Hy@abspage=\count314
+\c@Item=\count315
+\c@Hfootnote=\count316
+)
+Package hyperref Info: Driver (autodetected): hpdftex.
+ (/usr/local/share/miktex-texmf/tex/latex/hyperref/hpdftex.def
+File: hpdftex.def 2026-04-24 v7.01q Hyperref driver for pdfTeX
+\Fld@listcount=\count317
+\c@bookmark@seq@number=\count318
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/rerunfilecheck/rerunfilech
+eck.sty
+Package: rerunfilecheck 2025-06-21 v1.11 Rerun checks for auxiliary files (HO)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/uniquecounter/uniquecoun
+ter.sty
+Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
+)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
+84.
+)
+\Hy@SectionHShift=\skip53
+) (/usr/local/share/miktex-texmf/tex/latex/graphics/lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+(/usr/local/share/miktex-texmf/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2024/09/29 v3.02 LaTeX color extensions (UK)
+
+(/usr/local/share/miktex-texmf/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 274.
+
+(/usr/local/share/miktex-texmf/tex/latex/graphics/mathcolor.ltx)
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1349.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1353.
+Package xcolor Info: Model `RGB' extended on input line 1365.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1367.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1370.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1371.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1372.
+)
+(/usr/local/share/miktex-texmf/tex/latex/xcolor/svgnam.def
+File: svgnam.def 2024/09/29 v3.02 Predefined colors according to SVG 1.1 (UK)
+)
+(/usr/local/share/miktex-texmf/tex/latex/graphics/dvipsnam.def
+File: dvipsnam.def 2016/06/17 v3.0m Driver-dependent file (DPC,SPQR)
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/colortbl/colortbl.sty
+Package: colortbl 2026/05/01 v1.0l Color table columns (DPC)
+
+(/usr/local/share/miktex-texmf/tex/latex/tools/array.sty
+Package: array 2025/09/25 v2.6n Tabular extension package (FMi)
+\col@sep=\dimen189
+\ar@mcellbox=\box53
+\extrarowheight=\dimen190
+\NC@list=\toks22
+\extratabsurround=\skip54
+\backup@length=\skip55
+\ar@cellbox=\box54
+)
+\everycr=\toks23
+\minrowclearance=\skip56
+\rownum=\count319
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/lipsum/lipsum.sty
+(/usr/local/share/miktex-texmf/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+(/usr/local/share/miktex-texmf/tex/latex/l3kernel/expl3.sty
+Package: expl3 2026-04-28 L3 programming layer (loader) 
+
+(/usr/local/share/miktex-texmf/tex/latex/l3backend/l3backend-pdftex.def
+File: l3backend-pdftex.def 2026-02-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count320
+))
+Package: l3keys2e 2025-10-09 LaTeX2e option processing using LaTeX3 keys
+)
+Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
+\g__lipsum_par_int=\count321
+\l__lipsum_a_int=\count322
+\l__lipsum_b_int=\count323
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/lipsum/lipsum.ltd.tex))
+(/usr/local/share/miktex-texmf/tex/latex/tools/longtable.sty
+Package: longtable 2025-10-13 v4.24 Multi-page Table package (DPC)
+\LTleft=\skip57
+\LTright=\skip58
+\LTpre=\skip59
+\LTpost=\skip60
+\LTchunksize=\count324
+\LTcapwidth=\dimen191
+\LT@head=\box55
+\LT@firsthead=\box56
+\LT@foot=\box57
+\LT@lastfoot=\box58
+\LT@gbox=\box59
+\LT@cols=\count325
+\LT@rows=\count326
+\c@LT@tables=\count327
+\c@LT@chunks=\count328
+\LT@p@ftn=\toks24
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/psnfss/pifont.sty
+Package: pifont 2020/03/25 PSNFSS-v9.3 Pi font support (SPQR) 
+LaTeX Font Info:    Trying to load font information for U+pzd on input line 63.
+
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/psnfss/upzd.fd
+File: upzd.fd 2001/06/04 font definitions for U/pzd.
+)
+LaTeX Font Info:    Trying to load font information for U+psy on input line 64.
+
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/psnfss/upsy.fd
+File: upsy.fd 2001/06/04 font definitions for U/psy.
+))
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/diagbox/diagbox.sty
+Package: diagbox 2020/02/09 v2.3 Making table heads with diagonal lines
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/pict2e/pict2e.sty
+Package: pict2e 2020/09/30 v0.4b Improved picture commands (HjG,RN,JT)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/pict2e/pict2e.cfg
+File: pict2e.cfg 2016/02/05 v0.1u pict2e configuration for teTeX/TeXLive
+)
+Package pict2e Info: Driver file: pdftex.def on input line 112.
+Package pict2e Info: Driver file for pict2e: p2e-pdftex.def on input line 114.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/pict2e/p2e-pdftex.def
+File: p2e-pdftex.def 2016/02/05 v0.1u Driver-dependant file (RN,HjG,JT)
+)
+\pIIe@GRAPH=\toks25
+\@arclen=\dimen192
+\@arcrad=\dimen193
+\pIIe@tempdima=\dimen194
+\pIIe@tempdimb=\dimen195
+\pIIe@tempdimc=\dimen196
+\pIIe@tempdimd=\dimen197
+\pIIe@tempdime=\dimen198
+\pIIe@tempdimf=\dimen199
+)
+(/usr/local/share/miktex-texmf/tex/latex/tools/calc.sty
+Package: calc 2025/03/01 v4.3b Infix arithmetic (KKT,FJ)
+\calc@Acount=\count329
+\calc@Bcount=\count330
+\calc@Adimen=\dimen256
+\calc@Bdimen=\dimen257
+\calc@Askip=\skip61
+\calc@Bskip=\skip62
+LaTeX Info: Redefining \setlength on input line 86.
+LaTeX Info: Redefining \addtolength on input line 87.
+\calc@Ccount=\count331
+\calc@Cskip=\skip63
+)
+\diagbox@boxa=\box60
+\diagbox@boxb=\box61
+\diagbox@boxm=\box62
+\diagbox@wd=\dimen258
+\diagbox@ht=\dimen259
+\diagbox@insepl=\dimen260
+\diagbox@insepr=\dimen261
+\diagbox@outsepl=\dimen262
+\diagbox@outsepr=\dimen263
+)
+(/usr/local/share/miktex-texmf/tex/latex/lm/lmodern.sty
+Package: lmodern 2015/05/01 v1.6.1 Latin Modern Fonts
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> OT1/lmr/m/n on input line 22.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/cmm/m/it --> OML/lmm/m/it on input line 23.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/cmsy/m/n --> OMS/lmsy/m/n on input line 24.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 25.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 26.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/cmm/b/it --> OML/lmm/b/it on input line 27.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/cmsy/b/n --> OMS/lmsy/b/n on input line 28.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/cmex/m/n --> OMX/lmex/m/n on input line 29.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 31.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> OT1/lmss/m/n on input line 32.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> OT1/lmr/m/it on input line 33.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 34.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/cmr/bx/n --> OT1/lmr/bx/n on input line 35.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> OT1/lmss/bx/n on input line 36.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> OT1/lmr/bx/it on input line 37.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> OT1/lmtt/m/n on input line 38.
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/framed/framed.sty
+Package: framed 2011/10/22 v 0.96: framed or shaded text with page breaks
+\OuterFrameSep=\skip64
+\fb@frw=\dimen264
+\fb@frh=\dimen265
+\FrameRule=\dimen266
+\FrameSep=\dimen267
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/fncychap/fncychap.sty
+Package: fncychap 2007/07/30 v1.34 LaTeX package (Revised chapters)
+\RW=\skip65
+\mylen=\skip66
+\myhi=\skip67
+\px=\skip68
+\py=\skip69
+\pyy=\skip70
+\pxx=\skip71
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count332
+\float@exts=\toks26
+\float@box=\box63
+\@float@everytoks=\toks27
+\@floatcapt=\box64
+)
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsmath.sty
+Package: amsmath 2025/07/09 v2.17z AMS math features
+\@mathmargin=\skip72
+
+For additional information on amsmath, use the `?' option.
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amstext.sty
+Package: amstext 2024/11/17 v2.01 AMS text
+
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks28
+\ex@=\dimen268
+))
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsbsy.sty
+Package: amsbsy 1999/11/29 v1.2d Bold Symbols
+\pmbraise@=\dimen269
+)
+(/usr/local/share/miktex-texmf/tex/latex/amsmath/amsopn.sty
+Package: amsopn 2022/04/08 v2.04 operator names
+)
+\inf@bad=\count333
+LaTeX Info: Redefining \frac on input line 233.
+\uproot@=\count334
+\leftroot@=\count335
+LaTeX Info: Redefining \overline on input line 398.
+LaTeX Info: Redefining \colon on input line 409.
+\classnum@=\count336
+\DOTSCASE@=\count337
+LaTeX Info: Redefining \ldots on input line 495.
+LaTeX Info: Redefining \dots on input line 498.
+LaTeX Info: Redefining \cdots on input line 619.
+\Mathstrutbox@=\box65
+\strutbox@=\box66
+LaTeX Info: Redefining \big on input line 721.
+LaTeX Info: Redefining \Big on input line 722.
+LaTeX Info: Redefining \bigg on input line 723.
+LaTeX Info: Redefining \Bigg on input line 724.
+\big@size=\dimen270
+LaTeX Font Info:    Redeclaring font encoding OML on input line 742.
+LaTeX Font Info:    Redeclaring font encoding OMS on input line 743.
+\macc@depth=\count338
+LaTeX Info: Redefining \bmod on input line 904.
+LaTeX Info: Redefining \pmod on input line 909.
+LaTeX Info: Redefining \smash on input line 939.
+LaTeX Info: Redefining \relbar on input line 969.
+LaTeX Info: Redefining \Relbar on input line 970.
+\c@MaxMatrixCols=\count339
+\dotsspace@=\muskip18
+\c@parentequation=\count340
+\dspbrk@lvl=\count341
+\tag@help=\toks29
+\row@=\count342
+\column@=\count343
+\maxfields@=\count344
+\andhelp@=\toks30
+\eqnshift@=\dimen271
+\alignsep@=\dimen272
+\tagshift@=\dimen273
+\tagwidth@=\dimen274
+\totwidth@=\dimen275
+\lineht@=\dimen276
+\@envbody=\toks31
+\multlinegap=\skip73
+\multlinetaggap=\skip74
+\mathdisplay@stack=\toks32
+LaTeX Info: Redefining \[ on input line 2950.
+LaTeX Info: Redefining \] on input line 2951.
+)
+(/usr/local/share/miktex-texmf/tex/latex/tools/tabularx.sty
+Package: tabularx 2023/12/11 v2.12a `tabularx' package (DPC)
+\TX@col@width=\dimen277
+\TX@old@table=\dimen278
+\TX@old@col=\dimen279
+\TX@target=\dimen280
+\TX@delta=\dimen281
+\TX@cols=\count345
+\TX@ftn=\toks33
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/newtxtext.sty
+Package: newtxtext 2024/04/01 v1.744(Michael Sharpe) latex and unicode latex su
+pport for TeXGyreTermesX
+
+`newtxtext' v1.744, 2024/04/01 Text macros taking advantage of TeXGyre Termes a
+nd its extensions (msharpe)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/xpatch/xpatch.sty
+Package: xpatch 2020/03/25 v0.3a Extending etoolbox patching commands
+
+(/usr/local/share/miktex-texmf/tex/latex/l3packages/xparse/xparse.sty
+Package: xparse 2025-10-09 L3 Experimental document command parser
+))
+(/usr/local/share/miktex-texmf/tex/latex/xkeyval/xkeyval.sty
+Package: xkeyval 2022/06/16 v2.9 package option processing (HA)
+
+(/usr/local/share/miktex-texmf/tex/generic/xkeyval/xkeyval.tex
+(/usr/local/share/miktex-texmf/tex/generic/xkeyval/xkvutils.tex
+\XKV@toks=\toks34
+\XKV@tempa@toks=\toks35
+)
+\XKV@depth=\count346
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+))
+(/usr/local/share/miktex-texmf/tex/latex/base/textcomp.sty
+Package: textcomp 2024/04/24 v2.1b Standard LaTeX package
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/xstring/xstring.sty
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/xstring/xstring.tex
+\xs_counta=\count347
+\xs_countb=\count348
+)
+Package: xstring 2023/08/22 v1.86 String manipulations (CT)
+)
+(/usr/local/share/miktex-texmf/tex/latex/base/ifthen.sty
+Package: ifthen 2024/03/16 v1.1e Standard LaTeX ifthen package (DPC)
+)
+LaTeX Font Info:    Setting ntxLF sub-encoding to TS1/0 on input line 24.
+LaTeX Font Info:    Setting ntxTLF sub-encoding to TS1/0 on input line 24.
+LaTeX Font Info:    Setting ntxOsF sub-encoding to TS1/0 on input line 24.
+LaTeX Font Info:    Setting ntxTOsF sub-encoding to TS1/0 on input line 24.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/binhex/binhex.tex)
+\ntx@tmpcnta=\count349
+\ntx@cnt=\count350
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/fontaxes/fontaxes.sty
+Package: fontaxes 2026-01-02 v2.0.2 Font selection axes (deprecated)
+Applying: [2024-11-01] Use figureversions if present on input line 74.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/figureversions/figureversi
+ons.sty
+Package: figureversions 2025-04-29 v1.0.1 Figure versions
+)
+Already applied: [0000-00-00] Fall back to v1 on input line 76.
+)
+\tx@sixem=\dimen282
+\tx@y=\dimen283
+\tx@x=\dimen284
+\tx@tmpdima=\dimen285
+\tx@tmpdimb=\dimen286
+\tx@tmpdimc=\dimen287
+\tx@tmpdimd=\dimen288
+\tx@tmpdime=\dimen289
+\tx@tmpdimf=\dimen290
+\tx@dimA=\dimen291
+\tx@dimAA=\dimen292
+\tx@dimB=\dimen293
+\tx@dimBB=\dimen294
+\tx@dimC=\dimen295
+LaTeX Info: Redefining \oldstylenums on input line 902.
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/newtxmath.sty
+Package: newtxmath 2024/09/22 v1.754
+
+`newtxmath' v1.754, 2024/09/22 Math macros based originally on txfonts (msharpe
+) (/usr/local/share/miktex-texmf/tex/latex/oberdiek/centernot.sty
+Package: centernot 2016/05/16 v1.4 Centers the not symbol horizontally (HO)
+)
+\tx@cntz=\count351
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/generic/binhex/binhex.tex)
+\tx@Isdigit=\count352
+\tx@IsAlNum=\count353
+\tx@tA=\toks36
+\tx@tB=\toks37
+\tx@su=\read3
+
+amsthm NOT loaded
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 402.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/lmr/m/n --> OT1/minntx/m/n on input line 402.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/lmr/bx/n --> OT1/minntx/m/n on input line 402.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/minntx/m/n --> OT1/minntx/b/n on input line 403.
+LaTeX Font Info:    Redeclaring math alphabet \mathsf on input line 410.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/lmss/m/n --> OT1/lmss/m/n on input line 410.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/bx/n --> OT1/lmss/m/n on input line 410.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/lmss/m/n --> OT1/lmss/b/n on input line 412.
+LaTeX Font Info:    Redeclaring math alphabet \mathit on input line 419.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/lmr/m/it --> OT1/minntx/m/it on input line 419.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/lmr/bx/it --> OT1/minntx/m/it on input line 419.
+LaTeX Font Info:    Redeclaring math alphabet \mathtt on input line 420.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 420.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/lmtt/m/n --> T1/lmtt/m/n on input line 420.
+LaTeX Font Info:    Redeclaring math alphabet \mathbf on input line 422.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/lmr/bx/n --> OT1/minntx/b/n on input line 422.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `bold'
+(Font)                  OT1/lmr/bx/n --> OT1/minntx/b/n on input line 422.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/minntx/m/it --> OT1/minntx/b/it on input line 423.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  T1/lmtt/m/n --> T1/lmtt/b/n on input line 426.
+LaTeX Font Info:    Redeclaring symbol font `letters' on input line 534.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `normal'
+(Font)                  OML/lmm/m/it --> OML/ntxmi/m/it on input line 534.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/lmm/b/it --> OML/ntxmi/m/it on input line 534.
+LaTeX Font Info:    Overwriting symbol font `letters' in version `bold'
+(Font)                  OML/ntxmi/m/it --> OML/ntxmi/b/it on input line 535.
+\symlettersA=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `lettersA' in version `bold'
+(Font)                  U/ntxmia/m/it --> U/ntxmia/b/it on input line 582.
+Now handling font encoding LMS ...
+... no UTF-8 mapping file for font encoding LMS
+LaTeX Font Info:    Redeclaring symbol font `symbols' on input line 604.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `normal' on input line 604.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `normal'
+(Font)                  OMS/lmsy/m/n --> LMS/ntxsy/m/n on input line 604.
+LaTeX Font Info:    Encoding `OMS' has changed to `LMS' for symbol font
+(Font)              `symbols' in the math version `bold' on input line 604.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  OMS/lmsy/b/n --> LMS/ntxsy/m/n on input line 604.
+LaTeX Font Info:    Overwriting symbol font `symbols' in version `bold'
+(Font)                  LMS/ntxsy/m/n --> LMS/ntxsy/b/n on input line 605.
+\symAMSm=\mathgroup5
+LaTeX Font Info:    Overwriting symbol font `AMSm' in version `bold'
+(Font)                  U/ntxsym/m/n --> U/ntxsym/b/n on input line 630.
+\symsymbolsC=\mathgroup6
+LaTeX Font Info:    Overwriting symbol font `symbolsC' in version `bold'
+(Font)                  U/ntxsyc/m/n --> U/ntxsyc/b/n on input line 651.
+Now handling font encoding LMX ...
+... no UTF-8 mapping file for font encoding LMX
+LaTeX Font Info:    Redeclaring symbol font `largesymbols' on input line 664.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `normal' on input line 6
+64.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `normal'
+(Font)                  OMX/lmex/m/n --> LMX/ntxexx/m/n on input line 664.
+LaTeX Font Info:    Encoding `OMX' has changed to `LMX' for symbol font
+(Font)              `largesymbols' in the math version `bold' on input line 664
+.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  OMX/lmex/m/n --> LMX/ntxexx/m/n on input line 664.
+LaTeX Font Info:    Overwriting symbol font `largesymbols' in version `bold'
+(Font)                  LMX/ntxexx/m/n --> LMX/ntxexx/b/n on input line 665.
+\symlargesymbolsTXA=\mathgroup7
+LaTeX Font Info:    Overwriting symbol font `largesymbolsTXA' in version `bold'
+
+(Font)                  U/ntxexa/m/n --> U/ntxexa/b/n on input line 679.
+\tx@sbptoks=\toks38
+LaTeX Font Info:    Redeclaring math delimiter \lfloor on input line 902.
+LaTeX Font Info:    Redeclaring math delimiter \rfloor on input line 903.
+LaTeX Font Info:    Redeclaring math delimiter \lceil on input line 904.
+LaTeX Font Info:    Redeclaring math delimiter \rceil on input line 905.
+LaTeX Font Info:    Redeclaring math delimiter \lbrace on input line 910.
+LaTeX Font Info:    Redeclaring math delimiter \rbrace on input line 911.
+LaTeX Font Info:    Redeclaring math delimiter \langle on input line 913.
+LaTeX Font Info:    Redeclaring math delimiter \rangle on input line 915.
+LaTeX Font Info:    Redeclaring math delimiter \arrowvert on input line 919.
+LaTeX Font Info:    Redeclaring math delimiter \vert on input line 920.
+LaTeX Font Info:    Redeclaring math symbol \hbar on input line 966.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 991.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 992.
+LaTeX Font Info:    Redeclaring math accent \vec on input line 2057.
+LaTeX Info: Redefining \Bbbk on input line 2847.
+LaTeX Info: Redefining \not on input line 2995.
+) (/usr/local/share/miktex-texmf/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/minitoc/minitoc.sty
+Package: minitoc 2018/07/12 v62 Package minitoc
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/minitoc/mtcmess.sty
+Package: mtcmess 2006/03/14
+)
+Package minitoc Info: I0001
+(minitoc)             *** minitoc package, version 62 ***.
+\tf@mtc=\write3
+\mtcindent=\skip75
+\mtcskipamount=\skip76
+Package minitoc Info: I0005
+(minitoc)             compatible with hyperref.
+Package minitoc Info: I0023
+(minitoc)             part level macros available.
+Package minitoc Info: I0003
+(minitoc)             chapter level macros available.
+\mtc@toks=\toks39
+\mtc@strutbox=\box67
+\mtc@hstrutbox=\box68
+Package minitoc Info: I0002
+(minitoc)             Autoconfiguration of extensions.
+\openout3 = `main.mtc0'.
+
+\openout3 = `main.mtc'.
+
+
+(main.mtc0)
+Package minitoc Info: I0012
+(minitoc)             Long extensions (Unix-like) will be used.
+Package minitoc Info: I0031
+(minitoc)             ==> this version is configured for UNIX-like 
+(minitoc)                 (long extensions) file names.
+\openout3 = `main.mtc'.
+
+\openout3 = `main.mtc0'.
+
+\c@mtc=\count354
+\c@minitocdepth=\count355
+\c@ptc=\count356
+\c@parttocdepth=\count357
+\ptcindent=\skip77
+Package minitoc Info: I0010
+(minitoc)             The english language is selected.
+(minitoc)              on input line 4910.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/minitoc/english.mld
+File: english.mld 2006/01/13
+)
+Package minitoc Info: I0010
+(minitoc)             The french language is selected.
+(minitoc)              on input line 4911.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/minitoc/french.mld
+File: french.mld 2006/03/21
+))
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/geometry/geometry.sty
+Package: geometry 2026/03/07 v6.0 Page Geometry
+
+(/usr/local/share/miktex-texmf/tex/generic/iftex/ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+)
+\Gm@cnth=\count358
+\Gm@cntv=\count359
+\c@Gm@tempcnt=\count360
+\Gm@bindingoffset=\dimen296
+\Gm@wd@mp=\dimen297
+\Gm@odd@mp=\dimen298
+\Gm@even@mp=\dimen299
+\Gm@layoutwidth=\dimen300
+\Gm@layoutheight=\dimen301
+\Gm@layouthoffset=\dimen302
+\Gm@layoutvoffset=\dimen303
+\Gm@dimlist=\toks40
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/geometry/geometry.cfg))
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/subfig/subfig.sty
+Package: subfig 2005/06/28 ver: 1.3 subfig package
+\c@KVtest=\count361
+\sf@farskip=\skip78
+\sf@captopadj=\dimen304
+\sf@capskip=\skip79
+\sf@nearskip=\skip80
+\c@subfigure=\count362
+\c@subfigure@save=\count363
+\c@lofdepth=\count364
+\c@subtable=\count365
+\c@subtable@save=\count366
+\c@lotdepth=\count367
+\sf@top=\skip81
+\sf@bottom=\skip82
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/wrapfig/wrapfig.sty
+\wrapoverhang=\dimen305
+\WF@size=\dimen306
+\c@WF@wrappedlines=\count368
+\WF@box=\box69
+\WF@everypar=\toks41
+Package: wrapfig 2003/01/31  v 3.6
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/mwe/mwe.sty
+Package: mwe 2018/03/30 v0.5 Package to support minimal working examples (MWE)
+
+(/usr/local/share/miktex-texmf/tex/latex/blindtext/blindtext.sty
+Package: blindtext 2012/01/06 V2.0 blindtext-Package
+\c@blindtext=\count369
+\c@Blindtext=\count370
+\c@blind@countparstart=\count371
+\blind@countxx=\count372
+\blindtext@numBlindtext=\count373
+\blind@countyy=\count374
+\c@blindlist=\count375
+\c@blindlistlevel=\count376
+\c@blindlist@level=\count377
+\blind@listitem=\count378
+\c@blind@listcount=\count379
+\c@blind@levelcount=\count380
+\blind@mathformula=\count381
+\blind@Mathformula=\count382
+\c@blind@randomcount=\count383
+\c@blind@randommax=\count384
+\c@blind@pangramcount=\count385
+\c@blind@pangrammax=\count386
+))
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/adjustbox/adjustbox.sty
+Package: adjustbox 2025/02/26 v1.3c Adjusting TeX boxes (trim, clip, ...)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/adjustbox/adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back
+-ends (calc, etex, pgfmath)
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/adjustbox/trimclip.sty
+Package: trimclip 2025/02/21 v1.2a Trim and clip general TeX material
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/collectbox/collectbox.sty
+Package: collectbox 2022/10/17 v0.4c Collect macro arguments as boxes
+\collectedbox=\box70
+)
+\tc@llx=\dimen307
+\tc@lly=\dimen308
+\tc@urx=\dimen309
+\tc@ury=\dimen310
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/adjustbox/tc-pdftex.def
+File: tc-pdftex.def 2025/02/26 v2.3 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen311
+\adjbox@Height=\dimen312
+\adjbox@Depth=\dimen313
+\adjbox@Totalheight=\dimen314
+\adjbox@pwidth=\dimen315
+\adjbox@pheight=\dimen316
+\adjbox@pdepth=\dimen317
+\adjbox@ptotalheight=\dimen318
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/ifoddpage/ifoddpage.sty
+Package: ifoddpage 2022/10/18 v1.2 Conditionals for odd/even page detection
+\c@checkoddpage=\count387
+)
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/varwidth/varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box71
+\sift@deathcycles=\count388
+\@vwid@loff=\dimen319
+\@vwid@roff=\dimen320
+)
+==> First Aid for varwidth.sty applied!
+) (/home/salm-el-heni/.miktex/texmfs/install/tex/latex/pdfpages/pdfpages.sty
+Package: pdfpages 2026/03/30 v0.6h Insert pages of external PDF documents (AM)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/eso-pic/eso-pic.sty
+Package: eso-pic 2025/12/10 v3.0d eso-pic (RN)
+\ESO@tempdima=\dimen321
+\ESO@tempdimb=\dimen322
+)
+\AM@pagewidth=\dimen323
+\AM@pageheight=\dimen324
+\AM@fboxrule=\dimen325
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/pdfpages/pppdftex.def
+File: pppdftex.def 2026/03/30 v0.6h Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count389
+\AM@pagebox=\box72
+\AM@global@opts=\toks42
+\AM@pagecnt=\count390
+\AM@toc@title=\toks43
+\AM@lof@heading=\toks44
+\c@AM@survey=\count391
+\AM@templatesizebox=\box73
+)
+(/usr/local/share/miktex-texmf/tex/latex/graphics/rotating.sty
+Package: rotating 2025/01/14 v2.16e rotated objects in LaTeX
+\c@r@tfl@t=\count392
+\rotFPtop=\skip83
+\rotFPbot=\skip84
+\rot@float@box=\box74
+\rot@mess@toks=\toks45
+)
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/biblatex.sty
+Package: biblatex 2025/07/10 v3.21 programmable bibliographies (PK/MW)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/logreq/logreq.sty
+Package: logreq 2010/08/04 v1.0 xml request logger
+\lrq@indent=\count393
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/logreq/logreq.def
+File: logreq.def 2010/08/04 v1.0 logreq spec v1.0
+))
+\c@tabx@nest=\count394
+\c@listtotal=\count395
+\c@listcount=\count396
+\c@liststart=\count397
+\c@liststop=\count398
+\c@citecount=\count399
+\c@citetotal=\count400
+\c@multicitecount=\count401
+\c@multicitetotal=\count402
+\c@instcount=\count403
+\c@maxnames=\count404
+\c@minnames=\count405
+\c@maxitems=\count406
+\c@minitems=\count407
+\c@citecounter=\count408
+\c@maxcitecounter=\count409
+\c@savedcitecounter=\count410
+\c@uniquelist=\count411
+\c@uniquename=\count412
+\c@refsection=\count413
+\c@refsegment=\count414
+\c@maxextratitle=\count415
+\c@maxextratitleyear=\count416
+\c@maxextraname=\count417
+\c@maxextradate=\count418
+\c@maxextraalpha=\count419
+\c@abbrvpenalty=\count420
+\c@highnamepenalty=\count421
+\c@lownamepenalty=\count422
+\c@maxparens=\count423
+\c@parenlevel=\count424
+\blx@tempcnta=\count425
+\blx@tempcntb=\count426
+\blx@tempcntc=\count427
+\c@blx@maxsection=\count428
+\blx@maxsegment@0=\count429
+\blx@notetype=\count430
+\blx@parenlevel@text=\count431
+\blx@parenlevel@foot=\count432
+\blx@sectionciteorder@0=\count433
+\blx@sectionciteorderinternal@0=\count434
+\blx@entrysetcounter=\count435
+\blx@biblioinstance=\count436
+\labelnumberwidth=\skip85
+\labelalphawidth=\skip86
+\biblabelsep=\skip87
+\bibitemsep=\skip88
+\bibnamesep=\skip89
+\bibinitsep=\skip90
+\bibparsep=\skip91
+\bibhang=\skip92
+\blx@bcfin=\read4
+\blx@bcfout=\write4
+\blx@langwohyphens=\language80
+\c@mincomprange=\count437
+\c@maxcomprange=\count438
+\c@mincompwidth=\count439
+Package biblatex Info: Trying to load biblatex default data model...
+Package biblatex Info: ... file 'blx-dm.def' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-dm.def
+File: blx-dm.def 2025/07/10 v3.21 biblatex datamodel (PK/MW)
+)
+Package biblatex Info: Trying to load biblatex style data model...
+Package biblatex Info: ... file 'numeric.dbx' not found.
+Package biblatex Info: Trying to load biblatex custom data model...
+Package biblatex Info: ... file 'biblatex-dm.cfg' not found.
+\c@afterword=\count440
+\c@savedafterword=\count441
+\c@annotator=\count442
+\c@savedannotator=\count443
+\c@author=\count444
+\c@savedauthor=\count445
+\c@bookauthor=\count446
+\c@savedbookauthor=\count447
+\c@commentator=\count448
+\c@savedcommentator=\count449
+\c@editor=\count450
+\c@savededitor=\count451
+\c@editora=\count452
+\c@savededitora=\count453
+\c@editorb=\count454
+\c@savededitorb=\count455
+\c@editorc=\count456
+\c@savededitorc=\count457
+\c@foreword=\count458
+\c@savedforeword=\count459
+\c@holder=\count460
+\c@savedholder=\count461
+\c@introduction=\count462
+\c@savedintroduction=\count463
+\c@namea=\count464
+\c@savednamea=\count465
+\c@nameb=\count466
+\c@savednameb=\count467
+\c@namec=\count468
+\c@savednamec=\count469
+\c@translator=\count470
+\c@savedtranslator=\count471
+\c@shortauthor=\count472
+\c@savedshortauthor=\count473
+\c@shorteditor=\count474
+\c@savedshorteditor=\count475
+\c@labelname=\count476
+\c@savedlabelname=\count477
+\c@institution=\count478
+\c@savedinstitution=\count479
+\c@lista=\count480
+\c@savedlista=\count481
+\c@listb=\count482
+\c@savedlistb=\count483
+\c@listc=\count484
+\c@savedlistc=\count485
+\c@listd=\count486
+\c@savedlistd=\count487
+\c@liste=\count488
+\c@savedliste=\count489
+\c@listf=\count490
+\c@savedlistf=\count491
+\c@location=\count492
+\c@savedlocation=\count493
+\c@organization=\count494
+\c@savedorganization=\count495
+\c@origlocation=\count496
+\c@savedoriglocation=\count497
+\c@origpublisher=\count498
+\c@savedorigpublisher=\count499
+\c@publisher=\count500
+\c@savedpublisher=\count501
+\c@language=\count502
+\c@savedlanguage=\count503
+\c@origlanguage=\count504
+\c@savedoriglanguage=\count505
+\c@pageref=\count506
+\c@savedpageref=\count507
+\shorthandwidth=\skip93
+\shortjournalwidth=\skip94
+\shortserieswidth=\skip95
+\shorttitlewidth=\skip96
+\shortauthorwidth=\skip97
+\shorteditorwidth=\skip98
+\locallabelnumberwidth=\skip99
+\locallabelalphawidth=\skip100
+\localshorthandwidth=\skip101
+\localshortjournalwidth=\skip102
+\localshortserieswidth=\skip103
+\localshorttitlewidth=\skip104
+\localshortauthorwidth=\skip105
+\localshorteditorwidth=\skip106
+Package biblatex Info: Trying to load compatibility code...
+Package biblatex Info: ... file 'blx-compat.def' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-compat.def
+File: blx-compat.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+)
+Package biblatex Info: Trying to load generic definitions...
+Package biblatex Info: ... file 'biblatex.def' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/biblatex.def
+File: biblatex.def 2025/07/10 v3.21 biblatex compatibility (PK/MW)
+\c@textcitecount=\count508
+\c@textcitetotal=\count509
+\c@textcitemaxnames=\count510
+\c@biburlbigbreakpenalty=\count511
+\c@biburlbreakpenalty=\count512
+\c@biburlnumpenalty=\count513
+\c@biburlucpenalty=\count514
+\c@biburllcpenalty=\count515
+\biburlbigskip=\muskip19
+\biburlnumskip=\muskip20
+\biburlucskip=\muskip21
+\biburllcskip=\muskip22
+\c@smartand=\count516
+)
+Package biblatex Info: Trying to load bibliography style 'numeric'...
+Package biblatex Info: ... file 'numeric.bbx' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/bbx/numeric.bbx
+File: numeric.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+Package biblatex Info: Trying to load bibliography style 'standard'...
+Package biblatex Info: ... file 'standard.bbx' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/bbx/standard.bbx
+File: standard.bbx 2025/07/10 v3.21 biblatex bibliography style (PK/MW)
+\c@bbx:relatedcount=\count517
+\c@bbx:relatedtotal=\count518
+))
+Package biblatex Info: Trying to load citation style 'numeric'...
+Package biblatex Info: ... file 'numeric.cbx' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/cbx/numeric.cbx
+File: numeric.cbx 2025/07/10 v3.21 biblatex citation style (PK/MW)
+Package biblatex Info: Redefining '\cite'.
+Package biblatex Info: Redefining '\parencite'.
+Package biblatex Info: Redefining '\footcite'.
+Package biblatex Info: Redefining '\footcitetext'.
+Package biblatex Info: Redefining '\smartcite'.
+Package biblatex Info: Redefining '\supercite'.
+Package biblatex Info: Redefining '\textcite'.
+Package biblatex Info: Redefining '\textcites'.
+Package biblatex Info: Redefining '\cites'.
+Package biblatex Info: Redefining '\parencites'.
+Package biblatex Info: Redefining '\smartcites'.
+)
+Package biblatex Info: Trying to load configuration file...
+Package biblatex Info: ... file 'biblatex.cfg' found.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/biblatex.cfg
+File: biblatex.cfg 
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Document encoding is UTF8 ....
+Package biblatex Info: ... and expl3
+(biblatex)             2026-04-28 L3 programming layer (loader) 
+(biblatex)             is new enough (at least 2020/04/06),
+(biblatex)             setting 'casechanger=expl3'.
+
+(/usr/local/share/miktex-texmf/tex/latex/biblatex/blx-case-expl3.sty
+Package: blx-case-expl3 2025/07/10 v3.21 expl3 case changing code for biblatex
+))
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/lettrine/lettrine.sty
+File: lettrine.sty 2025-12-06 v2.83 (Daniel Flipo)
+\c@DefaultLines=\count519
+\c@DefaultDepth=\count520
+\DefaultFindent=\dimen326
+\DefaultNindent=\dimen327
+\DefaultSlope=\dimen328
+\DiscardVskip=\dimen329
+\L@lbox=\box75
+\c@L@lines=\count521
+\c@L@depth=\count522
+\L@Pindent=\dimen330
+\L@Findent=\dimen331
+\L@Nindent=\dimen332
+\L@lraise=\dimen333
+\L@first=\dimen334
+\L@next=\dimen335
+\L@slope=\dimen336
+\L@height=\dimen337
+\L@novskip=\dimen338
+\L@target@ht=\dimen339
+\L@target@dp=\dimen340
+\L@target@tht=\dimen341
+\LettrineWidth=\dimen342
+\LettrineHeight=\dimen343
+\LettrineDepth=\dimen344
+\L@finalht=\dimen345
+\L@finaldp=\dimen346
+
+Loading lettrine.cfg
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/lettrine/lettrine.cfg)
+\Lettrine@tweaks=\toks46
+\Llist@everypar=\toks47
+))
+Package csquotes Info: Checking for multilingual support...
+Package csquotes Info: ... found 'babel' package.
+Package csquotes Info: Adjusting default style.
+Package csquotes Info: Redefining alias 'default' -> 'french'.
+LaTeX Font Info:    Trying to load font information for T1+ntxtlf on input line
+ 8.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/t1ntxtlf.fd
+File: t1ntxtlf.fd 2021/05/24 v1.1 font definition file for T1/ntx/tlf
+)
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 8.
+
+(main.aux
+Package babel Info: 'french' activates 'french' shorthands.
+(babel)             Reported on input line 13.
+)
+\openout1 = `main.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/ntxmi/m/it on input line 8.
+LaTeX Font Info:    Trying to load font information for OML+ntxmi on input line
+ 8.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/omlntxmi.fd
+File: omlntxmi.fd 2015/08/25 Fontinst v1.933 font definitions for OML/ntxmi.
+)
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for U/ntxexa/m/n on input line 8.
+LaTeX Font Info:    Trying to load font information for U+ntxexa on input line 
+8.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/untxexa.fd
+File: untxexa.fd 2012/04/16 Fontinst v1.933 font definitions for U/ntxexa.
+)
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 8.
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for LMS/ntxsy/m/n on input line 8.
+LaTeX Font Info:    Trying to load font information for LMS+ntxsy on input line
+ 8.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/lmsntxsy.fd
+File: lmsntxsy.fd 2016/07/02 Fontinst v1.933 font definitions for LMS/ntxsy.
+)
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Font Info:    Checking defaults for LMX/ntxexx/m/n on input line 8.
+LaTeX Font Info:    Trying to load font information for LMX+ntxexx on input lin
+e 8.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/lmxntxexx.fd
+File: lmxntxexx.fd 2016/07/03 Fontinst v1.933 font definitions for LMX/ntxexx.
+)
+LaTeX Font Info:    ... okay on input line 8.
+LaTeX Info: Redefining \degres on input line 8.
+
+(/usr/local/share/miktex-texmf/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count523
+\scratchdimen=\dimen347
+\scratchbox=\box76
+\nofMPsegments=\count524
+\nofMParguments=\count525
+\everyMPshowfont=\toks48
+\MPscratchCnt=\count526
+\MPscratchDim=\dimen348
+\MPnumerator=\count527
+\makeMPintoPDFobject=\count528
+\everyMPtoPDFconversion=\toks49
+) (/usr/local/share/miktex-texmf/tex/latex/epstopdf-pkg/epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 4
+85.
+
+(/usr/local/share/miktex-texmf/tex/latex/00miktex/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+))
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: subfig package v1.3 is loaded.
+Package caption Info: float package is loaded.
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2021/01/08 v1.4c longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+Package caption Info: wrapfig package is loaded.
+Package caption Info: End \AtBeginDocument code.
+Package hyperref Info: Link coloring OFF on input line 8.
+\@outlinefile=\write5
+\openout5 = `main.out'.
+
+LaTeX Info: Command `\dddot' is already robust on input line 8.
+LaTeX Info: Command `\ddddot' is already robust on input line 8.
+\c@mv@tabular=\count529
+\c@mv@boldtabular=\count530
+\c@minilofdepth=\count531
+\c@minilotdepth=\count532
+\c@partlofdepth=\count533
+\c@partlotdepth=\count534
+\c@sectlofdepth=\count535
+\c@sectlotdepth=\count536
+Package minitoc(hints) Info: I0049
+(minitoc(hints))             ==> You requested the hints option. 
+(minitoc(hints))             Some hints are eventually given below.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(56.9055pt, 483.69687pt, 56.9055pt)
+* v-part:(T,H,B)=(56.9055pt, 731.23584pt, 56.9055pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=483.69687pt
+* \textheight=731.23584pt
+* \oddsidemargin=-15.36449pt
+* \evensidemargin=-15.36449pt
+* \topmargin=-52.36449pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=12.0pt
+* \footskip=30.0pt
+* \marginparwidth=35.0pt
+* \marginparsep=10.0pt
+* \columnsep=10.0pt
+* \skip\footins=10.8pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape.sty
+Package: pdflscape 2022-10-27 v0.13 Display of landscape pages in PDF
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/pdflscape/pdflscape-nometa
+data.sty
+Package: pdflscape-nometadata 2022-10-28 v0.13 Display of landscape pages in PD
+F (HO)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+))
+Package biblatex Info: Trying to load language 'french'...
+Package biblatex Info: ... file 'french.lbx' found.
+ (/usr/local/share/miktex-texmf/tex/latex/biblatex/lbx/french.lbx
+File: french.lbx 2025/07/10 v3.21 biblatex localization (PK/MW)
+)
+Package biblatex Info: Input encoding 'utf8' detected.
+Package biblatex Info: Automatic encoding selection.
+(biblatex)             Assuming data encoding 'utf8'.
+\openout4 = `main.bcf'.
+
+Package biblatex Info: Trying to load bibliographic data...
+Package biblatex Info: ... file 'main.bbl' not found.
+
+No file main.bbl.
+Package biblatex Info: Reference section=0 on input line 8.
+Package biblatex Info: Reference segment=0 on input line 8.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 22.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 22.
+(main.toc)
+\tf@toc=\write6
+\openout6 = `main.toc'.
+
+ [1
+
+
+{/home/salm-el-heni/.miktex/texmfs/data/fonts/map/pdftex/pdftex.map}{/home/salm
+-el-heni/.miktex/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 24.88pt on input line 26.
+ (main.lof)
+\tf@lof=\write7
+\openout7 = `main.lof'.
+
+ [2
+
+
+] (main.lot)
+\tf@lot=\write8
+\openout8 = `main.lot'.
+
+ [3
+
+]
+Package minitoc Info: I0024
+(minitoc)             PREPARING MINITOCS FROM main.toc on input line 35.
+ (content/Introduction-generale.tex [1
+
+
+]
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 12.0pt on input line 27.
+)
+[2] (content/chapitre1.tex
+Chapitre 1.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 24.88pt on input line 1.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 17.28pt on input line 3.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input lin
+e 10.
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 12.0pt on input line 10.
+<images/autre/logo-medianet.png, id=30, 135.50626pt x 48.18pt>
+File: images/autre/logo-medianet.png Graphic file (type png)
+<use images/autre/logo-medianet.png>
+Package pdftex.def Info: images/autre/logo-medianet.png  used on input line 16.
+
+(pdftex.def)             Requested size: 284.5384pt x 85.35794pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
+(Font)              scaled to size 12.0pt on input line 17.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 14.4pt on input line 21.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 14.4pt on input line 21.
+
+[3
+
+
+{/home/salm-el-heni/.miktex/texmfs/install/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+ [4{/home/salm-el-heni/.miktex/texmfs/install/fonts/enc/dvips/newtx/ntx-ec-tlf-
+pc.enc}]
+<images/autre/graph-population-internet.png, id=50, 780.9175pt x 523.9575pt>
+File: images/autre/graph-population-internet.png Graphic file (type png)
+<use images/autre/graph-population-internet.png>
+Package pdftex.def Info: images/autre/graph-population-internet.png  used on in
+put line 70.
+(pdftex.def)             Requested size: 386.95897pt x 259.6276pt.
+ [5] [6]
+<images/autre/FranceConnect.png, id=61, 533.5935pt x 476.982pt>
+File: images/autre/FranceConnect.png Graphic file (type png)
+<use images/autre/FranceConnect.png>
+Package pdftex.def Info: images/autre/FranceConnect.png  used on input line 115
+.
+(pdftex.def)             Requested size: 386.95897pt x 345.92317pt.
+ [7]
+LaTeX Font Info:    Trying to load font information for OT1+minntx on input lin
+e 132.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/ot1minntx.fd
+File: ot1minntx.fd 2023/09/09 v1.1 font definition file for OT1/minntx
+)
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 12.0pt on input line 132.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 8.8pt on input line 132.
+LaTeX Font Info:    Font shape `OT1/minntx/m/n' will be
+(Font)              scaled to size 6.6pt on input line 132.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 12.0pt on input line 132.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 8.8pt on input line 132.
+LaTeX Font Info:    Font shape `OML/ntxmi/m/it' will be
+(Font)              scaled to size 6.6pt on input line 132.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 12.0pt on input line 132.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 8.8pt on input line 132.
+LaTeX Font Info:    Font shape `LMS/ntxsy/m/n' will be
+(Font)              scaled to size 6.6pt on input line 132.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 12.0pt on input line 132.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 8.8pt on input line 132.
+LaTeX Font Info:    Font shape `LMX/ntxexx/m/n' will be
+(Font)              scaled to size 6.6pt on input line 132.
+LaTeX Font Info:    Trying to load font information for U+ntxmia on input line 
+132.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/untxmia.fd
+File: untxmia.fd 2024/04/09 Fontinst v1.933 font definitions for U/ntxmia.
+)
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 12.0pt on input line 132.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 8.8pt on input line 132.
+LaTeX Font Info:    Font shape `U/ntxmia/m/it' will be
+(Font)              scaled to size 6.6pt on input line 132.
+LaTeX Font Info:    Trying to load font information for U+ntxsym on input line 
+132.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/untxsym.fd
+File: untxsym.fd 2023/08/16 Fontinst v1.933 font definitions for U/ntxsym.
+)
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 12.0pt on input line 132.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 8.8pt on input line 132.
+LaTeX Font Info:    Font shape `U/ntxsym/m/n' will be
+(Font)              scaled to size 6.6pt on input line 132.
+LaTeX Font Info:    Trying to load font information for U+ntxsyc on input line 
+132.
+
+(/home/salm-el-heni/.miktex/texmfs/install/tex/latex/newtx/untxsyc.fd
+File: untxsyc.fd 2012/04/12 Fontinst v1.933 font definitions for U/ntxsyc.
+)
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 12.0pt on input line 132.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 8.8pt on input line 132.
+LaTeX Font Info:    Font shape `U/ntxsyc/m/n' will be
+(Font)              scaled to size 6.6pt on input line 132.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 12.0pt on input line 132.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 8.8pt on input line 132.
+LaTeX Font Info:    Font shape `U/ntxexa/m/n' will be
+(Font)              scaled to size 6.6pt on input line 132.
+
+
+LaTeX Warning: Citation 'franceconnect_gaps' on page 8 undefined on input line 
+150.
+
+<images/autre/irembo.png, id=68, 1356.06625pt x 872.25874pt>
+File: images/autre/irembo.png Graphic file (type png)
+<use images/autre/irembo.png>
+Package pdftex.def Info: images/autre/irembo.png  used on input line 165.
+(pdftex.def)             Requested size: 386.95897pt x 248.90244pt.
+[8]
+
+LaTeX Warning: Citation 'rwanda_e_gov_gaps' on page 9 undefined on input line 2
+00.
+
+<images/autre/ghana_gov.png, id=76, 1356.06625pt x 872.25874pt>
+File: images/autre/ghana_gov.png Graphic file (type png)
+<use images/autre/ghana_gov.png>
+Package pdftex.def Info: images/autre/ghana_gov.png  used on input line 215.
+(pdftex.def)             Requested size: 386.95897pt x 248.90244pt.
+[9]
+
+LaTeX Warning: Citation 'ghana_portal_gaps' on page 10 undefined on input line 
+250.
+
+
+Underfull \hbox (badness 2351) in paragraph at lines 250--251
+[]\T1/ntxtlf/m/n/12 Stabilit� du sys-t�me : peut par-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+\T1/ntxtlf/m/n/12 fois souf-frir de ra-len-tis-se-ments
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 250--251
+\T1/ntxtlf/m/n/12 lors des pics de de-mandes
+ []
+
+[10] [11] [12]
+<images/autre/scrum.png, id=105, 903.375pt x 451.6875pt>
+File: images/autre/scrum.png Graphic file (type png)
+<use images/autre/scrum.png>
+Package pdftex.def Info: images/autre/scrum.png  used on input line 325.
+(pdftex.def)             Requested size: 483.69684pt x 241.85373pt.
+ [13]) [14] (content/chapitre2.tex
+Chapitre 2.
+[15
+
+
+] [16]
+Overfull \hbox (12.44722pt too wide) in paragraph at lines 155--198
+ [][] 
+ []
+
+[17] [18] [19]
+<images/diagrammes/Diagramme use case global admins.drawio.png, id=149, 1650.16
+5pt x 2118.91624pt>
+File: images/diagrammes/Diagramme use case global admins.drawio.png Graphic fil
+e (type png)
+<use images/diagrammes/Diagramme use case global admins.drawio.png>
+Package pdftex.def Info: images/diagrammes/Diagramme use case global admins.dra
+wio.png  used on input line 223.
+(pdftex.def)             Requested size: 483.69739pt x 621.09805pt.
+ [20]
+<images/diagrammes/internaute_citoyen.drawio_2.png, id=155, 1244.65pt x 1988.42
+876pt>
+File: images/diagrammes/internaute_citoyen.drawio_2.png Graphic file (type png)
+
+<use images/diagrammes/internaute_citoyen.drawio_2.png>
+Package pdftex.def Info: images/diagrammes/internaute_citoyen.drawio_2.png  use
+d on input line 233.
+(pdftex.def)             Requested size: 389.06612pt x 621.56451pt.
+ [21]
+Underfull \hbox (badness 10000) in paragraph at lines 251--251
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 252--252
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 253--253
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 254--254
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 255--255
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 256--256
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 258--258
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 268--268
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 269--269
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 274--274
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+[22]
+Underfull \hbox (badness 10000) in paragraph at lines 290--290
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 291--291
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 292--292
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 293--293
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 294--294
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 295--295
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 296--296
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+[23]
+Underfull \hbox (badness 10000) in paragraph at lines 311--311
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+[24]
+Overfull \vbox (13.86388pt too high) has occurred while \output is active []
+
+
+[25]
+
+LaTeX Warning: File `images/autre/planification_2releases_v3.png' not found on 
+input line 333.
+
+
+! Package pdftex.def Error: File `images/autre/planification_2releases_v3.png' 
+not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.333 ...ges/autre/planification_2releases_v3.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 3
+33.
+(/usr/local/share/miktex-texmf/tex/latex/lm/t1lmtt.fd
+File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
+) [26{/usr/local/share/miktex-texmf/fonts/enc/dvips/lm/lm-ec.enc}]
+<images/logos/vscode.png, id=187, 2055.68pt x 2055.68pt>
+File: images/logos/vscode.png Graphic file (type png)
+<use images/logos/vscode.png>
+Package pdftex.def Info: images/logos/vscode.png  used on input line 361.
+(pdftex.def)             Requested size: 56.89993pt x 56.89993pt.
+
+
+LaTeX Warning: Citation 'vscode' on page 27 undefined on input line 363.
+
+<images/logos/git.png, id=188, 349.305pt x 145.54375pt>
+File: images/logos/git.png Graphic file (type png)
+<use images/logos/git.png>
+Package pdftex.def Info: images/logos/git.png  used on input line 367.
+(pdftex.def)             Requested size: 42.67697pt x 42.67741pt.
+
+LaTeX Warning: Citation 'git' on page 27 undefined on input line 369.
+
+<images/logos/GitLab01.png, id=189, 302.12875pt x 301.125pt>
+File: images/logos/GitLab01.png Graphic file (type png)
+<use images/logos/GitLab01.png>
+Package pdftex.def Info: images/logos/GitLab01.png  used on input line 373.
+(pdftex.def)             Requested size: 56.90254pt x 56.90189pt.
+
+LaTeX Warning: Citation 'gitlab' on page 27 undefined on input line 375.
+
+<images/logos/Jira_Logo.svg.png, id=190, 1284.8pt x 541.02126pt>
+File: images/logos/Jira_Logo.svg.png Graphic file (type png)
+<use images/logos/Jira_Logo.svg.png>
+Package pdftex.def Info: images/logos/Jira_Logo.svg.png  used on input line 379
+.
+(pdftex.def)             Requested size: 56.89209pt x 42.67169pt.
+
+LaTeX Warning: Citation 'jira' on page 27 undefined on input line 381.
+
+<images/logos/figma.png, id=191, 1204.5pt x 602.25pt>
+File: images/logos/figma.png Graphic file (type png)
+<use images/logos/figma.png>
+Package pdftex.def Info: images/logos/figma.png  used on input line 385.
+(pdftex.def)             Requested size: 85.35284pt x 56.90189pt.
+
+LaTeX Warning: Citation 'figma' on page 27 undefined on input line 387.
+
+
+Underfull \hbox (badness 1264) in paragraph at lines 387--387
+[]|\T1/ntxtlf/m/n/12 Figma est un ou-til de concep-tion col-la-bo-ra-
+ []
+
+<images/logos/drowio.jpeg, id=192, 1606.0pt x 903.375pt>
+File: images/logos/drowio.jpeg Graphic file (type jpg)
+<use images/logos/drowio.jpeg>
+Package pdftex.def Info: images/logos/drowio.jpeg  used on input line 391.
+(pdftex.def)             Requested size: 56.90189pt x 56.90189pt.
+
+LaTeX Warning: Citation 'drawio' on page 27 undefined on input line 393.
+
+[27]
+<images/logos/postman.png, id=198, 636.3775pt x 572.1375pt>
+File: images/logos/postman.png Graphic file (type png)
+<use images/logos/postman.png>
+Package pdftex.def Info: images/logos/postman.png  used on input line 410.
+(pdftex.def)             Requested size: 56.90251pt x 56.90282pt.
+
+
+LaTeX Warning: Citation 'postman' on page 28 undefined on input line 412.
+
+<images/logos/mailtrap.png, id=199, 151.56625pt x 172.645pt>
+File: images/logos/mailtrap.png Graphic file (type png)
+<use images/logos/mailtrap.png>
+Package pdftex.def Info: images/logos/mailtrap.png  used on input line 416.
+(pdftex.def)             Requested size: 56.90657pt x 56.90453pt.
+
+LaTeX Warning: Citation 'mailtrap' on page 28 undefined on input line 418.
+
+[28]
+<images/logos/php.png, id=206, 343.2825pt x 343.2825pt>
+File: images/logos/php.png Graphic file (type png)
+<use images/logos/php.png>
+Package pdftex.def Info: images/logos/php.png  used on input line 437.
+(pdftex.def)             Requested size: 85.35422pt x 56.90106pt.
+
+
+LaTeX Warning: Citation 'php' on page 29 undefined on input line 439.
+
+<images/logos/laravel.png, id=207, 775.89874pt x 803.0pt>
+File: images/logos/laravel.png Graphic file (type png)
+<use images/logos/laravel.png>
+Package pdftex.def Info: images/logos/laravel.png  used on input line 443.
+(pdftex.def)             Requested size: 56.89941pt x 56.90189pt.
+
+LaTeX Warning: Citation 'laravel' on page 29 undefined on input line 445.
+
+
+Underfull \hbox (badness 2626) in paragraph at lines 445--445
+[]|\T1/ntxtlf/m/n/12 Laravel est un fra-me-work web open-source
+ []
+
+<images/logos/drupal.png, id=208, 445.665pt x 513.92pt>
+File: images/logos/drupal.png Graphic file (type png)
+<use images/logos/drupal.png>
+Package pdftex.def Info: images/logos/drupal.png  used on input line 449.
+(pdftex.def)             Requested size: 56.90483pt x 56.89993pt.
+
+LaTeX Warning: Citation 'drupal' on page 29 undefined on input line 451.
+
+<images/logos/next.js.jpg, id=209, 910.602pt x 364.36125pt>
+File: images/logos/next.js.jpg Graphic file (type jpg)
+<use images/logos/next.js.jpg>
+Package pdftex.def Info: images/logos/next.js.jpg  used on input line 466.
+(pdftex.def)             Requested size: 113.81107pt x 85.35803pt.
+
+LaTeX Warning: Citation 'nextjs' on page 29 undefined on input line 468.
+
+<images/logos/Docker.png, id=210, 583.17876pt x 506.89375pt>
+File: images/logos/Docker.png Graphic file (type png)
+<use images/logos/Docker.png>
+Package pdftex.def Info: images/logos/Docker.png  used on input line 472.
+(pdftex.def)             Requested size: 85.35518pt x 85.35092pt.
+
+LaTeX Warning: Citation 'docker' on page 29 undefined on input line 474.
+
+<images/logos/nginx.png, id=211, 225.84375pt x 225.84375pt>
+File: images/logos/nginx.png Graphic file (type png)
+<use images/logos/nginx.png>
+Package pdftex.def Info: images/logos/nginx.png  used on input line 478.
+(pdftex.def)             Requested size: 56.90533pt x 56.90533pt.
+
+LaTeX Warning: Citation 'nginx' on page 29 undefined on input line 480.
+
+<images/logos/Postgresql_elephant.svg.png, id=212, 1284.8pt x 1324.95pt>
+File: images/logos/Postgresql_elephant.svg.png Graphic file (type png)
+<use images/logos/Postgresql_elephant.svg.png>
+Package pdftex.def Info: images/logos/Postgresql_elephant.svg.png  used on inpu
+t line 484.
+(pdftex.def)             Requested size: 56.89209pt x 56.89087pt.
+
+LaTeX Warning: Citation 'postgresql' on page 29 undefined on input line 486.
+
+<images/logos/redis-color-1.png, id=213, 569.12625pt x 487.8225pt>
+File: images/logos/redis-color-1.png Graphic file (type png)
+<use images/logos/redis-color-1.png>
+Package pdftex.def Info: images/logos/redis-color-1.png  used on input line 490
+.
+(pdftex.def)             Requested size: 85.35657pt x 56.89859pt.
+
+LaTeX Warning: Citation 'redis' on page 29 undefined on input line 492.
+
+[29] [30]
+<images/autre/arch3tier.drawio.png, id=228, 1157.32375pt x 675.52374pt>
+File: images/autre/arch3tier.drawio.png Graphic file (type png)
+<use images/autre/arch3tier.drawio.png>
+Package pdftex.def Info: images/autre/arch3tier.drawio.png  used on input line 
+510.
+(pdftex.def)             Requested size: 483.68866pt x 282.3265pt.
+ [31]
+<images/autre/Architecture 3 Couches — Présentation _ Accès Données _ Donn
+ées.png, id=235, 2842.62pt x 2174.1225pt>
+File: images/autre/Architecture 3 Couches — Présentation _ Accès Données _
+ Données.png Graphic file (type png)
+<use images/autre/Architecture 3 Couches — Présentation _ Accès Données _ 
+Données.png>
+Package pdftex.def Info: images/autre/Architecture 3 Couches — Présentation 
+_ Accès Données _ Données.png  used on input line 528.
+(pdftex.def)             Requested size: 483.67276pt x 369.92767pt.
+) [32] (content/chapitre3.tex
+Chapitre 3.
+
+Underfull \hbox (badness 10000) in paragraph at lines 27--27
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--29
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 31--31
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 35--35
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 37--37
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 39--39
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+[33
+
+
+]
+<images/diagrammes/sprint1/cas-utilisation.drawio.png, id=250, 1166.3575pt x 11
+90.4475pt>
+File: images/diagrammes/sprint1/cas-utilisation.drawio.png Graphic file (type p
+ng)
+<use images/diagrammes/sprint1/cas-utilisation.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint1/cas-utilisation.drawio.png  
+used on input line 52.
+(pdftex.def)             Requested size: 455.23354pt x 455.24478pt.
+ [34]
+<images/diagrammes/sprint1/diag-classe.drawio.png, id=258, 894.34125pt x 733.74
+126pt>
+File: images/diagrammes/sprint1/diag-classe.drawio.png Graphic file (type png)
+<use images/diagrammes/sprint1/diag-classe.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint1/diag-classe.drawio.png  used
+ on input line 60.
+(pdftex.def)             Requested size: 455.24828pt x 455.25076pt.
+ [35]
+<images/diagrammes/sprint1/cas-utilisation-gerer-administration.png, id=265, 12
+65.72874pt x 643.40375pt>
+File: images/diagrammes/sprint1/cas-utilisation-gerer-administration.png Graphi
+c file (type png)
+<use images/diagrammes/sprint1/cas-utilisation-gerer-administration.png>
+Package pdftex.def Info: images/diagrammes/sprint1/cas-utilisation-gerer-admini
+stration.png  used on input line 74.
+(pdftex.def)             Requested size: 483.6858pt x 256.08066pt.
+ [36] [37] [38] [39] [40] [41] [42]
+<images/diagrammes/sprint1/vrai-ajouter-administration.drawio.png, id=342, 915.
+42pt x 1557.82pt>
+File: images/diagrammes/sprint1/vrai-ajouter-administration.drawio.png Graphic 
+file (type png)
+<use images/diagrammes/sprint1/vrai-ajouter-administration.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint1/vrai-ajouter-administration.
+drawio.png  used on input line 397.
+(pdftex.def)             Requested size: 426.78336pt x 625.94565pt.
+ [43]
+<images/diagrammes/sprint1/vrai-modifier-administration.drawio.png, id=353, 784
+.9325pt x 1407.2575pt>
+File: images/diagrammes/sprint1/vrai-modifier-administration.drawio.png Graphic
+ file (type png)
+<use images/diagrammes/sprint1/vrai-modifier-administration.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint1/vrai-modifier-administration
+.drawio.png  used on input line 407.
+(pdftex.def)             Requested size: 426.80359pt x 711.31436pt.
+ [44]
+Overfull \vbox (4.5785pt too high) has occurred while \output is active []
+
+
+[45]
+<images/diagrammes/sprint1/vrai-supp-administration.drawio.png, id=364, 791.958
+76pt x 954.56625pt>
+File: images/diagrammes/sprint1/vrai-supp-administration.drawio.png Graphic fil
+e (type png)
+<use images/diagrammes/sprint1/vrai-supp-administration.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint1/vrai-supp-administration.dra
+wio.png  used on input line 417.
+(pdftex.def)             Requested size: 426.79338pt x 540.59814pt.
+ [46]
+<images/diagrammes/sprint1/vrai-consulter-administration.drawio.png, id=371, 67
+6.5275pt x 604.2575pt>
+File: images/diagrammes/sprint1/vrai-consulter-administration.drawio.png Graphi
+c file (type png)
+<use images/diagrammes/sprint1/vrai-consulter-administration.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint1/vrai-consulter-administratio
+n.drawio.png  used on input line 427.
+(pdftex.def)             Requested size: 426.80298pt x 426.79454pt.
+ [47]
+<images/realisation/sprint1/Capture1.png, id=377, 1848.9075pt x 927.465pt>
+File: images/realisation/sprint1/Capture1.png Graphic file (type png)
+<use images/realisation/sprint1/Capture1.png>
+Package pdftex.def Info: images/realisation/sprint1/Capture1.png  used on input
+ line 441.
+(pdftex.def)             Requested size: 483.69684pt x 242.63531pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 441--442
+ [] 
+ []
+
+<images/realisation/sprint1//Capture2.png, id=378, 1848.9075pt x 927.465pt>
+File: images/realisation/sprint1//Capture2.png Graphic file (type png)
+<use images/realisation/sprint1//Capture2.png>
+Package pdftex.def Info: images/realisation/sprint1//Capture2.png  used on inpu
+t line 451.
+(pdftex.def)             Requested size: 483.69684pt x 242.63531pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 451--452
+ [] 
+ []
+
+[48]
+<images/realisation/sprint1//Capture3.png, id=385, 1848.9075pt x 927.465pt>
+File: images/realisation/sprint1//Capture3.png Graphic file (type png)
+<use images/realisation/sprint1//Capture3.png>
+Package pdftex.def Info: images/realisation/sprint1//Capture3.png  used on inpu
+t line 461.
+(pdftex.def)             Requested size: 483.69684pt x 242.63531pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 461--462
+ [] 
+ []
+
+<images/realisation/sprint1/Capture4.png, id=386, 1848.9075pt x 927.465pt>
+File: images/realisation/sprint1/Capture4.png Graphic file (type png)
+<use images/realisation/sprint1/Capture4.png>
+Package pdftex.def Info: images/realisation/sprint1/Capture4.png  used on input
+ line 471.
+(pdftex.def)             Requested size: 483.69684pt x 242.63531pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 471--472
+ [] 
+ []
+
+[49] [50]
+Underfull \hbox (badness 10000) in paragraph at lines 510--510
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 512--512
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 514--514
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+<images/diagrammes/sprint2/cas-utilisation-sprint2.drawio.png, id=401, 804.0037
+5pt x 1064.97874pt>
+File: images/diagrammes/sprint2/cas-utilisation-sprint2.drawio.png Graphic file
+ (type png)
+<use images/diagrammes/sprint2/cas-utilisation-sprint2.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint2/cas-utilisation-sprint2.draw
+io.png  used on input line 533.
+(pdftex.def)             Requested size: 284.52162pt x 455.23439pt.
+[51]
+<images/diagrammes/sprint2/diag-classe-sprint2.drawio.png, id=409, 1216.545pt x
+ 1105.12875pt>
+File: images/diagrammes/sprint2/diag-classe-sprint2.drawio.png Graphic file (ty
+pe png)
+<use images/diagrammes/sprint2/diag-classe-sprint2.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint2/diag-classe-sprint2.drawio.p
+ng  used on input line 541.
+(pdftex.def)             Requested size: 455.23798pt x 455.23045pt.
+ [52]
+<images/diagrammes/sprint2/cas-utilisation-form-dyn.drawio.png, id=417, 1404.24
+625pt x 754.82pt>
+File: images/diagrammes/sprint2/cas-utilisation-form-dyn.drawio.png Graphic fil
+e (type png)
+<use images/diagrammes/sprint2/cas-utilisation-form-dyn.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint2/cas-utilisation-form-dyn.dra
+wio.png  used on input line 554.
+(pdftex.def)             Requested size: 426.78387pt x 227.62254pt.
+ [53] [54] [55] [56] [57]
+<images/diagrammes/sprint2/ajouter-formulaire.drawio.png, id=469, 1035.87pt x 1
+496.59125pt>
+File: images/diagrammes/sprint2/ajouter-formulaire.drawio.png Graphic file (typ
+e png)
+<use images/diagrammes/sprint2/ajouter-formulaire.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint2/ajouter-formulaire.drawio.pn
+g  used on input line 833.
+(pdftex.def)             Requested size: 512.1645pt x 569.05313pt.
+
+Overfull \hbox (28.46764pt too wide) in paragraph at lines 833--834
+ [][] 
+ []
+
+[58]
+<images/diagrammes/sprint2/modif-formulaire.drawio.png, id=481, 1105.12875pt x 
+1717.41624pt>
+File: images/diagrammes/sprint2/modif-formulaire.drawio.png Graphic file (type 
+png)
+<use images/diagrammes/sprint2/modif-formulaire.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint2/modif-formulaire.drawio.png 
+ used on input line 844.
+(pdftex.def)             Requested size: 512.14268pt x 654.40695pt.
+
+Overfull \hbox (28.44582pt too wide) in paragraph at lines 844--845
+ [][] 
+ []
+
+[59] [60]
+<images/diagrammes/sprint2/consulter-formulai.drawio.png, id=492, 676.5275pt x 
+604.2575pt>
+File: images/diagrammes/sprint2/consulter-formulai.drawio.png Graphic file (typ
+e png)
+<use images/diagrammes/sprint2/consulter-formulai.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint2/consulter-formulai.drawio.pn
+g  used on input line 855.
+(pdftex.def)             Requested size: 512.16357pt x 455.24812pt.
+
+Overfull \hbox (28.4667pt too wide) in paragraph at lines 855--856
+ [][] 
+ []
+
+<images/diagrammes/sprint2/supprimer-formulaire.drawio.png, id=493, 903.375pt x
+ 963.6pt>
+File: images/diagrammes/sprint2/supprimer-formulaire.drawio.png Graphic file (t
+ype png)
+<use images/diagrammes/sprint2/supprimer-formulaire.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint2/supprimer-formulaire.drawio.
+png  used on input line 865.
+(pdftex.def)             Requested size: 512.17223pt x 569.06311pt.
+
+Overfull \hbox (28.47536pt too wide) in paragraph at lines 865--866
+ [][] 
+ []
+
+[61] [62]
+<images/realisation/sprint2/consulter-sprint2.png, id=505, 1854.93pt x 885.3075
+pt>
+File: images/realisation/sprint2/consulter-sprint2.png Graphic file (type png)
+<use images/realisation/sprint2/consulter-sprint2.png>
+Package pdftex.def Info: images/realisation/sprint2/consulter-sprint2.png  used
+ on input line 879.
+(pdftex.def)             Requested size: 483.69684pt x 230.84995pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 879--880
+ [] 
+ []
+
+<images/realisation/sprint2/add-list.png, id=506, 1854.93pt x 885.3075pt>
+File: images/realisation/sprint2/add-list.png Graphic file (type png)
+<use images/realisation/sprint2/add-list.png>
+Package pdftex.def Info: images/realisation/sprint2/add-list.png  used on input
+ line 887.
+(pdftex.def)             Requested size: 483.69684pt x 230.84995pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 887--888
+ [] 
+ []
+
+[63]
+<images/realisation/sprint2/Capture d’écran du 2026-04-16 12-03-09.png, id=5
+12, 1854.93pt x 885.3075pt>
+File: images/realisation/sprint2/Capture d’écran du 2026-04-16 12-03-09.png 
+Graphic file (type png)
+<use images/realisation/sprint2/Capture d’écran du 2026-04-16 12-03-09.png>
+Package pdftex.def Info: images/realisation/sprint2/Capture d’écran du 2026-
+04-16 12-03-09.png  used on input line 895.
+(pdftex.def)             Requested size: 483.69684pt x 230.84995pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 895--896
+ [] 
+ []
+
+<images/realisation/sprint2/Capture d’écran du 2026-04-16 12-05-36.png, id=5
+13, 1854.93pt x 885.3075pt>
+File: images/realisation/sprint2/Capture d’écran du 2026-04-16 12-05-36.png 
+Graphic file (type png)
+<use images/realisation/sprint2/Capture d’écran du 2026-04-16 12-05-36.png>
+Package pdftex.def Info: images/realisation/sprint2/Capture d’écran du 2026-
+04-16 12-05-36.png  used on input line 901.
+(pdftex.def)             Requested size: 483.69684pt x 230.84995pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 901--902
+ [] 
+ []
+
+[64]
+Underfull \hbox (badness 10000) in paragraph at lines 942--942
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 954--954
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+[65]
+<images/diagrammes/sprint3/cas-utilisation-sprint3.drawio.png, id=530, 862.2212
+5pt x 1175.39125pt>
+File: images/diagrammes/sprint3/cas-utilisation-sprint3.drawio.png Graphic file
+ (type png)
+<use images/diagrammes/sprint3/cas-utilisation-sprint3.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint3/cas-utilisation-sprint3.draw
+io.png  used on input line 969.
+(pdftex.def)             Requested size: 341.42226pt x 398.33643pt.
+ [66]
+<images/diagrammes/sprint3/diag-class-sprint3.drawio.png, id=537, 1335.99126pt 
+x 874.26625pt>
+File: images/diagrammes/sprint3/diag-class-sprint3.drawio.png Graphic file (typ
+e png)
+<use images/diagrammes/sprint3/diag-class-sprint3.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint3/diag-class-sprint3.drawio.pn
+g  used on input line 978.
+(pdftex.def)             Requested size: 455.2503pt x 455.24806pt.
+ [67]
+<images/diagrammes/sprint3/cas-utilisation-sprint3-raff.drawio.png, id=544, 108
+5.05376pt x 714.67pt>
+File: images/diagrammes/sprint3/cas-utilisation-sprint3-raff.drawio.png Graphic
+ file (type png)
+<use images/diagrammes/sprint3/cas-utilisation-sprint3-raff.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint3/cas-utilisation-sprint3-raff
+.drawio.png  used on input line 990.
+(pdftex.def)             Requested size: 426.79515pt x 284.52162pt.
+ [68] [69] [70] [71] [72] [73]
+<images/diagrammes/sprint3/consulter-demandes.drawio.png, id=598, 884.30376pt x
+ 1064.97874pt>
+File: images/diagrammes/sprint3/consulter-demandes.drawio.png Graphic file (typ
+e png)
+<use images/diagrammes/sprint3/consulter-demandes.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint3/consulter-demandes.drawio.pn
+g  used on input line 1231.
+(pdftex.def)             Requested size: 426.79533pt x 455.23439pt.
+ [74]
+<images/diagrammes/sprint3/Evaluer-demande.drawio.png, id=608, 643.40375pt x 74
+3.77875pt>
+File: images/diagrammes/sprint3/Evaluer-demande.drawio.png Graphic file (type p
+ng)
+<use images/diagrammes/sprint3/Evaluer-demande.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint3/Evaluer-demande.drawio.png  
+used on input line 1242.
+(pdftex.def)             Requested size: 512.17114pt x 455.2592pt.
+
+Overfull \hbox (28.47427pt too wide) in paragraph at lines 1242--1243
+ [][] 
+ []
+
+[75]
+<images/diagrammes/sprint3/Exporter-demande.drawio.png, id=614, 743.77875pt x 8
+20.06375pt>
+File: images/diagrammes/sprint3/Exporter-demande.drawio.png Graphic file (type 
+png)
+<use images/diagrammes/sprint3/Exporter-demande.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint3/Exporter-demande.drawio.png 
+ used on input line 1253.
+(pdftex.def)             Requested size: 512.16377pt x 455.25339pt.
+
+Overfull \hbox (28.4669pt too wide) in paragraph at lines 1253--1254
+ [][] 
+ []
+
+[76]
+<images/diagrammes/sprint3/info-complemantary.drawio.png, id=621, 533.995pt x 9
+19.435pt>
+File: images/diagrammes/sprint3/info-complemantary.drawio.png Graphic file (typ
+e png)
+<use images/diagrammes/sprint3/info-complemantary.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint3/info-complemantary.drawio.pn
+g  used on input line 1264.
+(pdftex.def)             Requested size: 369.89915pt x 398.33762pt.
+ [77]
+Overfull \hbox (0.77534pt too wide) in paragraph at lines 1270--1270
+[]\T1/ntxtlf/b/n/14.4 R�alisation du sprint <<Suivre �tat avan-ce-ment des dos-
+siers des de-mandes>> 
+ []
+
+<images/realisation/sprint3/Capture-list.png, id=627, 1845.89626pt x 930.47626p
+t>
+File: images/realisation/sprint3/Capture-list.png Graphic file (type png)
+<use images/realisation/sprint3/Capture-list.png>
+Package pdftex.def Info: images/realisation/sprint3/Capture-list.png  used on i
+nput line 1279.
+(pdftex.def)             Requested size: 483.69684pt x 243.82063pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 1279--1280
+ [] 
+ []
+
+[78]
+<images/realisation/sprint3/Capture-evaluer.png, id=634, 1844.8925pt x 935.495p
+t>
+File: images/realisation/sprint3/Capture-evaluer.png Graphic file (type png)
+<use images/realisation/sprint3/Capture-evaluer.png>
+Package pdftex.def Info: images/realisation/sprint3/Capture-evaluer.png  used o
+n input line 1288.
+(pdftex.def)             Requested size: 483.69684pt x 245.2642pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 1288--1289
+ [] 
+ []
+
+<images/realisation/sprint3/Capture-export.png, id=635, 784.9325pt x 853.1875pt
+>
+File: images/realisation/sprint3/Capture-export.png Graphic file (type png)
+<use images/realisation/sprint3/Capture-export.png>
+Package pdftex.def Info: images/realisation/sprint3/Capture-export.png  used on
+ input line 1297.
+(pdftex.def)             Requested size: 483.69684pt x 525.76822pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 1297--1298
+ [] 
+ []
+
+[79]
+<images/realisation/sprint3/Capture-complemantary.png, id=642, 1846.9pt x 927.4
+65pt>
+File: images/realisation/sprint3/Capture-complemantary.png Graphic file (type p
+ng)
+<use images/realisation/sprint3/Capture-complemantary.png>
+Package pdftex.def Info: images/realisation/sprint3/Capture-complemantary.png  
+used on input line 1306.
+(pdftex.def)             Requested size: 483.69684pt x 242.89005pt.
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 1306--1307
+ [] 
+ []
+
+[80] [81]) [82] (content/chapitre4.tex
+Chapitre 4.
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--21
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 22--22
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--23
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 24--24
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 25--25
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 26--26
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+[83
+
+
+]
+<images/diagrammes/sprint4/cas-utilisation-sprint4.drawio_2.png, id=669, 752.81
+25pt x 1235.61626pt>
+File: images/diagrammes/sprint4/cas-utilisation-sprint4.drawio_2.png Graphic fi
+le (type png)
+<use images/diagrammes/sprint4/cas-utilisation-sprint4.drawio_2.png>
+Package pdftex.def Info: images/diagrammes/sprint4/cas-utilisation-sprint4.draw
+io_2.png  used on input line 40.
+(pdftex.def)             Requested size: 284.53246pt x 455.24776pt.
+ [84]
+<images/diagrammes/sprint4/class-reclamation.drawio.png, id=676, 1265.72874pt x
+ 653.44125pt>
+File: images/diagrammes/sprint4/class-reclamation.drawio.png Graphic file (type
+ png)
+<use images/diagrammes/sprint4/class-reclamation.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint4/class-reclamation.drawio.png
+  used on input line 49.
+(pdftex.def)             Requested size: 512.15382pt x 455.24211pt.
+
+Overfull \hbox (28.45695pt too wide) in paragraph at lines 49--50
+ [][] 
+ []
+
+[85]
+<images/diagrammes/sprint4/cas-utilisation-personaliser-reclamation-raff.drawio
+_2.png, id=682, 1064.97874pt x 557.08125pt>
+File: images/diagrammes/sprint4/cas-utilisation-personaliser-reclamation-raff.d
+rawio_2.png Graphic file (type png)
+<use images/diagrammes/sprint4/cas-utilisation-personaliser-reclamation-raff.dr
+awio_2.png>
+Package pdftex.def Info: images/diagrammes/sprint4/cas-utilisation-personaliser
+-reclamation-raff.drawio_2.png  used on input line 62.
+(pdftex.def)             Requested size: 426.78021pt x 284.5327pt.
+ [86] [87] [88] [89] [90]
+<images/diagrammes/sprint4/consulter-etape.drawio.png, id=733, 676.5275pt x 604
+.2575pt>
+File: images/diagrammes/sprint4/consulter-etape.drawio.png Graphic file (type p
+ng)
+<use images/diagrammes/sprint4/consulter-etape.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint4/consulter-etape.drawio.png  
+used on input line 292.
+(pdftex.def)             Requested size: 426.80298pt x 455.24812pt.
+ [91]
+<images/diagrammes/sprint4/workflow_etape.drawio.png, id=739, 676.5275pt x 604.
+2575pt>
+File: images/diagrammes/sprint4/workflow_etape.drawio.png Graphic file (type pn
+g)
+<use images/diagrammes/sprint4/workflow_etape.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint4/workflow_etape.drawio.png  u
+sed on input line 303.
+(pdftex.def)             Requested size: 426.80298pt x 455.24812pt.
+ [92]
+<images/diagrammes/sprint4/ajouter-etape.drawio.png, id=745, 915.42pt x 1115.16
+624pt>
+File: images/diagrammes/sprint4/ajouter-etape.drawio.png Graphic file (type png
+)
+<use images/diagrammes/sprint4/ajouter-etape.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint4/ajouter-etape.drawio.png  us
+ed on input line 314.
+(pdftex.def)             Requested size: 426.78336pt x 455.23024pt.
+ [93]
+<images/diagrammes/sprint4/modifier-etape.drawio.png, id=751, 784.9325pt x 1025
+.8325pt>
+File: images/diagrammes/sprint4/modifier-etape.drawio.png Graphic file (type pn
+g)
+<use images/diagrammes/sprint4/modifier-etape.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint4/modifier-etape.drawio.png  u
+sed on input line 325.
+(pdftex.def)             Requested size: 426.80359pt x 455.24963pt.
+ [94]
+<images/diagrammes/sprint4/supp-etape.drawio.png, id=758, 784.9325pt x 955.57pt
+>
+File: images/diagrammes/sprint4/supp-etape.drawio.png Graphic file (type png)
+<use images/diagrammes/sprint4/supp-etape.drawio.png>
+Package pdftex.def Info: images/diagrammes/sprint4/supp-etape.drawio.png  used 
+on input line 336.
+(pdftex.def)             Requested size: 426.80359pt x 455.2419pt.
+ [95] [96]
+
+LaTeX Warning: File `images/realisation/sprint4/list.png' not found on input li
+ne 353.
+
+
+! Package pdftex.def Error: File `images/realisation/sprint4/list.png' not foun
+d: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.353 ...7cm]{images/realisation/sprint4/list.png}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 353--354
+ [] 
+ []
+
+
+LaTeX Warning: File `images/realisation/sprint4/workflow.png' not found on inpu
+t line 363.
+
+
+! Package pdftex.def Error: File `images/realisation/sprint4/workflow.png' not 
+found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.363 ...{images/realisation/sprint4/workflow.png}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 363--364
+ [] 
+ []
+
+[97]
+
+LaTeX Warning: File `images/realisation/sprint4/modifier.png' not found on inpu
+t line 373.
+
+
+! Package pdftex.def Error: File `images/realisation/sprint4/modifier.png' not 
+found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.373 ...{images/realisation/sprint4/modifier.png}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 373--374
+ [] 
+ []
+
+[98]
+
+LaTeX Warning: File `images/realisation/sprint4/delete.png' not found on input 
+line 383.
+
+
+! Package pdftex.def Error: File `images/realisation/sprint4/delete.png' not fo
+und: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.383 ...m]{images/realisation/sprint4/delete.png}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 383--384
+ [] 
+ []
+
+[99]
+ignored: Infinite glue shrinkage found in box being split [100]
+Underfull \hbox (badness 10000) in paragraph at lines 425--425
+[]|\T1/ntxtlf/m/n/12 Administrateur
+ []
+
+[101]
+Overfull \vbox (38.36386pt too high) has occurred while \output is active []
+
+
+[102]
+
+LaTeX Warning: File `images/diagrammes/sprint5/cas-utilisation-sprint5.drawio.p
+ng' not found on input line 449.
+
+
+! Package pdftex.def Error: File `images/diagrammes/sprint5/cas-utilisation-spr
+int5.drawio.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.449 ...rint5/cas-utilisation-sprint5.drawio.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/diagrammes/sprint5/class-sprint5.drawio.png' not fo
+und on input line 458.
+
+
+! Package pdftex.def Error: File `images/diagrammes/sprint5/class-sprint5.drawi
+o.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.458 ...grammes/sprint5/class-sprint5.drawio.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[103]
+
+LaTeX Warning: File `images/diagrammes/sprint5/cas-utilisation-sprint5-activity
+.drawio.png' not found on input line 471.
+
+
+! Package pdftex.def Error: File `images/diagrammes/sprint5/cas-utilisation-spr
+int5-activity.drawio.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.471 ...-utilisation-sprint5-activity.drawio.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+[104] [105] [106]
+
+LaTeX Warning: File `images/diagrammes/sprint5/seq-1-sprint5.drawio.png' not fo
+und on input line 580.
+
+
+! Package pdftex.def Error: File `images/diagrammes/sprint5/seq-1-sprint5.drawi
+o.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.580 ...grammes/sprint5/seq-1-sprint5.drawio.png}
+                                                  
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+LaTeX Warning: File `images/realisation/sprint5/statistique.png' not found on i
+nput line 593.
+
+
+! Package pdftex.def Error: File `images/realisation/sprint5/statistique.png' n
+ot found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.593 ...ages/realisation/sprint5/statistique.png}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 593--594
+ [] 
+ []
+
+[107]
+
+LaTeX Warning: File `images/realisation/sprint5/journaux.png' not found on inpu
+t line 602.
+
+
+! Package pdftex.def Error: File `images/realisation/sprint5/journaux.png' not 
+found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.602 ...{images/realisation/sprint5/journaux.png}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 602--603
+ [] 
+ []
+
+[108]
+
+LaTeX Warning: File `images/realisation/sprint5/accueil.png' not found on input
+ line 613.
+
+
+! Package pdftex.def Error: File `images/realisation/sprint5/accueil.png' not f
+ound: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.613 ...]{images/realisation/sprint5/accueil.png}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 613--614
+ [] 
+ []
+
+[109]
+
+LaTeX Warning: File `images/realisation/sprint5/projet-realisation.png' not fou
+nd on input line 622.
+
+
+! Package pdftex.def Error: File `images/realisation/sprint5/projet-realisation
+.png' not found: using draft setting.
+
+See the pdftex.def package documentation for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.622 ...alisation/sprint5/projet-realisation.png}
+                                                  }
+Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (0.79996pt too wide) in paragraph at lines 622--623
+ [] 
+ []
+
+[110]
+ignored: Infinite glue shrinkage found in box being split [111] [112] [113] [114] [
+115]
+
+LaTeX Warning: Reference `tab:comparaison-llm' on page 116 undefined on input l
+ine 737.
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 746--746
+[]|\T1/ntxtlf/m/n/12 OpenAI
+ []
+
+[116] [117] [118] [119] [120] [121]
+ignored: Infinite glue shrinkage found in box being s
+plit [122]) [123] (content/conclusion.tex)
+[124
+
+
+]
+Package minitoc Info: I0009
+(minitoc)             Listing minitoc auxiliary files. 
+(minitoc)             Creating the main.maf file.
+\openout3 = `main.maf'.
+
+
+
+Package minitoc(hints) Warning: W0078
+(minitoc(hints))                You have used \dominitoc, 
+(minitoc(hints))                but not \minitoc.
+
+Package minitoc(hints) Info: I0053
+(minitoc(hints))             You have loaded the float package; 
+(minitoc(hints))             please be aware that the minitoc package 
+(minitoc(hints))             facilities can not be used for new types 
+(minitoc(hints))             of floats defined by the float package.
+
+Package minitoc(hints) Warning: W0024
+(minitoc(hints))                Some hints have been written 
+(minitoc(hints))                in the main.log file.
+
+[125] (main.aux)
+ ***********
+LaTeX2e <2025-11-01>
+L3 programming layer <2020/03/25>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+
+Package rerunfilecheck Warning: File `main.out' has changed.
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `main.out':
+(rerunfilecheck)             Before: B9E44A6A45ED4623210615990AF53432;418
+(rerunfilecheck)             After:  B73027EB9AC6FA0EFB79F6263D51836C;26303.
+
+Package biblatex Warning: Please (re)run Biber on the file:
+(biblatex)                main
+(biblatex)                and rerun LaTeX afterwards.
+
+Package logreq Info: Writing requests to 'main.run.xml'.
+\openout1 = `main.run.xml'.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 32901 strings out of 467684
+ 593790 string characters out of 5421976
+ 1504805 words of memory out of 5000000
+ 60991 multiletter control sequences out of 15000+600000
+ 671535 words of font info for 82 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 80i,15n,87p,1183b,1932s stack positions out of 10000i,1000n,20000p,200000b,200000s
+
+pdfTeX warning: \pdfdraftmode enabled, not changing output pdf
+
+PDF statistics:
+ 963 PDF objects out of 1000 (max. 8388607)
+ 481 named destinations out of 1000 (max. 500000)
+ 336 words of extra memory for PDF output out of 10000 (max. 10000000)
+

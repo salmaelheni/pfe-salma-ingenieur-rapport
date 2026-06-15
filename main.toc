@@ -1,0 +1,102 @@
+\babel@toc {french}{}\relax 
+\contentsline {chapter}{Table des matières}{I}{section*.1}%
+\contentsline {chapter}{Table des figures}{II}{section*.2}%
+\contentsline {chapter}{Liste des tableaux}{II}{section*.3}%
+\contentsline {chapter}{Introduction Générale}{1}{section*.3}%
+\contentsline {chapter}{\numberline {1}Cadre du projet}{3}{chapter.1}%
+\contentsline {section}{\numberline {1.1}Introduction}{3}{section.1.1}%
+\contentsline {section}{\numberline {1.2}Présentation de l'organisme d'accueil}{3}{section.1.2}%
+\contentsline {subsection}{\numberline {1.2.1}Vision et mission}{4}{subsection.1.2.1}%
+\contentsline {subsection}{\numberline {1.2.2}Engagements qualité}{4}{subsection.1.2.2}%
+\contentsline {subsection}{\numberline {1.2.3}Secteurs d’activités}{4}{subsection.1.2.3}%
+\contentsline {section}{\numberline {1.3}Contexte du projet}{5}{section.1.3}%
+\contentsline {section}{\numberline {1.4}Problématique}{7}{section.1.4}%
+\contentsline {section}{\numberline {1.5}Etude de l'existant : Benchmark des plateformes de référence}{7}{section.1.5}%
+\contentsline {subsection}{\numberline {1.5.1}FranceConnect (France)}{8}{subsection.1.5.1}%
+\contentsline {subsection}{\numberline {1.5.2}IremboGov (Rwanda)}{9}{subsection.1.5.2}%
+\contentsline {subsection}{\numberline {1.5.3}Ghana.gov (Ghana)}{10}{subsection.1.5.3}%
+\contentsline {section}{\numberline {1.6}Solution proposée}{10}{section.1.6}%
+\contentsline {section}{\numberline {1.7}Les méthodologies de gestion de projet}{11}{section.1.7}%
+\contentsline {subsection}{\numberline {1.7.1}Méthodologies traditionnelles (prédictives)}{12}{subsection.1.7.1}%
+\contentsline {subsection}{\numberline {1.7.2}Méthodologies Agiles (adaptatives)}{12}{subsection.1.7.2}%
+\contentsline {subsection}{\numberline {1.7.3}Présentation de la méthode Scrum}{12}{subsection.1.7.3}%
+\contentsline {subsection}{\numberline {1.7.4}Mise en œuvre opérationnelle}{13}{subsection.1.7.4}%
+\contentsline {section}{\numberline {1.8}Conclusion}{14}{section.1.8}%
+\contentsline {chapter}{\numberline {2}Spécification et capture des besoins}{15}{chapter.2}%
+\contentsline {section}{\numberline {2.1}Introduction}{15}{section.2.1}%
+\contentsline {section}{\numberline {2.2}Capture des besoins}{15}{section.2.2}%
+\contentsline {subsection}{\numberline {2.2.1}Identification des acteurs}{15}{subsection.2.2.1}%
+\contentsline {subsection}{\numberline {2.2.2}Besoins fonctionnels}{17}{subsection.2.2.2}%
+\contentsline {subsection}{\numberline {2.2.3}Les Besoins non fonctionnels}{18}{subsection.2.2.3}%
+\contentsline {subsection}{\numberline {2.2.4}Digramme des cas d'utilisations global}{19}{subsection.2.2.4}%
+\contentsline {subsection}{\numberline {2.2.5}Backlog du Produit}{22}{subsection.2.2.5}%
+\contentsline {subsection}{\numberline {2.2.6}Structuration et planification des sprints}{26}{subsection.2.2.6}%
+\contentsline {subsection}{\numberline {2.2.7}Environnement matériel}{26}{subsection.2.2.7}%
+\contentsline {subsection}{\numberline {2.2.8}Environnement logiciel}{27}{subsection.2.2.8}%
+\contentsline {subsection}{\numberline {2.2.9}Environnement technique}{29}{subsection.2.2.9}%
+\contentsline {section}{\numberline {2.3}Architecture générale}{30}{section.2.3}%
+\contentsline {subsection}{\numberline {2.3.1}Architecture logique}{30}{subsection.2.3.1}%
+\contentsline {subsection}{\numberline {2.3.2}Architecture physique}{31}{subsection.2.3.2}%
+\contentsline {section}{\numberline {2.4}Conclusion}{32}{section.2.4}%
+\contentsline {chapter}{\numberline {3}Première release}{33}{chapter.3}%
+\contentsline {section}{\numberline {3.1}Introduction}{33}{section.3.1}%
+\contentsline {section}{\numberline {3.2}Sprint 1: Gouvernance des accès et des entités organisationnelles }{33}{section.3.2}%
+\contentsline {subsection}{\numberline {3.2.1}Backlog du Sprint 1}{33}{subsection.3.2.1}%
+\contentsline {subsection}{\numberline {3.2.2}Spécification fonctionnelle du sprint 1}{34}{subsection.3.2.2}%
+\contentsline {subsection}{\numberline {3.2.3}Diagramme de cas d’utilisation du sprint 1}{35}{subsection.3.2.3}%
+\contentsline {subsection}{\numberline {3.2.4}Diagramme de classe du sprint 1}{36}{subsection.3.2.4}%
+\contentsline {subsection}{\numberline {3.2.5}Raffinement et description textuelle du cas d'utilisation «Gérer les administrations»}{36}{subsection.3.2.5}%
+\contentsline {subsection}{\numberline {3.2.6}Les diagrammes de séquences du cas d’utilisation « Gérer les administrations »}{43}{subsection.3.2.6}%
+\contentsline {subsection}{\numberline {3.2.7}Réalisation du cas d'utilisation « Gérer les administrations »}{48}{subsection.3.2.7}%
+\contentsline {subsection}{\numberline {3.2.8}Revue du Sprint 1}{50}{subsection.3.2.8}%
+\contentsline {section}{\numberline {3.3}Sprint 2 : Configuration du catalogue de services administratifs}{50}{section.3.3}%
+\contentsline {subsection}{\numberline {3.3.1}Backlog du Sprint 2}{51}{subsection.3.3.1}%
+\contentsline {subsection}{\numberline {3.3.2}Spécification fonctionnelle du Sprint 2}{51}{subsection.3.3.2}%
+\contentsline {subsection}{\numberline {3.3.3}Diagramme de cas d'utilisation du sprint 2}{52}{subsection.3.3.3}%
+\contentsline {subsection}{\numberline {3.3.4}Diagramme de classe du sprint 2}{53}{subsection.3.3.4}%
+\contentsline {subsection}{\numberline {3.3.5}Raffinement et description textuelle du cas d'utilisation <<Gérer les formulaire dynamique >>}{53}{subsection.3.3.5}%
+\contentsline {subsection}{\numberline {3.3.6}Les diagrammes de séquences du cas d’utilisation « Gérer les formulaires dynamiques »}{58}{subsection.3.3.6}%
+\contentsline {subsection}{\numberline {3.3.7}Réalisation du sprint << Gérer formulaire dynamique >>}{62}{subsection.3.3.7}%
+\contentsline {subsection}{\numberline {3.3.8}Revue du Sprint 2}{64}{subsection.3.3.8}%
+\contentsline {section}{\numberline {3.4}Sprint 3 : Dématérialisation des demandes de services}{65}{section.3.4}%
+\contentsline {subsection}{\numberline {3.4.1}Backlog du Sprint 3}{65}{subsection.3.4.1}%
+\contentsline {subsection}{\numberline {3.4.2}Spécification fonctionnelle du Sprint 3}{66}{subsection.3.4.2}%
+\contentsline {subsection}{\numberline {3.4.3}Diagramme de cas d'utilisation du sprint 3}{67}{subsection.3.4.3}%
+\contentsline {subsection}{\numberline {3.4.4}Diagramme de classe du sprint 3}{68}{subsection.3.4.4}%
+\contentsline {subsection}{\numberline {3.4.5}Raffinement et description textuelle du cas d'utilisation << Suivre état avancement des dossiers des demandes >>}{68}{subsection.3.4.5}%
+\contentsline {subsection}{\numberline {3.4.6}Les diagrammes de séquences du cas d’utilisation « Suivre état avancement des dossiers des demandes »}{74}{subsection.3.4.6}%
+\contentsline {subsection}{\numberline {3.4.7}Réalisation du sprint <<Suivre état avancement des dossiers des demandes>>}{78}{subsection.3.4.7}%
+\contentsline {subsection}{\numberline {3.4.8}Revue du Sprint 3}{81}{subsection.3.4.8}%
+\contentsline {section}{\numberline {3.5}Conclusion}{81}{section.3.5}%
+\contentsline {chapter}{\numberline {4}Deuxième release}{83}{chapter.4}%
+\contentsline {section}{\numberline {4.1}Introduction}{83}{section.4.1}%
+\contentsline {section}{\numberline {4.2}Sprint 4 : La gestion des réclamations et du système de notifications}{83}{section.4.2}%
+\contentsline {subsection}{\numberline {4.2.1}Backlog du Sprint 4}{83}{subsection.4.2.1}%
+\contentsline {subsection}{\numberline {4.2.2}Spécification fonctionnelle du Sprint 4}{84}{subsection.4.2.2}%
+\contentsline {subsection}{\numberline {4.2.3}Diagramme de classe du Sprint 4}{86}{subsection.4.2.3}%
+\contentsline {subsection}{\numberline {4.2.4}Raffinement et description textuelle du cas d'utilisation <<Personnaliser les étapes de traitement des réclamations >>}{86}{subsection.4.2.4}%
+\contentsline {subsection}{\numberline {4.2.5}Les diagrammes de séquences du cas d’utilisation « Personnaliser les étapes de traitement des réclamations »}{91}{subsection.4.2.5}%
+\contentsline {subsection}{\numberline {4.2.6}Réalisation du sprint <<Personnaliser les étapes de traitement des réclamations>>}{96}{subsection.4.2.6}%
+\contentsline {subsection}{\numberline {4.2.7}Revue du Sprint 4}{100}{subsection.4.2.7}%
+\contentsline {section}{\numberline {4.3}Sprint 5 : Vitrine institutionnelle et supervision système}{101}{section.4.3}%
+\contentsline {subsection}{\numberline {4.3.1}Backlog du Sprint 5}{101}{subsection.4.3.1}%
+\contentsline {subsection}{\numberline {4.3.2}Spécification fonctionnelle du Sprint 5}{103}{subsection.4.3.2}%
+\contentsline {subsection}{\numberline {4.3.3}Diagramme de cas d'utilisation du sprint 5}{103}{subsection.4.3.3}%
+\contentsline {subsection}{\numberline {4.3.4}Diagramme de classe du sprint 5}{104}{subsection.4.3.4}%
+\contentsline {subsection}{\numberline {4.3.5}Raffinement et description textuelle du cas d'utilisation <<Consulter les journaux d'activités>>}{104}{subsection.4.3.5}%
+\contentsline {subsection}{\numberline {4.3.6}Les diagrammes de séquences du cas d'utilisation <<Consulter les journaux d'activités>>}{106}{subsection.4.3.6}%
+\contentsline {subsection}{\numberline {4.3.7}Réalisation du Sprint 5}{107}{subsection.4.3.7}%
+\contentsline {subsection}{\numberline {4.3.8}Revue du Sprint 5}{111}{subsection.4.3.8}%
+\contentsline {section}{\numberline {4.4}Sprint 6 : Assistant conversationnel intelligent (chatbot RAG) et canal d'assistance citoyen}{112}{section.4.4}%
+\contentsline {subsection}{\numberline {4.4.1}Backlog du Sprint 6}{112}{subsection.4.4.1}%
+\contentsline {subsection}{\numberline {4.4.2}Spécification fonctionnelle du Sprint 6}{113}{subsection.4.4.2}%
+\contentsline {subsection}{\numberline {4.4.3}Architecture de l'assistant conversationnel}{114}{subsection.4.4.3}%
+\contentsline {subsection}{\numberline {4.4.4}Base de données vectorielle}{115}{subsection.4.4.4}%
+\contentsline {subsection}{\numberline {4.4.5}Choix du fournisseur LLM et configuration des clés API}{115}{subsection.4.4.5}%
+\contentsline {subsection}{\numberline {4.4.6}Architecture du canal d'assistance citoyen}{116}{subsection.4.4.6}%
+\contentsline {subsection}{\numberline {4.4.7}Descriptions textuelles des cas d'utilisation}{117}{subsection.4.4.7}%
+\contentsline {subsection}{\numberline {4.4.8}Diagramme de classe du Sprint 6}{119}{subsection.4.4.8}%
+\contentsline {subsection}{\numberline {4.4.9}Réalisation du chatbot conversationnel}{120}{subsection.4.4.9}%
+\contentsline {subsection}{\numberline {4.4.10}Réalisation du canal d'assistance}{121}{subsection.4.4.10}%
+\contentsline {subsection}{\numberline {4.4.11}Revue du Sprint 6}{122}{subsection.4.4.11}%
+\contentsline {chapter}{Conclusion Générale}{124}{table.4.16}%
