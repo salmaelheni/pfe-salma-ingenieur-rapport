@@ -13,7 +13,7 @@ Le premier sprint vise principalement à mettre en place les fondations de la pl
 
 \subsection{Backlog du Sprint 1}
 
-Nous proposons grâce au tableau ci-dessous, notre backlog du premier sprint détaillé avec les jours estimés de chaque tâche.
+Nous proposons grâce au tableau ci-dessous, notre backlog du premier sprint détaillé avec les jours estimées de chaque tâche.
 
 \begin{table}[H]
 
@@ -66,8 +66,8 @@ Dans cette section, nous présenterons les diagrammes/ de cas d'utilisation pour
 \subsection{Raffinement et description textuelle du cas d'utilisation «Gérer les administrations»}
 
 Dans la section suivante, nous utiliserons un diagramme raffiné et des descriptions de
-scénarios pour décrire le cas « Gérer les administrations ». Ce dernier montre les sous-opérations
-possibles à faire
+scénarios pour décrire le cas « Gérer les administrations ». Ce dernier montre les sous opérations
+possible à faire
 
 \begin{figure}[H]
     \centering
@@ -77,6 +77,46 @@ possibles à faire
 \end{figure}
 
 \textbf{Description textuelle}
+
+
+Une description du cas "Consulter la liste des administrations" est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter la liste des administrations \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l’administrateur de visualiser l’ensemble des administrations enregistrées dans le système. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède au module de gestion des administrations.
+\item Le système affiche la liste des administrations.
+\item L’administrateur peut rechercher ou filtrer les administrations.
+\item L’administrateur consulte les informations détaillées.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si aucune administration n’existe, le système affiche un message informatif.
+\end{itemize}
+\\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Consulter la liste des administrations}
+\label{tab:consulter-admin}
+\end{table}
 
 Une description des scénarios du cas "Ajouter une administration" est présentée dans le tableau suivant :
 
@@ -88,7 +128,7 @@ Nom & Ajouter une administration \\ \hline
 
 Acteur principal & Administrateur système \\ \hline
 
-Objectif & Permettre à l’administrateur de créer une nouvelle administration ministérielle dans le système afin de structurer l’organisation administrative. \\ \hline
+Objectif & Permettre à l’administrateur de créer une nouvelle administration ministèrel dans le système afin de structurer l’organisation administrative. \\ \hline
 
 Pré-condition & 
 \begin{itemize}
@@ -122,6 +162,51 @@ Scénario alternatif &
 \label{tab:ajouter-admin}
 \end{table}
 
+Une description du cas "Modifier une administration" est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Modifier une administration \\ \hline
+
+Acteur principal & Administrateur système \\ \hline
+
+Objectif & Permettre à l’administrateur de mettre à jour les informations d’une administration existante. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item L’administration existe dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède à la liste des administrations.
+\item Il sélectionne une administration.
+\item Il clique sur l’option "Modifier".
+\item Le système affiche le formulaire pré-rempli.
+\item L’administrateur modifie les informations.
+\item Il valide les modifications.
+\item Le système vérifie les données.
+\item Le système enregistre les modifications.
+\item Le système affiche un message de confirmation.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si les données sont invalides, le système affiche un message d’erreur.
+\item Si l’administration n’existe plus, le système informe l’utilisateur.
+\end{itemize}
+\\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Modifier une administration}
+\label{tab:modifier-admin}
+\end{table}
 
 Une description du cas "Supprimer une administration" est présentée ci-dessous :
 
@@ -169,6 +254,134 @@ Scénario alternatif &
 \label{tab:supprimer-admin}
 \end{table}
 
+Une description du cas « Consulter les détails d’une administration » est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter les détails d’une administration \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l’administrateur de visualiser les informations détaillées d’une administration enregistrée dans le système. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item L’administration existe dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède au module de gestion des administrations.
+\item Il sélectionne une administration depuis la liste.
+\item Il clique sur l’option "Consulter détails".
+\item Le système affiche les informations détaillées de l’administration (nom, responsable, coordonnées, services associés, statut, etc.).
+\item L’administrateur consulte les informations affichées.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si l’administration n’existe plus, le système affiche un message d’erreur.
+\item En cas de problème de chargement, le système informe l’utilisateur.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Les informations détaillées de l’administration sont affichées et consultables. \\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Consulter les détails d’une administration}
+\label{tab:details-admin}
+\end{table}
+
+Une description du cas « Trier les administrations » est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Trier les administrations \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l’administrateur de filtrer ou trier les administrations afin de faciliter leur recherche et leur gestion. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item Au moins une administration existe dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède au module de gestion des administrations.
+\item Il sélectionne un critère de tri ou de filtrage (nom, statut).
+\item Le système récupère les administrations correspondantes.
+\item Le système affiche la liste triée ou filtrée des administrations.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item Si aucun résultat ne correspond au critère sélectionné, le système affiche un message informatif.
+\item En cas d’erreur système, un message d’échec est affiché.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+La liste des administrations est affichée selon les critères de tri ou de filtrage sélectionnés. \\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Trier les administrations}
+\label{tab:trier-admin}
+\end{table}
+
+Une description du cas "Consulter la liste des responsables d’administration" est présentée ci-dessous :
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter la liste des responsables d’administration \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l’administrateur de visualiser les responsables associés à chaque administration afin d’assurer le suivi organisationnel et la gestion des responsabilités. \\ \hline
+
+Pré-condition & 
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item Les administrations existent dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+\item L’administrateur accède au module de gestion des administrations.
+\item Il sélectionne une administration ou accède à la vue globale des responsables.
+\item Le système affiche la liste des responsables associés.
+\item L’administrateur consulte les informations (nom, fonction, coordonnées).
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+\item En cas d’erreur de chargement, le système affiche un message d’erreur.
+\end{itemize}
+\\ \hline
+
+\end{tabular}
+
+\caption{Description textuelle - Consulter les responsables d’administration}
+\label{tab:consulter-responsables}
+\end{table}
 
 \subsection{Les diagrammes de séquences du cas d’utilisation « Gérer les administrations »}
 
@@ -186,6 +399,16 @@ Dans cette section, nous avons choisi d’illustrer uniquement certains diagramm
     \label{fig:ajouter-administration}
 \end{figure}
 
+% Modifier
+\noindent Ce diagramme présente les interactions nécessaires pour modifier les informations d’une administration existante, en passant par la récupération des données puis leur mise à jour.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=25cm]{images/diagrammes/sprint1/vrai-modifier-administration.drawio.png}
+    \caption{Diagramme de séquence - Modifier une administration}
+    \label{fig:modifier-administration}
+\end{figure}
+
 % Supprimer
 \noindent Ce diagramme décrit le processus de suppression d’une administration, incluant la confirmation de l’action et la suppression définitive des données.
 
@@ -195,9 +418,16 @@ Dans cette section, nous avons choisi d’illustrer uniquement certains diagramm
     \caption{Diagramme de séquence - Supprimer une administration}
     \label{fig:supprimer-administration}
 \end{figure}
+\newpage
+% Consulter
+\noindent Ce diagramme montre les interactions permettant de consulter les informations d’une administration, depuis la demande de l’utilisateur jusqu’à l’affichage des données.
 
-
-
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint1/vrai-consulter-administration.drawio.png}
+    \caption{Diagramme de séquence - Consulter une administration}
+    \label{fig:consulter-administration}
+\end{figure}
 \newpage
 \subsection{Réalisation du cas d'utilisation « Gérer les administrations »}
 
@@ -314,15 +544,15 @@ Dans cette section, nous présentons les diagrammes de cas d'utilisation du spri
 \end{figure}
 
 
-\subsection{Raffinement et description textuelle du cas d'utilisation <<Gérer les formulaires dynamiques >>}
+\subsection{Raffinement et description textuelle du cas d'utilisation <<Gérer les formulaire dynamique >>}
 
 Dans la section suivante, nous utiliserons des descriptions de
-scénarios pour décrire le cas « Gérer les formulaires dynamiques ». Ce dernier montre les sous-opérations possibles à faire.
+scénarios pour décrire le cas « les formulaire dynamique ». Ce dernier montre les sous opérations possible à faire.
 
 \begin{figure}[H]
     \centering
     \includegraphics[width=15cm,height=8cm]{images/diagrammes/sprint2/cas-utilisation-form-dyn.drawio.png}
-    \caption{Raffinement du cas d'utilisation « Gérer les formulaires dynamiques »}
+    \caption{Raffinement du cas d'utilisation « les formulaire dynamique »}
     \label{fig:cas-utilisation-sprint2-raff}
 \end{figure}
 
@@ -343,13 +573,13 @@ Objectif & Vérifier le rendu et le comportement du formulaire avant sa publicat
 
 Pré-condition &
 \begin{itemize}
-    \item Le formulaire est créé.
+    \item Le formulaire est créer.
 \end{itemize}
 \\ \hline
 
 Scénario nominal &
 \begin{enumerate}
-    \item L’administrateur clique sur "Aperçu".
+    \item L’administrateur clique sur "Apercu".
     \item Le système affiche le formulaire.
     \item L’administrateur vérifie le rendu.
 \end{enumerate}
@@ -369,60 +599,223 @@ Le formulaire est validé ou corrigé avant publication. \\ \hline
 \label{tab:uc-preview}
 \end{table}
 
-Une description détaillée du cas d’utilisation « Modifier un formulaire dynamique » est présentée ci-dessous.
-
-
+Une description détaillée du cas d’utilisation « Consulter la liste des formulaires dynamiques » est présentée ci-dessous.
 
 \begin{table}[H]
 \centering
-\begin{tabular}{ |p{3cm}|p{13cm}|} \hline
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
 
-Nom & Modifier un formulaire dynamique \\ \hline
+Nom & Consulter la liste des formulaires dynamiques \\ \hline
 
 Acteur principal & Administrateur \\ \hline
 
-Objectif & Permettre à l’administrateur de mettre à jour et reconfigurer un formulaire dynamique existant afin de l’adapter à l’évolution des besoins. \\ \hline
+Objectif & Permettre à l’administrateur de consulter l’ensemble des formulaires dynamiques disponibles dans le système afin de faciliter leur gestion et leur suivi. \\ \hline
 
 Pré-condition &
 \begin{itemize}
     \item L’administrateur est authentifié.
-    \item L’administrateur dispose des droits nécessaires.
-    \item Le formulaire dynamique existe dans le système.
+    \item L’administrateur dispose des droits d’accès au module des formulaires.
 \end{itemize}
 \\ \hline
 
 Scénario nominal &
 \begin{enumerate}
     \item L’administrateur accède au module de gestion des formulaires.
-    \item Il consulte la liste des formulaires existants.
-    \item Il sélectionne un formulaire dynamique à modifier.
-    \item Le système affiche les informations du formulaire (nom, description, service associé, champs, steps et validations).
-    \item L’administrateur modifie les informations générales du formulaire.
-    \item Il ajoute, modifie ou supprime des champs (texte, date, fichier, liste déroulante, etc.).
-    \item Il modifie les propriétés et les règles de validation des champs.
-    \item Il réorganise les champs dans les différentes étapes (steps) du formulaire.
-    \item Le système vérifie la cohérence de la structure du formulaire.
-    \item L’administrateur valide les modifications.
-    \item Le système sauvegarde les changements effectués.
-    \item Le système affiche un message de confirmation.
+    \item Le système récupère la liste des formulaires enregistrés.
+    \item Le système affiche les formulaires avec leurs principales informations (nom, administration associée, date de création etc.).
+    \item L’administrateur peut consulter un formulaire ou effectuer des actions de gestion (modifier, supprimer, prévisualiser).
 \end{enumerate}
 \\ \hline
 
 Scénario alternatif &
 \begin{itemize}
-    \item Si un champ contient une configuration invalide, le système affiche un message d’erreur et bloque l’enregistrement.
-    \item Si une étape (step) est vide, le système empêche sa sauvegarde.
-    \item Si l’administrateur annule l’opération, aucune modification n’est enregistrée.
-    \item Si le formulaire n’existe plus, le système affiche un message d’erreur.
+    \item Si aucun formulaire n’est disponible, le système affiche un message indiquant qu’aucun formulaire n’a été trouvé.
+    \item En cas d’erreur de chargement, le système affiche un message d’erreur.
 \end{itemize}
 \\ \hline
 
 Post-condition &
-Le formulaire dynamique est mis à jour avec sa nouvelle structure. \\ \hline
+La liste des formulaires dynamiques est affichée et disponible pour consultation et gestion. \\ \hline
 
 \end{tabular}
-\caption{Description textuelle du cas d'utilisation : Modifier un formulaire dynamique}
-\label{tab:uc-edit-formulaire-dynamique}
+\caption{Description textuelle : Consulter la liste des formulaires dynamiques}
+\label{tab:uc-list-form}
+\end{table}
+
+
+
+Une description détaillée du cas d’utilisation « Ajouter un formulaire dynamique » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{3cm}|p{13cm}|} \hline
+
+Nom & Ajouter un formulaire dynamique \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre la création et la configuration complète d’un formulaire dynamique associé à une administration ou un service, incluant la gestion des champs, des étapes (steps) et des règles de validation afin de structurer et contrôler les données saisies par les citoyens. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item L’administrateur dispose des droits nécessaires.
+    \item Une administration ou un service existe dans le système.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L’administrateur accède au module de gestion des formulaires.
+    \item Il clique sur "Créer un formulaire".
+    \item Il définit les informations générales du formulaire (nom, description, service associé).
+    \item Le système initialise une structure de formulaire vide.
+    \item L’administrateur ajoute des champs (texte, date, fichier, etc.).
+    \item Il configure les propriétés et les règles de validation de chaque champ.
+    \item Il organise les champs en étapes (steps) afin de structurer la saisie utilisateur.
+    \item Le système enregistre la configuration complète du formulaire.
+    \item L’administrateur peut publier ou enregistrer le formulaire en brouillon.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si un champ est invalide, le système affiche un message d’erreur et bloque l’enregistrement.
+    \item Si une étape est vide, elle ne peut pas être sauvegardée.
+    \item Si les informations du formulaire sont incomplètes, le formulaire reste en mode brouillon.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Le formulaire est créé, structuré (champs + steps + validations) et prêt à être associé à un service pour la soumission des demandes. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle du cas d'utilisation : Ajouter un formulaire dynamique}
+\label{tab:uc-formulaire-dynamique}
+\end{table}
+
+Une description détaillée du cas d’utilisation « Modifier un formulaire dynamique » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Modifier formulaire \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Adapter un formulaire existant selon l’évolution des besoins. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item Un formulaire existe.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L’administrateur ouvre un formulaire.
+    \item Il modifie champs, steps ou validations.
+    \item Le système sauvegarde les modifications.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si l'administrateur clique sur annuler aucune modification enregistrée.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Le formulaire est mis à jour. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle : Modifier formulaire}
+\label{tab:uc-edit}
+\end{table}
+
+Une description détaillée du cas d’utilisation « Supprimer un formulaire dynamique » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Supprimer formulaire \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Supprimer un formulaire devenu inutile afin de maintenir un système propre. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item Le formulaire existe.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L’administrateur sélectionne un formulaire.
+    \item Il confirme la suppression.
+    \item Le système supprime le formulaire.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si l'administrateur clique sur annuler la suppression ne sera pas executer.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Le formulaire est supprimé du système. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle : Supprimer formulaire}
+\label{tab:uc-delete}
+\end{table}
+
+
+Une description détaillée du cas d’utilisation « Trier les formulaires dynamiques » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Trier les formulaires dynamiques \\ \hline
+
+Acteur principal & Administrateur \\ \hline
+
+Objectif & Permettre à l’administrateur de filtrer les formulaires dynamiques selon une administration afin de faciliter leur consultation et leur gestion. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item L’administrateur est authentifié.
+    \item Au moins une administration existe dans le système.
+    \item Des formulaires sont déjà enregistrés.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item L’administrateur accède au module de gestion des formulaires.
+    \item Il sélectionne un critère de tri par administration.
+    \item Le système récupère les formulaires associés à l’administration sélectionnée.
+    \item Le système affiche la liste filtrée des formulaires.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si aucun formulaire n’est associé à l’administration sélectionnée, le système affiche un message indiquant qu’aucun résultat n’est disponible.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Les formulaires sont affichés selon le critère de tri sélectionné. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle : Trier les formulaires dynamiques}
+\label{tab:uc-sort-form}
 \end{table}
 
 \subsection{Les diagrammes de séquences du cas d’utilisation « Gérer les formulaires dynamiques »}
@@ -431,6 +824,17 @@ Dans cette section, nous avons choisi de présenter uniquement certains diagramm
 
 
 \noindent  \textbf{Présentation des diagrammes de séquences :}
+
+% Ajouter
+\noindent Ce diagramme illustre le processus d’ajout d’un nouveau formulaires, depuis la saisie des informations par l’utilisateur jusqu’à leur enregistrement dans le système.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=18cm,height=20cm]{images/diagrammes/sprint2/ajouter-formulaire.drawio.png}
+    \caption{Diagramme de séquence - Ajouter un formulaire}
+    \label{fig:ajouter-form}
+\end{figure}
+
 
 % Modifier
 \noindent  Ce diagramme illustre le processus de modification d’un formulaire dynamique, permettant à l’administrateur d’éditer les champs, les étapes et les règles de validation avant la mise à jour des données dans le système.
@@ -453,13 +857,23 @@ Dans cette section, nous avons choisi de présenter uniquement certains diagramm
     \label{fig:consulter-form}
 \end{figure}
 
+% Supprimer
+\noindent Ce diagramme illustre le processus de suppression d’un formulaire dynamique, depuis la sélection du formulaire par l’administrateur jusqu’à sa suppression définitive dans le système.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=18cm,height=20cm]{images/diagrammes/sprint2/supprimer-formulaire.drawio.png}
+    \caption{Diagramme de séquence - Supprimer un formulaire}
+    \label{fig:supp-form}
+\end{figure}
+
 \subsection{Réalisation du sprint << Gérer formulaire dynamique >>}
 
 Dans cette section, nous avons choisi de présenter certaines interfaces représentatives du sprint « Gérer formulaire dynamique » afin d’illustrer les principales fonctionnalités implémentées. Ce choix met en évidence les écrans les plus significatifs du système, notamment la consultation, l’ajout, la configuration et la modification des formulaires. Ces captures permettent de mieux comprendre le fonctionnement global de l’application ainsi que l’interaction de l’administrateur avec les différentes fonctionnalités proposées.
 
 \noindent \textbf{Présentation des interfaces :}
 
-\noindent Cette interface permet à l’administrateur de visualiser l’ensemble des formulaires enregistrés dans le système, avec la possibilité de rechercher, filtrer et accéder aux actions de gestion.
+\noindent Cette interface permet à l’administrateur de visualiser l’ensemble des formulaires enregistrées dans le système, avec la possibilité de rechercher, filtrer et accéder aux actions de gestion.
 
 \begin{center}
     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint2/consulter-sprint2.png}}
@@ -467,7 +881,7 @@ Dans cette section, nous avons choisi de présenter certaines interfaces représ
     \label{fig:real1}
 \end{center}
 
-\noindent Cette interface permet à l’administrateur d'ajouter de nouveaux formulaires enregistrés dans le système.
+\noindent Cette interface permet à l’administrateur d'ajouter des nouveaux formulaires enregistrées dans le système.
 
 \begin{center}
     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint2/add-list.png}}
@@ -475,15 +889,13 @@ Dans cette section, nous avons choisi de présenter certaines interfaces représ
     \label{fig:real2}
 \end{center}
 
-\noindent Cette interface permet à l’administrateur de configurer les différents paramètres d'un champ, par exemple le champ CIN dans le cas suivant.
+\noindent Cette interface permet à l’administrateur de configurer les differentes parametre d'un champs par exemple le champs CIN dans le cas suivant.
 
 \begin{center}
     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint2/Capture d’écran du 2026-04-16 12-03-09.png}}
     \captionof{figure}{Configuration des champs du formulaire}
     \label{fig:real3}
 \end{center}
-
-\noindent Cette interface permet à l’administrateur de modifier un formulaire existant en mettant à jour ses champs, ses étapes et ses règles de validation.
 
 \begin{center}
     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint2/Capture d’écran du 2026-04-16 12-05-36.png}}
@@ -571,7 +983,7 @@ Dans cette section, nous présentons les diagrammes de cas d'utilisation du spri
 \subsection{Raffinement et description textuelle du cas d'utilisation << Suivre état avancement des dossiers des demandes >>}
 
 Dans la section suivante, nous utiliserons des descriptions de
-scénarios pour décrire le cas « Suivre état avancement des dossiers des demandes ». Ce dernier montre les sous-opérations possibles à faire.
+scénarios pour décrire le cas « Suivre état avancement des dossiers des demandes ». Ce dernier montre les sous opérations possible à faire.
 
 \begin{figure}[H]
     \centering
@@ -581,7 +993,6 @@ scénarios pour décrire le cas « Suivre état avancement des dossiers des dema
 \end{figure}
 
 \textbf{Description textuelle}
-
 
 Une description détaillée du cas d’utilisation « Suivre état avancement des dossiers des demandes » est présentée ci-dessous.
 
@@ -627,6 +1038,49 @@ Le client visualise les informations et l’état d’avancement de son dossier.
 \end{table}
 
 
+Une description détaillée du cas d’utilisation « Exporter dossier » est présentée ci-dessous.
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Exporter dossier \\ \hline
+
+Acteur principal & Client e-Gouv \\ \hline
+
+Objectif & Permettre au client d’exporter les informations de son dossier administratif sous un format exploitable. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item Le client consulte un dossier existant.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item Le client sélectionne une demande.
+    \item Il clique sur « Exporter dossier ».
+    \item Le système génère un document contenant les informations du dossier.
+    \item Le document est téléchargé par le client.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si le document ne peut pas être généré, le système affiche un message d’erreur.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Le dossier est exporté avec succès. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle : Exporter dossier}
+\label{tab:uc-exporter-dossier}
+\end{table}
+
+
 Une description détaillée du cas d’utilisation « Évaluer service » est présentée ci-dessous.
 
 \begin{table}[H]
@@ -651,7 +1105,7 @@ Scénario nominal &
     \item Le client consulte une demande traitée.
     \item Il sélectionne l’option « Évaluer service ».
     \item Le système affiche un tableau d’évaluation de satisfaction.
-    \item Le client écrit un commentaire et choisit un niveau de satisfaction :
+    \item Le client ecrit un commentaire est choisit un niveau de satisfaction :
     \begin{itemize}
         \item Très satisfaisant
         \item Satisfait
@@ -679,6 +1133,89 @@ L’évaluation du niveau de satisfaction du client est enregistrée et peut êt
 \label{tab:uc-evaluer-service}
 \end{table}
 
+
+Une description détaillée du cas d’utilisation « Fournir des informations complémentaires » est présentée ci-dessous.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Fournir des informations complémentaires \\ \hline
+
+Acteur principal & Client e-Gouv \\ \hline
+
+Objectif & Permettre au client de compléter un dossier lorsqu’une demande d’informations supplémentaires est requise. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item Une demande complémentaire a été initiée par l’administration.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item Le client consulte sa demande.
+    \item Le système affiche les informations complémentaires demandées.
+    \item Le client fournit les données ou documents requis.
+    \item Il valide l’envoi.
+    \item Le système met à jour le dossier.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si les documents sont invalides, le système affiche un message d’erreur.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Le dossier est complété avec les nouvelles informations. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle : Fournir des informations complémentaires}
+\label{tab:uc-info-complementaire}
+\end{table}
+
+Une description détaillée du cas d’utilisation « Consulter historique d’activité » est présentée ci-dessous.
+
+
+\begin{table}[H]
+\centering
+\begin{tabular}{ |p{4cm}|p{12cm}|} \hline
+
+Nom & Consulter historique d’activité \\ \hline
+
+Acteur principal & Client e-Gouv \\ \hline
+
+Objectif & Permettre au client de consulter l’ensemble des actions réalisées sur son dossier. \\ \hline
+
+Pré-condition &
+\begin{itemize}
+    \item Une demande existe.
+\end{itemize}
+\\ \hline
+
+Scénario nominal &
+\begin{enumerate}
+    \item Le client accède au détail du dossier.
+    \item Il consulte l’historique d’activité.
+    \item Le système affiche les différentes étapes de traitement avec leurs dates et statuts.
+\end{enumerate}
+\\ \hline
+
+Scénario alternatif &
+\begin{itemize}
+    \item Si aucun historique n’est disponible, un message informatif est affiché.
+\end{itemize}
+\\ \hline
+
+Post-condition &
+Le client visualise l’historique du traitement de son dossier. \\ \hline
+
+\end{tabular}
+\caption{Description textuelle : Consulter historique d’activité}
+\label{tab:uc-historique-activite}
+\end{table}
 
 \subsection{Les diagrammes de séquences du cas d’utilisation « Suivre état avancement des dossiers des demandes »}
 
@@ -708,6 +1245,28 @@ Dans cette section, nous avons choisi de présenter certains diagrammes de séqu
 \end{figure}
 
 
+% exporter
+\noindent Ce diagramme de séquence illustre le mécanisme d’exportation d’un dossier administratif. Il montre les interactions permettant au citoyen de générer et télécharger un document récapitulatif contenant les informations relatives à sa demande.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=18cm,height=16cm]{images/diagrammes/sprint3/Exporter-demande.drawio.png}
+    \caption{Diagramme de séquence - Exporter dossier}
+    \label{fig:export-seq}
+\end{figure}
+
+
+% info complemantaire
+\noindent Ce diagramme de séquence décrit le processus de fourniture d’informations complémentaires dans le cadre d’une demande administrative. Il présente les échanges permettant au citoyen d’ajouter des documents ou informations supplémentaires lorsqu’une demande de complément est initiée par l’administration.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=13cm,height=14cm]{images/diagrammes/sprint3/info-complemantary.drawio.png}
+    \caption{Diagramme de séquence - Fournir des informations complémentaires}
+    \label{fig:complemantery-seq}
+\end{figure}
+
+
 \subsection{Réalisation du sprint <<Suivre état avancement des dossiers des demandes>>}
 
 Dans cette section, nous présentons certaines interfaces représentatives de la réalisation du sprint « Suivi des demandes », afin d’illustrer les principales fonctionnalités mises en œuvre. Ce choix met en évidence les écrans les plus significatifs du système, notamment la consultation des dossiers, l’évaluation des services, l’exportation des informations ainsi que la fourniture de données complémentaires. Ces captures permettent de visualiser concrètement l’interaction du citoyen avec le système tout au long du traitement de ses demandes administratives.
@@ -732,7 +1291,7 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \end{center}
 
 
-\noindent L’interface suivante présente le résultat d’exportation des informations du dossier administratif. Cette fonctionnalité facilite la conservation, le partage ou l’impression des données relatives à la demande.
+\noindent L’interface suivante presente le resultat d’exportation des informations du dossier administratif. Cette fonctionnalité facilite la conservation, le partage ou l’impression des données relatives à la demande.
 
 \begin{center}
     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint3/Capture-export.png}}
@@ -741,7 +1300,7 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \end{center}
 
 
-\noindent L’interface suivante présente le processus d’ajout d’informations complémentaires demandées par l’administration. Le citoyen peut fournir des documents ou des informations supplémentaires afin de compléter le traitement de son dossier.
+\noindent L’interface suivante présente le processus d’ajout d’informations complémentaires demandé par l’administration. Le citoyen peut fournir des documents ou des informations supplémentaires afin de compléter le traitement de son dossier.
 
 \begin{center}
     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint3/Capture-complemantary.png}}
@@ -778,4 +1337,4 @@ Au cours de cette release, nous avons mis en place les fonctionnalités liées �
 
 Cette release a également permis de mettre à disposition des citoyens un espace dédié à la consultation des secteurs et services administratifs, au dépôt des demandes en ligne ainsi qu’au suivi de l’état d’avancement de leurs dossiers, améliorant ainsi l’accessibilité et la transparence des démarches administratives.
 
-Le chapitre suivant sera consacré à la deuxième release, regroupant les \textit{Sprint 4} et \textit{Sprint 5}, portant respectivement sur la gestion des réclamations et du système de notifications, ainsi que sur la vitrine institutionnelle, la supervision du système et l'assistant conversationnel intelligent.
+Le chapitre suivant sera consacré à la deuxième release, regroupant les \textit{Sprint 4} et \textit{Sprint 5}, portant respectivement sur la gestion des réclamations et du système de notifications, ainsi que sur la vitrine institutionnelle et la supervision du système.
