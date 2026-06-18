@@ -1,0 +1,125 @@
+<mxGraphModel dx="3451" dy="1640" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1520" pageHeight="2700" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+    <mxCell id="boundary" parent="1" style="swimlane;startSize=60;fontStyle=1;fontSize=26;strokeColor=#666666;fillColor=#f5f5f5;fontColor=#333333;rounded=1;shadow=0;" value="Système e-Gouv — Frontoffice" vertex="1">
+      <mxGeometry height="1480" width="1130" x="100" y="30" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_inscrire" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;S&#39;inscrire&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="120" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_secteurs" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Consulter &lt;b&gt;Secteurs et Services&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="225" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_pages" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Consulter les &lt;b&gt;pages d&#39;information&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="330" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_poser" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Poser des questions à l&#39;&lt;b&gt;assistant conversationnel&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="451" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_contact" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Contacter &lt;b&gt;administrateur&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="575" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_reclam" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Gérer &lt;b&gt;réclamations&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="680" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_tableau" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Consulter le &lt;b&gt;tableau de bord&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="815" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_notifs" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Consulter les &lt;b&gt;notifications&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="920" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_demandes" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Déposer &lt;b&gt;des demandes sur des services&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="1025" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_suivi_dem" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Suivre état avancement des&amp;nbsp;&lt;/font&gt;&lt;div&gt;&lt;font style=&quot;font-size: 18px;&quot;&gt;&lt;b&gt;dossiers des demandes&lt;/b&gt;&lt;/font&gt;&lt;/div&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="1130" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_evaluer" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Évaluer &lt;b&gt;service&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="1235" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_profil" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;font style=&quot;font-size: 18px;&quot;&gt;Modifier &lt;b&gt;profil&lt;/b&gt;&lt;/font&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="250" y="1340" as="geometry" />
+    </mxCell>
+    <mxCell id="UC_auth" parent="boundary" style="ellipse;whiteSpace=wrap;html=1;fillColor=#fff2cc;strokeColor=#d6b656;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;S&#39;authentifier&lt;/span&gt;" vertex="1">
+      <mxGeometry height="80" width="320" x="730" y="1077" as="geometry" />
+    </mxCell>
+    <mxCell id="inc1" edge="1" parent="boundary" source="UC_tableau" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;" target="UC_auth" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="inc2" edge="1" parent="boundary" source="UC_notifs" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;" target="UC_auth" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="inc3" edge="1" parent="boundary" source="UC_demandes" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;" target="UC_auth" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="inc4" edge="1" parent="boundary" source="UC_suivi_dem" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;" target="UC_auth" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="inc5" edge="1" parent="boundary" source="UC_evaluer" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;" target="UC_auth" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="inc6" edge="1" parent="boundary" source="UC_profil" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;dashed=1;endArrow=open;endFill=0;" target="UC_auth" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="ec1" edge="1" parent="boundary" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_tableau">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-25" y="1205.0000000000005" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ec2" edge="1" parent="boundary" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_notifs">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-25" y="1205.0000000000005" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ec3" edge="1" parent="boundary" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_demandes">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-25" y="1205.0000000000005" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ec4" edge="1" parent="boundary" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_suivi_dem">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-25" y="1205.0000000000005" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ec5" edge="1" parent="boundary" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_evaluer">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-25" y="1205.0000000000005" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ec6" edge="1" parent="boundary" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_profil">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="-25" y="1205.0000000000005" as="sourcePoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="actor_internaute" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBackgroundColor=none;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Internaute&lt;/span&gt;" vertex="1">
+      <mxGeometry height="100" width="60" x="14" y="370" as="geometry" />
+    </mxCell>
+    <mxCell id="actor_client" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBackgroundColor=none;fillColor=#dae8fc;strokeColor=#6c8ebf;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Client&lt;/span&gt;" vertex="1">
+      <mxGeometry height="100" width="60" x="14" y="1170" as="geometry" />
+    </mxCell>
+    <mxCell id="gen_client" edge="1" parent="1" source="actor_client" style="edgeStyle=orthogonalEdgeStyle;rounded=0;html=1;endArrow=block;endFill=0;endSize=12;">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="44" y="520" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="ei1" edge="1" parent="1" source="actor_internaute" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_inscrire">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="ei2" edge="1" parent="1" source="actor_internaute" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_secteurs">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="ei3" edge="1" parent="1" source="actor_internaute" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_pages">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="ei4" edge="1" parent="1" source="actor_internaute" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_poser">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="ei8" edge="1" parent="1" source="actor_internaute" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_contact">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="ei9" edge="1" parent="1" source="actor_internaute" style="edgeStyle=orthogonalEdgeStyle;exitX=1;exitY=0.5;entryX=0;entryY=0.5;endArrow=none;html=1;" target="UC_reclam">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+  </root>
+</mxGraphModel>
