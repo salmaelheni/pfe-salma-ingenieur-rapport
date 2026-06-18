@@ -1,6 +1,6 @@
 \documentclass[a4paper,12pt]{report}
 
-
+\usepackage{newtxtext,newtxmath}
 
 \input{settings.tex} 
 
@@ -42,6 +42,8 @@
 \input{content/chapitre4}
 \clearpage
 \input{content/conclusion.tex}
+\clearpage
+\printbibliography[heading=bibintoc,title={References}]
 % \clearpage
-% \includepdf[pages=-]{"content/end_page.pdf"}
+%\includepdf[pages=-]{"content/end_page.pdf"}
 \end{document}
