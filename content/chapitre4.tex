@@ -290,7 +290,7 @@ Avant de décrire l'assistant, nous rappelons les notions sur lesquelles il repo
 
 \subsection{Backlog du Sprint 5}
 
-Le tableau ci-dessous présente le backlog du cinquième sprint avec l'estimation en jours de chaque tâche.
+Le tableau ci-dessous présente le backlog du cinquième sprint avec l'estimation en jours de chaque tâche. L'ordre des tâches suit une contrainte de dépendance : la vitrine et les pages d'information (notamment les actualités) sont réalisées d'abord, car l'assistant conversationnel est développé ensuite et son indexation (RAG) a besoin de ce contenu pour répondre.
 
 \begin{table}[H]
     \centering
@@ -298,14 +298,11 @@ Le tableau ci-dessous présente le backlog du cinquième sprint avec l'estimatio
     \rowcolor{orange!30}
     \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
 
-    US33 & Internaute & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches & 10 & Élevée \\ \hline
-    US34 & Internaute & Je veux dicter ma question à la voix afin de faciliter la saisie & 1 & Moyenne \\ \hline
-    US35 & Internaute & Je veux disposer de suggestions de questions afin d'être guidé dans mes demandes & 1 & Moyenne \\ \hline
-    US36 & Internaute & Je veux demander à être assisté par un administrateur lorsque je n'arrive pas à utiliser le site & 2 & Élevée \\ \hline
-    US37 & Administrateur Système & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & 2 & Élevée \\ \hline
-    US38 & Administrateur Système & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & 1 & Moyenne \\ \hline
-    US39 & Internaute & Je veux consulter les pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide, à propos) afin d'accéder aux données officielles du portail & 2 & Moyenne \\ \hline
-    US40 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
+    US33 & Internaute & Je veux consulter les pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide, à propos) afin d'accéder aux données officielles du portail & 2 & Moyenne \\ \hline
+    US34 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
+    US35 & Internaute & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches (avec saisie vocale, suggestions et possibilité de demander une assistance humaine) & 14 & Élevée \\ \hline
+    US36 & Administrateur Système & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & 2 & Élevée \\ \hline
+    US37 & Administrateur Système & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & 1 & Moyenne \\ \hline
 
     \end{tabular}
     \caption{User stories du Sprint 5}
@@ -360,8 +357,10 @@ Scénario nominal &
 \\ \hline
 Scénario alternatif &
 \begin{itemize}
+\item \textbf{Saisie vocale} : au lieu de taper, l'internaute dicte sa question à la voix ; le navigateur transcrit la dictée en texte avant l'envoi.
+\item \textbf{Suggestions de questions} : dès l'ouverture, l'internaute peut sélectionner une question prédéfinie pour être guidé au lieu de formuler la sienne.
+\item \textbf{Demande d'assistance humaine} : si l'internaute n'arrive pas à obtenir d'aide, il peut demander à être assisté par un administrateur ; le chatbot affiche un court formulaire (nom et téléphone) et enregistre la demande pour un rappel.
 \item Si aucun passage pertinent n'est trouvé, l'assistant l'indique sans inventer de réponse.
-\item L'internaute peut sélectionner une suggestion prédéfinie au lieu de saisir sa question.
 \end{itemize}
 \\ \hline
 \end{tabular}
@@ -553,14 +552,11 @@ OpenAI & Fiable & Maîtrisé & \textbf{Retenu} \\ \hline
 \hline
 \rowcolor{orange!30}
 \textbf{ID} & \textbf{User Story} & \textbf{Statut} \\ \hline
-US33 & Poser une question à l'assistant conversationnel & \textcolor{green!60!black}{Terminé} \\ \hline
-US34 & Dicter sa question à la voix & \textcolor{green!60!black}{Terminé} \\ \hline
-US35 & Utiliser des suggestions de questions & \textcolor{green!60!black}{Terminé} \\ \hline
-US36 & Demander à être assisté par un administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
-US37 & Gérer les demandes d'assistance & \textcolor{green!60!black}{Terminé} \\ \hline
-US38 & Être notifié par email d'une nouvelle demande & \textcolor{green!60!black}{Terminé} \\ \hline
-US39 & Consulter les pages d'information & \textcolor{green!60!black}{Terminé} \\ \hline
-US40 & Contacter l'administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
+US33 & Consulter les pages d'information & \textcolor{green!60!black}{Terminé} \\ \hline
+US34 & Contacter l'administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
+US35 & Poser une question à l'assistant conversationnel (voix, suggestions et demande d'assistance incluses) & \textcolor{green!60!black}{Terminé} \\ \hline
+US36 & Gérer les demandes d'assistance & \textcolor{green!60!black}{Terminé} \\ \hline
+US37 & Être notifié par email d'une nouvelle demande & \textcolor{green!60!black}{Terminé} \\ \hline
 \caption{Revue du Sprint 5}
 \end{longtable}
 
