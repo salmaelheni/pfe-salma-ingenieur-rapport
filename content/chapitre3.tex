@@ -6,7 +6,7 @@
 Cette première release constitue la base fondamentale du système en regroupant les \textit{Sprint 1}, \textit{Sprint 2} et \textit{Sprint 3}. Elle couvre la gestion des accès et des entités organisationnelles, la configuration du catalogue de services administratifs ainsi que la dématérialisation complète des demandes des citoyens. Cette release jette les fondations techniques et fonctionnelles du système et marque le passage d’une infrastructure sécurisée vers une plateforme pleinement opérationnelle orientée utilisateur.
 
 
-\section{Sprint 1: Gestion d'authentification, des utilisateur et des entités organisationnelles }
+\section{Sprint 1 : Socle d'accès et structures institutionnelles}
 
 Le premier sprint vise principalement à mettre en place les fondations de la plateforme, notamment la gestion des utilisateurs, l’authentification, l’autorisation ainsi que la structuration des entités administratives et institutionnelles.
 
@@ -22,21 +22,21 @@ Nous proposons grâce au tableau ci-dessous, notre backlog du premier sprint dé
     \rowcolor{orange!30}
     \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
     
-       1 & Administrateur & Je veux m’authentifier afin d’accéder au backoffice & 2 & Élevée\\ \hline
+       US1 & Administrateur & Je veux m’authentifier afin d’accéder au backoffice & 2 & Élevée\\ \hline
 
-       2 & Administrateur système & Je veux gérer les comptes des administrateurs backoffice afin de contrôler l’accès au système & 4 & Élevée\\ \hline
+       US2 & Administrateur système & Je veux gérer les comptes des administrateurs backoffice afin de contrôler l’accès au système & 4 & Élevée\\ \hline
 
-       3 & Administrateur système & Je veux gérer les rôles afin de définir les niveaux d’accès des utilisateurs & 2 & Élevée\\ \hline
+       US3 & Administrateur système & Je veux gérer les rôles afin de définir les niveaux d’accès des utilisateurs & 2 & Élevée\\ \hline
 
-       4 & Administrateur système & Je veux consulter les permissions afin de contrôler les actions autorisées & 1 & Élevée\\ \hline
+       US4 & Administrateur système & Je veux consulter les permissions afin de contrôler les actions autorisées & 1 & Élevée\\ \hline
 
-       8 & Administrateur & Je veux modifier mon profil afin de mettre à jour mes informations & 1 & Moyenne\\ \hline
+       US8 & Administrateur & Je veux modifier mon profil afin de mettre à jour mes informations & 1 & Moyenne\\ \hline
 
-       5 & Administrateur Ministériel & Je veux gérer les comptes des administrateurs institutionnels afin d’assurer leur accès et leurs droits & 4 & Élevée\\ \hline
+       US5 & Administrateur Ministériel & Je veux gérer les comptes des administrateurs institutionnels afin d’assurer leur accès et leurs droits & 4 & Élevée\\ \hline
 
-       6 & Administrateur système & Je veux gérer les administrations ministérielles afin d’organiser les structures & 4 & Élevée\\ \hline
+       US6 & Administrateur système & Je veux gérer les administrations ministérielles afin d’organiser les structures & 4 & Élevée\\ \hline
         
-       7 & Administrateur système & Je veux gérer les langues de la plateforme afin de garantir une interface multilingue & 2 & Élevée\\ \hline
+       US7 & Administrateur système & Je veux gérer les langues de la plateforme afin de garantir une interface multilingue & 2 & Élevée\\ \hline
 
     \end{tabular}
     \caption{User stories du Sprint 1}
@@ -250,20 +250,20 @@ Dans cette section, nous avons choisi de présenter certaines interfaces de réa
 \hline
 \rowcolor{orange!30}
 \textbf{ID} & \textbf{User Story} & \textbf{Statut} \\ \hline
-1 & S'authentifier & \textcolor{green!60!black}{Terminé} \\ \hline
-8 & Modifier mon profil & \textcolor{green!60!black}{Terminé} \\ \hline
-5 & Gérer les comptes des administrateurs institutionnels & \textcolor{green!60!black}{Terminé} \\ \hline
-7 & Gérer les langues de la plateforme & \textcolor{green!60!black}{Terminé} \\ \hline
-3 & Gérer les rôles & \textcolor{green!60!black}{Terminé} \\ \hline
-4 & Consulter les permissions & \textcolor{green!60!black}{Terminé} \\ \hline
-2 & Gérer les comptes des administrateurs backoffice & \textcolor{green!60!black}{Terminé} \\ \hline
-6 & Gérer les administrations ministérielles & \textcolor{green!60!black}{Terminé} \\ \hline
+US1 & S'authentifier & \textcolor{green!60!black}{Terminé} \\ \hline
+US8 & Modifier mon profil & \textcolor{green!60!black}{Terminé} \\ \hline
+US5 & Gérer les comptes des administrateurs institutionnels & \textcolor{green!60!black}{Terminé} \\ \hline
+US7 & Gérer les langues de la plateforme & \textcolor{green!60!black}{Terminé} \\ \hline
+US3 & Gérer les rôles & \textcolor{green!60!black}{Terminé} \\ \hline
+US4 & Consulter les permissions & \textcolor{green!60!black}{Terminé} \\ \hline
+US2 & Gérer les comptes des administrateurs backoffice & \textcolor{green!60!black}{Terminé} \\ \hline
+US6 & Gérer les administrations ministérielles & \textcolor{green!60!black}{Terminé} \\ \hline
 \caption{Revue du Sprint 1}
 \end{longtable}
 
 
 
-\section{Sprint 2 : Configuration du catalogue de services administratifs}
+\section{Sprint 2 : Catalogue de services et moteur de formulaires dynamiques}
 
 Ce sprint établit le référentiel de services de la plateforme. Il donne aux administrateurs les outils nécessaires pour structurer l'offre de services par secteur, configurer des formulaires adaptés à chaque prestation et gérer les langues de l'interface. Il couvre également la partie citoyenne avec l'inscription, l'authentification et la consultation du catalogue de services.
 
@@ -277,17 +277,17 @@ Le tableau ci-dessous présente le backlog du second sprint avec l'estimation en
     \rowcolor{orange!30}
     \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
     
-        9  & Administrateur système & Je veux gérer les secteurs de services afin d'organiser les offres de la plateforme par domaine & 2 & Élevée\\ \hline
+        US9  & Administrateur système & Je veux gérer les secteurs de services afin d'organiser les offres de la plateforme par domaine & 2 & Élevée\\ \hline
         
-        10 & Administrateur ministériel& Je veux gérer les services administratifs afin de définir les prestations disponibles pour les citoyens & 4 & Élevée\\ \hline
+        US10 & Administrateur ministériel& Je veux gérer les services administratifs afin de définir les prestations disponibles pour les citoyens & 4 & Élevée\\ \hline
 
-       11 & Administrateur institutionnel & Je veux gérer le moteur de formulaires dynamiques afin de personnaliser les champs et les étapes des demandes par service & 13 & Élevée\\ \hline
+       US11 & Administrateur institutionnel & Je veux gérer le moteur de formulaires dynamiques afin de personnaliser les champs et les étapes des demandes par service & 8 & Élevée\\ \hline
 
-       12 & Internaute & Je veux créer un compte afin de pouvoir déposer des demandes de services & 2 & Élevée\\ \hline
+       US12 & Internaute & Je veux créer un compte afin de pouvoir déposer des demandes de services & 2 & Élevée\\ \hline
 
-       13 & Client & Je veux m'authentifier afin d'accéder à mon espace personnel & 3 & Élevée\\ \hline
+       US13 & Client & Je veux m'authentifier afin d'accéder à mon espace personnel & 2 & Élevée\\ \hline
 
-       14 & Internaute & Je veux consulter les secteurs et les services disponibles afin de connaître les offres par administration & 2 & Moyenne\\ \hline
+       US14 & Internaute & Je veux consulter les secteurs et les services disponibles afin de connaître les offres par administration & 2 & Moyenne\\ \hline
 
     \end{tabular}
     \caption{User stories du Sprint 2}
@@ -500,16 +500,16 @@ Dans cette section, nous avons choisi de présenter certaines interfaces représ
 \hline
 \rowcolor{orange!30}
 \textbf{ID} & \textbf{User Story} & \textbf{Statut} \\ \hline
-9  & Gérer les secteurs de services & \textcolor{green!60!black}{Terminé} \\ \hline
-10 & Gérer les services administratifs & \textcolor{green!60!black}{Terminé} \\ \hline
-12 & Gérer le moteur de formulaires dynamiques & \textcolor{green!60!black}{Terminé} \\ \hline
-13 & Créer un compte citoyen & \textcolor{green!60!black}{Terminé} \\ \hline
-14 & S’authentifier (Client) & \textcolor{green!60!black}{Terminé} \\ \hline
-15 & Consulter les secteurs et les services disponibles & \textcolor{green!60!black}{Terminé} \\ \hline
+US9  & Gérer les secteurs de services & \textcolor{green!60!black}{Terminé} \\ \hline
+US10 & Gérer les services administratifs & \textcolor{green!60!black}{Terminé} \\ \hline
+US12 & Gérer le moteur de formulaires dynamiques & \textcolor{green!60!black}{Terminé} \\ \hline
+US13 & Créer un compte citoyen & \textcolor{green!60!black}{Terminé} \\ \hline
+US14 & S’authentifier (Client) & \textcolor{green!60!black}{Terminé} \\ \hline
+US15 & Consulter les secteurs et les services disponibles & \textcolor{green!60!black}{Terminé} \\ \hline
 \caption{Revue du Sprint 2}
 \end{longtable}
 
-\section{Sprint 3 : Dématérialisation des demandes de services}
+\section{Sprint 3 : Dématérialisation et suivi des démarches en ligne}
 
 Le Sprint 3 constitue une étape clé du projet, dédiée à la dématérialisation des demandes de services. Il permet aux citoyens de soumettre et suivre leurs dossiers, de fournir des informations complémentaires et d’évaluer les services, tout en offrant un tableau de bord personnalisé.
 
@@ -528,19 +528,19 @@ Le tableau ci-dessous présente le backlog du troisième sprint avec l'estimatio
     \rowcolor{orange!30}
     \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
     
-    15 & Administrateur Ministériel & Je veux personnaliser les étapes de traitement des demandes sur les services afin d’adapter le workflow aux besoins spécifiques de mon ministère & 2 & Élevée \\ \hline
+    US15 & Administrateur Ministériel & Je veux personnaliser les étapes de traitement des demandes sur les services afin d’adapter le workflow aux besoins spécifiques de mon ministère & 2 & Élevée \\ \hline
 
-    16 & Client & Je veux déposer une demande de service en ligne afin d'obtenir une prestation administrative sans me déplacer & 7 & Élevée \\ \hline
+    US16 & Client & Je veux déposer une demande de service en ligne afin d'obtenir une prestation administrative sans me déplacer & 7 & Élevée \\ \hline
 
-    17 & Client & Je veux suivre l'état d'avancement de mes dossiers afin de connaître leur progression en temps réel & 5 & Élevée \\ \hline
+    US17 & Client & Je veux suivre l'état d'avancement de mes dossiers afin de connaître leur progression en temps réel & 4 & Élevée \\ \hline
 
-    18 & Client & Je veux évaluer un service après traitement afin de donner mon avis sur la qualité de la prestation & 2 & Moyenne \\ \hline
+    US18 & Client & Je veux évaluer un service après traitement afin de donner mon avis sur la qualité de la prestation & 2 & Moyenne \\ \hline
 
-    19 & Client & Je veux consulter mon tableau de bord afin d’avoir une vue d’ensemble de mes demandes et activités & 2 & Moyenne \\ \hline
+    US19 & Client & Je veux consulter mon tableau de bord afin d’avoir une vue d’ensemble de mes demandes et activités & 2 & Moyenne \\ \hline
 
-    20 & Client & Je veux Modifier mon profil afin de changer mes informations personnelles & 1 & Moyenne \\ \hline
+    US20 & Client & Je veux Modifier mon profil afin de changer mes informations personnelles & 1 & Moyenne \\ \hline
 
-    21 & Administrateur Institutionnel & Je veux gérer les demandes de service afin de les traiter et les suivre & 2 & Élevée \\ \hline
+    US21 & Administrateur Institutionnel & Je veux gérer les demandes de service afin de les traiter et les suivre & 2 & Élevée \\ \hline
 
     \end{tabular}
     \caption{User stories du Sprint 3}
@@ -759,13 +759,13 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \hline
 \rowcolor{orange!30}
 \textbf{ID} & \textbf{User Story} & \textbf{Statut} \\ \hline
-16 & Déposer une demande de service en ligne & \textcolor{green!60!black}{Terminé} \\ \hline
-17 & Suivre l'état d'avancement de mes dossiers & \textcolor{green!60!black}{Terminé} \\ \hline
-18 & Évaluer un service après traitement & \textcolor{green!60!black}{Terminé} \\ \hline
-19 & Consulter mon tableau de bord & \textcolor{green!60!black}{Terminé} \\ \hline
-20 & Modifier mon profil (Client) & \textcolor{green!60!black}{Terminé} \\ \hline
-11 & Personnaliser les étapes de traitement des demandes & \textcolor{green!60!black}{Terminé} \\ \hline
-24 & Gérer les demandes de service (Admin Institutionnel) & \textcolor{green!60!black}{Terminé} \\ \hline
+US16 & Déposer une demande de service en ligne & \textcolor{green!60!black}{Terminé} \\ \hline
+US17 & Suivre l'état d'avancement de mes dossiers & \textcolor{green!60!black}{Terminé} \\ \hline
+US18 & Évaluer un service après traitement & \textcolor{green!60!black}{Terminé} \\ \hline
+US19 & Consulter mon tableau de bord & \textcolor{green!60!black}{Terminé} \\ \hline
+US20 & Modifier mon profil (Client) & \textcolor{green!60!black}{Terminé} \\ \hline
+US11 & Personnaliser les étapes de traitement des demandes & \textcolor{green!60!black}{Terminé} \\ \hline
+US24 & Gérer les demandes de service (Admin Institutionnel) & \textcolor{green!60!black}{Terminé} \\ \hline
 \caption{Revue du Sprint 3}
 \end{longtable}
 
@@ -779,4 +779,4 @@ Au cours de cette release, nous avons mis en place les fonctionnalités liées �
 
 Cette release a également permis de mettre à disposition des citoyens un espace dédié à la consultation des secteurs et services administratifs, au dépôt des demandes en ligne ainsi qu’au suivi de l’état d’avancement de leurs dossiers, améliorant ainsi l’accessibilité et la transparence des démarches administratives.
 
-Le chapitre suivant sera consacré à la deuxième release, regroupant les \textit{Sprint 4} et \textit{Sprint 5}, portant respectivement sur la gestion des réclamations et du système de notifications, ainsi que sur la vitrine institutionnelle, la supervision du système et l'assistant conversationnel intelligent.
+Le chapitre suivant sera consacré à la deuxième release, regroupant le \textit{Sprint 4} (gestion des réclamations, système de notifications et supervision de la plateforme) et le \textit{Sprint 5} (portail public et assistant conversationnel intelligent).

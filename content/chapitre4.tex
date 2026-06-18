@@ -1,12 +1,12 @@
-\chapter{Deuxième release}
+\chapter{Deuxième release : sprint 4 et sprint 5}
 
 \section{Introduction}
-Cette deuxième release regroupe les \textit{Sprint 4} et \textit{Sprint 5}, consacrés à l’enrichissement de la plateforme e-Gouvernement à travers des fonctionnalités visant à améliorer l’interaction avec les citoyens, la communication institutionnelle, la supervision globale du système ainsi que l’intégration d’un assistant conversationnel intelligent basé sur l’intelligence artificielle.
+La deuxième release enrichit la plateforme e-Gouvernement par des fonctionnalités de communication, de supervision et d'assistance. Elle se compose de deux sprints. Le \textit{Sprint 4} met en place la gestion des réclamations, le moteur de notifications automatisées et les outils de supervision de la plateforme. Le \textit{Sprint 5} livre le portail public, avec la vitrine institutionnelle et un assistant conversationnel intelligent fondé sur l'intelligence artificielle générative et une approche RAG, doublé d'un canal d'assistance permettant de recontacter les citoyens en difficulté.
 
 
-\section{Sprint 4 : La gestion des réclamations et du système de notifications}
+\section{Sprint 4 : Réclamations, notifications et supervision}
 
-Ce sprint vise à permettre aux citoyens de soumettre et suivre leurs réclamations, tout en offrant aux administrations des mécanismes de traitement structurés et un système de notifications assurant une communication fluide entre les différents acteurs.
+Ce sprint permet aux citoyens de soumettre et suivre leurs réclamations, tout en offrant aux administrations des mécanismes de traitement structurés et un système de notifications assurant une communication fluide entre les acteurs. Il met également en place les outils de supervision : statistiques globales, journaux d'activités et logs système, qui donnent aux administrateurs une vue d'ensemble de l'activité de la plateforme et facilitent le diagnostic des anomalies.
 
 \subsection{Backlog du Sprint 4}
 
@@ -18,14 +18,17 @@ Le tableau ci-dessous présente le backlog du quatrième sprint avec l'estimatio
     \rowcolor{orange!30}
     \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
 
-    22 & Administrateur Système & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & 2 & Élevée \\ \hline
-    23 & Administrateur système & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & 3 & Élevée \\ \hline
-    24 & Administrateur Institutionnel  & Je veux gérer les réclamations soumises afin d'y apporter des réponses appropriées & 2 & Élevée \\ \hline
-    25 & Administrateur Système & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & 3 & Élevée \\ \hline
-    26 & Administrateur Système & Je veux gérer notifications afin d'informer automatiquement les utilisateurs des changements de statut & 4 & Élevée \\ \hline
-    27 & Administrateur Système & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & 2 & Moyenne \\ \hline
-    28 & Internaute & Je veux gérer mes réclamations afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement& 2 & Élevée \\ \hline
-    29 & Client & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & 2 & Élevée \\ \hline
+    US22 & Administrateur Système & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & 2 & Élevée \\ \hline
+    US23 & Administrateur système & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & 2 & Élevée \\ \hline
+    US24 & Administrateur Institutionnel  & Je veux gérer les réclamations soumises afin d'y apporter des réponses appropriées & 2 & Élevée \\ \hline
+    US25 & Administrateur Système & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & 2 & Élevée \\ \hline
+    US26 & Administrateur Système & Je veux gérer notifications afin d'informer automatiquement les utilisateurs des changements de statut & 2 & Élevée \\ \hline
+    US27 & Administrateur Système & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & 2 & Moyenne \\ \hline
+    US28 & Internaute & Je veux gérer mes réclamations afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement& 2 & Élevée \\ \hline
+    US29 & Client & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & 2 & Élevée \\ \hline
+    US30 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 2 & Moyenne \\ \hline
+    US31 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 1 & Moyenne \\ \hline
+    US32 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
 
     \end{tabular}
     \caption{User stories du Sprint 4}
@@ -226,6 +229,29 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \end{center}
 
 
+\subsection{Réalisation de la supervision de la plateforme}
+
+\noindent Le module de supervision donne aux administrateurs une vue d'ensemble de l'activité de la plateforme. Il s'appuie sur l'entité \texttt{activity\_log}, qui trace les actions effectuées sur le système.
+
+\noindent L'interface suivante présente le tableau de bord de supervision affichant les statistiques globales de la plateforme, avec des indicateurs par administration et par période.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/statistique.png}}
+    \captionof{figure}{Tableau de bord des statistiques globales}
+    \label{fig:real-statistiques}
+\end{center}
+
+\noindent L'interface suivante permet à l'administrateur de consulter les journaux d'activités de la plateforme et de les filtrer.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/journaux.png}}
+    \captionof{figure}{Journaux d'activités}
+    \label{fig:real-journaux}
+\end{center}
+
+\noindent Enfin, les logs système restituent les événements techniques de la plateforme et aident à détecter les anomalies.
+
+
 \subsection{Revue du Sprint 4}
 
 À l'issue du Sprint 4, l'ensemble des user stories planifiées ont été développées et validées.
@@ -234,20 +260,33 @@ Dans cette section, nous présentons certaines interfaces représentatives de la
 \hline
 \rowcolor{orange!30}
 \textbf{ID} & \textbf{User Story} & \textbf{Statut} \\ \hline
-21 & Gérer les catégories de réclamations & \textcolor{green!60!black}{Terminé} \\ \hline
-22 & Personnaliser les étapes de traitement des réclamations & \textcolor{green!60!black}{Terminé} \\ \hline
-23 & Gérer les réclamations soumises & \textcolor{green!60!black}{Terminé} \\ \hline
-25 & Gérer les modèles de notifications & \textcolor{green!60!black}{Terminé} \\ \hline
-26 & Gérer les notifications & \textcolor{green!60!black}{Terminé} \\ \hline
-27 & Consulter l'historique des notifications & \textcolor{green!60!black}{Terminé} \\ \hline
-28 & Gérer mes réclamations (Internaute) & \textcolor{green!60!black}{Terminé} \\ \hline
-29 & Consulter mes notifications (Client) & \textcolor{green!60!black}{Terminé} \\ \hline
+US22 & Gérer les catégories de réclamations & \textcolor{green!60!black}{Terminé} \\ \hline
+US23 & Personnaliser les étapes de traitement des réclamations & \textcolor{green!60!black}{Terminé} \\ \hline
+US24 & Gérer les réclamations soumises & \textcolor{green!60!black}{Terminé} \\ \hline
+US25 & Gérer les modèles de notifications & \textcolor{green!60!black}{Terminé} \\ \hline
+US26 & Gérer les notifications & \textcolor{green!60!black}{Terminé} \\ \hline
+US27 & Consulter l'historique des notifications & \textcolor{green!60!black}{Terminé} \\ \hline
+US28 & Gérer mes réclamations (Internaute) & \textcolor{green!60!black}{Terminé} \\ \hline
+US29 & Consulter mes notifications (Client) & \textcolor{green!60!black}{Terminé} \\ \hline
+US30 & Consulter les statistiques globales & \textcolor{green!60!black}{Terminé} \\ \hline
+US31 & Consulter les journaux d'activités & \textcolor{green!60!black}{Terminé} \\ \hline
+US32 & Consulter les logs système & \textcolor{green!60!black}{Terminé} \\ \hline
 \caption{Revue du Sprint 4}
 \end{longtable}
 
+\section{Sprint 5 : Portail public et assistant conversationnel intelligent}
+Ce dernier sprint réunit la couche publique de la plateforme et sa composante d'intelligence artificielle. Il met en place la vitrine institutionnelle, qui donne aux internautes un accès public aux informations officielles du gouvernement, et un assistant conversationnel intelligent intégré au portail. Cet assistant repose sur l'intelligence artificielle générative et une approche \textit{RAG} (\textit{Retrieval-Augmented Generation}, génération augmentée par la recherche) : il répond en langage naturel aux questions des citoyens sur les services, les secteurs, les démarches, les actualités et la FAQ, et réduit la charge pesant sur les canaux de support traditionnels. Le sprint met également en place un canal d'assistance humaine : un citoyen en difficulté laisse ses coordonnées afin d'être recontacté par un administrateur, les demandes étant centralisées et traitées dans le backoffice.
 
-\section{Sprint 5 : Assistant conversationnel intelligent, vitrine institutionnelle et supervision système}
-Ce sprint clôture la deuxième release en réunissant trois composantes complémentaires. La première est un assistant conversationnel intelligent intégré au portail : fondé sur l'intelligence artificielle générative et une approche \textit{RAG} (\textit{Retrieval-Augmented Generation}, génération augmentée par la recherche), il répond en langage naturel aux questions des citoyens sur les services en ligne, les secteurs, les démarches administratives, les actualités et la FAQ, et réduit ainsi la charge pesant sur les canaux de support traditionnels. La deuxième est la vitrine institutionnelle, qui donne aux internautes un accès public aux informations officielles du gouvernement à travers un ensemble de pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide d'utilisation, à propos). La troisième est le module de supervision, qui permet aux administrateurs de suivre l'activité de la plateforme via des tableaux de bord statistiques, des journaux d'activités et des logs système. Le sprint met également en place un \textbf{canal d'assistance humaine} : un citoyen en difficulté laisse ses coordonnées afin d'être recontacté par un administrateur, les demandes étant centralisées et traitées dans le backoffice.
+
+\subsection{Concepts fondamentaux}
+Avant de décrire l'assistant, nous rappelons les notions sur lesquelles il repose.
+
+\begin{itemize}
+    \item \textbf{Grand modèle de langage (LLM)} : un modèle entraîné à produire du texte en langage naturel. Utilisé seul, il peut « halluciner », c'est-à-dire produire une réponse plausible mais fausse, car il répond à partir de ce qu'il a appris et non à partir des données du portail.
+    \item \textbf{Embedding} : la transformation d'un texte en un vecteur de nombres qui en capture le sens. Deux textes proches par le sens donnent des vecteurs proches dans l'espace vectoriel.
+    \item \textbf{Base de données vectorielle} : une base qui stocke ces vecteurs et retrouve, pour une requête donnée, les vecteurs les plus proches au sens d'une mesure de similarité (ici la similarité cosinus).
+    \item \textbf{RAG (Retrieval-Augmented Generation)} : une approche qui, au lieu de laisser le modèle répondre de mémoire, récupère d'abord les passages pertinents du contenu du portail, puis les fournit au modèle comme contexte. La réponse est ainsi ancrée dans les données réelles, ce qui réduit les hallucinations.
+\end{itemize}
 
 \subsection{Backlog du Sprint 5}
 
@@ -259,14 +298,14 @@ Le tableau ci-dessous présente le backlog du cinquième sprint avec l'estimatio
     \rowcolor{orange!30}
     \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
 
-    30 & Internaute & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches & 9 & Élevée \\ \hline
-    34 & Administrateur Système & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & 2 & Élevée \\ \hline
-    35 & Administrateur Système & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & 1 & Moyenne \\ \hline
-    36 & Internaute & Je veux consulter les pages d'information (gouvernement, projets et réalisations, actualités...) afin d'accéder aux données officielles du portail & 3 & Moyenne \\ \hline
-    37 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
-    38 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 3 & Moyenne \\ \hline
-    39 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 2 & Moyenne \\ \hline
-    40 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
+    US33 & Internaute & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches & 10 & Élevée \\ \hline
+    US34 & Internaute & Je veux dicter ma question à la voix afin de faciliter la saisie & 1 & Moyenne \\ \hline
+    US35 & Internaute & Je veux disposer de suggestions de questions afin d'être guidé dans mes demandes & 1 & Moyenne \\ \hline
+    US36 & Internaute & Je veux demander à être assisté par un administrateur lorsque je n'arrive pas à utiliser le site & 2 & Élevée \\ \hline
+    US37 & Administrateur Système & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & 2 & Élevée \\ \hline
+    US38 & Administrateur Système & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & 1 & Moyenne \\ \hline
+    US39 & Internaute & Je veux consulter les pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide, à propos) afin d'accéder aux données officielles du portail & 2 & Moyenne \\ \hline
+    US40 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
 
     \end{tabular}
     \caption{User stories du Sprint 5}
@@ -274,15 +313,10 @@ Le tableau ci-dessous présente le backlog du cinquième sprint avec l'estimatio
 \end{table}
 
 \subsection{Spécification fonctionnelle du Sprint 5}
-Dans cette section, nous présentons le diagramme de cas d'utilisation du sprint 5, l'architecture de l'assistant conversationnel, le diagramme de classe ainsi que les descriptions textuelles des cas d'utilisation principaux.
+Dans cette section, nous présentons le diagramme de cas d'utilisation du sprint, le diagramme de classe et les descriptions textuelles des cas d'utilisation principaux.
 
-\subsection{Diagramme de cas d'utilisation du Sprint 5}
+\subsubsection{Diagramme de cas d'utilisation du Sprint 5}
 
-% TODO Salma : exporter ici le diagramme de cas d'utilisation fusionné
-% (Internaute : poser une question, dicter à la voix, choisir une suggestion,
-% demander assistance, consulter les pages d'information, contacter administrateur ;
-% Administrateur / Administrateur Système : consulter statistiques, journaux,
-% logs système, gérer les demandes d'assistance).
 \begin{figure}[H]
     \centering
     \includegraphics[width=11cm,height=18cm]{images/diagrammes/sprint5/v2-cas-utilisation-sprint5.drawio.png}
@@ -290,72 +324,8 @@ Dans cette section, nous présentons le diagramme de cas d'utilisation du sprint
     \label{fig:cas-utilisation-sprint5}
 \end{figure}
 
-\subsection{Architecture de l'assistant conversationnel}
-L'assistant repose sur l'écosystème de modules \textit{AI} de Drupal — \textit{AI Core}, \textit{AI Assistant API}, \textit{AI Chatbot}, \textit{AI Search} et \textit{AI Agents} — complété par deux connecteurs : \textit{AI Provider OpenAI} pour le modèle de langage (\texttt{gpt-4o-mini}) et \textit{AI VDB Provider Pinecone} pour la base de données vectorielle \textit{Pinecone}. Le fournisseur Gemini a également été évalué (voir la sous-section sur le choix du fournisseur LLM). Le tableau \ref{tab:modules-ai} décrit le rôle de chaque module.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|p{4.5cm}|p{10.5cm}|} \hline
-\rowcolor{orange!30}
-\textbf{Module} & \textbf{Rôle} \\ \hline
-AI Core & Couche de base de l'écosystème ; fournit l'abstraction commune aux fournisseurs d'IA et l'API utilisée par les autres modules. \\ \hline
-AI Provider OpenAI & Connecteur vers OpenAI ; permet d'appeler le modèle \texttt{gpt-4o-mini} pour la génération des réponses et la vectorisation (\textit{embeddings}). \\ \hline
-AI VDB Provider Pinecone & Connecteur vers la base de données vectorielle Pinecone ; enregistre et interroge les vecteurs du contenu. \\ \hline
-AI Search & Met en œuvre la recherche sémantique (RAG) ; indexe le contenu du portail et récupère les passages les plus pertinents via Search API. \\ \hline
-AI Assistant API & Définit l'assistant conversationnel : ses instructions, son comportement et ses sources de contexte. \\ \hline
-AI Chatbot & Fournit l'interface de conversation (\textit{widget}) intégrée au portail. \\ \hline
-AI Agents & Framework d'agents permettant à l'assistant de déclencher des actions et d'utiliser des outils. \\ \hline
-\end{tabular}
-\caption{Modules de l'écosystème AI de Drupal utilisés}
-\label{tab:modules-ai}
-\end{table}
-
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint5/architecture-chatbot.drawio (1).png}
-    \caption{Architecture RAG de l'assistant conversationnel -- Sprint 5}
-    \label{fig:architecture-chatbot-sprint5}
-\end{figure}
-
-
-\subsection{Base de données vectorielle}
-\noindent La base vectorielle constitue le socle de la phase de recherche du RAG. Le projet s'appuie sur \textit{Pinecone}, une base de données vectorielle gérée dans le cloud, à travers un index dédié.
-
-\noindent Chaque contenu du portail est découpé en passages, puis converti en \textit{embedding} (vecteur numérique de plusieurs centaines de dimensions) à l'aide du modèle de vectorisation du fournisseur d'IA. Ces vecteurs sont enregistrés dans l'index Pinecone. Lorsqu'une question est posée, elle est à son tour vectorisée puis comparée aux vecteurs de l'index par \textbf{similarité sémantique}, afin d'extraire les passages les plus proches.
-
-\noindent Le comportement de la recherche est paramétrable :
-\begin{itemize}
-    \item \textbf{Seuil de similarité} : score minimal qu'un passage doit atteindre pour être retenu ;
-    \item \textbf{Nombre de résultats} : nombre maximal de passages fournis au modèle comme contexte ;
-    \item \textbf{Mode de restitution} : passages bruts (\textit{chunks}) ou contenus rendus.
-\end{itemize}
-
-\subsection{Choix du fournisseur LLM et configuration des clés API}
-\noindent Le module \textit{AI} de Drupal s'interface avec le modèle de langage via un fournisseur configurable. La clé d'accès (\textit{clé API}) est enregistrée de manière sécurisée dans le gestionnaire de clés (\textit{Key}) de Drupal plutôt qu'en clair dans le code. \textbf{Deux modèles, issus de deux fournisseurs différents, ont été testés} avant d'arrêter le choix définitif.
-
-\begin{itemize}
-    % TODO Salma : remplacer <modèle Gemini> par le modèle réellement utilisé (ex. gemini-1.5-flash)
-    \item \textbf{Gemini (Google)}, modèle \texttt{gemini-2.0-flash} : intégré et fonctionnel, mais affecté par une \textbf{connectivité réseau instable} depuis l'environnement de développement (résolution DNS lente vers les services Google), entraînant des délais d'attente et des réponses intermittentes.
-    \item \textbf{OpenAI}, modèle \texttt{gpt-4o-mini} : retenu. Il offre un bon compromis entre coût, rapidité et qualité de restitution en français. Une difficulté a été rencontrée puis résolue : une première clé API ne disposait plus de quota (\textit{insufficient quota}), remplacée par une clé valide.
-\end{itemize}
-
-
-\noindent Le tableau \ref{tab:comparaison-llm} synthétise cette comparaison.
-
-\begin{table}[H]
-\centering
-\begin{tabular}{|p{3cm}|p{3.5cm}|p{2.5cm}|p{3cm}|} \hline
-\rowcolor{orange!30}
-\textbf{Fournisseur} & \textbf{Connectivité} & \textbf{Coût} & \textbf{Décision} \\ \hline
-Gemini & Instable (DNS) & Faible & Écarté \\ \hline
-OpenAI (\texttt{gpt-4o-mini}) & Fiable & Maîtrisé & \textbf{Retenu} \\ \hline
-\end{tabular}
-\caption{Comparaison des fournisseurs LLM évalués -- Sprint 5}
-\label{tab:comparaison-llm}
-\end{table}
-
-\subsection{Diagramme de classe du Sprint 5}
-\noindent Le canal d'assistance introduit l'entité \texttt{AssistanceRequest}, qui centralise les demandes issues du chatbot et du formulaire de contact (nom, prénom, téléphone, email, sujet, message, source et statut de traitement). Cette entité est partagée entre l'API métier (qui l'alimente) et le backoffice (qui la gère et la traite). Le module de supervision s'appuie quant à lui sur l'entité \texttt{activity\_log}, qui trace les actions effectuées sur la plateforme.
+\subsubsection{Diagramme de classe du Sprint 5}
+\noindent Le canal d'assistance introduit l'entité \texttt{AssistanceRequest}, qui centralise les demandes issues du chatbot et du formulaire de contact (nom, prénom, téléphone, email, sujet, message, source et statut de traitement). Cette entité est partagée entre l'API métier, qui l'alimente, et le backoffice, qui la gère et la traite.
 
 \begin{figure}[H]
     \centering
@@ -364,11 +334,9 @@ OpenAI (\texttt{gpt-4o-mini}) & Fiable & Maîtrisé & \textbf{Retenu} \\ \hline
     \label{fig:classe-sprint5}
 \end{figure}
 
-
-\subsection{Descriptions textuelles des cas d'utilisation}
+\subsubsection{Descriptions textuelles des cas d'utilisation}
 \noindent Nous détaillons ci-dessous les deux cas d'utilisation principaux du sprint : l'interaction du citoyen avec l'assistant conversationnel et le traitement des demandes d'assistance par l'administrateur.
 
-% ===================== POSER UNE QUESTION =====================
 \noindent Une description détaillée du cas d'utilisation « Poser une question à l'assistant » est présentée ci-dessous.
 
 \begin{table}[H]
@@ -401,7 +369,6 @@ Scénario alternatif &
 \label{tab:desc-poser-question}
 \end{table}
 
-% ===================== GÉRER LES DEMANDES D'ASSISTANCE =====================
 \noindent Une description détaillée du cas d'utilisation « Gérer les demandes d'assistance » est présentée ci-dessous.
 
 \begin{table}[H]
@@ -438,7 +405,95 @@ Le statut de la demande est mis à jour. \\ \hline
 \label{tab:desc-gerer-assistance}
 \end{table}
 
+\subsection{Architecture de l'assistant conversationnel}
+L'assistant repose sur l'écosystème de modules \textit{AI} de Drupal — \textit{AI Core}, \textit{AI Assistant API}, \textit{AI Chatbot}, \textit{AI Search} et \textit{AI Agents} — complété par deux connecteurs : \textit{AI Provider OpenAI} pour le modèle de langage et la vectorisation, et \textit{AI VDB Provider Pinecone} pour la base de données vectorielle \textit{Pinecone}. Le fournisseur Gemini a également été évalué (voir la section sur le choix du fournisseur LLM). Le tableau \ref{tab:modules-ai} décrit le rôle de chaque module.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{4.5cm}|p{10.5cm}|} \hline
+\rowcolor{orange!30}
+\textbf{Module} & \textbf{Rôle} \\ \hline
+AI Core & Couche de base de l'écosystème ; fournit l'abstraction commune aux fournisseurs d'IA et l'API utilisée par les autres modules. \\ \hline
+AI Provider OpenAI & Connecteur vers OpenAI ; permet d'appeler le modèle \texttt{gpt-4o-mini} pour la génération des réponses et le modèle \texttt{text-embedding-3-large} pour la vectorisation (\textit{embeddings}). \\ \hline
+AI VDB Provider Pinecone & Connecteur vers la base de données vectorielle Pinecone ; enregistre et interroge les vecteurs du contenu. \\ \hline
+AI Search & Met en œuvre la recherche sémantique (RAG) ; indexe le contenu du portail et récupère les passages les plus pertinents via Search API. \\ \hline
+AI Assistant API & Définit l'assistant conversationnel : ses instructions, son comportement et ses sources de contexte. \\ \hline
+AI Chatbot & Fournit l'interface de conversation (\textit{widget}) intégrée au portail. \\ \hline
+\end{tabular}
+\caption{Modules de l'écosystème AI de Drupal utilisés}
+\label{tab:modules-ai}
+\end{table}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm,height=15cm]{images/diagrammes/sprint5/architecture-chatbot.drawio (1).png}
+    \caption{Architecture de l'assistant conversationnel -- Sprint 5}
+    \label{fig:architecture-chatbot-sprint5}
+\end{figure}
+
+\subsection{Pipeline RAG}
+\noindent Le fonctionnement de l'assistant suit deux phases. La première, hors ligne, indexe le contenu : chaque contenu du portail est découpé en passages (\textit{chunking}), converti en \textit{embedding} par le modèle de vectorisation, puis enregistré dans l'index Pinecone. La seconde, en ligne, traite la question : la question est vectorisée, comparée aux vecteurs de l'index par similarité, et les passages les plus proches sont fournis au modèle de langage comme contexte pour produire la réponse. Le schéma \ref{fig:schema-rag} illustre ces deux phases.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth]{images/diagrammes/sprint5/schema-rag.drawio.png}
+    \caption{Schéma du pipeline RAG de l'assistant conversationnel}
+    \label{fig:schema-rag}
+\end{figure}
+
+\subsection{Base de données vectorielle}
+\noindent La base vectorielle est le socle de la phase de recherche du RAG. Le projet s'appuie sur \textit{Pinecone}, une base de données vectorielle gérée dans le cloud, à travers un index dédié (collection \texttt{trainning}, métrique cosinus, vecteurs de 3072 dimensions).
+
+\noindent Chaque contenu du portail est découpé en passages (taille de passage de 2000 caractères, chevauchement de 100), puis converti en \textit{embedding} à l'aide du modèle \texttt{text-embedding-3-large} d'OpenAI. Ces vecteurs sont enregistrés dans l'index Pinecone. Lorsqu'une question est posée, elle est à son tour vectorisée puis comparée aux vecteurs de l'index par \textbf{similarité sémantique}, afin d'extraire les passages les plus proches.
+
+\noindent Le comportement de la recherche est paramétrable :
+\begin{itemize}
+    \item \textbf{Seuil de similarité} : score minimal qu'un passage doit atteindre pour être retenu ;
+    \item \textbf{Nombre de résultats} : nombre maximal de passages fournis au modèle comme contexte ;
+    \item \textbf{Mode de restitution} : passages bruts (\textit{chunks}) ou contenus rendus.
+\end{itemize}
+
+\subsection{Choix du fournisseur LLM et configuration des clés API}
+\noindent Le module \textit{AI} de Drupal s'interface avec le modèle de langage via un fournisseur configurable. La clé d'accès (\textit{clé API}) est enregistrée de manière sécurisée dans le gestionnaire de clés (\textit{Key}) de Drupal plutôt qu'en clair dans le code. Deux fournisseurs ont été testés avant d'arrêter le choix définitif. La vectorisation et la génération sont assurées par deux modèles distincts d'OpenAI : \texttt{text-embedding-3-large} pour les embeddings et \texttt{gpt-4o-mini} pour la génération des réponses.
+
+\begin{itemize}
+    \item \textbf{Gemini (Google)}, modèle \texttt{gemini-2.0-flash} : intégré et fonctionnel, mais affecté par une connectivité réseau instable depuis l'environnement de développement (résolution DNS lente vers les services Google), entraînant des délais d'attente et des réponses intermittentes.
+    \item \textbf{OpenAI}, modèles \texttt{text-embedding-3-large} (embeddings) et \texttt{gpt-4o-mini} (génération) : retenu. Il offre un bon compromis entre coût, rapidité et qualité de restitution en français. Une difficulté a été rencontrée puis résolue : une première clé API ne disposait plus de quota (\textit{insufficient quota}), remplacée par une clé valide.
+\end{itemize}
+
+\noindent Le tableau \ref{tab:comparaison-llm} synthétise cette comparaison.
+
+\begin{table}[H]
+\centering
+\begin{tabular}{|p{3cm}|p{3.5cm}|p{2.5cm}|p{3cm}|} \hline
+\rowcolor{orange!30}
+\textbf{Fournisseur} & \textbf{Connectivité} & \textbf{Coût} & \textbf{Décision} \\ \hline
+Gemini & Instable (DNS) & Faible & Écarté \\ \hline
+OpenAI & Fiable & Maîtrisé & \textbf{Retenu} \\ \hline
+\end{tabular}
+\caption{Comparaison des fournisseurs LLM évalués -- Sprint 5}
+\label{tab:comparaison-llm}
+\end{table}
+
 \subsection{Réalisation du Sprint 5}
+
+\noindent \textbf{Vitrine institutionnelle :}
+
+\noindent La vitrine donne aux internautes un accès public aux informations officielles du portail à travers un ensemble de pages : accueil, gouvernement, projets et réalisations, actualités, FAQ, guide d'utilisation et à propos.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/accueil.png}}
+    \captionof{figure}{Page d'accueil de la vitrine institutionnelle}
+    \label{fig:real-vitrine}
+\end{center}
+
+\noindent La page « projets et réalisations » présente les initiatives officielles du gouvernement.
+
+\begin{center}
+    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/projet-realisation.png}}
+    \captionof{figure}{Page « projets et réalisations » de la vitrine}
+    \label{fig:real-vitrine-projets}
+\end{center}
 
 \noindent \textbf{Assistant conversationnel :}
 
@@ -451,7 +506,6 @@ Le statut de la demande est mis à jour. \\ \hline
     \label{fig:real-chatbot}
 \end{figure}
 
-
 \noindent \textbf{Demande d'assistance depuis le chatbot :}
 
 \noindent Lorsqu'un internaute signale une difficulté, l'assistant affiche un court formulaire (nom et téléphone) puis confirme la prise en compte de la demande.
@@ -462,7 +516,6 @@ Le statut de la demande est mis à jour. \\ \hline
     \caption{Demande d'assistance depuis le chatbot}
     \label{fig:real-assistance-form}
 \end{figure}
-
 
 \noindent \textbf{Gestion des demandes dans le backoffice :}
 
@@ -475,35 +528,23 @@ Le statut de la demande est mis à jour. \\ \hline
     \label{fig:real-backoffice-assistance}
 \end{figure}
 
-
-\noindent \textbf{Supervision du système :}
-
-\noindent L'interface suivante présente le tableau de bord de supervision affichant les statistiques globales de la plateforme, avec des indicateurs clés par administration et par période.
-
-\begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/statistique.png}}
-    \captionof{figure}{Tableau de bord des statistiques globales}
-    \label{fig:real-statistiques}
-\end{center}
-
-
-\noindent L'interface suivante permet à l'administrateur de consulter les journaux d'activités de la plateforme et de les filtrer.
-
-\begin{center}
-    \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint5/journaux.png}}
-    \captionof{figure}{Journaux d'activités}
-    \label{fig:real-journaux}
-\end{center}
-
-\noindent L'interface suivante permet à l'administrateur de gérer les demandes d'assistance provenant des citoyens du portail.
-
 \begin{center}
     \adjustbox{frame}{\includegraphics[width=17cm]{images/realisation/sprint6/Capture d’écran du 2026-06-14 21-45-07.png}}
     \captionof{figure}{Page de gestion des demandes d'assistance}
-    \label{fig:real-gouvernement}
+    \label{fig:real-gestion-assistance}
 \end{center}
 
-\newpage
+\subsection{Limites et perspectives}
+\noindent L'assistant est fonctionnel et ancré dans le contenu du portail, mais plusieurs limites restent à lever.
+
+\begin{itemize}
+    \item \textbf{Déclenchement de la recherche} : sans appel de fonction (\textit{function calling}), le modèle décide parfois de répondre « de mémoire » au lieu d'interroger l'index, ce qui peut produire des réponses inventées. L'activation du function calling est la piste principale d'amélioration.
+    \item \textbf{Remontée des actualités} : sur une question vague, les contenus de synthèse (secteurs, services) ressortent mieux classés que les actualités, qui apparaissent alors trop bas dans les résultats.
+    \item \textbf{Latence} : en mode sans function calling, une réponse nécessite deux appels au modèle, ce qui allonge le temps de réponse.
+\end{itemize}
+
+\noindent En perspective, l'activation du function calling, un réglage plus fin de l'indexation des actualités et une mise en cache des réponses fréquentes amélioreraient la fiabilité et la rapidité de l'assistant.
+
 \subsection{Revue du Sprint 5}
 
 À l'issue du Sprint 5, l'ensemble des user stories planifiées ont été développées et validées.
@@ -512,16 +553,17 @@ Le statut de la demande est mis à jour. \\ \hline
 \hline
 \rowcolor{orange!30}
 \textbf{ID} & \textbf{User Story} & \textbf{Statut} \\ \hline
-30 & Poser une question à l'assistant conversationnel & \textcolor{green!60!black}{Terminé} \\ \hline
-31 & Dicter sa question à la voix & \textcolor{green!60!black}{Terminé} \\ \hline
-32 & Utiliser des suggestions de questions & \textcolor{green!60!black}{Terminé} \\ \hline
-33 & Demander à être assisté par un administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
-34 & Gérer les demandes d'assistance & \textcolor{green!60!black}{Terminé} \\ \hline
-35 & Être notifié par email d'une nouvelle demande & \textcolor{green!60!black}{Terminé} \\ \hline
-36 & Consulter les pages d'information & \textcolor{green!60!black}{Terminé} \\ \hline
-37 & Contacter l'administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
-38 & Consulter les statistiques globales & \textcolor{green!60!black}{Terminé} \\ \hline
-39 & Consulter les journaux d'activités & \textcolor{green!60!black}{Terminé} \\ \hline
-40 & Consulter les logs système & \textcolor{green!60!black}{Terminé} \\ \hline
+US33 & Poser une question à l'assistant conversationnel & \textcolor{green!60!black}{Terminé} \\ \hline
+US34 & Dicter sa question à la voix & \textcolor{green!60!black}{Terminé} \\ \hline
+US35 & Utiliser des suggestions de questions & \textcolor{green!60!black}{Terminé} \\ \hline
+US36 & Demander à être assisté par un administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
+US37 & Gérer les demandes d'assistance & \textcolor{green!60!black}{Terminé} \\ \hline
+US38 & Être notifié par email d'une nouvelle demande & \textcolor{green!60!black}{Terminé} \\ \hline
+US39 & Consulter les pages d'information & \textcolor{green!60!black}{Terminé} \\ \hline
+US40 & Contacter l'administrateur & \textcolor{green!60!black}{Terminé} \\ \hline
 \caption{Revue du Sprint 5}
 \end{longtable}
+
+\section{Conclusion}
+
+Ce chapitre a présenté la deuxième release à travers ses deux sprints. Le Sprint 4 a mis en place la gestion des réclamations, le moteur de notifications automatisées et les outils de supervision de la plateforme. Le Sprint 5 a livré le portail public, avec la vitrine institutionnelle et un assistant conversationnel intelligent fondé sur une approche RAG et une base de données vectorielle, doublé d'un canal d'assistance humaine permettant de recontacter les citoyens en difficulté.

@@ -1,0 +1,129 @@
+<mxGraphModel dx="1400" dy="800" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1200" pageHeight="700" math="0" shadow="0">
+  <root>
+    <mxCell id="0" />
+    <mxCell id="1" parent="0" />
+
+    <!-- ===================== PHASE 1 : INDEXATION (hors ligne) ===================== -->
+    <mxCell id="t-phase1" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#143642;" value="Phase 1 — Indexation (hors ligne)" vertex="1">
+      <mxGeometry height="30" width="360" x="40" y="40" as="geometry" />
+    </mxCell>
+
+    <mxCell id="p1-band" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0F8B8D;dashed=1;dashPattern=6 6;verticalAlign=top;fontColor=#143642;" value="" vertex="1">
+      <mxGeometry height="120" width="880" x="40" y="80" as="geometry" />
+    </mxCell>
+
+    <mxCell id="a1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Contenu du portail&#10;(nœuds Drupal : secteurs, services, actualités, FAQ...)" vertex="1">
+      <mxGeometry height="70" width="180" x="60" y="105" as="geometry" />
+    </mxCell>
+    <mxCell id="a2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Découpage en passages&#10;(chunking : taille 2000, chevauchement 100)" vertex="1">
+      <mxGeometry height="70" width="170" x="290" y="105" as="geometry" />
+    </mxCell>
+    <mxCell id="a3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Embedding&#10;OpenAI text-embedding-3-large&#10;(vecteurs 3072 dimensions)" vertex="1">
+      <mxGeometry height="70" width="220" x="510" y="105" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e-a1a2" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="240" y="140" as="sourcePoint" />
+        <mxPoint x="290" y="140" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e-a2a3" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="460" y="140" as="sourcePoint" />
+        <mxPoint x="510" y="140" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- ===================== BASE VECTORIELLE (partagée) ===================== -->
+    <mxCell id="pinecone" parent="1" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=14;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;fontStyle=1;" value="Pinecone&#10;Index vectoriel&#10;(3072 dim, similarité cosinus)" vertex="1">
+      <mxGeometry height="120" width="190" x="960" y="80" as="geometry" />
+    </mxCell>
+    <mxCell id="e-a3pine" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;" value="Stocker les vecteurs">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="730" y="140" as="sourcePoint" />
+        <mxPoint x="960" y="140" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- ===================== PHASE 2 : INTERROGATION (en ligne) ===================== -->
+    <mxCell id="t-phase2" parent="1" style="text;html=1;whiteSpace=wrap;strokeColor=none;fillColor=none;align=left;verticalAlign=middle;fontStyle=1;fontSize=14;fontColor=#143642;" value="Phase 2 — Interrogation (en ligne)" vertex="1">
+      <mxGeometry height="30" width="360" x="40" y="270" as="geometry" />
+    </mxCell>
+
+    <mxCell id="p2-band" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=none;strokeColor=#0F8B8D;dashed=1;dashPattern=6 6;verticalAlign=top;fontColor=#143642;" value="" vertex="1">
+      <mxGeometry height="290" width="1110" x="40" y="310" as="geometry" />
+    </mxCell>
+
+    <!-- rangée haute : question -> embedding -> recherche -> passages -->
+    <mxCell id="b1" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Question de l'internaute" vertex="1">
+      <mxGeometry height="60" width="160" x="60" y="340" as="geometry" />
+    </mxCell>
+    <mxCell id="b2" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Embedding de la question&#10;(OpenAI text-embedding-3-large)" vertex="1">
+      <mxGeometry height="60" width="200" x="270" y="340" as="geometry" />
+    </mxCell>
+    <mxCell id="b3" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Recherche par similarité&#10;(top-k, seuil)" vertex="1">
+      <mxGeometry height="60" width="180" x="520" y="340" as="geometry" />
+    </mxCell>
+    <mxCell id="b4" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Passages pertinents&#10;(contexte récupéré)" vertex="1">
+      <mxGeometry height="60" width="180" x="750" y="340" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e-b1b2" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="220" y="370" as="sourcePoint" />
+        <mxPoint x="270" y="370" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e-b2b3" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="470" y="370" as="sourcePoint" />
+        <mxPoint x="520" y="370" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e-b3pine" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;" source="b3" target="pinecone" value="Interroger l'index">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="e-pineb4" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;dashed=1;dashPattern=8 8;strokeColor=#A8201A;fontColor=#143642;exitX=0.5;exitY=1;exitDx=0;exitDy=0;entryX=0.5;entryY=0;entryDx=0;entryDy=0;" source="pinecone" target="b4" value="Passages les plus proches">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+
+    <!-- descente vers la rangée basse -->
+    <mxCell id="e-b4b5" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="840" y="400" as="sourcePoint" />
+        <mxPoint x="840" y="480" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- rangée basse : prompt -> LLM -> réponse -->
+    <mxCell id="b5" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Construction du prompt&#10;(question + contexte)" vertex="1">
+      <mxGeometry height="60" width="180" x="750" y="480" as="geometry" />
+    </mxCell>
+    <mxCell id="b6" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Génération de la réponse&#10;LLM gpt-4o-mini" vertex="1">
+      <mxGeometry height="60" width="180" x="520" y="480" as="geometry" />
+    </mxCell>
+    <mxCell id="b7" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FAE5C7;strokeColor=#0F8B8D;fontColor=#143642;" value="Réponse ancrée dans le contenu&#10;affichée dans le chatbot" vertex="1">
+      <mxGeometry height="60" width="200" x="270" y="480" as="geometry" />
+    </mxCell>
+
+    <mxCell id="e-b5b6" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="750" y="510" as="sourcePoint" />
+        <mxPoint x="700" y="510" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+    <mxCell id="e-b6b7" parent="1" edge="1" style="endArrow=block;endFill=1;html=1;rounded=0;strokeColor=#A8201A;fontColor=#143642;" value="">
+      <mxGeometry relative="1" as="geometry">
+        <mxPoint x="520" y="510" as="sourcePoint" />
+        <mxPoint x="470" y="510" as="targetPoint" />
+      </mxGeometry>
+    </mxCell>
+
+    <!-- note anti-hallucination -->
+    <mxCell id="note" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FBE9E7;strokeColor=#A8201A;fontColor=#143642;dashed=1;align=left;spacingLeft=8;" value="Si aucun passage ne dépasse le seuil de similarité, l'assistant indique qu'il ne dispose pas de l'information — il n'invente pas de réponse." vertex="1">
+      <mxGeometry height="50" width="340" x="60" y="560" as="geometry" />
+    </mxCell>
+
+  </root>
+</mxGraphModel>
