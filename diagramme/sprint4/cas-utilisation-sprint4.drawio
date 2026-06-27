@@ -3,7 +3,7 @@
     <mxCell id="0" />
     <mxCell id="1" parent="0" />
     <mxCell id="-ZGibXNWiRuDWvTlwlwQ-10" parent="1" style="rounded=0;whiteSpace=wrap;html=1;" value="" vertex="1">
-      <mxGeometry height="1220" width="506" x="294" y="-650" as="geometry" />
+      <mxGeometry height="1560" width="506" x="294" y="-650" as="geometry" />
     </mxCell>
     <mxCell id="Yqdnyr8WQwLkUuQCRrZu-7" edge="1" parent="1" source="wgF7X52E9DQyifO6VSM0-63" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;labelBackgroundColor=none;fontColor=default;endArrow=none;endFill=0;" target="lRY_jCKQJ8JtK8Mmyk11-2">
       <mxGeometry relative="1" as="geometry" />
@@ -23,7 +23,7 @@
       <mxGeometry height="90" width="271.87" x="450" y="234" as="geometry" />
     </mxCell>
     <mxCell id="qS9fZMFOET766nopi8qX-32" parent="1" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;labelBackgroundColor=none;" value="&lt;div&gt;&lt;div&gt;&lt;span style=&quot;font-size: 18px;&quot;&gt;Administrateur&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;" vertex="1">
-      <mxGeometry height="100" width="60" x="134" y="-517" as="geometry" />
+      <mxGeometry height="100" width="60" x="134" y="640" as="geometry" />
     </mxCell>
     <mxCell id="qS9fZMFOET766nopi8qX-33" edge="1" parent="1" source="qS9fZMFOET766nopi8qX-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endSize=12;endArrow=block;endFill=0;">
       <mxGeometry relative="1" as="geometry">
@@ -82,6 +82,24 @@
       <mxGeometry height="96" width="330" x="420" y="-129" as="geometry" />
     </mxCell>
     <mxCell id="-ZGibXNWiRuDWvTlwlwQ-8" edge="1" parent="1" source="qS9fZMFOET766nopi8qX-35" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;entryX=0.026;entryY=0.377;entryDx=0;entryDy=0;entryPerimeter=0;endArrow=none;endFill=0;" target="9HmL-D2C6MbKw0Lzt8cm-3">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s4uc_stat" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Consulter les statistiques globales&lt;/span&gt;" vertex="1">
+      <mxGeometry height="90" width="300" x="440" y="600" as="geometry" />
+    </mxCell>
+    <mxCell id="s4uc_jour" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Consulter les journaux d&#39;activités&lt;/span&gt;" vertex="1">
+      <mxGeometry height="90" width="300" x="440" y="710" as="geometry" />
+    </mxCell>
+    <mxCell id="s4uc_log" parent="1" style="ellipse;whiteSpace=wrap;html=1;labelBackgroundColor=none;" value="&lt;span style=&quot;font-size: 18px;&quot;&gt;Consulter les logs système&lt;/span&gt;" vertex="1">
+      <mxGeometry height="90" width="300" x="440" y="820" as="geometry" />
+    </mxCell>
+    <mxCell id="s4uc_e_stat" parent="1" source="qS9fZMFOET766nopi8qX-32" target="s4uc_stat" edge="1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s4uc_e_jour" parent="1" source="qS9fZMFOET766nopi8qX-32" target="s4uc_jour" edge="1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
+      <mxGeometry relative="1" as="geometry" />
+    </mxCell>
+    <mxCell id="s4uc_e_log" parent="1" source="qS9fZMFOET766nopi8qX-35" target="s4uc_log" edge="1" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=none;endFill=0;">
       <mxGeometry relative="1" as="geometry" />
     </mxCell>
   </root>
