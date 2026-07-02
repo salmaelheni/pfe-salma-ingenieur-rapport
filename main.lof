@@ -1,0 +1,69 @@
+\babel@toc {french}{}\relax 
+\addvspace {10\p@ }
+\contentsline {xchapter}{Etude préalable}{3}{chapter.1}%
+\contentsline {figure}{\numberline {1.1}{\ignorespaces Logo de l'entreprise MEDIANET}}{4}{figure.1.1}%
+\contentsline {figure}{\numberline {1.2}{\ignorespaces Pourcentage des utilisateurs accédant à internet - Central African Republic, Chad, Cameroon, Congo, Dem. Rep.}}{6}{figure.1.2}%
+\contentsline {figure}{\numberline {1.3}{\ignorespaces Le Système FranceConnect}}{8}{figure.1.3}%
+\contentsline {figure}{\numberline {1.4}{\ignorespaces La Plateforme IremboGov}}{9}{figure.1.4}%
+\contentsline {figure}{\numberline {1.5}{\ignorespaces Plateforme Ghana.gov}}{10}{figure.1.5}%
+\contentsline {figure}{\numberline {1.6}{\ignorespaces Schéma illustratif de Scrum}}{13}{figure.1.6}%
+\contentsline {figure}{\numberline {1.7}{\ignorespaces Diagrame de Gantt}}{15}{figure.1.7}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Spécification des besoins}{16}{chapter.2}%
+\contentsline {figure}{\numberline {2.1}{\ignorespaces Diagramme de cas d'utilisation global (Partie Backoffice)}}{27}{figure.2.1}%
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Diagramme de cas d'utilisation global (Partie Frontoffice)}}{28}{figure.2.2}%
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Planification des sprints et des releases}}{33}{figure.2.3}%
+\contentsline {figure}{\numberline {2.4}{\ignorespaces Architecture logique}}{37}{figure.2.4}%
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Architecture physique}}{38}{figure.2.5}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Release 1 : sprint1, sprint2 et sprint3}{40}{chapter.3}%
+\contentsline {figure}{\numberline {3.1}{\ignorespaces Diagramme de cas d’utilisation -- Sprint 1}}{42}{figure.3.1}%
+\contentsline {figure}{\numberline {3.2}{\ignorespaces Diagramme de classe -- Sprint 1}}{43}{figure.3.2}%
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Raffinement du cas d'utilisation « Gérer les administrations »}}{44}{figure.3.3}%
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Diagramme de séquence - Ajouter une administration}}{47}{figure.3.4}%
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Diagramme de séquence - Supprimer une administration}}{48}{figure.3.5}%
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Liste des administrations}}{49}{figure.3.6}%
+\contentsline {figure}{\numberline {3.7}{\ignorespaces Liste des responsables administration}}{50}{figure.3.7}%
+\contentsline {figure}{\numberline {3.8}{\ignorespaces Ajouter administration}}{50}{figure.3.8}%
+\contentsline {figure}{\numberline {3.9}{\ignorespaces Ajouter un responsable à une administration}}{51}{figure.3.9}%
+\contentsline {figure}{\numberline {3.10}{\ignorespaces Diagramme de cas d'utilisation -- Sprint 2}}{53}{figure.3.10}%
+\contentsline {figure}{\numberline {3.11}{\ignorespaces Diagramme de classe -- Sprint 2}}{54}{figure.3.11}%
+\contentsline {figure}{\numberline {3.12}{\ignorespaces Raffinement du cas d'utilisation « Gérer les formulaires dynamiques »}}{55}{figure.3.12}%
+\contentsline {figure}{\numberline {3.13}{\ignorespaces Diagramme de séquence - Modifier un formulaire}}{58}{figure.3.13}%
+\contentsline {figure}{\numberline {3.14}{\ignorespaces Diagramme de séquence - Consulter un formulaire}}{59}{figure.3.14}%
+\contentsline {figure}{\numberline {3.15}{\ignorespaces Liste des formulaires}}{60}{figure.3.15}%
+\contentsline {figure}{\numberline {3.16}{\ignorespaces Ajouter des formulaires}}{60}{figure.3.16}%
+\contentsline {figure}{\numberline {3.17}{\ignorespaces Configuration des champs du formulaire}}{61}{figure.3.17}%
+\contentsline {figure}{\numberline {3.18}{\ignorespaces Modifier formulaire}}{61}{figure.3.18}%
+\contentsline {figure}{\numberline {3.19}{\ignorespaces Diagramme de cas d'utilisation -- Sprint 3}}{64}{figure.3.19}%
+\contentsline {figure}{\numberline {3.20}{\ignorespaces Diagramme de classe -- Sprint 3}}{65}{figure.3.20}%
+\contentsline {figure}{\numberline {3.21}{\ignorespaces Raffinement du cas d'utilisation « Suivre état avancement des dossiers des demandes »}}{66}{figure.3.21}%
+\contentsline {figure}{\numberline {3.22}{\ignorespaces Diagramme de séquence - Consulter le details de mon dossier}}{69}{figure.3.22}%
+\contentsline {figure}{\numberline {3.23}{\ignorespaces Diagramme de séquence - Évaluer service}}{70}{figure.3.23}%
+\contentsline {figure}{\numberline {3.24}{\ignorespaces Consulter le détail de mon dossier}}{71}{figure.3.24}%
+\contentsline {figure}{\numberline {3.25}{\ignorespaces Évaluer un service}}{71}{figure.3.25}%
+\contentsline {figure}{\numberline {3.26}{\ignorespaces Exporter un dossier}}{72}{figure.3.26}%
+\contentsline {figure}{\numberline {3.27}{\ignorespaces Fournir des informations complémentaires}}{73}{figure.3.27}%
+\addvspace {10\p@ }
+\contentsline {xchapter}{Deuxième release : sprint 4 et sprint 5}{75}{chapter.4}%
+\contentsline {figure}{\numberline {4.1}{\ignorespaces Diagramme de cas d'utilisation -- Sprint 4}}{77}{figure.4.1}%
+\contentsline {figure}{\numberline {4.2}{\ignorespaces Diagramme de classe -- Sprint 4}}{78}{figure.4.2}%
+\contentsline {figure}{\numberline {4.3}{\ignorespaces Raffinement du cas d'utilisation « Personnaliser les étapes de traitement des réclamations »}}{79}{figure.4.3}%
+\contentsline {figure}{\numberline {4.4}{\ignorespaces Diagramme de séquence - Visualiser workflow de traitement par administration}}{82}{figure.4.4}%
+\contentsline {figure}{\numberline {4.5}{\ignorespaces Diagramme de séquence - Ajouter une nouvelle étape de traitement}}{83}{figure.4.5}%
+\contentsline {figure}{\numberline {4.6}{\ignorespaces Consulter les étapes de traitement des réclamations}}{84}{figure.4.6}%
+\contentsline {figure}{\numberline {4.7}{\ignorespaces Visualiser workflow de traitement par administration}}{84}{figure.4.7}%
+\contentsline {figure}{\numberline {4.8}{\ignorespaces Modifier une étape}}{85}{figure.4.8}%
+\contentsline {figure}{\numberline {4.9}{\ignorespaces Supprimer une étape}}{85}{figure.4.9}%
+\contentsline {figure}{\numberline {4.10}{\ignorespaces Tableau de bord des statistiques globales}}{86}{figure.4.10}%
+\contentsline {figure}{\numberline {4.11}{\ignorespaces Journaux d'activités}}{86}{figure.4.11}%
+\contentsline {figure}{\numberline {4.12}{\ignorespaces Diagramme de cas d'utilisation -- Sprint 5}}{90}{figure.4.12}%
+\contentsline {figure}{\numberline {4.13}{\ignorespaces Diagramme de classe -- Sprint 5}}{91}{figure.4.13}%
+\contentsline {figure}{\numberline {4.14}{\ignorespaces Architecture de l'assistant conversationnel -- Sprint 5}}{95}{figure.4.14}%
+\contentsline {figure}{\numberline {4.15}{\ignorespaces Schéma du pipeline RAG de l'assistant conversationnel}}{96}{figure.4.15}%
+\contentsline {figure}{\numberline {4.16}{\ignorespaces Page d'accueil de la vitrine institutionnelle}}{98}{figure.4.16}%
+\contentsline {figure}{\numberline {4.17}{\ignorespaces Page « projets et réalisations » de la vitrine}}{98}{figure.4.17}%
+\contentsline {figure}{\numberline {4.18}{\ignorespaces Assistant conversationnel sur le portail}}{99}{figure.4.18}%
+\contentsline {figure}{\numberline {4.19}{\ignorespaces Demande d'assistance depuis le chatbot}}{99}{figure.4.19}%
+\contentsline {figure}{\numberline {4.20}{\ignorespaces Gestion des demandes d'assistance dans le backoffice}}{100}{figure.4.20}%
+\contentsline {figure}{\numberline {4.21}{\ignorespaces Page de gestion des demandes d'assistance}}{100}{figure.4.21}%

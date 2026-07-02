@@ -333,6 +333,7 @@ Dans cette section, nous présentons les diagrammes de cas d’utilisation. En r
 \subsection{Diagramme de classe}
 
 
+
 \section{Structuration et planification des sprints}
 le développement du projet a été planifié sous forme d’itérations successives appelées sprints. Chaque sprint vise la réalisation d’un ensemble priorisé d’éléments du backlog produit, sélectionnés en fonction de leur valeur métier. 
 
@@ -383,82 +384,107 @@ Afin de structurer les livraisons du projet, les cinq sprints ont été regroup�
 
 
 
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{1cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
-    \rowcolor{orange!30}
-    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
 
-    US1 & Administrateur & Je veux m'authentifier afin d'accéder de manière sécurisée au backoffice & 2 & Élevée \\ \hline
-    US2 & Administrateur Système & Je veux gérer les comptes des administrateurs backoffice afin de contrôler les accès à la plateforme & 4 & Élevée \\ \hline
-    US3 & Administrateur Système & Je veux gérer les rôles afin de définir les niveaux d'accès pour chaque type d'utilisateur & 2 & Élevée \\ \hline
-    US4 & Administrateur Système & Je veux consulter les permissions associées aux rôles afin de vérifier les droits attribués & 1 & Élevée \\ \hline
-    US5 & Administrateur Ministériel & Je veux gérer les comptes des administrateurs institutionnels afin d'assurer leur accès aux modules concernés & 4 & Élevée \\ \hline
-    US6 & Administrateur Système & Je veux gérer les administrations ministérielles afin d'organiser les structures institutionnelles de la plateforme & 4 & Élevée \\ \hline
-    US7 & Administrateur Système & Je veux gérer les langues de la plateforme afin de garantir une interface multilingue & 2 & Élevée \\ \hline
-    US8 & Administrateur & Je veux modifier mon profil afin de maintenir mes informations personnelles à jour & 1 & Moyenne \\ \hline
-    US9  & Administrateur système & Je veux gérer les secteurs de services afin d'organiser les offres de la plateforme par domaine & 2 & Élevée \\ \hline
-    
-\end{tabular}
-\end{table}
+\begin{longtable}{|p{0.8cm}|p{2.5cm}|p{9cm}|p{1.5cm}|p{1.5cm}|}
+\hline
+\rowcolor{orange!30}
+\textbf{ID} & \textbf{Épic} & \textbf{User Story} & \textbf{Priorité} & \textbf{Sprint} \\ \hline
+\endfirsthead
 
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
-    \rowcolor{orange!30}
-    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
-    US10 & Administrateur Ministériel & Je veux gérer les services administratifs afin de définir les prestations disponibles pour les citoyens & 4 & Élevée \\ \hline
-    US11 & Administrateur Ministériel & Je veux gérer le moteur de formulaires dynamiques afin de personnaliser les champs et les étapes des demandes par service & 8 & Élevée \\ \hline
-    US12 & Internaute & Je veux créer un compte afin de pouvoir déposer des demandes de services & 2 & Élevée \\ \hline
-    US13 & Client & Je veux m'authentifier afin d'accéder à mon espace personnel & 2 & Élevée \\ \hline
-    US14 & Internaute & Je veux consulter les secteurs et les services disponibles afin de connaître les offres par administration & 2 & Moyenne \\ \hline
+\multicolumn{5}{l}{\textit{\small Suite du tableau\ldots}} \\ \hline
+\rowcolor{orange!30}
+\textbf{ID} & \textbf{Épic} & \textbf{User Story} & \textbf{Priorité} & \textbf{Sprint} \\ \hline
+\endhead
 
-    US15 & Administrateur Ministériel & Je veux personnaliser les étapes de traitement des demandes sur les services afin d’adapter le workflow aux besoins spécifiques de mon ministère & 2 & Élevée \\ \hline
-    US16 & Client & Je veux déposer une demande de service en ligne afin d'obtenir une prestation administrative sans me déplacer & 7 & Élevée \\ \hline
-    US17 & Client & Je veux suivre l'état d'avancement de mes dossiers afin de connaître leur progression en temps réel & 4 & Élevée \\ \hline
-    US18 & Client & Je veux évaluer un service après traitement afin de donner mon avis sur la qualité de la prestation & 2 & Moyenne \\ \hline
-\end{tabular}
-\end{table}
+\multicolumn{5}{r}{\textit{\small Suite à la page suivante}} \\
+\endfoot
+\endlastfoot
 
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
-    \rowcolor{orange!30}
-    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
-    
+%% ── RELEASE 1 ────────────────────────────────────────────────
+\multicolumn{5}{|c|}{\cellcolor{orange!40}\textbf{Release 1 — Sprints 1 à 3}} \\ \hline
 
-    US19 & Client & Je veux consulter mon tableau de bord afin d'avoir une vue d'ensemble de mes demandes et activités & 2 & Moyenne \\ \hline
-    US20 & Client & Je veux Modifier mon profil afin de changer mes informations personnelles & 1 & Moyenne \\ \hline
-    US21 & Administrateur Institutionnel & Je veux gérer les demandes de service afin de les traiter et les suivre & 2 & Élevée \\ \hline
-    US22 & Administrateur Système & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & 2 & Élevée \\ \hline
-    US23 & Administrateur système & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & 2 & Élevée \\ \hline
-    US24 & Administrateur Institutionnel  & Je veux gérer les réclamations soumises afin d'y apporter des réponses appropriées & 2 & Élevée \\ \hline
-    US25 & Administrateur Système & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & 2 & Élevée \\ \hline
-    US26 & Administrateur Système & Je veux gérer notifications afin d'informer automatiquement les utilisateurs des changements de statut & 2 & Élevée \\ \hline
-    US27 & Administrateur Système & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & 2 & Moyenne \\ \hline
-    US28 & Internaute & Je veux gérer mes réclamations afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement& 2 & Élevée \\ \hline
-    US29 & Client & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & 2 & Élevée \\ \hline
-    
-\end{tabular}
-\end{table}
+%% Sprint 1 — Socle d'accès
+\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 1 — Socle d'accès}} \\ \hline
 
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
-    \rowcolor{orange!30}
-    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
+US1  & Authentification           & Je veux m'authentifier afin d'accéder de manière sécurisée au backoffice & Élevée & Sprint 1 \\ \hline
 
-    US30 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 2 & Moyenne \\ \hline
-    US31 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 1 & Moyenne \\ \hline
-    US32 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
-    US33 & Internaute & Je veux consulter les pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide, à propos) afin d'accéder aux données officielles du portail & 2 & Moyenne \\ \hline
-    US34 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
-    US35 & Internaute & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches (avec saisie vocale, suggestions et possibilité de demander une assistance humaine) & 14 & Élevée \\ \hline
-    US36 & Administrateur Système & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & 2 & Élevée \\ \hline
-    US37 & Administrateur Système & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & 1 & Moyenne \\ \hline
+US2  & \multirow{5}{2.5cm}{Gestion des comptes}
+     & Je veux gérer les comptes des administrateurs backoffice afin de contrôler les accès à la plateforme & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
+US3  & & Je veux gérer les rôles afin de définir les niveaux d'accès pour chaque type d'utilisateur & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
+US4  & & Je veux consulter les permissions associées aux rôles afin de vérifier les droits attribués & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
+US5  & & Je veux gérer les comptes des administrateurs institutionnels afin d'assurer leur accès aux modules concernés & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
+US8  & & Je veux modifier mon profil afin de maintenir mes informations personnelles à jour & Moyenne & Sprint 1 \\ \hline
 
-\end{tabular}
-\end{table}
+US6  & \multirow{2}{2.5cm}{Gestion des administrations}
+     & Je veux gérer les administrations ministérielles afin d'organiser les structures institutionnelles de la plateforme & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
+US7  & & Je veux gérer les langues de la plateforme afin de garantir une interface multilingue & Élevée & Sprint 1 \\ \hline
+
+US9  & Catalogue des services    & Je veux gérer les secteurs de services afin d'organiser les offres de la plateforme par domaine & Élevée & Sprint 1 \\ \hline
+
+%% Sprint 2 — Catalogue de services
+\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 2 — Catalogue de services}} \\ \hline
+
+US10 & \multirow{4}{2.5cm}{Catalogue des services}
+     & Je veux gérer les services administratifs afin de définir les prestations disponibles pour les citoyens & Élevée & Sprint 2 \\ \cline{1-1}\cline{3-5}
+US11 & & Je veux gérer le moteur de formulaires dynamiques afin de personnaliser les champs et les étapes des demandes par service & Élevée & Sprint 2 \\ \cline{1-1}\cline{3-5}
+US14 & & Je veux consulter les secteurs et les services disponibles afin de connaître les offres par administration & Moyenne & Sprint 2 \\ \cline{1-1}\cline{3-5}
+US15 & & Je veux personnaliser les étapes de traitement des demandes sur les services afin d'adapter le workflow aux besoins spécifiques de mon ministère & Élevée & Sprint 2 \\ \hline
+
+US12 & \multirow{2}{2.5cm}{Espace citoyen}
+     & Je veux créer un compte afin de pouvoir déposer des demandes de services & Élevée & Sprint 2 \\ \cline{1-1}\cline{3-5}
+US13 & & Je veux m'authentifier afin d'accéder à mon espace personnel & Élevée & Sprint 2 \\ \hline
+
+%% Sprint 3 — Dématérialisation des démarches
+\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 3 — Dématérialisation des démarches}} \\ \hline
+
+US16 & \multirow{4}{2.5cm}{Démarches administratives}
+     & Je veux déposer une demande de service en ligne afin d'obtenir une prestation administrative sans me déplacer & Élevée & Sprint 3 \\ \cline{1-1}\cline{3-5}
+US17 & & Je veux suivre l'état d'avancement de mes dossiers afin de connaître leur progression en temps réel & Élevée & Sprint 3 \\ \cline{1-1}\cline{3-5}
+US18 & & Je veux évaluer un service après traitement afin de donner mon avis sur la qualité de la prestation & Moyenne & Sprint 3 \\ \cline{1-1}\cline{3-5}
+US21 & & Je veux gérer les demandes de service afin de les traiter et les suivre & Élevée & Sprint 3 \\ \hline
+
+US19 & \multirow{2}{2.5cm}{Espace citoyen}
+     & Je veux consulter mon tableau de bord afin d'avoir une vue d'ensemble de mes demandes et activités & Moyenne & Sprint 3 \\ \cline{1-1}\cline{3-5}
+US20 & & Je veux modifier mon profil afin de changer mes informations personnelles & Moyenne & Sprint 3 \\ \hline
+
+%% ── RELEASE 2 ────────────────────────────────────────────────
+\multicolumn{5}{|c|}{\cellcolor{orange!40}\textbf{Release 2 — Sprints 4 et 5}} \\ \hline
+
+%% Sprint 4 — Réclamations, notifications et supervision
+\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 4 — Réclamations, notifications et supervision}} \\ \hline
+
+US22 & \multirow{4}{2.5cm}{Réclamations}
+     & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
+US23 & & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
+US24 & & Je veux gérer les réclamations soumises afin d'y apporter des réponses appropriées & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
+US28 & & Je veux gérer mes réclamations afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement & Élevée & Sprint 4 \\ \hline
+
+US25 & \multirow{4}{2.5cm}{Notifications}
+     & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
+US26 & & Je veux gérer les notifications afin d'informer automatiquement les utilisateurs des changements de statut & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
+US27 & & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & Moyenne & Sprint 4 \\ \cline{1-1}\cline{3-5}
+US29 & & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & Élevée & Sprint 4 \\ \hline
+
+US30 & \multirow{3}{2.5cm}{Supervision}
+     & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & Moyenne & Sprint 4 \\ \cline{1-1}\cline{3-5}
+US31 & & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & Moyenne & Sprint 4 \\ \cline{1-1}\cline{3-5}
+US32 & & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & Moyenne & Sprint 4 \\ \hline
+
+%% Sprint 5 — Portail public et assistant conversationnel
+\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 5 — Portail public et assistant conversationnel}} \\ \hline
+
+US33 & \multirow{2}{2.5cm}{Portail public}
+     & Je veux consulter les pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide, à propos) afin d'accéder aux données officielles du portail & Moyenne & Sprint 5 \\ \cline{1-1}\cline{3-5}
+US34 & & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & Basse & Sprint 5 \\ \hline
+
+US35 & \multirow{3}{2.5cm}{Assistant conversationnel}
+     & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches (avec saisie vocale, suggestions et possibilité de demander une assistance humaine) & Élevée & Sprint 5 \\ \cline{1-1}\cline{3-5}
+US36 & & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & Élevée & Sprint 5 \\ \cline{1-1}\cline{3-5}
+US37 & & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & Moyenne & Sprint 5 \\ \hline
+
+\caption{Planification des sprints par épic et release}
+\label{tab:planification_sprints}
+\end{longtable}
 
 
 
