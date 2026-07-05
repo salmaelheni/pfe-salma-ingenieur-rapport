@@ -3,80 +3,71 @@
 
 \section{Introduction}
 
-Dans ce chapitre, nous analysons les besoins fonctionnels et techniques du projet, identifions les différents acteurs impliqués et présentons le backlog produit. Nous détaillons également la planification des sprints afin de fournir une vision globale du déroulement du projet et des fonctionnalités clés à implémenter.
-Enfin, ce chapitre présente l'architecture générale de l'application.
+Dans ce chapitre, nous procédons à l’analyse des besoins fonctionnels et non fonctionnels du projet, ainsi qu’à l’identification des acteurs du système. Nous présentons également le backlog produit et la planification des sprints, offrant ainsi une vue d’ensemble sur le déroulement du projet et les fonctionnalités à développer. Le chapitre se conclut par la présentation de l’architecture globale de l’application.
+
 
 \section{Capture des besoins}
-La réussite du projet repose sur une compréhension claire et précise des besoins à satisfaire. Cette phase essentielle consiste à identifier les principaux acteurs du système et à définir leurs besoins fonctionnels et non fonctionnels. Elle permet ainsi de garantir que la solution proposée répond de manière cohérente aux exigences métier et aux contraintes techniques.
+
+La réussite du projet repose sur une analyse rigoureuse et détaillée des besoins à satisfaire. Cette étape fondamentale vise à identifier les acteurs du système et à définir leurs besoins fonctionnels et non fonctionnels. Elle contribue ainsi à assurer l’adéquation de la solution proposée avec les exigences métier et les contraintes techniques du projet.
+
 
 \subsection{Identification des acteurs}
 
-Le système e-Gouv repose sur plusieurs acteurs, chacun disposant d’un rôle et d’un périmètre d’intervention spécifiques. 
-\newpage
-Le tableau suivant présente les acteurs identifiés ainsi que leur description.
+Le système e-Gouv repose sur plusieurs acteurs, chacun disposant d’un rôle et d’un périmètre d’intervention spécifiques. Ces acteurs ainsi que leur description sont  présentés dans le tableau \ref{tab:acteurs}.
 
-\begin{table}[H]
-\centering
-
-\rowcolors{2}{gray!15}{white}
-\setlength{\arrayrulewidth}{0.3pt}
-\renewcommand{\arraystretch}{1.3}
-
-\begin{tabular}{|p{5cm}|p{11cm}|}
+\begin{longtable}{|p{6cm}|p{9cm}|}
 \hline
 \rowcolor{gray!30}
-\textbf{Acteur} & \textbf{Description} \\
-\hline
+\textbf{Acteur} & \textbf{Description} \\ \hline
+\endfirsthead
 
+ 
 Administrateur &
 Acteur générique regroupant l’ensemble des fonctionnalités communes aux profils administratifs du système.
-Il constitue l’acteur parent dont héritent l’administrateur système, l’administrateur ministériel et l’administrateur institutionnel. \\
-\hline
+Il constitue l’acteur parent dont héritent l’administrateur système, l’administrateur ministériel et l’administrateur institutionnel. \\ \hline
 
 Administrateur Système &
-Hérite de l’administrateur. Il dispose des privilèges les plus élevés et assure la gouvernance globale du système e-Gouv. \\
-\hline
+Hérite de l’administrateur. Il dispose des privilèges les plus élevés et assure la gouvernance globale du système e-Gouv. \\ \hline
 
 Administrateur Ministériel &
-Hérite de l’administrateur. Il est responsable de la gestion administrative d’un ministère ou d’une administration globale. \\
-\hline
+Hérite de l’administrateur. Il est responsable de la gestion administrative d’un ministère ou d’une administration globale. \\ \hline
 
 Administrateur Institutionnel &
-Hérite de l’administrateur. Il est rattaché à une institution spécifique et agit selon les permissions définies par l’administrateur ministériel. \\
-\hline
+Hérite de l’administrateur. Il est rattaché à une institution spécifique et agit selon les permissions définies par l’administrateur ministériel. \\ \hline
 
 Internaute &
-Utilisateur non authentifié accédant au portail e-Gouv afin de consulter les informations publiques et initier une inscription. \\
-\hline
+Utilisateur non authentifié accédant au portail e-Gouv afin de consulter les informations publiques et initier une inscription. \\ \hline
 
 Client &
-Hérite de l’internaute e-Gouv. Il s’agit d’un citoyen disposant d’un compte lui permettant d’accéder aux services publics numériques. \\
-\hline
-
-\end{tabular}
+Hérite de l’internaute e-Gouv. Il s’agit d’un citoyen disposant d’un compte lui permettant d’accéder aux services publics numériques. \\ \hline
 
 \caption{Acteurs du système e-Gouv}
 \label{tab:acteurs}
-\end{table}
+\end{longtable}
 
-\newpage
-\subsection{Besoins fonctionnels}
+ 
+\subsection{Identification des besoins fonctionnels}
 
-Les besoins fonctionnels du système sont exprimés à travers les cas d’utilisation associés à chaque acteur. Le tableau ci-dessous synthétise les principales fonctionnalités offertes par acteur.
 
-% long table 
-\begin{table}[H]
-\centering
+Les tableaux~\ref{tab:besoins_admin} et~\ref{tab:besoins_citoyens} présentent une synthèse des besoins fonctionnels du système structurés selon les différents types d’acteurs identifiés. Le tableau~\ref{tab:besoins_admin} expose les fonctionnalités relatives aux différents niveaux d’administration, tandis que le tableau~\ref{tab:besoins_citoyens} détaille celles destinées aux usagers citoyens. Cette classification permet de clarifier la répartition des responsabilités et des fonctionnalités au sein du système.
 
-\rowcolors{2}{gray!15}{white}
-\setlength{\arrayrulewidth}{0.3pt}
+
+
+
+ 
+
+
+
 \renewcommand{\arraystretch}{1.3}
 
-\begin{tabular}{|p{5cm}|p{11cm}|}
+\begin{longtable}{|p{6cm}|p{9cm}|}
 \hline
 \rowcolor{gray!30}
 \textbf{Acteur} & \textbf{Fonctionnalités principales} \\
 \hline
+\endfirsthead
+
+ 
 
 Administrateur &
 \begin{minipage}[t]{\linewidth}
@@ -139,26 +130,28 @@ Administrateur Institutionnel &
 \\
 \hline
 
-\end{tabular}
-
 \caption{Besoins fonctionnels par acteur (partie administration)}
 \label{tab:besoins_admin}
-\end{table}
+
+\end{longtable}
 
 
-\begin{table}[H]
-\centering
 
-\rowcolors{2}{gray!15}{white}
-\setlength{\arrayrulewidth}{0.3pt}
+ 
 \renewcommand{\arraystretch}{1.3}
-\setlength{\tabcolsep}{10pt} % <-- AJOUT IMPORTANT
+\setlength{\tabcolsep}{10pt}
 
-\begin{tabular}{|p{5cm}|p{11cm}|}
+\begin{longtable}{|p{5cm}|p{11cm}|}
 \hline
 \rowcolor{gray!30}
 \textbf{Acteur} & \textbf{Fonctionnalités principales} \\
 \hline
+\endfirsthead
+ 
+
+ 
+ 
+
 
 Internaute &
 \begin{minipage}[t]{\linewidth}
@@ -179,6 +172,7 @@ Internaute &
 \\
 \hline
 
+
 Client &
 \begin{minipage}[t]{\linewidth}
 \vspace{0.2cm}
@@ -196,254 +190,272 @@ Client &
 \\
 \hline
 
-\end{tabular}
+
 \caption{Besoins fonctionnels par acteur (partie citoyens)}
 \label{tab:besoins_citoyens}
-\end{table}
 
-\subsection{Les Besoins non fonctionnels}
+\end{longtable}
 
-Les besoins non fonctionnels du système s’appuient sur le modèle de qualité défini par la norme \textbf{ISO/IEC 25010}.  
-Cette norme internationale propose un cadre de référence permettant d’évaluer la qualité d’un système logiciel à travers plusieurs caractéristiques essentielles, notamment la performance, la sécurité, la maintenabilité, la fiabilité et la compatibilité.
-Dans le cadre de ce projet, les exigences non fonctionnelles ont été définies en s’inspirant principalement des caractéristiques suivantes du modèle ISO/IEC 25010 :
+\subsection{Identification des besoins non fonctionnels}
+
+Les besoins non fonctionnels du système s’appuient sur le modèle de qualité défini par la norme \textbf{ISO/IEC 25010}, qui constitue un cadre de référence international permettant d’évaluer la qualité d’un logiciel selon plusieurs caractéristiques, notamment la performance la sécurité la maintenabilité et la flexibilité.
+
+Dans le cadre de ce projet, quatre exigences principales ont été retenues :
 
 \begin{itemize}
-    \item \textbf{Performance} : La plateforme doit offrir des temps de chargement rapides et des réponses fluides aux actions des utilisateurs. Cela implique une optimisation du code, un traitement efficace côté serveur et l’utilisation de mécanismes de mise en cache afin d’assurer une navigation réactive, même en période de forte sollicitation.
+\item \textbf{Maintenabilité} : le système est conçu selon une architecture modulaire reposant sur des composants réutilisables, ce qui facilite son évolution ainsi que la correction rapide des anomalies.
 
-    \item \textbf{Sécurité} : La plateforme doit garantir la protection des données et la confidentialité des informations des utilisateurs. Elle doit mettre en œuvre des mécanismes de sécurité adaptés, tels que le l’authentification sécurisée, la gestion des accès et le respect des bonnes pratiques de sécurité afin de prévenir les accès non autorisés.
 
-    \item \textbf{Maintenance} : Le système doit être facile à maintenir, à corriger et à faire évoluer. Cela repose sur un code clair, modulaire et bien documenté, l’utilisation de technologies standards et le respect des bonnes pratiques de développement, afin de faciliter les interventions et les améliorations à long terme.
+\item \textbf{Sécurité} : la protection des données et la confidentialité des utilisateurs sont garanties par plusieurs mécanismes complémentaires : authentification à deux facteurs, utilisation de jetons JWT pour une gestion sécurisée des sessions, gestion précise des droits d’accès fondée sur les rôles et permissions, et validation des données à la fois côté client et côté serveur afin d’assurer leur intégrité et leur confidentialité.
 
-    % scalabilité
+\item \textbf{Performance} : la plateforme vise à offrir une expérience fluide avec des temps de réponse réduits. Cet objectif est atteint grâce à des choix techniques tels que l’indexation de la base de données et la mise en place de mécanismes de cache pour améliorer la réactivité du système.
+
+\item \textbf{Flexibilité} : le système est scalable, c'est-à-dire capable de supporter une augmentation de charge, grâce à un mécanisme de répartition de charge via le load balancer ainsi que l’architecture proposé pour notre système.
+
+
 \end{itemize}
 
 
 
 \subsection{Backlog du Produit}
-Le backlog produit constitue l'artefact central du framework Scrum. Il regroupe l'ensemble des fonctionnalités nécessaires à la réalisation de notre solution, organisées selon l'ordre d'implémentation défini dans la planification des sprints.
-Le tableau ci-dessous présente une synthèse du backlog produit relatif à la conception et au développement de la plateforme e-Gouv.
-
-
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{1cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
-    \rowcolor{orange!30}
-    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
-
-    US1 & Administrateur & Je veux m'authentifier afin d'accéder de manière sécurisée au backoffice & 2 & Élevée \\ \hline
-    US2 & Administrateur Système & Je veux gérer les comptes des administrateurs backoffice afin de contrôler les accès à la plateforme & 4 & Élevée \\ \hline
-    US3 & Administrateur Système & Je veux gérer les rôles afin de définir les niveaux d'accès pour chaque type d'utilisateur & 2 & Élevée \\ \hline
-    US4 & Administrateur Système & Je veux consulter les permissions associées aux rôles afin de vérifier les droits attribués & 1 & Élevée \\ \hline
-    US5 & Administrateur Ministériel & Je veux gérer les comptes des administrateurs institutionnels afin d'assurer leur accès aux modules concernés & 4 & Élevée \\ \hline
-    US6 & Administrateur Système & Je veux gérer les administrations ministérielles afin d'organiser les structures institutionnelles de la plateforme & 4 & Élevée \\ \hline
-    US7 & Administrateur Système & Je veux gérer les langues de la plateforme afin de garantir une interface multilingue & 2 & Élevée \\ \hline
-    US8 & Administrateur & Je veux modifier mon profil afin de maintenir mes informations personnelles à jour & 1 & Moyenne \\ \hline
-    US9  & Administrateur système & Je veux gérer les secteurs de services afin d'organiser les offres de la plateforme par domaine & 2 & Élevée \\ \hline
-    
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
-    \rowcolor{orange!30}
-    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
-    US10 & Administrateur Ministériel & Je veux gérer les services administratifs afin de définir les prestations disponibles pour les citoyens & 4 & Élevée \\ \hline
-    US11 & Administrateur Ministériel & Je veux gérer le moteur de formulaires dynamiques afin de personnaliser les champs et les étapes des demandes par service & 8 & Élevée \\ \hline
-    US12 & Internaute & Je veux créer un compte afin de pouvoir déposer des demandes de services & 2 & Élevée \\ \hline
-    US13 & Client & Je veux m'authentifier afin d'accéder à mon espace personnel & 2 & Élevée \\ \hline
-    US14 & Internaute & Je veux consulter les secteurs et les services disponibles afin de connaître les offres par administration & 2 & Moyenne \\ \hline
-
-    US15 & Administrateur Ministériel & Je veux personnaliser les étapes de traitement des demandes sur les services afin d’adapter le workflow aux besoins spécifiques de mon ministère & 2 & Élevée \\ \hline
-    US16 & Client & Je veux déposer une demande de service en ligne afin d'obtenir une prestation administrative sans me déplacer & 7 & Élevée \\ \hline
-    US17 & Client & Je veux suivre l'état d'avancement de mes dossiers afin de connaître leur progression en temps réel & 4 & Élevée \\ \hline
-    US18 & Client & Je veux évaluer un service après traitement afin de donner mon avis sur la qualité de la prestation & 2 & Moyenne \\ \hline
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
-    \rowcolor{orange!30}
-    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
-    
-
-    US19 & Client & Je veux consulter mon tableau de bord afin d'avoir une vue d'ensemble de mes demandes et activités & 2 & Moyenne \\ \hline
-    US20 & Client & Je veux Modifier mon profil afin de changer mes informations personnelles & 1 & Moyenne \\ \hline
-    US21 & Administrateur Institutionnel & Je veux gérer les demandes de service afin de les traiter et les suivre & 2 & Élevée \\ \hline
-    US22 & Administrateur Système & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & 2 & Élevée \\ \hline
-    US23 & Administrateur système & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & 2 & Élevée \\ \hline
-    US24 & Administrateur Institutionnel  & Je veux gérer les réclamations soumises afin d'y apporter des réponses appropriées & 2 & Élevée \\ \hline
-    US25 & Administrateur Système & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & 2 & Élevée \\ \hline
-    US26 & Administrateur Système & Je veux gérer notifications afin d'informer automatiquement les utilisateurs des changements de statut & 2 & Élevée \\ \hline
-    US27 & Administrateur Système & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & 2 & Moyenne \\ \hline
-    US28 & Internaute & Je veux gérer mes réclamations afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement& 2 & Élevée \\ \hline
-    US29 & Client & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & 2 & Élevée \\ \hline
-    
-\end{tabular}
-\end{table}
-
-\begin{table}[H]
-\centering
-\begin{tabular}{ |p{0.5cm}|p{3cm}|p{7cm}|p{1.5cm}|p{2cm}|} \hline
-    \rowcolor{orange!30}
-    \textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\ \hline
-
-    US30 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 2 & Moyenne \\ \hline
-    US31 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 1 & Moyenne \\ \hline
-    US32 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
-    US33 & Internaute & Je veux consulter les pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide, à propos) afin d'accéder aux données officielles du portail & 2 & Moyenne \\ \hline
-    US34 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
-    US35 & Internaute & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches (avec saisie vocale, suggestions et possibilité de demander une assistance humaine) & 14 & Élevée \\ \hline
-    US36 & Administrateur Système & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & 2 & Élevée \\ \hline
-    US37 & Administrateur Système & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & 1 & Moyenne \\ \hline
-
-\end{tabular}
-\end{table}
+Le backlog produit constitue l’artefact central du framework Scrum. Il regroupe l’ensemble des fonctionnalités nécessaires à la réalisation de la solution, ordonnées selon leur priorité et leur planification dans les différents sprints. Le tableau~\ref{tab:Backlogr_Produit} présente une synthèse du backlog produit relatif à la conception et au développement de la plateforme e-Gouv.
 
 
 
-\subsection{Digramme des cas d'utilisations global}
-Dans cette section, nous présentons les diagrammes de cas d’utilisation. En raison de la longueur de ce diagramme, le diagramme global a été divisé en deux diagrammes distincts afin d'améliorer la lisibilité et la compréhension.
+\renewcommand{\arraystretch}{1.2}
 
-% la figure ... refrenace presente le diagrame ..
-\newpage
-\vspace*{\fill}
+\rowcolors{2}{white}{white}
+\begin{longtable}{|p{1cm}|p{3cm}|p{6.5cm}|p{1.5cm}|p{2cm}|}
+
+\hline
+\rowcolor{orange!30}
+\textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\
+\hline
+\endfirsthead
+
+\hline
+\rowcolor{orange!30}
+\textbf{ID} & \textbf{En tant que} & \textbf{User Story} & \textbf{Est/J} & \textbf{Priorité} \\
+\hline
+\endhead
+
+
+
+% ---------------- US 1-9 ----------------
+US1 & Administrateur & Je veux m'authentifier afin d'accéder de manière sécurisée au backoffice & 2 & Élevée \\ \hline
+US2 & Administrateur Système & Je veux gérer les comptes des administrateurs backoffice afin de contrôler les accès à la plateforme & 4 & Élevée \\ \hline
+US3 & Administrateur Système & Je veux gérer les rôles afin de définir les niveaux d'accès pour chaque type d'utilisateur & 2 & Élevée \\ \hline
+US4 & Administrateur Système & Je veux consulter les permissions associées aux rôles afin de vérifier les droits attribués & 1 & Élevée \\ \hline
+US5 & Administrateur Ministériel & Je veux gérer les comptes des administrateurs institutionnels afin d'assurer leur accès aux modules concernés & 4 & Élevée \\ \hline
+US6 & Administrateur Système & Je veux gérer les administrations ministérielles afin d'organiser les structures institutionnelles de la plateforme & 4 & Élevée \\ \hline
+US7 & Administrateur Système & Je veux gérer les langues de la plateforme afin de garantir une interface multilingue & 2 & Élevée \\ \hline
+US8 & Administrateur & Je veux modifier mon profil afin de maintenir mes informations personnelles à jour & 1 & Moyenne \\ \hline
+US9 & Administrateur système & Je veux gérer les secteurs de services afin d'organiser les offres de la plateforme par domaine & 2 & Élevée \\ \hline
+
+% ---------------- US 10-18 ----------------
+US10 & Administrateur Ministériel & Je veux gérer les services administratifs afin de définir les prestations disponibles pour les citoyens & 4 & Élevée \\ \hline
+US11 & Administrateur Ministériel & Je veux gérer le moteur de formulaires dynamiques afin de personnaliser les champs et les étapes des demandes par service & 8 & Élevée \\ \hline
+US12 & Internaute & Je veux créer un compte afin de pouvoir déposer des demandes de services & 2 & Élevée \\ \hline
+US13 & Client & Je veux m'authentifier afin d'accéder à mon espace personnel & 2 & Élevée \\ \hline
+US14 & Internaute & Je veux consulter les secteurs et les services disponibles afin de connaître les offres par administration & 2 & Moyenne \\ \hline
+US15 & Administrateur Ministériel & Je veux personnaliser les étapes de traitement des demandes sur les services afin d’adapter le workflow aux besoins spécifiques de mon ministère & 2 & Élevée \\ \hline
+US16 & Client & Je veux déposer une demande de service en ligne afin d'obtenir une prestation administrative sans me déplacer & 7 & Élevée \\ \hline
+US17 & Client & Je veux suivre l'état d'avancement de mes dossiers afin de connaître leur progression en temps réel & 4 & Élevée \\ \hline
+US18 & Client & Je veux évaluer un service après traitement afin de donner mon avis sur la qualité de la prestation & 2 & Moyenne \\ \hline
+
+% ---------------- US 19-29 ----------------
+US19 & Client & Je veux consulter mon tableau de bord afin d'avoir une vue d'ensemble de mes demandes et activités & 2 & Moyenne \\ \hline
+US20 & Client & Je veux Modifier mon profil afin de changer mes informations personnelles & 1 & Moyenne \\ \hline
+US21 & Administrateur Institutionnel & Je veux gérer les demandes de service afin de les traiter et les suivre & 2 & Élevée \\ \hline
+US22 & Administrateur Système & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & 2 & Élevée \\ \hline
+US23 & Administrateur système & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & 2 & Élevée \\ \hline
+US24 & Administrateur Institutionnel & Je veux gérer les réclamations soumises afin d'y apporter des réponses appropriées & 2 & Élevée \\ \hline
+US25 & Administrateur Système & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & 2 & Élevée \\ \hline
+US26 & Administrateur Système & Je veux gérer les notifications afin d'informer automatiquement les utilisateurs des changements de statut & 2 & Élevée \\ \hline
+US27 & Administrateur Système & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & 2 & Moyenne \\ \hline
+US28 & Internaute & Je veux gérer mes réclamations afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement & 2 & Élevée \\ \hline
+US29 & Client & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & 2 & Élevée \\ \hline
+
+% ---------------- US 30-37 ----------------
+US30 & Administrateur & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & 2 & Moyenne \\ \hline
+US31 & Administrateur & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & 1 & Moyenne \\ \hline
+US32 & Administrateur Système & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & 1 & Moyenne \\ \hline
+US33 & Internaute & Je veux consulter les pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide, à propos) afin d'accéder aux données officielles du portail & 2 & Moyenne \\ \hline
+US34 & Internaute & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & 1 & Basse \\ \hline
+US35 & Internaute & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches (avec saisie vocale, suggestions et possibilité de demander une assistance humaine) & 14 & Élevée \\ \hline
+US36 & Administrateur Système & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & 2 & Élevée \\ \hline
+US37 & Administrateur Système & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & 1 & Moyenne \\ \hline
+
+\caption{Backlog du Produit}
+\label{tab:Backlogr_Produit}
+
+\end{longtable}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+\section{Spécification semi-formelle}
+Dans cette partie, nous décrivons une représentation semi-formelle du système en utilisant le diagramme global de cas d'utilisation de la solution, ainsi que le diagramme de classe global.
+
+\subsection{Digramme de cas d'utilisation global}
+Dans cette section, nous présentons les diagrammes de cas d’utilisation du système, qui permettent de modéliser les interactions entre les différents acteurs et le système, ainsi que de mettre en évidence les fonctionnalités qui leur sont associées.Ces diagrammes sont illustrés par les figures~\ref{fig:cas-utilisation-admins} et~\ref{fig:cas-utilisation-user}. En raison de leur taille, ils ont été subdivisés en deux parties distinctes dans un souci de clarté et de lisibilité.
+
+
+
+
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=0.85\textheight, keepaspectratio]{images/diagrammes/Diagramme use case global admins.drawio.png}
+    \includegraphics[width=\textwidth, height=0.85\textheight, keepaspectratio]{images/diagrammes/diag-utilisation-1.drawio.png}
     \caption{Diagramme de cas d'utilisation global (Partie Backoffice)}
     \label{fig:cas-utilisation-admins}
 \end{figure}
-\vspace*{\fill}
 
-\newpage
 
-% description 
-\vspace*{\fill}
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=0.85\textheight, keepaspectratio]{images/diagrammes/internaute_citoyen.drawio.png}
+    \includegraphics[width=\textwidth, height=0.85\textheight, keepaspectratio]{images/diagrammes/diag-utilisation-2.drawio.png}
     \caption{Diagramme de cas d'utilisation global (Partie Frontoffice)}
     \label{fig:cas-utilisation-user}
 \end{figure}
-\vspace*{\fill}
-
-
-\subsection{Diagramme de classe}
 
 
 
-\section{Structuration et planification des sprints}
-le développement du projet a été planifié sous forme d’itérations successives appelées sprints. Chaque sprint vise la réalisation d’un ensemble priorisé d’éléments du backlog produit, sélectionnés en fonction de leur valeur métier. 
-
-\subsection{Attribution des roles}
+\subsection{Diagramme de classe global}
+Le diagramme de classe global, illustré par la figure~\ref{fig:classe}, permet de représenter la structure statique de l’application. Il permet d’identifier les différentes classes de l’application, leurs attributs ainsi que les relations entre elles, offrant ainsi une vue d’ensemble de l’architecture orientée objet de la solution.
 
 
-Comme présenté dans le tableau suivant, les rôles Scrum et leurs responsabilités sont définis comme suit: 
+ 
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=0.85\textheight, keepaspectratio]{images/diagrammes/diag-class-v5.drawio.png}
+    \caption{Diagramme de classe global}
+    \label{fig:classe}
+\end{figure}
+ 
 
-\begin{table}[H]
-\centering
+\section{Planification du projet avec Scrum}
+Le développement du projet a été planifié sous forme d’itérations successives appelées sprints. Chaque sprint vise la réalisation d’un ensemble priorisé d’éléments du backlog produit, sélectionnés en fonction de leur valeur métier. 
 
-% lignes alternées
-\rowcolors{2}{gray!15}{white}
+\subsection{Attribution des rôles}
 
-% bordure plus fine
-\setlength{\arrayrulewidth}{0.3pt}
 
-\begin{tabular}{|p{3cm}|p{8cm}|p{3cm}|}
+Le tableau~\ref{tab:scrum_roles} présente les différents rôles du framework Scrum ainsi que leurs responsabilités associées, définis dans le cadre de la méthodologie adoptée pour ce projet.
+
+ \begin{longtable}{|p{3cm}|p{8cm}|p{3cm}|}
 \hline
 \rowcolor{gray!30}
-\textbf{Rôle} & \textbf{Responsabilité principale} & \textbf{Membres} \\
-\hline
+\textbf{Rôle} & \textbf{Responsabilité principale} & \textbf{Membres} \\ \hline
+\endfirsthead
+
+ 
 
 Product Owner &
-Garantit la vision du produit &
-Client \\
-\hline
+Garantit la vision du produit et assure la priorisation du backlog &
+Felix Moloua \\ \hline
 
 Scrum Master &
-Supprimer les obstacles et garantir la bonne utilisation de Scrum &
-Maher Mehri \\
-\hline
+Supprime les obstacles et garantit la bonne application de la méthodologie Scrum &
+Maher Mehri et Farah Harrathi \\ \hline
 
 Équipe de développement &
-Livrer des incréments fonctionnels à chaque sprint &
-Salma Elheni \\
-\hline
+Développe et livre des incréments fonctionnels à chaque sprint &
+Salma Elheni \\ \hline
 
-\end{tabular}
-
-\caption{Les acteurs de Scrum}
+\rowcolor{white}
+\caption{Les rôles de Scrum}
 \label{tab:scrum_roles}
-\end{table}
+\end{longtable}
 
 \subsection{Planification des sprints}
 
-Afin de structurer les livraisons du projet, les cinq sprints ont été regroupés en deux releases cohérentes, permettant de présenter l’évolution progressive du système. La première release rassemble les Sprints 1 à 3 (socle d’accès, catalogue de services et dématérialisation des démarches) ; la seconde réunit le Sprint 4 (réclamations, notifications et supervision) et le Sprint 5 (portail public et assistant conversationnel intelligent). Chaque sprint est dimensionné autour d’une vingtaine de jours, soit environ un mois de réalisation.
+ 
+
+Afin de structurer les livraisons du projet, les cinq sprints ont été regroupés en deux releases cohérentes, permettant de mettre en évidence l’évolution progressive du système. La première release regroupe les Sprints 1 à 3, couvrant le socle d’accès, le catalogue de services ainsi que la dématérialisation des démarches. La seconde release comprend le Sprint 4, relatif aux réclamations, aux notifications et à la supervision, ainsi que le Sprint 5, dédié au portail public et à l’assistant conversationnel intelligent. Chaque sprint est planifié sur une durée d’environ vingt jours, soit approximativement un mois de réalisation, comme présenté dans le tableau~\ref{tab:planification_sprints}.
 
 
 
+% À placer juste avant \begin{longtable} — neutralise toute alternance de couleur héritée
+\rowcolors{2}{white}{white}
 
-\begin{longtable}{|p{0.8cm}|p{2.5cm}|p{9cm}|p{1.5cm}|p{1.5cm}|}
+\begin{longtable}{|p{0.8cm}|p{2.5cm}|p{6.2cm}|p{1.5cm}|p{1.5cm}|}
 \hline
 \rowcolor{orange!30}
 \textbf{ID} & \textbf{Épic} & \textbf{User Story} & \textbf{Priorité} & \textbf{Sprint} \\ \hline
 \endfirsthead
 
-\multicolumn{5}{l}{\textit{\small Suite du tableau\ldots}} \\ \hline
+\hline
 \rowcolor{orange!30}
 \textbf{ID} & \textbf{Épic} & \textbf{User Story} & \textbf{Priorité} & \textbf{Sprint} \\ \hline
 \endhead
 
-\multicolumn{5}{r}{\textit{\small Suite à la page suivante}} \\
+\hline
 \endfoot
+
 \endlastfoot
 
 %% ── RELEASE 1 ────────────────────────────────────────────────
-\multicolumn{5}{|c|}{\cellcolor{orange!40}\textbf{Release 1 — Sprints 1 à 3}} \\ \hline
+\multicolumn{5}{|c|}{\cellcolor{orange!40}\textbf{Release 1 — Sprints 1, 2 et 3}} \\ \hline
 
 %% Sprint 1 — Socle d'accès
-\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 1 — Socle d'accès}} \\ \hline
+\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 1 — Socle d'accès et 
+structures institutionnelles}} \\ \hline
 
-US1  & Authentification           & Je veux m'authentifier afin d'accéder de manière sécurisée au backoffice & Élevée & Sprint 1 \\ \hline
+US1  & Authentification & Je veux m'authentifier afin d'accéder de manière sécurisée au backoffice & Élevée & Sprint 1 \\ \hline
 
-US2  & \multirow{5}{2.5cm}{Gestion des comptes}
+US2  & Gestion des comptes
      & Je veux gérer les comptes des administrateurs backoffice afin de contrôler les accès à la plateforme & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
 US3  & & Je veux gérer les rôles afin de définir les niveaux d'accès pour chaque type d'utilisateur & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
 US4  & & Je veux consulter les permissions associées aux rôles afin de vérifier les droits attribués & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
 US5  & & Je veux gérer les comptes des administrateurs institutionnels afin d'assurer leur accès aux modules concernés & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
 US8  & & Je veux modifier mon profil afin de maintenir mes informations personnelles à jour & Moyenne & Sprint 1 \\ \hline
 
-US6  & \multirow{2}{2.5cm}{Gestion des administrations}
+US6  & Gestion des administrations
      & Je veux gérer les administrations ministérielles afin d'organiser les structures institutionnelles de la plateforme & Élevée & Sprint 1 \\ \cline{1-1}\cline{3-5}
 US7  & & Je veux gérer les langues de la plateforme afin de garantir une interface multilingue & Élevée & Sprint 1 \\ \hline
 
 US9  & Catalogue des services    & Je veux gérer les secteurs de services afin d'organiser les offres de la plateforme par domaine & Élevée & Sprint 1 \\ \hline
 
 %% Sprint 2 — Catalogue de services
-\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 2 — Catalogue de services}} \\ \hline
+\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 2 — Catalogue de services 
+et moteur de formulaires dynamiques}} \\ \hline
 
-US10 & \multirow{4}{2.5cm}{Catalogue des services}
+US10 & Catalogue des services
      & Je veux gérer les services administratifs afin de définir les prestations disponibles pour les citoyens & Élevée & Sprint 2 \\ \cline{1-1}\cline{3-5}
 US11 & & Je veux gérer le moteur de formulaires dynamiques afin de personnaliser les champs et les étapes des demandes par service & Élevée & Sprint 2 \\ \cline{1-1}\cline{3-5}
 US14 & & Je veux consulter les secteurs et les services disponibles afin de connaître les offres par administration & Moyenne & Sprint 2 \\ \cline{1-1}\cline{3-5}
 US15 & & Je veux personnaliser les étapes de traitement des demandes sur les services afin d'adapter le workflow aux besoins spécifiques de mon ministère & Élevée & Sprint 2 \\ \hline
 
-US12 & \multirow{2}{2.5cm}{Espace citoyen}
+US12 & Espace citoyen
      & Je veux créer un compte afin de pouvoir déposer des demandes de services & Élevée & Sprint 2 \\ \cline{1-1}\cline{3-5}
 US13 & & Je veux m'authentifier afin d'accéder à mon espace personnel & Élevée & Sprint 2 \\ \hline
 
 %% Sprint 3 — Dématérialisation des démarches
-\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 3 — Dématérialisation des démarches}} \\ \hline
+\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 3 — Dématérialisation 
+et suivi des démarches en ligne}} \\ \hline
 
-US16 & \multirow{4}{2.5cm}{Démarches administratives}
+US16 & Démarches administratives
      & Je veux déposer une demande de service en ligne afin d'obtenir une prestation administrative sans me déplacer & Élevée & Sprint 3 \\ \cline{1-1}\cline{3-5}
 US17 & & Je veux suivre l'état d'avancement de mes dossiers afin de connaître leur progression en temps réel & Élevée & Sprint 3 \\ \cline{1-1}\cline{3-5}
 US18 & & Je veux évaluer un service après traitement afin de donner mon avis sur la qualité de la prestation & Moyenne & Sprint 3 \\ \cline{1-1}\cline{3-5}
 US21 & & Je veux gérer les demandes de service afin de les traiter et les suivre & Élevée & Sprint 3 \\ \hline
 
-US19 & \multirow{2}{2.5cm}{Espace citoyen}
+US19 & Espace citoyen
      & Je veux consulter mon tableau de bord afin d'avoir une vue d'ensemble de mes demandes et activités & Moyenne & Sprint 3 \\ \cline{1-1}\cline{3-5}
 US20 & & Je veux modifier mon profil afin de changer mes informations personnelles & Moyenne & Sprint 3 \\ \hline
 
@@ -453,31 +465,32 @@ US20 & & Je veux modifier mon profil afin de changer mes informations personnell
 %% Sprint 4 — Réclamations, notifications et supervision
 \multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 4 — Réclamations, notifications et supervision}} \\ \hline
 
-US22 & \multirow{4}{2.5cm}{Réclamations}
+US22 & Réclamations
      & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
 US23 & & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
 US24 & & Je veux gérer les réclamations soumises afin d'y apporter des réponses appropriées & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
 US28 & & Je veux gérer mes réclamations afin de signaler un problème rencontré sur la plateforme et de suivre leur statut de traitement & Élevée & Sprint 4 \\ \hline
 
-US25 & \multirow{4}{2.5cm}{Notifications}
+US25 & Notifications
      & Je veux gérer les modèles de notifications afin de standardiser les messages envoyés aux utilisateurs & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
 US26 & & Je veux gérer les notifications afin d'informer automatiquement les utilisateurs des changements de statut & Élevée & Sprint 4 \\ \cline{1-1}\cline{3-5}
 US27 & & Je veux consulter l'historique des notifications afin de suivre les communications envoyées & Moyenne & Sprint 4 \\ \cline{1-1}\cline{3-5}
 US29 & & Je veux consulter mes notifications afin de rester informé des mises à jour concernant mes dossiers & Élevée & Sprint 4 \\ \hline
 
-US30 & \multirow{3}{2.5cm}{Supervision}
+US30 & Supervision
      & Je veux consulter les statistiques globales par administration afin d'analyser l'activité de la plateforme & Moyenne & Sprint 4 \\ \cline{1-1}\cline{3-5}
 US31 & & Je veux consulter les journaux d'activités par administration afin de surveiller les actions effectuées & Moyenne & Sprint 4 \\ \cline{1-1}\cline{3-5}
 US32 & & Je veux consulter les logs système afin de détecter les anomalies et assurer la sécurité & Moyenne & Sprint 4 \\ \hline
 
 %% Sprint 5 — Portail public et assistant conversationnel
-\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 5 — Portail public et assistant conversationnel}} \\ \hline
+\multicolumn{5}{|c|}{\cellcolor{orange!15}\textbf{Sprint 5 — Portail public et 
+assistant conversationnel intelligent}} \\ \hline
 
-US33 & \multirow{2}{2.5cm}{Portail public}
+US33 & Portail public
      & Je veux consulter les pages d'information (accueil, gouvernement, projets et réalisations, actualités, FAQ, guide, à propos) afin d'accéder aux données officielles du portail & Moyenne & Sprint 5 \\ \cline{1-1}\cline{3-5}
 US34 & & Je veux contacter l'administrateur afin de poser une question ou signaler un problème & Basse & Sprint 5 \\ \hline
 
-US35 & \multirow{3}{2.5cm}{Assistant conversationnel}
+US35 & Assistant conversationnel
      & Je veux poser des questions à l'assistant conversationnel afin d'obtenir des réponses instantanées sur les services, les secteurs et les démarches (avec saisie vocale, suggestions et possibilité de demander une assistance humaine) & Élevée & Sprint 5 \\ \cline{1-1}\cline{3-5}
 US36 & & Je veux gérer les demandes d'assistance afin d'accompagner les citoyens & Élevée & Sprint 5 \\ \cline{1-1}\cline{3-5}
 US37 & & Je veux être notifié par email d'une nouvelle demande d'assistance afin de réagir rapidement & Moyenne & Sprint 5 \\ \hline
@@ -487,200 +500,286 @@ US37 & & Je veux être notifié par email d'une nouvelle demande d'assistance af
 \end{longtable}
 
 
+\section{Environnement de développement et technologies utilisées}
 
-\begin{figure}[H]
-    \centering
-    \includegraphics[width=\textwidth]{images/autre/planification_2releases_v3.png}
-    \caption{Planification des sprints et des releases}
-    \label{fig:release}
-\end{figure}
+Cette section présente l’environnement de développement ainsi que les différents outils et technologies utilisés pour la réalisation du projet. Elle permet de mettre en évidence les choix techniques adoptés, ainsi que les technologies ayant contribué au développement, au test et au déploiement de la solution.
 
+ 
 
-\section{Environnement matériel}
-Au cours de la phase de la réalisation, j'ai utilisé un ordinateur ayant les caractéristiques suivantes: 
+\subsection{Environnement de développement}
 
-\begin{itemize}
-    \item \textbf{Processeur} : 11th Gen Intel® Core™ i5-1135G7 @ 2.40GHz × 8.
-    \item \textbf{Mémoire RAM} : 24.0 GiB.
-    \item \textbf{Type de système} : Système d’exploitation 64 bits.
-    \item \textbf{OS} : Ubuntu 24.04.3 LTS.
-    \item \textbf{Carte graphique} : Mesa Intel® Xe Graphics (TGL GT2).
-    \item \textbf{Disque dur} : 1.5 TB.
-\end{itemize}
+Le tableau~\ref{tab:env_logiciel_3} présente les principaux outils logiciels utilisés dans le cadre du projet. Il met en évidence l’environnement de développement adopté, ainsi que les plateformes et technologies ayant contribué à la gestion du code source, à la collaboration, au suivi des tâches et au test des fonctionnalités de la solution.
 
+\renewcommand{\arraystretch}{1.2}
+% ============================================================
+% TABLEAU 1 — Environnement logiciel
+% ============================================================
+\rowcolors{2}{white}{white}
 
+\begin{longtable}{|p{2.5cm}|p{4cm}|p{7.5cm}|}
 
+\hline
+\rowcolor{gray!30}
+\textbf{Nom} & \textbf{Logo} & \textbf{Description} \\
+\hline
+\endfirsthead
 
-\section{Environnement logiciel}
+\hline
+\rowcolor{gray!30}
+\textbf{Nom} & \textbf{Logo} & \textbf{Description} \\
+\hline
+\endhead
 
-Le tableau suivant présente les logiciels utilisés lors du développement de notre application :
+\hline
+\endfoot
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{ |p{2.5cm}|p{4cm}|p{8.5cm}|} \hline
-        \textbf{Nom} & \textbf{Logo} & \textbf{Description} \\ \hline
+\endlastfoot
 
-        \begin{center} Visual Studio Code \end{center} &
-        \begin{center}
-            \includegraphics[width=2cm,height=2cm]{images/logos/vscode.png}
-        \end{center} &
-        Visual Studio Code est un éditeur de code source léger mais puissant, disponible sur Windows, macOS et Linux. Il offre plusieurs fonctionnalités facilitant le développement logiciel, telles que le débogage, l’autocomplétion et l’intégration Git.\cite{vscode} \\ \hline
-
-        \begin{center} Git \end{center} &
-        \begin{center}
-            \includegraphics[width=1.5cm,height=1.5cm]{images/logos/git.png}
-        \end{center} &
-        Git est un système de contrôle de version distribué conçu pour suivre les modifications du code source et faciliter la collaboration entre développeurs au sein d’un projet logiciel.\cite{git} \\ \hline
-
-        \begin{center} GitLab \end{center} &
-        \begin{center}
-            \includegraphics[width=2cm,height=2cm]{images/logos/GitLab01.png}
-        \end{center} &
-        GitLab est une plateforme de gestion de code source basée sur Git, permettant l’hébergement des dépôts, la collaboration entre équipes et l’automatisation des processus de développement.\cite{gitlab} \\ \hline
-
-        \begin{center} Jira \end{center} &
-        \begin{center}
-            \includegraphics[width=2cm,height=1.5cm]{images/logos/Jira_Logo.svg.png}
-        \end{center} &
-        Jira est un outil de gestion de projet permettant de planifier, suivre et gérer efficacement les tâches, les tickets et les processus de développement logiciel.\cite{jira} \\ \hline
-        
-        \begin{center} Figma \end{center} &
-        \begin{center}
-            \includegraphics[width=3cm,height=2cm]{images/logos/figma.png}
-        \end{center} &
-        Figma est un outil de conception collaborative permettant de créer des interfaces utilisateur, des prototypes interactifs et des systèmes de design adaptés au développement d’applications modernes.\cite{figma} \\ \hline
-
-        \begin{center} draw.io \end{center} &
-        \begin{center}
-            \includegraphics[width=2cm,height=2cm]{images/logos/drowio.jpeg}
-        \end{center} &
-        draw.io (diagrams.net) est un outil gratuit et open-source permettant de concevoir différents types de diagrammes, notamment les diagrammes UML, les architectures logicielles et les diagrammes de flux.\cite{drawio} \\ \hline
-
-    \end{tabular}
-    \caption{Environnement logiciel (partie 1)}
-    \label{tab:env_logiciel_2}
-\end{table}
+% ---------------- Visual Studio Code ----------------
+\begin{center} Visual Studio Code \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=2cm]{images/logos/vscode.png}
+\end{center} &
+Visual Studio Code est un éditeur de code source léger mais puissant, utilisable sous Windows, macOS et Linux. Il offre plusieurs fonctionnalités facilitant le développement logiciel, comme le débogage, l'autocomplétion et l'intégration de Git \cite{vscode}.\\
+\hline
 
 
+% ---------------- Git ----------------
+\begin{center} Git \end{center} &
+\begin{center}
+\includegraphics[width=1.5cm,height=1.5cm]{images/logos/git.png}
+\end{center} &
+Git est un système de gestion de versions distribué, conçu pour suivre les modifications apportées au code source et faciliter la collaboration entre les développeurs d’un même projet logiciel \cite{git}. \\
+\hline
 
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{ |p{2.5cm}|p{4cm}|p{8.5cm}|} \hline
-        \textbf{Nom} & \textbf{Logo} & \textbf{Description} \\ \hline
+% ---------------- GitLab ----------------
+\begin{center} GitLab \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=2cm]{images/logos/GitLab01.png}
+\end{center} &
+GitLab est une plateforme de gestion de code source basée sur Git, permettant l'hébergement des dépôts, la collaboration entre équipes et l'automatisation des processus de développement.\cite{gitlab} \\
+\hline
 
-        \begin{center} Postman \end{center} &
-                \begin{center}
-                    \includegraphics[width=2cm,height=2cm]{images/logos/postman.png}
-                \end{center} &
-                Postman est une plateforme permettant de tester, documenter et valider les API afin de garantir leur bon fonctionnement tout au long du développement.\cite{postman} \\ \hline
-                
-        \begin{center} Mailtrap \end{center} &
-        \begin{center}
-            \includegraphics[width=2cm,height=2cm]{images/logos/mailtrap.png}
-        \end{center} &
-        Mailtrap est une plateforme dédiée au test et à la validation des emails dans un environnement sécurisé, facilitant le développement et le débogage des fonctionnalités d’envoi d’emails.\cite{mailtrap} \\ \hline
+% ---------------- Jira ----------------
+\begin{center} Jira \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=1.5cm]{images/logos/Jira_Logo.svg.png}
+\end{center} &
+Jira est un outil de gestion de projet permettant de planifier, suivre et gérer efficacement les tâches, les tickets et les processus de développement logiciel.\cite{jira} \\
+\hline
 
-    \end{tabular}
-    \caption{Environnement logiciel (partie 2)}
-    \label{tab:env_logiciel_3}
-\end{table}
+% ---------------- Figma ----------------
+\begin{center} Figma \end{center} &
+\begin{center}
+\includegraphics[width=3cm,height=2cm]{images/logos/figma.png}
+\end{center} &
+Figma est un outil de conception collaborative permettant de réaliser des interfaces utilisateur, de concevoir des prototypes interactifs et de mettre en place des systèmes de design adaptés au développement d’applications modernes \cite{figma}. \\
+\hline
+
+% ---------------- draw.io ----------------
+\begin{center} draw.io \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=2cm]{images/logos/drowio.jpeg}
+\end{center} &
+draw.io (diagrams.net) est un outil gratuit et open-source permettant de concevoir différents types de diagrammes, notamment les diagrammes UML, les architectures logicielles et les diagrammes de flux.\cite{drawio} \\
+\hline
+
+% ---------------- Postman ----------------
+\begin{center} Postman \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=2cm]{images/logos/postman.png}
+\end{center} &
+Postman est une plateforme qui permet de documenter, tester et valider les API afin de s’assurer qu’elles fonctionnent correctement tout au long du développement.\cite{postman} \\
+\hline
+
+% ---------------- Mailtrap ----------------
+\begin{center} Mailtrap \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=2cm]{images/logos/mailtrap.png}
+\end{center} &
+Mailtrap est une plateforme dédiée au test et à la validation des emails dans un environnement sécurisé, facilitant le développement et le débogage des fonctionnalités d'envoi d'emails.\cite{mailtrap} \\
+\hline
+
+\caption{Environnement logiciel}
+\label{tab:env_logiciel_3}
+
+\end{longtable}
+
+\subsection{Technologies utilisées}
+
+Le tableau~\ref{tab:env_technique} présente les différentes technologies utilisées lors du développement de notre application, incluant les langages de programmation, les frameworks ainsi que les outils et services mobilisés pour la réalisation du système.
+
+\renewcommand{\arraystretch}{1.2}
+
+% ============================================================
+% TABLEAU 2 — Environnement technique
+% ============================================================
+\rowcolors{2}{white}{white}
+
+\begin{longtable}{|p{2.5cm}|p{4cm}|p{7.5cm}|}
+
+\hline
+\rowcolor{gray!30}
+\textbf{Nom} & \textbf{Logo} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\hline
+\rowcolor{gray!30}
+\textbf{Nom} & \textbf{Logo} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline
+\endfoot
 
 
-\subsection{Environnement technique}
+\endlastfoot
 
-Le tableau suivant présente les différentes technologies utilisées lors du développement de notre application :
+% ---------------- PHP ----------------
+\begin{center} PHP \end{center} &
+\begin{center}
+\includegraphics[width=3cm,height=2cm]{images/logos/php.png}
+\end{center} &
+PHP est un langage de programmation open source utilisé essentiellement pour développer des applications web dynamiques côté serveur.\cite{php} \\
+\hline
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{ |p{2.5cm}|p{4cm}|p{8.5cm}|} \hline
-        \textbf{Nom} & \textbf{Logo} & \textbf{Description} \\ \hline
+% ---------------- Laravel ----------------
+\begin{center} Laravel \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=2cm]{images/logos/laravel.png}
+\end{center} &
+Laravel est un framework web open-source basé sur PHP, suivant l'architecture MVC (Modèle–Vue–Contrôleur), facilitant le développement d'applications web robustes et sécurisées.\cite{laravel} \\
+\hline
 
-        \begin{center} PHP \end{center} &
-        \begin{center}
-            \includegraphics[width=3cm,height=2cm]{images/logos/php.png}
-        \end{center} &
-        PHP est un langage de programmation open-source principalement utilisé pour le développement d’applications web dynamiques côté serveur.\cite{php} \\ \hline
+% ---------------- Drupal ----------------
+\begin{center} Drupal \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=2cm]{images/logos/drupal.png}
+\end{center} &
+Drupal est un système de gestion de contenu (CMS) open-source développé en PHP, permettant de concevoir et de gérer efficacement des sites web ainsi que des contenus numériques \cite{drupal}. \\
+\hline
 
-        \begin{center} Laravel \end{center} &
-        \begin{center}
-            \includegraphics[width=2cm,height=2cm]{images/logos/laravel.png}
-        \end{center} &
-        Laravel est un framework web open-source basé sur PHP, suivant l’architecture MVC (Modèle–Vue–Contrôleur), facilitant le développement d’applications web robustes et sécurisées.\cite{laravel} \\ \hline
+% ---------------- Next.js ----------------
+\begin{center} Next.js \end{center} &
+\begin{center}
+\includegraphics[width=4cm,height=3cm]{images/logos/next.js.jpg}
+\end{center} &
+Next.js est un framework React destiné au développement d'applications web modernes. Il propose des fonctionnalités avancées comme le rendu côté serveur (SSR) et le référencement d'un site web dans les résultats des moteurs de recherche (SEO) \cite{nextjs}. \\
+\hline
 
-        \begin{center} Drupal \end{center} &
-        \begin{center}
-            \includegraphics[width=2cm,height=2cm]{images/logos/drupal.png}
-        \end{center} &
-        Drupal est un système de gestion de contenu (CMS) open-source écrit en PHP, permettant de créer et gérer efficacement des sites web et des contenus numériques.\cite{drupal} \\ \hline
+% ---------------- Docker ----------------
+\begin{center} Docker \end{center} &
+\begin{center}
+\includegraphics[width=3cm,height=3cm]{images/logos/Docker.png}
+\end{center} &
+Docker est une plateforme de conteneurisation qui permet de créer, déployer et exécuter des applications dans des environnements isolés et reproductibles \cite{docker}. \\
+\hline
 
-    \end{tabular}
-    \caption{Environnement technique (partie 1)}
-    \label{tab:env_technique_1}
-\end{table}
+% ---------------- Nginx ----------------
+\begin{center} Nginx \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=2cm]{images/logos/nginx.png}
+\end{center} &
+Nginx est un serveur web et proxy inverse permettant la gestion des requêtes HTTP, la répartition de charge ainsi que l'amélioration des performances des applications web.\cite{nginx} \\
+\hline
+
+% ---------------- PostgreSQL ----------------
+\begin{center} PostgreSQL \end{center} &
+\begin{center}
+\includegraphics[width=2cm,height=2cm]{images/logos/Postgresql_elephant.svg.png}
+\end{center} &
+PostgreSQL est une base de données relationnelle open source reconnue pour sa robustesse, sa fiabilité et ses hautes performances \cite{postgresql}. \\
+\hline
+
+% ---------------- Redis ----------------
+\begin{center} Redis \end{center} &
+\begin{center}
+\includegraphics[width=3cm,height=2cm]{images/logos/redis-color-1.png}
+\end{center} &
+Redis est une base de données en mémoire utilisée principalement pour la mise en cache, l'optimisation des performances et le stockage rapide de données temporaires.\cite{redis} \\
+\hline
+
+% ---------------- Pinecone ----------------
+\begin{center} Pinecone \end{center} &
+\begin{center}
+\includegraphics[width=3cm,height=2cm]{images/logos/Pinecone.jpg}
+\end{center} &
+Pinecone est une base de données vectorielle cloud native, conçue pour stocker, indexer et interroger efficacement des embeddings pour des applications d'intelligence artificielle.\cite{pinecone} \\
+\hline
+
+\caption{Environnement technique utilisé}
+\label{tab:env_technique}
+
+\end{longtable}
+
+\subsection{Technologies d'intelligence artificielle}
+
+Le tableau \ref{tab:ia} regroupe les modèles d'intelligence artificielle utilisés dans le développement de notre solution. Ils permettent d'assurer le fonctionnement de l'assistant conversationnel grâce à la génération de texte et à la recherche sémantique.
+
+\renewcommand{\arraystretch}{1.2}
+
+% ============================================================
+% TABLEAU 2 — Environnement technique
+% ============================================================
+\rowcolors{2}{white}{white}
+
+\begin{longtable}{|p{2.5cm}|p{4cm}|p{7.5cm}|}
+
+\hline
+\rowcolor{gray!30}
+\textbf{Nom} & \textbf{Logo} & \textbf{Description} \\
+\hline
+\endfirsthead
+
+\hline
+\rowcolor{gray!30}
+\textbf{Nom} & \textbf{Logo} & \textbf{Description} \\
+\hline
+\endhead
+
+\hline
+\endfoot
 
 
-\begin{table}[H]
-    \centering
-    \begin{tabular}{ |p{2.5cm}|p{4cm}|p{8.5cm}|} \hline
-        \textbf{Nom} & \textbf{Logo} & \textbf{Description} \\ \hline
+\endlastfoot
+% ---------------- GPT-4o ----------------
+\begin{center} GPT-4o \end{center} &
+\begin{center}
+\includegraphics[width=3cm,height=2cm]{images/autre/model-gpt-4o.png}
+\end{center} &
+GPT-4o est un modèle de langage multimodal développé par OpenAI, capable de traiter du texte, de la voix et de l'image.\cite{gpt4o} \\
+\hline
 
-        \begin{center} Next.js \end{center} &
-        \begin{center}
-            \includegraphics[width=4cm,height=3cm]{images/logos/next.js.jpg}
-        \end{center} &
-        Next.js est un framework React utilisé pour développer des applications web modernes, offrant des fonctionnalités avancées telles que le rendu côté serveur et l’optimisation des performances.\cite{nextjs} \\ \hline
+% ---------------- text-embedding-3-large ----------------
+\begin{center} text-embedding-3-large \end{center} &
+\begin{center}
+\includegraphics[width=3cm,height=2cm]{images/autre/model-embedding.png}
+\end{center} &
+text-embedding-3-large est un modèle d'embedding développé par OpenAI, utilisé pour mesurer la similarité entre deux textes. Ils sont utiles pour la recherche, le clustering, les recommandations, la détection d'anomalies et les tâches de classification.\cite{textembedding3large} \\
+\hline
 
-        \begin{center} Docker \end{center} &
-        \begin{center}
-            \includegraphics[width=3cm,height=3cm]{images/logos/Docker.png}
-        \end{center} &
-        Docker est une plateforme de conteneurisation permettant de développer, déployer et exécuter des applications dans des environnements isolés et reproductibles.\cite{docker} \\ \hline
+\caption{Environnement technique utilisé}
+\label{tab:ia}
 
-        \begin{center} Nginx \end{center} &
-        \begin{center}
-            \includegraphics[width=2cm,height=2cm]{images/logos/nginx.png}
-        \end{center} &
-        Nginx est un serveur web et proxy inverse permettant la gestion des requêtes HTTP, la répartition de charge ainsi que l’amélioration des performances des applications web.\cite{nginx} \\ \hline
-
-        \begin{center} PostgreSQL \end{center} &
-        \begin{center}
-            \includegraphics[width=2cm,height=2cm]{images/logos/Postgresql_elephant.svg.png}
-        \end{center} &
-        PostgreSQL est un système de gestion de base de données relationnelle open-source reconnu pour sa robustesse, sa fiabilité et ses performances élevées.\cite{postgresql} \\ \hline
-
-        \begin{center} Redis \end{center} &
-        \begin{center}
-            \includegraphics[width=3cm,height=2cm]{images/logos/redis-color-1.png}
-        \end{center} &
-        Redis est une base de données en mémoire utilisée principalement pour la mise en cache, l’optimisation des performances et le stockage rapide de données temporaires.\cite{redis} \\ \hline
-
-        \begin{center} Pinecone \end{center} &
-        \begin{center}
-            \includegraphics[width=3cm,height=2cm]{images/logos/Pinecone.jpg}
-        \end{center} &
-        Pinecone est une base de données vectorielle spécialisée, cloud native, conçue pour stocker, indexer et interroger efficacement des embeddings vectoriels de grande dimension pour des applications d'IA et de machine learning.\cite{pinecone} \\ \hline
-
-    \end{tabular}
-    \caption{Environnement technique (partie 2)}
-    \label{tab:env_technique_2}
-\end{table}
-
+\end{longtable}
 
 \section{Architecture logicielle}
 
+Cette partie est dédiée à la présentation de l’architecture logicielle de la solution. Elle permet de décrire l’organisation générale du système ainsi que les différents composants logiciels et leurs interactions.
 
-% description
 \subsection{Architecture logique}
-L'architecture logique de la plateforme \textbf{e-Gouv} repose sur un modèle \textbf{trois couches} qui sépare clairement les responsabilités du système. 
+La figure~\ref{fig:arch-log} montre l'architecture logique de la plateforme \textbf{e-Gouv}, qui repose sur un modèle à \textbf{trois couches} qui sépare nettement les responsabilités du système.
 
-La \textbf{couche de présentation} constitue le point d'entrée des utilisateurs ; elle regroupe l'ensemble des interfaces web à travers lesquelles citoyens et administrateurs interagissent avec la plateforme. Les requêtes sont transmises à la \textbf{couche d'application}, qui centralise la logique métier et orchestre le traitement des services administratifs. 
+La \textbf{couche de présentation} constitue le point d'entrée des utilisateurs ; elle regroupe l'ensemble des interfaces web à travers lesquelles citoyens et administrateurs interagissent avec la plateforme. Les requêtes sont transmises à la \textbf{couche d'application}, qui centralise la logique métier et orchestre le traitement des services administratifs.
 
 Cette couche communique à son tour avec la \textbf{couche de données}, chargée de la persistance et de la restitution des informations. Les échanges entre les couches suivent un flux structuré : les requêtes descendent de la présentation vers les données, et les résultats remontent vers l'utilisateur final. Cette séparation garantit la maintenabilité, la scalabilité et la sécurité de l'ensemble du système.
 
+
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/autre/arch3tier.drawio.png}
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/autre/arch-logique.png}
     \caption{Architecture logique}
     \label{fig:arch-log}
 \end{figure}
@@ -695,17 +794,20 @@ La \textbf{couche métier} est portée par une API Laravel dédiée, également 
 
 La \textbf{couche données} regroupe trois systèmes de stockage complémentaires : PostgreSQL pour la persistance relationnelle des données, Redis pour la gestion du cache et des sessions, et un Document Storage pour l'archivage des fichiers et pièces jointes. Les échanges entre la couche métier et la couche données s'effectuent en lecture/écriture selon les besoins du traitement.
 
-Enfin, l'assistant conversationnel s'appuie sur des \textbf{services d'intelligence artificielle externes}, accédés en HTTPS depuis le CMS Drupal du Frontoffice, qui héberge les modules d'IA. La recherche sémantique repose sur \textbf{Pinecone}, une base de données vectorielle gérée dans le cloud, où sont stockés les vecteurs (\textit{embeddings}) du contenu du portail. La génération des réponses est confiée à un \textbf{fournisseur LLM externe}, OpenAI (modèle \texttt{gpt-4o-mini}), interrogé via son API. Lors d'une question, Drupal interroge Pinecone pour récupérer les passages les plus pertinents, puis transmet ce contexte au modèle OpenAI qui formule la réponse, selon le principe de la génération augmentée par la recherche (RAG).
+Enfin, l'assistant conversationnel s'appuie sur des \textbf{services d'intelligence artificielle externes}, accédés en HTTPS depuis le CMS Drupal du Frontoffice, qui héberge les modules d'IA. La recherche sémantique repose sur \textbf{Pinecone}, une base de données vectorielle gérée dans le cloud, où sont stockés les vecteurs (\textit{embeddings}) du contenu du portail. La génération des réponses est confiée à un \textbf{fournisseur LLM externe}, OpenAI (modèle \texttt{gpt-4o}), interrogé via son API. Lors d'une question, Drupal interroge Pinecone pour récupérer les passages les plus pertinents, puis transmet ce contexte au modèle OpenAI qui formule la réponse, selon le principe de la génération augmentée par la recherche (RAG).
+
+La figure~\ref{fig:arch-phy} illustre l’architecture physique de la plateforme.
+
 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/autre/Architecture 3 Couches — Présentation _ Accès Données _ Données (2).png}
+    \includegraphics[width=\textwidth, height=1\textheight, keepaspectratio]{images/autre/arch-physique.png}
     \caption{Architecture physique}
     \label{fig:arch-phy}
 \end{figure}
 
 
 \section{Conclusion}
-Dans ce chapitre, nous avons identifié les acteurs du système ainsi que les besoins fonctionnels et non fonctionnels. Nous avons ensuite présenté les diagrammes de cas d’utilisation, le backlog produit, l’environnement de travail et l’architecture générale du système.
-Dans ce chapitre, nous avons identifié les acteurs du système ainsi que les besoins fonctionnels et non fonctionnels. Nous avons ensuite présenté les diagrammes de cas d’utilisation, le backlog produit, l’environnement de travail et l’architecture générale du système.
+
+Nous avons exposé, dans ce chapitre, la phase de spécification des besoins du système e-Gouv. Nous avons tout d’abord identifié les différents acteurs et les besoins fonctionnels et non fonctionnels du système. Nous avons ensuite détaillé les diagrammes de cas d’utilisation, le backlog de produit ainsi que la planification des sprints. Enfin, nous avons décrit l’environnement de développement et l’architecture globale de la solution.
