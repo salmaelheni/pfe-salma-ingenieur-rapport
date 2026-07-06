@@ -206,7 +206,7 @@ Dans le cadre de ce projet, quatre exigences principales ont été retenues :
 \item \textbf{Maintenabilité} : le système est conçu selon une architecture modulaire reposant sur des composants réutilisables, ce qui facilite son évolution ainsi que la correction rapide des anomalies.
 
 
-\item \textbf{Sécurité} : la protection des données et la confidentialité des utilisateurs sont garanties par plusieurs mécanismes complémentaires : authentification à deux facteurs, utilisation de jetons JWT pour une gestion sécurisée des sessions, gestion précise des droits d’accès fondée sur les rôles et permissions, et validation des données à la fois côté client et côté serveur afin d’assurer leur intégrité et leur confidentialité.
+\item \textbf{Sécurité} : la protection des données et la confidentialité des utilisateurs sont garanties par plusieurs mécanismes complémentaires: authentification à deux facteurs utilisation de jetons JWT pour une gestion sécurisée des sessions gestion précise des droits d’accès fondée sur les rôles et permissions et validation des données à la fois côté client et côté serveur afin d’assurer leur intégrité et leur confidentialité.
 
 \item \textbf{Performance} : la plateforme vise à offrir une expérience fluide avec des temps de réponse réduits. Cet objectif est atteint grâce à des choix techniques tels que l’indexation de la base de données et la mise en place de mécanismes de cache pour améliorer la réactivité du système.
 
@@ -313,8 +313,7 @@ US37 & Administrateur Système & Je veux être notifié par email d'une nouvelle
 Dans cette partie, nous décrivons une représentation semi-formelle du système en utilisant le diagramme global de cas d'utilisation de la solution, ainsi que le diagramme de classe global.
 
 \subsection{Digramme de cas d'utilisation global}
-Dans cette section, nous présentons les diagrammes de cas d’utilisation du système, qui permettent de modéliser les interactions entre les différents acteurs et le système, ainsi que de mettre en évidence les fonctionnalités qui leur sont associées.Ces diagrammes sont illustrés par les figures~\ref{fig:cas-utilisation-admins} et~\ref{fig:cas-utilisation-user}. En raison de leur taille, ils ont été subdivisés en deux parties distinctes dans un souci de clarté et de lisibilité.
-
+Dans cette section nous présentons les diagrammes de cas d’utilisation du système qui permettent de modéliser les interactions entre les différents acteurs et le système ainsi que de mettre en évidence les fonctionnalités qui leur sont associées. Ces diagrammes sont illustrés par les figures~\ref{fig:cas-utilisation-admins} et~\ref{fig:cas-utilisation-user}. En raison de leur taille ils ont été subdivisés en deux parties distinctes dans un souci de clarté et de lisibilité.
 
 
 
@@ -337,7 +336,7 @@ Dans cette section, nous présentons les diagrammes de cas d’utilisation du sy
 
 
 \subsection{Diagramme de classe global}
-Le diagramme de classe global, illustré par la figure~\ref{fig:classe}, permet de représenter la structure statique de l’application. Il permet d’identifier les différentes classes de l’application, leurs attributs ainsi que les relations entre elles, offrant ainsi une vue d’ensemble de l’architecture orientée objet de la solution.
+Le diagramme de classe global illustré par la figure~\ref{fig:classe} permet de représenter la structure statique de l’application. Il permet d’identifier les différentes classes de l’application leurs attributs ainsi que les relations entre elles offrant ainsi une vue d’ensemble de l’architecture orientée objet de la solution.
 
 
  
@@ -350,7 +349,7 @@ Le diagramme de classe global, illustré par la figure~\ref{fig:classe}, permet 
  
 
 \section{Planification du projet avec Scrum}
-Le développement du projet a été planifié sous forme d’itérations successives appelées sprints. Chaque sprint vise la réalisation d’un ensemble priorisé d’éléments du backlog produit, sélectionnés en fonction de leur valeur métier. 
+Le développement du projet a été planifié sous forme d’itérations successives appelées sprints. Chaque sprint vise la réalisation d’un ensemble priorisé d’éléments du backlog produit sélectionnés en fonction de leur valeur métier.
 
 \subsection{Attribution des rôles}
 
@@ -502,7 +501,7 @@ US37 & & Je veux être notifié par email d'une nouvelle demande d'assistance af
 
 \section{Environnement de développement et technologies utilisées}
 
-Cette section présente l’environnement de développement ainsi que les différents outils et technologies utilisés pour la réalisation du projet. Elle permet de mettre en évidence les choix techniques adoptés, ainsi que les technologies ayant contribué au développement, au test et au déploiement de la solution.
+Cette section présente l’environnement de développement ainsi que les différents outils et technologies utilisés pour la réalisation du projet. Elle permet de mettre en évidence les choix techniques adoptés ainsi que les technologies ayant contribué au développement au test et au déploiement de la solution.
 
  
 
@@ -540,7 +539,7 @@ Le tableau~\ref{tab:env_logiciel_3} présente les principaux outils logiciels ut
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/vscode.png}
 \end{center} &
-Visual Studio Code est un éditeur de code source léger mais puissant, utilisable sous Windows, macOS et Linux. Il offre plusieurs fonctionnalités facilitant le développement logiciel, comme le débogage, l'autocomplétion et l'intégration de Git \cite{vscode}.\\
+Visual Studio Code est un éditeur de code source léger mais puissant utilisable sous Windows macOS et Linux. Il offre plusieurs fonctionnalités facilitant le développement logiciel comme le débogage l'autocomplétion et l'intégration de Git \cite{vscode}.\\
 \hline
 
 
@@ -549,7 +548,7 @@ Visual Studio Code est un éditeur de code source léger mais puissant, utilisab
 \begin{center}
 \includegraphics[width=1.5cm,height=1.5cm]{images/logos/git.png}
 \end{center} &
-Git est un système de gestion de versions distribué, conçu pour suivre les modifications apportées au code source et faciliter la collaboration entre les développeurs d’un même projet logiciel \cite{git}. \\
+Git est un système de gestion de versions distribué conçu pour suivre les modifications apportées au code source et faciliter la collaboration entre les développeurs d’un même projet logiciel \cite{git}. \\
 \hline
 
 
@@ -558,7 +557,7 @@ Git est un système de gestion de versions distribué, conçu pour suivre les mo
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/GitLab01.png}
 \end{center} &
-GitLab est une plateforme de gestion de code source basée sur Git, permettant l'hébergement des dépôts, la collaboration entre équipes et l'automatisation des processus de développement.\cite{gitlab} \\
+GitLab est une plateforme de gestion de code source basée sur Git permettant l'hébergement des dépôts la collaboration entre équipes et l'automatisation des processus de développement.\cite{gitlab} \\
 \hline
 
 % ---------------- Jira ----------------
@@ -582,7 +581,7 @@ Figma est un outil de conception collaborative permettant de réaliser des inter
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/drowio.jpeg}
 \end{center} &
-draw.io (diagrams.net) est un outil gratuit et open-source permettant de concevoir différents types de diagrammes, notamment les diagrammes UML, les architectures logicielles et les diagrammes de flux.\cite{drawio} \\
+draw.io est un outil gratuit et open-source permettant de concevoir différents types de diagrammes, notamment les diagrammes UML, les architectures logicielles et les diagrammes de flux.\cite{drawio} \\
 \hline
 
 % ---------------- Postman ----------------
@@ -650,7 +649,7 @@ PHP est un langage de programmation open source utilisé essentiellement pour d�
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/laravel.png}
 \end{center} &
-Laravel est un framework web open-source basé sur PHP, suivant l'architecture MVC (Modèle–Vue–Contrôleur), facilitant le développement d'applications web robustes et sécurisées.\cite{laravel} \\
+Laravel est un framework web open-source basé sur PHP suivant l'architecture MVC (Modèle–Vue–Contrôleur) facilitant le développement d'applications web robustes et sécurisées.\cite{laravel} \\
 \hline
 
 % ---------------- Drupal ----------------
@@ -658,7 +657,7 @@ Laravel est un framework web open-source basé sur PHP, suivant l'architecture M
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/drupal.png}
 \end{center} &
-Drupal est un système de gestion de contenu (CMS) open-source développé en PHP, permettant de concevoir et de gérer efficacement des sites web ainsi que des contenus numériques \cite{drupal}. \\
+Drupal est un système de gestion de contenu (CMS) open-source développé en PHP permettant de concevoir et de gérer efficacement des sites web ainsi que des contenus numériques \cite{drupal}. \\
 \hline
 
 % ---------------- Next.js ----------------
@@ -772,7 +771,7 @@ Cette partie est dédiée à la présentation de l’architecture logicielle de 
 \subsection{Architecture logique}
 La figure~\ref{fig:arch-log} montre l'architecture logique de la plateforme \textbf{e-Gouv}, qui repose sur un modèle à \textbf{trois couches} qui sépare nettement les responsabilités du système.
 
-La \textbf{couche de présentation} constitue le point d'entrée des utilisateurs ; elle regroupe l'ensemble des interfaces web à travers lesquelles citoyens et administrateurs interagissent avec la plateforme. Les requêtes sont transmises à la \textbf{couche d'application}, qui centralise la logique métier et orchestre le traitement des services administratifs.
+La \textbf{couche de présentation} constitue le point d'entrée des utilisateurs elle regroupe l'ensemble des interfaces web à travers lesquelles citoyens et administrateurs interagissent avec la plateforme. Les requêtes sont transmises à la \textbf{couche d'application}, qui centralise la logique métier et orchestre le traitement des services administratifs.
 
 Cette couche communique à son tour avec la \textbf{couche de données}, chargée de la persistance et de la restitution des informations. Les échanges entre les couches suivent un flux structuré : les requêtes descendent de la présentation vers les données, et les résultats remontent vers l'utilisateur final. Cette séparation garantit la maintenabilité, la scalabilité et la sécurité de l'ensemble du système.
 
@@ -810,4 +809,4 @@ La figure~\ref{fig:arch-phy} illustre l’architecture physique de la plateforme
 
 \section{Conclusion}
 
-Nous avons exposé, dans ce chapitre, la phase de spécification des besoins du système e-Gouv. Nous avons tout d’abord identifié les différents acteurs et les besoins fonctionnels et non fonctionnels du système. Nous avons ensuite détaillé les diagrammes de cas d’utilisation, le backlog de produit ainsi que la planification des sprints. Enfin, nous avons décrit l’environnement de développement et l’architecture globale de la solution.
+Nous avons exposé, dans ce chapitre, la phase de spécification des besoins du système e-Gouv. Nous avons tout d’abord identifié les différents acteurs et les besoins fonctionnels et non fonctionnels du système. Nous avons ensuite détaillé les diagrammes de cas d’utilisation le backlog de produit ainsi que la planification des sprints . Enfin nous avons décrit l’environnement de développement et l’architecture globale de la solution.
