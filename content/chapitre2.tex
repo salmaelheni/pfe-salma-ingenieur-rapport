@@ -3,17 +3,18 @@
 
 \section{Introduction}
 
-Dans ce chapitre, nous procédons à l’analyse des besoins fonctionnels et non fonctionnels du projet, ainsi qu’à l’identification des acteurs du système. Nous présentons également le backlog produit et la planification des sprints, offrant ainsi une vue d’ensemble sur le déroulement du projet et les fonctionnalités à développer. Le chapitre se conclut par la présentation de l’architecture globale de l’application.
+Ce chapitre s'articule autour de deux axes principaux. Le premier consiste à identifier les acteurs du système e-Gouv ainsi que leurs besoins, qu'ils soient fonctionnels ou non fonctionnels. Le second porte sur l'organisation du travail à travers le backlog produit et la planification des sprints. Une présentation de l'architecture globale de l'application vient clôturer ce chapitre.
 
 
 \section{Capture des besoins}
 
-La réussite du projet repose sur une analyse rigoureuse et détaillée des besoins à satisfaire. Cette étape fondamentale vise à identifier les acteurs du système et à définir leurs besoins fonctionnels et non fonctionnels. Elle contribue ainsi à assurer l’adéquation de la solution proposée avec les exigences métier et les contraintes techniques du projet.
+Aucun projet ne peut aboutir sans une compréhension fine de ce qu'il doit accomplir. C'est l'objet de cette phase de capture des besoins : cerner qui sont les acteurs du système, cerner ce qu'ils attendent — sur le plan fonctionnel comme non fonctionnel —, et s'assurer, au final, que la solution imaginée colle aussi bien aux réalités du métier qu'aux limites techniques du projet. 
 
 
 \subsection{Identification des acteurs}
 
-Le système e-Gouv repose sur plusieurs acteurs, chacun disposant d’un rôle et d’un périmètre d’intervention spécifiques. Ces acteurs ainsi que leur description sont  présentés dans le tableau \ref{tab:acteurs}.
+Plusieurs acteurs interviennent dans le fonctionnement du système e-Gouv, chacun ayant un rôle bien défini et un champ d'action qui lui est propre.le tableau \ref{tab:acteurs} récapitule ces différents acteurs accompagnés de leur description respective. 
+
 
 \begin{longtable}{|p{6cm}|p{9cm}|}
 \hline
@@ -39,8 +40,9 @@ Internaute &
 Utilisateur non authentifié accédant au portail e-Gouv afin de consulter les informations publiques et initier une inscription. \\ \hline
 
 Client &
-Hérite de l’internaute e-Gouv. Il s’agit d’un citoyen disposant d’un compte lui permettant d’accéder aux services publics numériques. \\ \hline
+Cet acteur hérite de l’internaute e-Gouv. Il désigne un citoyen disposant d’un compte utilisateur authentifié, lui permettant d’accéder aux différents services publics numériques. \\ \hline
 
+\rowcolor{white}
 \caption{Acteurs du système e-Gouv}
 \label{tab:acteurs}
 \end{longtable}
@@ -72,7 +74,6 @@ Les tableaux~\ref{tab:besoins_admin} et~\ref{tab:besoins_citoyens} présentent u
 Administrateur &
 \begin{minipage}[t]{\linewidth}
 \begin{itemize}
-    \item S’authentifier
     \item Consulter les statistiques globales
     \item Consulter les journaux d'activités
     \item Consulter les notifications
@@ -130,6 +131,7 @@ Administrateur Institutionnel &
 \\
 \hline
 
+\rowcolor{white}
 \caption{Besoins fonctionnels par acteur (partie administration)}
 \label{tab:besoins_admin}
 
@@ -177,7 +179,6 @@ Client &
 \begin{minipage}[t]{\linewidth}
 \vspace{0.2cm}
 \begin{itemize}
-    \item S’authentifier
     \item Consulter le tableau de bord
     \item Consulter les notifications
     \item Déposer des demandes de services
@@ -190,7 +191,7 @@ Client &
 \\
 \hline
 
-
+\rowcolor{white}
 \caption{Besoins fonctionnels par acteur (partie citoyens)}
 \label{tab:besoins_citoyens}
 
@@ -206,7 +207,7 @@ Dans le cadre de ce projet, quatre exigences principales ont été retenues :
 \item \textbf{Maintenabilité} : le système est conçu selon une architecture modulaire reposant sur des composants réutilisables, ce qui facilite son évolution ainsi que la correction rapide des anomalies.
 
 
-\item \textbf{Sécurité} : la protection des données et la confidentialité des utilisateurs sont garanties par plusieurs mécanismes complémentaires: authentification à deux facteurs utilisation de jetons JWT pour une gestion sécurisée des sessions gestion précise des droits d’accès fondée sur les rôles et permissions et validation des données à la fois côté client et côté serveur afin d’assurer leur intégrité et leur confidentialité.
+\item \textbf{Sécurité} : la protection des données et la confidentialité des utilisateurs sont garanties par plusieurs mécanismes complémentaires : authentification à deux facteurs, utilisation de jetons JWT pour une gestion sécurisée des sessions, gestion précise des droits d’accès fondée sur les rôles et permissions, et validation des données à la fois côté client et côté serveur afin d’assurer leur intégrité et leur confidentialité.
 
 \item \textbf{Performance} : la plateforme vise à offrir une expérience fluide avec des temps de réponse réduits. Cet objectif est atteint grâce à des choix techniques tels que l’indexation de la base de données et la mise en place de mécanismes de cache pour améliorer la réactivité du système.
 
@@ -218,8 +219,7 @@ Dans le cadre de ce projet, quatre exigences principales ont été retenues :
 
 
 \subsection{Backlog du Produit}
-Le backlog produit constitue l’artefact central du framework Scrum. Il regroupe l’ensemble des fonctionnalités nécessaires à la réalisation de la solution, ordonnées selon leur priorité et leur planification dans les différents sprints. Le tableau~\ref{tab:Backlogr_Produit} présente une synthèse du backlog produit relatif à la conception et au développement de la plateforme e-Gouv.
-
+Au cœur de la méthode Scrum se trouve le backlog produit, qui rassemble toutes les fonctionnalités requises pour mener à bien la solution, classées par priorité et réparties entre les différents sprints. Le tableau~\ref{tab:Backlogr_Produit} en donne une vue d'ensemble, appliquée à la conception et au développement de la plateforme e-Gouv. 
 
 
 \renewcommand{\arraystretch}{1.2}
@@ -295,26 +295,11 @@ US37 & Administrateur Système & Je veux être notifié par email d'une nouvelle
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
- 
-
 \section{Spécification semi-formelle}
-Dans cette partie, nous décrivons une représentation semi-formelle du système en utilisant le diagramme global de cas d'utilisation de la solution, ainsi que le diagramme de classe global.
+Deux outils UML soutiennent la modélisation semi-formelle présentée dans cette section : d'une part le diagramme de cas d'utilisation global, offrant une lecture synthétique des fonctionnalités du système, et d'autre part le diagramme de classes global, qui en organise la structure de données. 
 
 \subsection{Digramme de cas d'utilisation global}
-Dans cette section nous présentons les diagrammes de cas d’utilisation du système qui permettent de modéliser les interactions entre les différents acteurs et le système ainsi que de mettre en évidence les fonctionnalités qui leur sont associées. Ces diagrammes sont illustrés par les figures~\ref{fig:cas-utilisation-admins} et~\ref{fig:cas-utilisation-user}. En raison de leur taille ils ont été subdivisés en deux parties distinctes dans un souci de clarté et de lisibilité.
-
+Cette sous-section expose les diagrammes de cas d'utilisation, un outil qui met en lumière les échanges entre les acteurs et le système tout en identifiant clairement les fonctionnalités rattachées à chacun d'eux. Compte tenu de leur volume, ces schémas ont été répartis en deux figures ~\ref{fig:cas-utilisation-admins} et~\ref{fig:cas-utilisation-user} afin d'en faciliter la lecture et la compréhension. 
 
 
 
@@ -336,8 +321,7 @@ Dans cette section nous présentons les diagrammes de cas d’utilisation du sys
 
 
 \subsection{Diagramme de classe global}
-Le diagramme de classe global illustré par la figure~\ref{fig:classe} permet de représenter la structure statique de l’application. Il permet d’identifier les différentes classes de l’application leurs attributs ainsi que les relations entre elles offrant ainsi une vue d’ensemble de l’architecture orientée objet de la solution.
-
+La figure~\ref{fig:classe} présente le diagramme de classes global, qui décrit l'organisation statique de l'application. Ce diagramme met en évidence l'ensemble des classes composant le système, avec leurs attributs respectifs et les liens qui les unissent, apportant ainsi une vision complète de la conception orientée objet retenue pour la solution. 
 
  
 \begin{figure}[H]
@@ -349,7 +333,7 @@ Le diagramme de classe global illustré par la figure~\ref{fig:classe} permet de
  
 
 \section{Planification du projet avec Scrum}
-Le développement du projet a été planifié sous forme d’itérations successives appelées sprints. Chaque sprint vise la réalisation d’un ensemble priorisé d’éléments du backlog produit sélectionnés en fonction de leur valeur métier.
+Le développement du projet a été planifié sous forme d’itérations successives appelées sprints. Chaque sprint vise la réalisation d’un ensemble priorisé d’éléments du backlog produit, sélectionnés en fonction de leur valeur métier. 
 
 \subsection{Attribution des rôles}
 
@@ -501,13 +485,13 @@ US37 & & Je veux être notifié par email d'une nouvelle demande d'assistance af
 
 \section{Environnement de développement et technologies utilisées}
 
-Cette section présente l’environnement de développement ainsi que les différents outils et technologies utilisés pour la réalisation du projet. Elle permet de mettre en évidence les choix techniques adoptés ainsi que les technologies ayant contribué au développement au test et au déploiement de la solution.
+Nous abordons dans cette section l'ensemble des outils, technologies et environnements mobilisés tout au long de la réalisation du projet. L'objectif est de justifier les orientations techniques retenues et de recenser les différentes ressources ayant servi à concevoir, tester et déployer la solution.
 
  
 
 \subsection{Environnement de développement}
 
-Le tableau~\ref{tab:env_logiciel_3} présente les principaux outils logiciels utilisés dans le cadre du projet. Il met en évidence l’environnement de développement adopté, ainsi que les plateformes et technologies ayant contribué à la gestion du code source, à la collaboration, au suivi des tâches et au test des fonctionnalités de la solution.
+Les principaux outils logiciels mobilisés au cours du projet sont récapitulés dans le tableau ~\ref{tab:env_logiciel_3}. Celui-ci regroupe l'environnement de développement retenu ainsi que les différentes plateformes ayant permis d'assurer la gestion du code, le travail collaboratif, le suivi de l'avancement des tâches et la vérification des fonctionnalités développées.
 
 \renewcommand{\arraystretch}{1.2}
 % ============================================================
@@ -539,7 +523,7 @@ Le tableau~\ref{tab:env_logiciel_3} présente les principaux outils logiciels ut
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/vscode.png}
 \end{center} &
-Visual Studio Code est un éditeur de code source léger mais puissant utilisable sous Windows macOS et Linux. Il offre plusieurs fonctionnalités facilitant le développement logiciel comme le débogage l'autocomplétion et l'intégration de Git \cite{vscode}.\\
+Cet éditeur se distingue par sa légèreté combinée à de solides performances. Il embarque de nombreuses fonctionnalités destinées à simplifier le travail des développeurs, notamment le débogage intégré, la complétion automatique du code et une prise en charge native de Git \cite{vscode}.\\
 \hline
 
 
@@ -548,7 +532,7 @@ Visual Studio Code est un éditeur de code source léger mais puissant utilisabl
 \begin{center}
 \includegraphics[width=1.5cm,height=1.5cm]{images/logos/git.png}
 \end{center} &
-Git est un système de gestion de versions distribué conçu pour suivre les modifications apportées au code source et faciliter la collaboration entre les développeurs d’un même projet logiciel \cite{git}. \\
+Il s'agit d'un outil de gestion de versions fonctionnant de manière distribuée, permettant de tracer l'historique des modifications du code et de coordonner efficacement le travail de plusieurs développeurs sur un même projet \cite{git}. \\
 \hline
 
 
@@ -557,7 +541,7 @@ Git est un système de gestion de versions distribué conçu pour suivre les mod
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/GitLab01.png}
 \end{center} &
-GitLab est une plateforme de gestion de code source basée sur Git permettant l'hébergement des dépôts la collaboration entre équipes et l'automatisation des processus de développement.\cite{gitlab} \\
+Il s'agit d'une solution complète bâtie autour de Git, permettant non seulement de déployer le code source, mais aussi de faciliter le travail collectif, d'exécuter des tests, de sécuriser les projets et d'automatiser les différentes phases du cycle de développement. \cite{gitlab} \\
 \hline
 
 % ---------------- Jira ----------------
@@ -565,7 +549,7 @@ GitLab est une plateforme de gestion de code source basée sur Git permettant l'
 \begin{center}
 \includegraphics[width=2cm,height=1.5cm]{images/logos/Jira_Logo.svg.png}
 \end{center} &
-Jira est un outil de gestion de projet permettant de planifier, suivre et gérer efficacement les tâches, les tickets et les processus de développement logiciel.\cite{jira} \\
+Il s'agit d'un outil avancé de pilotage de projets, permettant aux équipes d'organiser, de suivre l'avancement et de mener à terme leurs projets, quel qu'en soit le type, avec un haut niveau de fiabilité.\cite{jira} \\
 \hline
 
 % ---------------- Figma ----------------
@@ -573,7 +557,7 @@ Jira est un outil de gestion de projet permettant de planifier, suivre et gérer
 \begin{center}
 \includegraphics[width=3cm,height=2cm]{images/logos/figma.png}
 \end{center} &
-Figma est un outil de conception collaborative permettant de réaliser des interfaces utilisateur, de concevoir des prototypes interactifs et de mettre en place des systèmes de design adaptés au développement d’applications modernes \cite{figma}. \\
+Il s'agit d'un outil collaboratif de conception d'interfaces, utilisé pour créer des maquettes d'interfaces utilisateur, élaborer des prototypes dynamiques et bâtir des design systems cohérents, adaptés aux besoins des applications actuelles. \cite{figma} \\
 \hline
 
 % ---------------- draw.io ----------------
@@ -581,7 +565,7 @@ Figma est un outil de conception collaborative permettant de réaliser des inter
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/drowio.jpeg}
 \end{center} &
-draw.io est un outil gratuit et open-source permettant de concevoir différents types de diagrammes, notamment les diagrammes UML, les architectures logicielles et les diagrammes de flux.\cite{drawio} \\
+Il s'agit d'un outil gratuit et libre d'accès, connu aussi sous le nom de diagrams.net, permettant de concevoir toutes sortes de schémas : diagrammes UML, représentations d'architecture logicielle ou encore diagrammes de flux. \cite{drawio} \\
 \hline
 
 % ---------------- Postman ----------------
@@ -589,7 +573,7 @@ draw.io est un outil gratuit et open-source permettant de concevoir différents 
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/postman.png}
 \end{center} &
-Postman est une plateforme qui permet de documenter, tester et valider les API afin de s’assurer qu’elles fonctionnent correctement tout au long du développement.\cite{postman} \\
+Postman est une solution dédiée à la documentation, aux tests et à la validation des API, garantissant leur bon fonctionnement à chaque étape du cycle de développement.\cite{postman} \\
 \hline
 
 % ---------------- Mailtrap ----------------
@@ -597,7 +581,7 @@ Postman est une plateforme qui permet de documenter, tester et valider les API a
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/mailtrap.png}
 \end{center} &
-Mailtrap est une plateforme dédiée au test et à la validation des emails dans un environnement sécurisé, facilitant le développement et le débogage des fonctionnalités d'envoi d'emails.\cite{mailtrap} \\
+Mailtrap propose un environnement sécurisé dédié aux tests et à la vérification des emails, ce qui simplifie grandement le développement et la correction des fonctionnalités liées à l'envoi de messages électroniques.\cite{mailtrap} \\
 \hline
 
 \caption{Environnement logiciel}
@@ -641,7 +625,7 @@ Le tableau~\ref{tab:env_technique} présente les différentes technologies utili
 \begin{center}
 \includegraphics[width=3cm,height=2cm]{images/logos/php.png}
 \end{center} &
-PHP est un langage de programmation open source utilisé essentiellement pour développer des applications web dynamiques côté serveur.\cite{php} \\
+Il s'agit d'un langage de programmation open source, principalement destiné au développement d'applications web dynamiques exécutées côté serveur.\cite{php} \\
 \hline
 
 % ---------------- Laravel ----------------
@@ -649,7 +633,7 @@ PHP est un langage de programmation open source utilisé essentiellement pour d�
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/laravel.png}
 \end{center} &
-Laravel est un framework web open-source basé sur PHP suivant l'architecture MVC (Modèle–Vue–Contrôleur) facilitant le développement d'applications web robustes et sécurisées.\cite{laravel} \\
+Il s'agit d'un framework open-source basé sur le langage PHP, structuré selon l'architecture MVC (Modèle-Vue-Contrôleur), qui simplifie la mise en place d'applications web à la fois solides et sécurisées.\cite{laravel} \\
 \hline
 
 % ---------------- Drupal ----------------
@@ -657,7 +641,7 @@ Laravel est un framework web open-source basé sur PHP suivant l'architecture MV
 \begin{center}
 \includegraphics[width=2cm,height=2cm]{images/logos/drupal.png}
 \end{center} &
-Drupal est un système de gestion de contenu (CMS) open-source développé en PHP permettant de concevoir et de gérer efficacement des sites web ainsi que des contenus numériques \cite{drupal}. \\
+Drupal est un système open-source de gestion de contenu (CMS) développé en PHP, permettant de concevoir et de gérer efficacement des sites web ainsi que des contenus numériques \cite{drupal}. \\
 \hline
 
 % ---------------- Next.js ----------------
@@ -665,7 +649,8 @@ Drupal est un système de gestion de contenu (CMS) open-source développé en PH
 \begin{center}
 \includegraphics[width=4cm,height=3cm]{images/logos/next.js.jpg}
 \end{center} &
-Next.js est un framework React destiné au développement d'applications web modernes. Il propose des fonctionnalités avancées comme le rendu côté serveur (SSR) et le référencement d'un site web dans les résultats des moteurs de recherche (SEO) \cite{nextjs}. \\
+Construit au-dessus de React, Next.js est un framework pensé pour la création d'applications web performantes. Parmi ses atouts figurent notamment le rendu côté serveur (SSR), qui améliore les temps de chargement, ainsi qu'une meilleure prise en compte du référencement naturel (SEO) des sites développés.\cite{nextjs
+} \\
 \hline
 
 % ---------------- Docker ----------------
@@ -771,7 +756,7 @@ Cette partie est dédiée à la présentation de l’architecture logicielle de 
 \subsection{Architecture logique}
 La figure~\ref{fig:arch-log} montre l'architecture logique de la plateforme \textbf{e-Gouv}, qui repose sur un modèle à \textbf{trois couches} qui sépare nettement les responsabilités du système.
 
-La \textbf{couche de présentation} constitue le point d'entrée des utilisateurs elle regroupe l'ensemble des interfaces web à travers lesquelles citoyens et administrateurs interagissent avec la plateforme. Les requêtes sont transmises à la \textbf{couche d'application}, qui centralise la logique métier et orchestre le traitement des services administratifs.
+La \textbf{couche de présentation} constitue le point d'entrée des utilisateurs ; elle regroupe l'ensemble des interfaces web à travers lesquelles citoyens et administrateurs interagissent avec la plateforme. Les requêtes sont transmises à la \textbf{couche d'application}, qui centralise la logique métier et orchestre le traitement des services administratifs.
 
 Cette couche communique à son tour avec la \textbf{couche de données}, chargée de la persistance et de la restitution des informations. Les échanges entre les couches suivent un flux structuré : les requêtes descendent de la présentation vers les données, et les résultats remontent vers l'utilisateur final. Cette séparation garantit la maintenabilité, la scalabilité et la sécurité de l'ensemble du système.
 
@@ -789,7 +774,7 @@ L'architecture physique décrit le déploiement concret des composants technique
 
 La \textbf{couche présentation} est assurée par deux espaces distincts : le Frontoffice, qui héberge Next.js pour le rendu des interfaces citoyens et Drupal pour la gestion de contenu, et le Backoffice, qui expose l'interface d'administration via Laravel. Chacun de ces composants est exposé derrière un serveur Nginx jouant le rôle de reverse proxy, qui gère la terminaison SSL, le routage des requêtes et la transmission par Proxy Pass vers l'application cible. 
 
-La \textbf{couche métier} est portée par une API Laravel dédiée, également protégée par Nginx, qui reçoit les requêtes HTTPS depuis la couche présentation et retourne des réponses JSON.
+La \textbf{couche métier} est portée par une API Laravel dédiée, également protégée par Nginx, qui reçoit les requêtes HTTPS de la couche présentation et retourne des réponses JSON.
 
 La \textbf{couche données} regroupe trois systèmes de stockage complémentaires : PostgreSQL pour la persistance relationnelle des données, Redis pour la gestion du cache et des sessions, et un Document Storage pour l'archivage des fichiers et pièces jointes. Les échanges entre la couche métier et la couche données s'effectuent en lecture/écriture selon les besoins du traitement.
 
@@ -809,4 +794,4 @@ La figure~\ref{fig:arch-phy} illustre l’architecture physique de la plateforme
 
 \section{Conclusion}
 
-Nous avons exposé, dans ce chapitre, la phase de spécification des besoins du système e-Gouv. Nous avons tout d’abord identifié les différents acteurs et les besoins fonctionnels et non fonctionnels du système. Nous avons ensuite détaillé les diagrammes de cas d’utilisation le backlog de produit ainsi que la planification des sprints . Enfin nous avons décrit l’environnement de développement et l’architecture globale de la solution.
+L'identification des acteurs du système e-Gouv, la définition de leurs besoins — qu'ils soient fonctionnels ou non — ainsi que la modélisation des cas d'utilisation ont constitué le cœur de ce chapitre. Le travail s'est poursuivi par l'élaboration du backlog produit et la répartition du travail entre les sprints. Les choix relatifs aux outils de développement et à l'organisation technique de la solution, tant sur le plan physique que logique, ont clos cette étape de spécification. 

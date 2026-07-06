@@ -42,7 +42,7 @@ US32 & Administrateur Système & Je veux consulter les logs système afin de dé
 
 \subsection{Diagramme de cas d’utilisation du sprint 4}
 
-La figure \ref{fig:cas-utilisation-sprint4} présente le diagramme de cas d'utilisation du sprint 4.
+La figure \ref{fig:cas-utilisation-sprint4},présente le diagramme de cas d'utilisation du sprint 4.
 
 \begin{figure}[H]
     \centering
@@ -52,7 +52,7 @@ La figure \ref{fig:cas-utilisation-sprint4} présente le diagramme de cas d'util
 \end{figure}
 
 \subsection{Diagramme de classe du Sprint 4}
-La figure \ref{fig:classe-sprint4} présente le diagramme de classe du sprint 4.
+La figure \ref{fig:classe-sprint4}, présente le diagramme de classe du sprint 4.
 
 \begin{figure}[H]
     \centering
@@ -68,7 +68,8 @@ scénarios pour décrire le cas « Personnaliser les étapes
 de traitement des réclamations ». Ce dernier montre les sous-opérations possibles à faire.
 
 
-La figure \ref{fig:cas-utilisation-sprint4-raff} présente le diagramme de cas d'utilisation raffiné du cas d'utilisation « Personnaliser les étapes de traitement des réclamations ».
+La figure \ref{fig:cas-utilisation-sprint4-raff}, présente le diagramme de cas d'utilisation raffiné du cas d'utilisation « Personnaliser les étapes
+de traitement des réclamations ».
 \begin{figure}[H]
     \centering
     \includegraphics[width=15cm,height=10cm]{images/diagrammes/sprint4/cas-utilisation-personaliser-reclamation-raff.drawio_2.png}
@@ -116,7 +117,7 @@ Scénario nominal &
 
 Scénario alternatif &
 \begin{itemize}
-    \item Si les champs sont invalides un message d’erreur est affiché.
+    \item Si les champs sont invalides, un message d’erreur est affiché.
 \end{itemize}
 \\ \hline
 
@@ -202,7 +203,7 @@ Le diagramme de séquence de la figure~\ref{fig:workflow-etapes} décrit le proc
 
 
 % ===================== AJOUTER =====================
-Le diagramme de séquence présenté dans la figure~\ref{fig:ajouter-etape} illustre  le processus d’ajout d’une nouvelle étape de traitement des réclamations. Il décrit les interactions permettant à l’administrateur de créer et d’enregistrer une nouvelle étape dans le workflow existant.
+La figure ~\ref{fig:ajouter-etape} décrit, sous forme de diagramme de séquence, le déroulement de l'ajout d'une nouvelle étape dans le traitement des réclamations. Elle met en évidence les échanges permettant à l'administrateur de créer puis d'enregistrer cette étape au sein du workflow déjà en place. 
 
 \begin{figure}[H]
     \centering
@@ -214,14 +215,13 @@ Le diagramme de séquence présenté dans la figure~\ref{fig:ajouter-etape} illu
 
 \subsection{Réalisation du sprint <<Personnaliser les étapes de traitement des réclamations>>}
 
-Dans cette section nous présentons certaines interfaces représentatives de la réalisation du sprint « Gestion des étapes de traitement des réclamations », afin d’illustrer les principales fonctionnalités implémentées. Ce choix met en évidence les écrans les plus significatifs du système, notamment la consultation des étapes, la visualisation du workflow ainsi que les opérations de modification et de suppression. Ces captures permettent de mieux comprendre la structuration du processus de traitement des réclamations et l’interaction de l’administrateur avec le système.
+Dans cette section, nous présentons certaines interfaces représentatives de la réalisation du sprint « Gestion des étapes de traitement des réclamations », afin d’illustrer les principales fonctionnalités implémentées. Ce choix met en évidence les écrans les plus significatifs du système, notamment la consultation des étapes, la visualisation du workflow ainsi que les opérations de modification et de suppression. Ces captures permettent de mieux comprendre la structuration du processus de traitement des réclamations et l’interaction de l’administrateur avec le système.
 
 \noindent \textbf{Présentation des interfaces :}
 
 % ===================== CONSULTER =====================
-La figure~\ref{fig:etapes-reclamations} présente l’interface qui permet à l’administrateur de consulter la liste des étapes de traitement des réclamations associées à une administration. Elle offre une vue globale sur la structure du workflow configuré.
+La figure~\ref{fig:etapes-reclamations} présente l’interface de consultation des étapes de traitement des réclamations associées à plusieurs administration.
 
- 
 
 \begin{figure}[H]
     \centering
@@ -264,7 +264,7 @@ La figure~\ref{fig:modifier-etape} présente l’interface qui permet à l’adm
 
 
 % ===================== SUPPRIMER =====================
-La figure~\ref{fig:suppression-etape} présente l’interface qui permet à l’administrateur de supprimer une étape du workflow de traitement des réclamations, une confirmation est généralement demandée afin d’éviter toute suppression accidentelle.
+L'écran illustré en figure ~\ref{fig:suppression-etape} permet à l'administrateur de supprimer une étape du workflow dédié au traitement des réclamations. Un message de confirmation s'affiche au préalable, de manière à prévenir toute suppression involontaire. 
 
 \begin{figure}[H]
     \centering
@@ -279,7 +279,7 @@ La figure~\ref{fig:suppression-etape} présente l’interface qui permet à l’
 
 Le module de supervision donne aux administrateurs une vue d'ensemble de l'activité de la plateforme.
 
-La figure~\ref{fig:dashboard-statistiques} montre l’interface du tableau de bord de supervision qui affiche les statistiques globales des services et des réclamations avec des indicateurs ventilés par administration et par période.
+Le tableau de bord de supervision, présenté en figure ~\ref{fig:dashboard-statistiques}, regroupe les statistiques globales relatives aux services et aux réclamations, avec des indicateurs pouvant être répartis selon l'administration concernée ou la période sélectionnée.
 
 \begin{figure}[H]
     \centering
@@ -336,7 +336,7 @@ US32 & Consulter les logs système & \textcolor{green!60!black}{Terminé} \\ \hl
 \end{longtable}
 
 \section{Sprint 5 : Portail public et assistant conversationnel intelligent}
-Le sprint 5 réunit la couche publique de la plateforme et sa composante d'intelligence artificielle. Il met en place la vitrine institutionnelle, qui donne aux internautes un accès public aux informations officielles du gouvernement, et un assistant conversationnel intelligent intégré au portail. Cet assistant repose sur l'intelligence artificielle générative et une approche \textit{RAG} (\textit{Retrieval-Augmented Generation}, génération augmentée par la recherche) : il répond en langage naturel aux questions des citoyens sur les services, les secteurs, les démarches, les actualités et la FAQ, et réduit la charge pesant sur les canaux de support traditionnels. Le sprint met également en place un canal d'assistance humaine : un citoyen en difficulté laisse ses coordonnées afin d'être recontacté par un administrateur, les demandes étant centralisées et traitées dans le backoffice.
+Le sprint 5 réunit la couche publique de la plateforme et sa composante d'intelligence artificielle. Il met en place la vitrine institutionnelle, qui donne aux internautes un accès public aux informations officielles du gouvernement, et un assistant conversationnel intelligent pour les citoyens. Cet assistant repose sur l'intelligence artificielle générative et une approche \textit{RAG} (\textit{Retrieval-Augmented Generation}, génération augmentée par la recherche) : il répond en langage naturel aux questions des citoyens sur les services, les secteurs, les démarches, les actualités et la FAQ, et réduit la charge pesant sur les canaux de support traditionnels. Le sprint met également en place un canal d'assistance humaine : un citoyen en difficulté laisse ses coordonnées afin d'être recontacté par un administrateur, les demandes étant centralisées et traitées dans le backoffice.
 
 
 \subsection{Concepts fondamentaux}
@@ -646,7 +646,7 @@ Lorsqu'un internaute signale une difficulté, l'assistant affiche un court formu
 
 \noindent \textbf{Gestion des demandes dans le backoffice :}
 
-\noindent Les demandes, qu’elles proviennent du chatbot ou du formulaire de contact, sont centralisées au niveau du backoffice, où l’administrateur peut les consulter les filtrer selon leur statut et faire évoluer leur traitement. Ce processus est illustré par la figure~\ref{fig:real-gestion-assistance}.
+\noindent Les demandes, qu’elles proviennent du chatbot ou du formulaire de contact, sont centralisées au niveau du backoffice, où l’administrateur peut les consulter, les filtrer selon leur statut et faire évoluer leur traitement. Ce processus est illustré par la figure~\ref{fig:real-gestion-assistance}.
  
 \begin{figure}[H]
     \centering
@@ -676,7 +676,7 @@ Lorsqu'un internaute signale une difficulté, l'assistant affiche un court formu
 
 \subsection{Revue du Sprint 5}
 
-A l'issue du Sprint 5, l'ensemble des user stories planifiées ont été développées et validées comme présenté dans le tableau~\ref{tab:revue-sprint5}.
+Le tableau ~\ref{tab:revue-sprint5} récapitule les user stories prévues pour ce sprint, toutes achevées et validées au terme du Sprint 5.
 
 \begin{longtable}{|c|p{9cm}|c|}
 \hline
@@ -693,4 +693,4 @@ US37 & Être notifié par email d'une nouvelle demande & \textcolor{green!60!bla
 
 \section{Conclusion}
 
-Ce chapitre a présenté la release 2, structurée en deux sprints. Le Sprint 4 a permis de mettre en place la gestion des réclamations, les notifications ainsi que les outils de supervision. Le Sprint 5, quant à lui, a introduit le portail public, incluant une vitrine institutionnelle et un assistant conversationnel basé sur une approche RAG, complété par un canal d’assistance humaine.
+Répartie sur deux sprints, la release 2 a fait l'objet de ce chapitre. D'un côté, le Sprint 4 a été consacré à la mise en place de la gestion des réclamations, du système de notifications et des outils dédiés à la supervision. De l'autre, le Sprint 5 a abouti au déploiement du portail public, comprenant une vitrine institutionnelle ainsi qu'un assistant conversationnel s'appuyant sur une approche RAG, épaulé par un canal d'assistance assuré par des opérateurs humains.

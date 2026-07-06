@@ -13,7 +13,7 @@ Le premier sprint vise principalement à mettre en place les fondations de la pl
 
 \subsection{Backlog du Sprint 1}
 
-Nous proposons, à travers le tableau~\ref{tab:user-stories-sprint1} une présentation détaillée du backlog du sprint 1, accompagnée des estimations en jours de chaque tâche.
+Nous proposons, à travers le tableau~\ref{tab:user-stories-sprint1}, une présentation détaillée du backlog du sprint 1, accompagnée des estimations en jours de chaque tâche.
 
 
 
@@ -84,7 +84,7 @@ Le diagramme de cas d'utilisation du sprint 1 est présenté dans la figure \ref
 
 \subsection{Diagramme de classe du sprint 1}
 
-La figure \ref{fig:cas-utilisation-classe} présente le diagramme de classe du sprint 1.
+La figure \ref{fig:cas-utilisation-classe}, présente le diagramme de classe du sprint 1.
  
 \begin{figure}[H]
     \centering
@@ -99,7 +99,7 @@ La figure \ref{fig:cas-utilisation-classe} présente le diagramme de classe du s
 Dans cette section, nous utiliserons le diagramme raffiné et les descriptions de scénarios pour décrire le cas « Gérer les administrations». Ce dernier montre les sous-opérations
 possibles à faire.
 
-La figure \ref{fig:cas-utilisation-raffiné-gérer-administrations}  représente le diagramme de cas d'utilisation raffiné du cas d'utilisation « Gérer les administrations ».
+La figure \ref{fig:cas-utilisation-raffiné-gérer-administrations},  représente le diagramme de cas d'utilisation raffiné du cas d'utilisation « Gérer les administrations ».
 
 \begin{figure}[H]
     \centering
@@ -130,21 +130,21 @@ Objectif & Permettre à l’administrateur de créer une nouvelle administration
 
 Pré-condition &
 \begin{itemize}
-    \item L’administrateur est identifié.
-    \item L'administrateur possède les droits requis.
+    \item L'administrateur s'est connecté avec succès au système.
+    \item Il possède les autorisations requises pour cette action.
 \end{itemize}
 \\ \hline
 
 Scénario nominal &
 \begin{enumerate}
-    \item L’administrateur accède au module de gestion des administrations.
-    \item Il clique sur l’option "Ajouter une administration".
+    \item L'administrateur se rend dans le module dédié à la gestion des administrations.
+    \item Un formulaire de création s'affiche alors à l'écran.
     \item Le système présente le formulaire de création.
-    \item L’administrateur renseigne les informations nécessaires (nom, responsable, coordonnées, etc.).
+    \item L'administrateur saisit les éléments requis, tels que le nom, le responsable ou encore les coordonnées.
     \item L'administrateur vérifie le formulaire.
     \item Le système vérifie que les données saisies sont valides.
-    \item Le système enregistre la nouvelle gestion.
-    \item Le système affiche un message de confirmation.
+    \item Les informations sont ensuite enregistrées dans le système. 
+    \item Un message confirmant la réussite de l'opération s'affiche.
 \end{enumerate}
 \\ \hline
 
@@ -187,21 +187,21 @@ Pré-condition &
 
 Scénario nominal &
 \begin{enumerate}
-    \item L'administrateur peut consulter la liste des organismes gouvernementaux.
-    \item Il sélectionne une administration.
-    \item Il clique sur l’option "Supprimer".
-    \item Le système sollicite une confirmation.
-    \item L’administrateur valide la suppression.
-    \item Le système fait disparaître l’administration.
-    \item Un message de confirmation s’affiche sur le système.
+    \item L'administrateur consulte la liste des organismes gouvernementaux enregistrés.
+    \item Il choisit l'administration à supprimer.
+    \item Il active l'option "Supprimer".
+    \item Une confirmation lui est demandée par le système.
+    \item L’administrateur confirme la suppression.
+    \item L'administration disparaît alors du système.
+    \item Un message atteste que la suppression a bien été effectuée.
 \end{enumerate}
 \\ \hline
 
 Scénario alternatif &
 \begin{itemize}
-    \item Si l’administration est liée à des données (services, agents), le système empêche la suppression.
-    \item Si l’administrateur annule l’action, aucune modification n’est effectuée.
-    \item En cas d’erreur système, un message d’échec est affiché.
+    \item Lorsque l'administration est rattachée à des données existantes (services, agents), sa suppression est bloquée par le système.
+    \item En cas d'annulation par l'administrateur, aucune modification n'est apportée.
+    \item Une erreur système entraîne l'affichage d'un message d'échec.
 \end{itemize}
 \\ \hline
 
@@ -216,7 +216,7 @@ Nous avons choisi, dans cette section d’illustrer uniquement certains diagramm
 
 \noindent  \textbf{Présentation des diagrammes de séquences :}
 
-Ce diagramme illustre le processus d’ajout d’une nouvelle administration depuis la saisie des informations par l’utilisateur jusqu’à leur enregistrement dans le système comme présenté dans la figure~\ref{fig:ajouter-administration}.
+Ce diagramme illustre le processus d’ajout d’une nouvelle administration, depuis la saisie des informations par l’utilisateur jusqu’à leur enregistrement dans le système, comme présenté dans la figure~\ref{fig:ajouter-administration}.
 
 
 \begin{figure}[H]
@@ -242,12 +242,13 @@ Ce diagramme décrit le processus de suppression d’une administration, incluan
 \newpage
 \subsection{Réalisation du cas d'utilisation « Gérer les administrations »}
 
-Dans cette section nous présentons un ensemble d’interfaces issues de la réalisation du cas d’utilisation « Gérer les administrations » sélectionnées afin d’illustrer les principales fonctionnalités mises en œuvre. Cette sélection met en avant les écrans les plus représentatifs du processus de gestion des administrations, notamment la consultation, l’ajout ainsi que l’association des responsables administratifs. Ces captures permettent ainsi de visualiser concrètement le fonctionnement du système et les interactions de l’administrateur avec les différentes fonctionnalités proposées.
-
+Cette section regroupe plusieurs captures d'écran illustrant la mise en œuvre du cas d'utilisation « Gérer les administrations ». Elles ont été choisies pour mettre en avant les fonctionnalités essentielles associées à ce cas, à travers les écrans jugés les plus représentatifs du processus de gestion : consultation des administrations, ajout de nouvelles entrées et association avec les responsables concernés. Ces éléments visuels offrent ainsi un aperçu concret du fonctionnement du système et de la manière dont l'administrateur interagit avec les fonctionnalités mises à sa disposition.
 
 \noindent \textbf{Présentation des réalisations :}
 
-La figure~\ref{fig:liste-admins} montre l’interface qui permet de consulter les administrations enregistrées dans le système. Elle permet à l’administrateur de faire des recherches, d’appliquer des filtres et d’accéder aux différentes opérations de gestion associées.
+L'interface présentée en figure ~\ref{fig:liste-admins} donne accès à la liste des administrations enregistrées dans le système. Depuis cet écran, l'administrateur peut effectuer une recherche, appliquer des critères de filtrage et accéder aux diverses actions de gestion disponibles. 
+
+
 
 \begin{figure}[H]
     \centering
@@ -260,7 +261,7 @@ La figure~\ref{fig:liste-admins} montre l’interface qui permet de consulter le
 
  
 
-La figure~\ref{fig:liste-responsables} présente l’interface affichant la liste des responsables associés aux administrations offrant ainsi une vision claire de la structure organisationnelle et des rôles attribués au sein du système.
+La figure~\ref{fig:liste-responsables} présente l’interface affichant la liste des responsables associés aux administrations, offrant ainsi une vision claire de la structure organisationnelle et des rôles attribués au sein du système.
 
 
 
@@ -277,9 +278,7 @@ La figure~\ref{fig:liste-responsables} présente l’interface affichant la list
 \end{figure}
  
 
- 
-
-L’interface de création d’une nouvelle administration par l’administrateur où celui-ci doit saisir les informations requises notamment le nom les coordonnées et les données du responsable concerné est illustrée dans la figure~\ref{fig:ajouter-admin}.
+Pour créer une nouvelle administration, l'administrateur passe par l'interface visible en figure ~\ref{fig:ajouter-admin}, dans laquelle il indique notamment le nom de l'administration, ses coordonnées et les données du responsable associé. 
 
 \begin{figure}[H]
     \centering
@@ -318,7 +317,7 @@ La figure~\ref{fig:ajouter-responsable} présente l’interface permettant d’a
 
 
 \subsection{Revue du Sprint 1}
-À l’issue du Sprint 1, toutes les user stories prévues ont été développées et validées comme l’indique le tableau~\ref{tab:revue-sprint1}.
+À l’issue du Sprint 1, toutes les user stories prévues ont été développées et validées, comme l’indique le tableau~\ref{tab:revue-sprint1}.
 
 \begin{longtable}{|c|p{9cm}|c|}
 \hline
@@ -343,9 +342,7 @@ US6 & Gérer les administrations ministérielles & \textcolor{green!60!black}{Te
 Ce sprint établit le référentiel de services de la plateforme. Il donne aux administrateurs les outils nécessaires pour structurer l'offre de services par secteur, configurer des formulaires adaptés à chaque prestation et gérer les langues de l'interface. Il couvre également la partie citoyenne avec l'inscription, l'authentification et la consultation du catalogue de services.
 
 \subsection{Backlog du Sprint 2}
-
-Le tableau~\ref{tab:Backlogdu-sprint2} montre le backlog du sprint 2 avec l’estimation des tâches en jours.
- 
+Le backlog associé à ce sprint, présenté dans le tableau ~\ref{tab:Backlogdu-sprint2}, détaille les tâches prévues ainsi que leur charge de travail estimée en jours. 
 
 
 \renewcommand{\arraystretch}{1.3}
@@ -392,7 +389,7 @@ Je veux consulter les secteurs et les services disponibles afin de connaître le
  
 
 \subsection{Diagramme de cas d'utilisation du sprint 2}
-Le diagramme de cas d'utilisation du sprint 2 est représenté par la figure \ref{fig:cas-utilisation-sprint2}.
+La figure \ref{fig:cas-utilisation-sprint2} illustre le diagramme de cas d'utilisation correspondant à ce deuxième sprint. 
 
 \begin{figure}[H]
     \centering
@@ -402,7 +399,7 @@ Le diagramme de cas d'utilisation du sprint 2 est représenté par la figure \re
 \end{figure}
 
 \subsection{Diagramme de classe du sprint 2}
-Le diagramme de classe du sprint 2 est présenté dans la figure \ref{fig:Diagrammedeclasse-Sprint2}.
+La figure \ref{fig:Diagrammedeclasse-Sprint2} correspond au diagramme de classes établi pour ce sprint.
 
 \begin{figure}[H]
     \centering
@@ -414,11 +411,10 @@ Le diagramme de classe du sprint 2 est présenté dans la figure \ref{fig:Diagra
 
 \subsection{Raffinement et description textuelle du cas d'utilisation <<Gérer les formulaires dynamiques >>}
 
-Dans cette section , nous utiliserons des descriptions de
-scénarios pour décrire le cas « Gérer les formulaires dynamiques ». Ce dernier montre les sous-opérations possibles à faire.
+Cette section détaille, à travers des scénarios descriptifs, le fonctionnement du cas d'utilisation « Gérer les formulaires dynamiques », en mettant en lumière les différentes sous-opérations qui le composent. 
 
-
-La figure \ref{fig:cas-utilisation-sprint2-raff} montre le diagramme de cas d'utilisation affiné du cas d'utilisation « Gérer les formulaires dynamiques ».
+Le raffinement de ce cas d'utilisation est représenté graphiquement en figure
+\ref{fig:cas-utilisation-sprint2-raff}.
 
 \begin{figure}[H]
     \centering
@@ -498,9 +494,9 @@ Objectif & Permettre à l’administrateur de mettre à jour et de reconfigurer 
 
 Pré-condition &
 \begin{itemize}
-    \item L’administrateur est authentifié.
-    \item L’administrateur dispose des droits nécessaires.
-    \item Le formulaire dynamique existe dans le système.
+    \item L'administrateur s'est connecté avec succès au système.
+    \item Il possède les autorisations requises pour cette action.
+    \item Le formulaire concerné a préalablement été créé dans le système. 
 \end{itemize}
 \\ \hline
 
@@ -509,7 +505,7 @@ Scénario nominal &
     \item L'administrateur accède au module de gestion des formulaires.
     \item Il vérifie la liste des formulaires existants.
     \item Il choisit un formulaire dynamique à modifier.
-    \item Le système présente les données du formulaire (nom, description, service associé, champs, steps et validations).
+    \item Le système affiche alors les informations relatives au formulaire sélectionné (intitulé, description, service lié, champs, étapes et règles de validation).
     \item L'administrateur modifie les données générales du formulaire.
     \item Il ajoute, modifie ou supprime des champs (texte, date, fichier, liste déroulante, ...).
     \item Il modifie les règles de validation des champs ainsi que leurs propriétés.
@@ -540,7 +536,7 @@ Post-condition & Le formulaire dynamique est mis à jour avec sa nouvelle struct
 
 \subsection{Les diagrammes de séquences du cas d’utilisation « Gérer les formulaires dynamiques »}
 
-Dans cette partie, nous avons choisi de ne présenter que quelques-uns des diagrammes de séquence identifiés lors du pas de raffinement. Ce choix permet de mettre en évidence les interactions les plus représentatives du cas d’utilisation « Gérer les formulaires dynamiques », notamment les opérations essentielles la modification et la consultation. Ces diagrammes permettent d’illustrer plus clairement le fonctionnement du système ainsi que les échanges entre les différents acteurs et les composants applicatifs.
+Parmi l'ensemble des diagrammes de séquence issus de l'étape de raffinement, seuls quelques-uns ont été retenus pour cette partie, de manière à mettre en avant les interactions jugées les plus significatives du cas d'utilisation « Gérer les formulaires dynamiques » — en particulier les opérations de modification et de consultation. Ce choix permet de rendre plus lisible le fonctionnement interne du système, ainsi que les échanges intervenant entre les acteurs et les différents composants applicatifs.
 
 \noindent  \textbf{Présentation des diagrammes de séquences :}
 
@@ -556,7 +552,7 @@ Le diagramme de la figure~\ref{fig:modif-form} montre le processus de modificati
 
  
 % Consulter
-Le diagramme présenté à la figure~\ref{fig:consulter-form}, décrit le processus de consultation des formulaires dynamiques et permet à l’administrateur de visualiser la liste des formulaires ainsi que leurs détails et configurations.
+La figure ~\ref{fig:consulter-form} illustre le déroulement de la consultation des formulaires dynamiques, offrant à l'administrateur un accès à la liste complète des formulaires ainsi qu'à leurs détails et paramètres respectifs. 
 
 \begin{figure}[H]
     \centering
@@ -567,15 +563,12 @@ Le diagramme présenté à la figure~\ref{fig:consulter-form}, décrit le proces
 
 \subsection{Réalisation du sprint « Gérer formulaire dynamique »}
 
-Dans cette section nous avons choisi de présenter certaines interfaces représentatives du sprint « Gérer formulaire dynamique » afin d’illustrer les principales fonctionnalités implémentées. Ce choix met en avant les écrans les plus significatifs du système, notamment la consultation, l’ajout, la configuration et la modification des formulaires. Ces captures permettent de mieux appréhender le fonctionnement global de l’application ainsi que l’interaction de l’administrateur avec les différentes fonctionnalités proposées.
+Dans cette section, nous avons choisi de présenter certaines interfaces représentatives du sprint « Gérer formulaire dynamique » afin d’illustrer les principales fonctionnalités implémentées. Ce choix met en avant les écrans les plus significatifs du système, notamment la consultation, l’ajout, la configuration et la modification des formulaires. Ces captures permettent de mieux appréhender le fonctionnement global de l’application ainsi que l’interaction de l’administrateur avec les différentes fonctionnalités proposées.
 
 
 \noindent \textbf{Présentation des interfaces :}
 
-La figure~\ref{fig:real1} présente l'interface de l'administrateur qui permet de consulter tous les formulaires enregistrés dans le système. Cette interface permet également de rechercher, de filtrer et d’accéder aux opérations de gestion associées.
-
-
-
+L'écran illustré en figure ~\ref{fig:real1} offre à l'administrateur une vue d'ensemble sur les formulaires enregistrés dans le système. Il propose par ailleurs des fonctionnalités de recherche et de filtrage, ainsi qu'un accès direct aux actions de gestion correspondantes.
 
 
 
@@ -588,9 +581,7 @@ La figure~\ref{fig:real1} présente l'interface de l'administrateur qui permet d
     \label{fig:real1}
 \end{figure}
 
-La figure~\ref{fig:real2} montre l'interface qui permet à l’administrateur d'ajouter de nouveaux formulaires dynamiques dans le système.
-
-
+L'ajout de nouveaux formulaires dynamiques par l'administrateur s'effectue via l'interface présentée en figure ~\ref{fig:real2}. 
 
 \begin{figure}[H]
     \centering
@@ -637,11 +628,9 @@ La figure~\ref{fig:real4} présente l'interface qui permet à l’administrateur
  
 \subsection{Revue du Sprint 2}
  
-
-A l'issue du Sprint 2 l'ensemble des user stories planifiées ont été développées et validées comme présenté dans le tableau~\ref{tab:revue-sprint2}.
+Comme le montre le tableau ~\ref{tab:revue-sprint2}, toutes les user stories prévues pour ce sprint ont été menées à bien et validées à son terme.
 
 \newpage
-
 \begin{longtable}{|c|p{9cm}|c|}
 \hline
 \rowcolor{orange!30}
@@ -658,7 +647,7 @@ US15 & Consulter les secteurs et les services disponibles & \textcolor{green!60!
 
 \section{Sprint 3 : Dématérialisation et suivi des démarches en ligne}
 
-Le Sprint 3 constitue une étape clé du projet, dédiée à la dématérialisation des demandes de services. Il permet aux citoyens de soumettre et suivre leurs dossiers, de fournir des informations complémentaires et d’évaluer les services, tout en offrant un tableau de bord personnalisé.
+Le Sprint 3 constitue une étape clé du projet, dédiée à la dématérialisation des demandes de services. Il permet aux citoyens de soumettre et suivre leurs dossiers, de fournir des informations complémentaires et d’évaluer les services et de bénéficier d'un tableau de bord adapté à leur profil.  
 
 Du côté des administrations, il introduit la gestion et le suivi des demandes ainsi que la personnalisation des étapes de traitement selon les besoins spécifiques.
 
@@ -666,8 +655,7 @@ Enfin, ce sprint intègre également des fonctionnalités complémentaires telle
 
 
 \subsection{Backlog du Sprint 3}
-
-Le tableau ci-dessous présente le backlog du troisième sprint avec l'estimation en jours de chaque tâche.
+Les tâches prévues pour ce troisième sprint, accompagnées de leur estimation en jours, sont récapitulées dans le tableau suivant. 
 
 \begin{table}[H]
     \centering
@@ -696,33 +684,32 @@ Le tableau ci-dessous présente le backlog du troisième sprint avec l'estimatio
 
 \subsection{Spécification fonctionnelle du Sprint 3}
 
-Dans cette section nous présentons les diagrammes de cas d'utilisation du sprint 3 le raffinement des cas principaux ainsi que leur description textuelle.
+Cette section regroupe les diagrammes de cas d'utilisation relatifs au sprint 3, accompagnés du raffinement des cas jugés principaux et de leur description sous forme textuelle.
 
 \subsection{Diagramme de cas d'utilisation du sprint 3}
-La figure \ref{fig:cas-utilisation-sprint3}, présente le diagramme de cas d'utilisation du sprint 3.
+Le diagramme de cas d'utilisation correspondant à ce troisième sprint est visible en figure \ref{fig:cas-utilisation-sprint3}. 
 
 \begin{figure}[H]
     \centering
-    \includegraphics[width=12cm,height=14cm]{images/diagrammes/sprint3/diag-classe-sprint3.drawio.png}
+    \includegraphics[width=12cm,height=14cm]{images/diagrammes/sprint3/cas-utilisation-sprint3.drawio.png}
     \caption{Diagramme de cas d'utilisation -- Sprint 3}
     \label{fig:cas-utilisation-sprint3}
 \end{figure}
 
 \subsection{Diagramme de classe du sprint 3}
-La figure \ref{fig:class-sprint3} présente le diagramme de classe du sprint 3.
+La figure \ref{fig:class-sprint3}, présente le diagramme de classe du sprint 3.
 \begin{figure}[H]
     \centering
-    \includegraphics[width=16cm,height=16cm]{images/diagrammes/sprint3/cas-utilisation-sprint3.drawio.png}
+    \includegraphics[width=16cm,height=16cm]{images/diagrammes/sprint3/diag-classe-sprint3.drawio.png}
     \caption{Diagramme de classe -- Sprint 3}
     \label{fig:class-sprint3}
 \end{figure}
 
 \subsection{Raffinement et description textuelle du cas d'utilisation << Suivre état avancement des dossiers des demandes >>}
 
-Dans la section suivante, nous utiliserons des descriptions de
-scénarios pour décrire le cas « Suivre état avancement des dossiers des demandes ». Ce dernier montre les sous-opérations possibles à faire.
+Le cas d'utilisation « Suivre état avancement des dossiers des demandes » est détaillé ci-après à l'aide de scénarios, mettant en évidence les différentes sous-opérations qui lui sont associées. 
 
-La figure \ref{fig:cas-utilisation-sprint3-raff} montre le diagramme de cas d'utilisation raffiné du cas d'utilisation « Suivre état avancement des dossiers des demandes ».
+Le raffinement de ce cas d'utilisation est représenté en figure \ref{fig:cas-utilisation-sprint3-raff}.
 
 \begin{figure}[H]
     \centering
@@ -760,9 +747,9 @@ Pré-condition &
 
 Scénario nominal &
 \begin{enumerate}
-    \item Le client accède à son espace personnel.
-    \item Il consulte la liste de ses demandes.
-    \item Il sélectionne une demande spécifique.
+    \item Le client se connecte à son espace personnel. 
+    \item Il affiche la liste des demandes qu'il a soumises. 
+    \item Il choisit l'une des demandes présentées.
     \item Le système affiche les détails du dossier ainsi que son statut actuel.
     \item Le client peut consulter les étapes de traitement du dossier.
 \end{enumerate}
@@ -770,11 +757,11 @@ Scénario nominal &
 
 Scénario alternatif &
 \begin{itemize}
-    \item Si aucune demande n’existe, le système affiche un message informatif.
+    \item En l'absence de demande enregistrée, un message informatif est affiché par le système.
 \end{itemize}
 \\ \hline
 
-Post-condition & Le client peut voir les informations et l’avancement de son dossier. \\ \hline
+Post-condition & Le client dispose alors d'une visibilité complète sur son dossier et son état d'avancement. \\ \hline
 
 \caption{Description textuelle : Consulter le détail de mon dossier}
 \label{tab:uc-suivre-dossier}
@@ -846,7 +833,7 @@ Dans cette section, nous avons choisi de présenter certains diagrammes de séqu
 \noindent  \textbf{Présentation des diagrammes de séquences :}
 
 % Consulter
- Comme présenté dans la figure~\ref{fig:consulter-form-seq} ce diagramme de séquence illustre le processus de suivi du  dossier de demande. Il décrit les différentes interactions permettant au citoyen de consulter les détails d’un dossier, son statut actuel ainsi que les différentes étapes de traitement effectuées par l’administration.
+ Comme présenté dans la figure~\ref{fig:consulter-form-seq}, ce diagramme de séquence illustre le processus de suivi du  dossier de demande. Il décrit les différentes interactions permettant au citoyen de consulter les détails d’un dossier, son statut actuel ainsi que les différentes étapes de traitement effectuées par l’administration.
 
 \begin{figure}[H]
     \centering
@@ -857,7 +844,7 @@ Dans cette section, nous avons choisi de présenter certains diagrammes de séqu
 
 
 % evaluer
- Comme présenté dans la figure~\ref{fig:evaluer-seq} ce diagramme de séquence présente le processus d’évaluation d’un service administratif après le traitement d’une demande. Il met en évidence les échanges permettant au citoyen de sélectionner un niveau de satisfaction afin de partager son retour d’expérience sur le service reçu.
+ Comme présenté dans la figure~\ref{fig:evaluer-seq}, ce diagramme de séquence présente le processus d’évaluation d’un service administratif après le traitement d’une demande. Il met en évidence les échanges permettant au citoyen de sélectionner un niveau de satisfaction afin de partager son retour d’expérience sur le service reçu.
 
 \begin{figure}[H]
     \centering
@@ -869,7 +856,7 @@ Dans cette section, nous avons choisi de présenter certains diagrammes de séqu
 
 \subsection{Réalisation du sprint 3 : « Suivre état avancement des dossiers des demandes »}
 
-Dans cette section nous présentons certaines interfaces représentatives de la réalisation du sprint « Suivi des demandes », afin d’illustrer les principales fonctionnalités mises en œuvre. Ce choix met en évidence les écrans les plus significatifs du système, notamment la consultation des dossiers, l’évaluation des services, l’exportation des informations ainsi que la fourniture de données complémentaires. Ces captures permettent de visualiser concrètement l’interaction du citoyen avec le système tout au long du traitement de ses demandes administratives.
+Dans cette section, nous présentons certaines interfaces représentatives de la réalisation du sprint « Suivi des demandes », afin d’illustrer les principales fonctionnalités mises en œuvre. Ce choix met en évidence les écrans les plus significatifs du système, notamment la consultation des dossiers, l’évaluation des services, l’exportation des informations ainsi que la fourniture de données complémentaires. Ces captures permettent de visualiser concrètement l’interaction du citoyen avec le système tout au long du traitement de ses demandes administratives.
 
 \noindent \textbf{Présentation des interfaces :}
 
@@ -894,7 +881,7 @@ Dans cette section nous présentons certaines interfaces représentatives de la 
 
 
  
- L’interface présenté dans la figure~\ref{fig:evaluer-service} illustre le mécanisme d’évaluation d’un service administratif. Une fois la demande traitée, le citoyen peut exprimer son niveau de satisfaction afin de contribuer à l’amélioration continue de la qualité des services publics.
+ L’interface présenté dans la figure~\ref{fig:evaluer-service}, illustre le mécanisme d’évaluation d’un service administratif. Une fois la demande traitée, le citoyen peut exprimer son niveau de satisfaction afin de contribuer à l’amélioration continue de la qualité des services publics.
 
  
 
@@ -933,7 +920,7 @@ Dans cette section nous présentons certaines interfaces représentatives de la 
 
 \subsection{Revue du Sprint 3}
 
-A l'issue du Sprint 3 l'ensemble des user stories planifiées ont été développées et validées, comme présenté dans le tableau~\ref{tab:revue-sprint3}.
+A l'issue du Sprint 3, l'ensemble des user stories planifiées ont été développées et validées, comme présenté dans le tableau~\ref{tab:revue-sprint3}.
 
 \begin{longtable}{|c|p{9cm}|c|}
 \hline
