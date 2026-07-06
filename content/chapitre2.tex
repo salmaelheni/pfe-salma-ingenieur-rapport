@@ -13,7 +13,7 @@ Aucun projet ne peut aboutir sans une compréhension fine de ce qu'il doit accom
 
 \subsection{Identification des acteurs}
 
-Plusieurs acteurs interviennent dans le fonctionnement du système e-Gouv, chacun ayant un rôle bien défini et un champ d'action qui lui est propre.le tableau \ref{tab:acteurs} récapitule ces différents acteurs accompagnés de leur description respective. 
+Plusieurs acteurs interviennent dans le fonctionnement du système e-Gouv, chacun ayant un rôle bien défini et un champ d'action qui lui est propre. Le tableau \ref{tab:acteurs} récapitule ces différents acteurs accompagnés de leur description respective. 
 
 
 \begin{longtable}{|p{6cm}|p{9cm}|}
@@ -199,7 +199,7 @@ Client &
 
 \subsection{Identification des besoins non fonctionnels}
 
-Les besoins non fonctionnels du système s’appuient sur le modèle de qualité défini par la norme \textbf{ISO/IEC 25010}, qui constitue un cadre de référence international permettant d’évaluer la qualité d’un logiciel selon plusieurs caractéristiques, notamment la performance la sécurité la maintenabilité et la flexibilité.
+Les besoins non fonctionnels du système s’appuient sur le modèle de qualité défini par la norme \textbf{ISO/IEC 25010}, qui constitue un cadre de référence international permettant d’évaluer la qualité d’un logiciel selon plusieurs caractéristiques, notamment la performance, la sécurité, la maintenabilité et la flexibilité.
 
 Dans le cadre de ce projet, quatre exigences principales ont été retenues :
 
@@ -211,7 +211,7 @@ Dans le cadre de ce projet, quatre exigences principales ont été retenues :
 
 \item \textbf{Performance} : la plateforme vise à offrir une expérience fluide avec des temps de réponse réduits. Cet objectif est atteint grâce à des choix techniques tels que l’indexation de la base de données et la mise en place de mécanismes de cache pour améliorer la réactivité du système.
 
-\item \textbf{Flexibilité} : le système est scalable, c'est-à-dire capable de supporter une augmentation de charge, grâce à un mécanisme de répartition de charge via le load balancer ainsi que l’architecture proposé pour notre système.
+\item \textbf{Flexibilité} : le système est scalable, c'est-à-dire capable de supporter une augmentation de charge, grâce à un mécanisme de répartition de charge via le load balancer ainsi que l’architecture proposée pour notre système.
 
 
 \end{itemize}
@@ -265,7 +265,7 @@ US18 & Client & Je veux évaluer un service après traitement afin de donner mon
 
 % ---------------- US 19-29 ----------------
 US19 & Client & Je veux consulter mon tableau de bord afin d'avoir une vue d'ensemble de mes demandes et activités & 2 & Moyenne \\ \hline
-US20 & Client & Je veux Modifier mon profil afin de changer mes informations personnelles & 1 & Moyenne \\ \hline
+US20 & Client & Je veux modifier mon profil afin de changer mes informations personnelles & 1 & Moyenne \\ \hline
 US21 & Administrateur Institutionnel & Je veux gérer les demandes de service afin de les traiter et les suivre & 2 & Élevée \\ \hline
 US22 & Administrateur Système & Je veux gérer les catégories de réclamations afin de mieux organiser et prioriser leur traitement & 2 & Élevée \\ \hline
 US23 & Administrateur système & Je veux personnaliser les étapes de traitement des réclamations afin d'adapter le workflow au système & 2 & Élevée \\ \hline
@@ -298,7 +298,7 @@ US37 & Administrateur Système & Je veux être notifié par email d'une nouvelle
 \section{Spécification semi-formelle}
 Deux outils UML soutiennent la modélisation semi-formelle présentée dans cette section : d'une part le diagramme de cas d'utilisation global, offrant une lecture synthétique des fonctionnalités du système, et d'autre part le diagramme de classes global, qui en organise la structure de données. 
 
-\subsection{Digramme de cas d'utilisation global}
+\subsection{Diagramme de cas d'utilisation global}
 Cette sous-section expose les diagrammes de cas d'utilisation, un outil qui met en lumière les échanges entre les acteurs et le système tout en identifiant clairement les fonctionnalités rattachées à chacun d'eux. Compte tenu de leur volume, ces schémas ont été répartis en deux figures ~\ref{fig:cas-utilisation-admins} et~\ref{fig:cas-utilisation-user} afin d'en faciliter la lecture et la compréhension. 
 
 
@@ -741,7 +741,7 @@ GPT-4o est un modèle de langage multimodal développé par OpenAI, capable de t
 \begin{center}
 \includegraphics[width=3cm,height=2cm]{images/autre/model-embedding.png}
 \end{center} &
-text-embedding-3-large est un modèle d'embedding développé par OpenAI, utilisé pour mesurer la similarité entre deux textes. Ils sont utiles pour la recherche, le clustering, les recommandations, la détection d'anomalies et les tâches de classification.\cite{textembedding3large} \\
+text-embedding-3-large est un modèle d'embedding développé par OpenAI, utilisé pour mesurer la similarité entre deux textes. Il est utile pour la recherche, le clustering, les recommandations, la détection d'anomalies et les tâches de classification.\cite{textembedding3large} \\
 \hline
 
 \caption{Environnement technique utilisé}
